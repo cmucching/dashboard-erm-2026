@@ -26,7 +26,7 @@ BASE = "https://resultadoelectoral.onpe.gob.pe"
 PAGINA_INICIO = f"{BASE}/main/alcance-electoral"
 API = "/presentacion-backend"
 RUTA_UBIGEOS = "/assets/ubig/v1.json"  # verificado: archivo estático en la raíz del sitio
-ID_REGIONAL, ID_MUNICIPAL = 1, 3
+ID_REGIONAL, ID_MUNICIPAL, ID_DISTRITAL = 1, 3, 4  # 3 = alcalde provincial; 4 = alcalde distrital (verificado con --descubrir)
 LOTE = 40
 RITMO = {"conc": 2, "min": 500, "max": 1100}  # pedidos en paralelo y pausa (ms); ajustable con --hilos/--pausa-ms
 SMOKE_N = 3
@@ -119,7 +119,7 @@ def _datos(resp: dict | None):
     return body.get("data") if isinstance(body, dict) and "data" in body else body
 
 
-def consultar_unidades(fetch, id_eleccion: int, nivel: str, unidades: list[dict]) -> list[dict]:
+def consultar_unidades(fetch, id_eleccion: int, nivel: str, unidades: list[dict], vacio_ok: bool = False) -> list[dict]:
     """Totales + participantes de cada unidad. Devuelve registros con 'qc' (lista de problemas)."""
     urls = []
     for u in unidades:
@@ -130,6 +130,11 @@ def consultar_unidades(fetch, id_eleccion: int, nivel: str, unidades: list[dict]
     for u in unidades:
         tot = _datos(respuestas.get(url_resumen("totales", id_eleccion, nivel, u)))
         par = _datos(respuestas.get(url_resumen("participantes", id_eleccion, nivel, u)))
+        if vacio_ok and not tot and not par:
+            # distrito sin elección distrital propia (p. ej. capital de provincia): no es un error
+            registros.append({"ubigeo": u["ubigeo"], "nombre": u["nombre"], "dep": u["dep"], "prov": u["prov"],
+                              "totales": None, "participantes": None, "qc": [], "sin_eleccion": True})
+            continue
         registros.append({
             "ubigeo": u["ubigeo"], "nombre": u["nombre"], "dep": u["dep"], "prov": u["prov"],
             "totales": tot, "participantes": par, "qc": T.qc_unidad(tot, par) if tot else ["sin_totales"],
@@ -185,9 +190,9 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     prev_prov = _leer(out / "municipal_provincias.json")
     prev_dist = _leer(out / "municipal_distritos.json")
     consultar, copiar = T.planificar_distritos(prev_prov, provs, prev_dist, ub["dist"],
-                                               completo=(modo != "incremental"))
+                                               completo=True)  # los totales provinciales ya no sirven de proxy: la elección distrital es otra
     # Avance guardado: si ONPE corta (403) a mitad de camino, la siguiente corrida retoma desde aquí.
-    clave = modo
+    clave = modo + "_distrital"
     avance = _cargar_cache(cache_path, clave)
     if avance:
         print(f"Se reutiliza avance guardado: {len(avance)} distritos", file=sys.stderr, flush=True)
@@ -197,7 +202,7 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     print(f"Distritos por consultar: {len(pendientes)} (ya guardados: {total - len(pendientes)} de {total})", file=sys.stderr, flush=True)
     try:
         for i in range(0, len(pendientes), 100):
-            for r in consultar_unidades(fetch, ID_MUNICIPAL, "dist", pendientes[i:i + 100]):
+            for r in consultar_unidades(fetch, ID_DISTRITAL, "dist", pendientes[i:i + 100], vacio_ok=True):
                 avance[r["ubigeo"]] = r
             _guardar_cache(cache_path, clave, avance)
             hechos = min(i + 100, len(pendientes))
@@ -226,6 +231,7 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
         "modo": modo,
         "fuente": "ONPE – Resultados Electorales ERM 2026 (https://resultadoelectoral.onpe.gob.pe)",
         "huella": h,
+        "id_distrital": ID_DISTRITAL,
         "conteo": {"departamentos": len(deps), "provincias": len(provs), "distritos": len(dists),
                    "distritos_consultados": len(consultar), "distritos_copiados": len(copiar)},
         "problemas_qc": problemas,
@@ -313,7 +319,7 @@ def main(argv: list[str] | None = None) -> int:
                 browser.close()
                 return 0
             resultado = recolectar(FetcherNavegador(page), out, modo,
-                                   cache_path=Path(".cache") / "avance_distritos.json")
+                                   cache_path=Path(".cache") / "avance_distritos_d4.json")
             print("Cerrando navegador…", file=sys.stderr, flush=True)
             try:
                 browser.close()

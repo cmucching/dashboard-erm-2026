@@ -20,7 +20,7 @@ FALLBACK = ["#6B7C93", "#8C5E3C", "#4E8F6F", "#9B6BA8", "#B08D2A", "#3F7CAC", "#
 
 
 # False mientras el scraper no pida la elección distrital (ver `--descubrir`).
-DISTRITAL_DESDE_DATA = False
+DISTRITAL_DESDE_DATA = False  # se activa solo si meta.json declara id_distrital == 4
 
 
 def jload(p):
@@ -56,7 +56,9 @@ def csv_text(rows, cols):
 
 
 def main():
+    global DISTRITAL_DESDE_DATA
     meta = jload(ROOT / "data" / "meta.json")
+    DISTRITAL_DESDE_DATA = meta.get("id_distrital") == 4
     gen = meta["generado_utc"]
     dep = jload(ROOT / "data" / "regional_departamentos.json")
     prov = jload(ROOT / "data" / "municipal_provincias.json")
@@ -254,8 +256,9 @@ def main():
         if not oc:
             print("AVISO distrito sin cobertura previa:", d["ubigeo"], d["nombre"])
             continue
-        if oc["status"] == "not_applicable":
-            cov.append(oc)
+        if d.get("sin_eleccion") or (not d["participantes"] and not d["totales"]):
+            cov.append({**oc, "status": "not_applicable",
+                        "reason": "No figura como elección municipal distrital en las opciones oficiales de su provincia."})
             continue
         if not d["participantes"] or not d["totales"]:
             cov.append({**oc, "status": "pending", "reason": "Sin datos en la descarga"})
