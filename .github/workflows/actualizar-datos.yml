@@ -1,8 +1,7 @@
-name: Actualizar datos ONPE (ERM 2026)
+name: Actualizar datos ONPE (runner GitHub - solo manual)
 
 on:
-  schedule:
-    - cron: "7 * * * *"   # cada hora, minuto 7 (UTC)
+  # El cron horario vive en actualizar-datos-local.yml (runner propio): ONPE bloquea IPs de GitHub (403).
   workflow_dispatch:
     inputs:
       modo:

@@ -1,0 +1,67 @@
+name: Actualizar datos ONPE (runner propio)
+
+on:
+  schedule:
+    - cron: "7 * * * *"   # cada hora, minuto 7 (UTC)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "incremental | full | smoke"
+        default: "incremental"
+        type: choice
+        options: [incremental, smoke, full]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-datos-local
+  cancel-in-progress: false
+
+jobs:
+  descargar:
+    runs-on: [self-hosted, windows, onpe]
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Entorno Python
+        run: |
+          if (-not (Test-Path .venv)) { py -3 -m venv .venv }
+          .\.venv\Scripts\python -m pip install -q -r requirements.txt
+          .\.venv\Scripts\python -m playwright install chromium
+
+      - name: Pruebas offline
+        run: .\.venv\Scripts\python -m unittest discover -s tests
+
+      - name: Descargar datos de ONPE
+        env:
+          MODO: ${{ github.event.inputs.modo || 'incremental' }}
+        run: |
+          $flag = switch ($env:MODO) { 'full' { '--full' } 'smoke' { '--smoke' } default { '' } }
+          if ($flag) { .\.venv\Scripts\python scraper/onpe_scraper.py --out data $flag }
+          else { .\.venv\Scripts\python scraper/onpe_scraper.py --out data }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "dashboard-erm-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { Write-Host "Sin cambios" }
+          else {
+            git commit -m "datos: actualización ONPE $((Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm')) UTC"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          }
+
+      - name: Avisar a Netlify (opcional)
+        if: ${{ env.NETLIFY_BUILD_HOOK != '' }}
+        run: Invoke-RestMethod -Method Post -Uri $env:NETLIFY_BUILD_HOOK -Body '{}'
