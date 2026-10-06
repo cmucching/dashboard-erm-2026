@@ -94,15 +94,19 @@ nav.top a[aria-current]{color:var(--ink);font-weight:800;border-color:var(--oran
 const DATA=__DATA__,SYM=__SYM__,GEO=__GEO__;
 const $=s=>document.querySelector(s),f=(n,d=1)=>n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const sy=r=>SYM[r]||r;
-DATA.forEach(r=>{r.m=r.top[0].percent-r.top[1].percent;r.p1=r.top[0].percent;r.p2=r.top[1].percent});
-let sel=null,filt=null,sortK='margin';
-// titular
-const close=DATA.filter(r=>r.m<3),by={};DATA.forEach(r=>by[r.organizacion]=(by[r.organizacion]||0)+1);
-const rank=Object.entries(by).sort((a,b)=>b[1]-a[1]),minA=Math.min(...DATA.map(r=>r.actas_contabilizadas)),maxA=Math.max(...DATA.map(r=>r.actas_contabilizadas));
+let sel=null,filt=null,sortK='margin',rank=[];
+function prep(){DATA.forEach(r=>{r.m=r.top[0].percent-r.top[1].percent;r.p1=r.top[0].percent;r.p2=r.top[1].percent})}
+function head(){
+
+var close=DATA.filter(r=>r.m<3),by={};DATA.forEach(r=>by[r.organizacion]=(by[r.organizacion]||0)+1);
+rank=Object.entries(by).sort((a,b)=>b[1]-a[1]),minA=Math.min(...DATA.map(r=>r.actas_contabilizadas)),maxA=Math.max(...DATA.map(r=>r.actas_contabilizadas));
 $('#h1').innerHTML=`25 carreras abiertas.<br><em>${close.length} se deciden por menos de 3 puntos.</em>`;
 $('#sub').textContent=`${rank[0][0]} lidera en ${rank[0][1]} regiones y ${rank[1][0]} en ${rank[1][1]}. Aquí ves quién va primero, a cuánto está el segundo y cuánto del conteo falta.`;
 $('#kpis').innerHTML=`<div class="hot"><b>${close.length}</b><span>regiones con ventaja menor a 3 pp</span></div><div><b>${rank.length}</b><span>organizaciones lideran al menos una región</span></div><div><b>${f(minA)}–${f(maxA)} %</b><span>actas contabilizadas, según región</span></div>`;
 $('#cut').innerHTML=`<i></i>Corte ONPE · ${DATA[0].actualizacion||DATA[0].hora_onpe} · Perú (UTC−5)`;
+
+}
+prep();head();
 // mapa
 const W=-81.4,E=-68.6,N=0.2,Sx=-18.5,k=Math.cos(9*Math.PI/180),X=l=>(l-W)*k,Y=a=>(N-a);
 const vw=(E-W)*k,vh=N-Sx;const svg=$('#map');svg.setAttribute('viewBox',`-1 -1 ${vw+2} ${vh+2}`);
@@ -110,7 +114,8 @@ const ring=c=>'M'+c.map(p=>X(p[0]).toFixed(2)+' '+Y(p[1]).toFixed(2)).join('L')+
 const dgeo=id=>GEO.t[id]==='Polygon'?GEO.p[id].map(ring).join(''):GEO.p[id].map(po=>po.map(ring).join('')).join('');
 svg.innerHTML=DATA.map(r=>`<path data-id="${r.id}" d="${dgeo(r.id)}" fill="${r.color}" fill-rule="evenodd"><title>${r.region}</title></path>`).join('');
 // chips
-$('#chips').innerHTML=rank.map(([o,n])=>{const c=DATA.find(r=>r.organizacion===o).color;return `<button class="chip" aria-pressed="false" data-o="${o}"><i style="background:${c}"></i>${o}<b>${n}</b></button>`}).join('');
+function chips(){$('#chips').innerHTML=rank.map(([o,n])=>{const c=DATA.find(r=>r.organizacion===o).color;return `<button class="chip" aria-pressed="${filt===o}" data-o="${o}"><i style="background:${c}"></i>${o}<b>${n}</b></button>`}).join('')}
+chips();
 // filas
 const maxM=10,tk=[0,2,4,6,8,10];
 $('#sc').innerHTML=tk.map(v=>`<span style="left:${v/maxM*100}%">${v}</span>`).join('');
@@ -132,4 +137,8 @@ svg.addEventListener('mouseleave',()=>tip.style.display='none');
 $('#sort').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;sortK=b.dataset.k;document.querySelectorAll('#sort button').forEach(x=>x.setAttribute('aria-pressed',x===b));rows()});
 $('#chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;filt=filt===b.dataset.o?null:b.dataset.o;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.o===filt));rows()});
 rows();
+// datos en vivo: si existe /api/results (sitio publicado) se actualiza cada 5 min; si no, queda el corte incrustado
+async function live(){try{const r=await fetch('/api/results',{cache:'no-store'});if(!r.ok)return;const info=await r.json();if(info.regiones?.length!==25)return;
+ DATA.splice(0,25,...info.regiones);prep();head();chips();svg.querySelectorAll('path').forEach(p=>{const d=DATA.find(x=>x.id===p.dataset.id);if(d)p.setAttribute('fill',d.color)});rows()}catch(e){}}
+if(location.protocol.startsWith('http')){live();setInterval(live,300000)}
 </script></body></html>
