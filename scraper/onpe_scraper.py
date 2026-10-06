@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlencode
@@ -183,11 +184,20 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     clave = T.huella({"prov": provs, "modo": modo})
     avance = _cargar_cache(cache_path, clave)
     pendientes = [d for d in consultar if d["ubigeo"] not in avance]
+    t0 = time.time()
+    total = len(consultar)
+    print(f"Distritos por consultar: {len(pendientes)} (ya guardados: {total - len(pendientes)} de {total})", file=sys.stderr, flush=True)
     try:
         for i in range(0, len(pendientes), 100):
             for r in consultar_unidades(fetch, ID_MUNICIPAL, "dist", pendientes[i:i + 100]):
                 avance[r["ubigeo"]] = r
             _guardar_cache(cache_path, clave, avance)
+            hechos = min(i + 100, len(pendientes))
+            seg = time.time() - t0
+            falta = seg / hechos * (len(pendientes) - hechos) if hechos else 0
+            print(f"Avance: {total - len(pendientes) + hechos}/{total} distritos "
+                  f"({(total - len(pendientes) + hechos) / total:.0%}) · transcurrido {int(seg // 60)} min · "
+                  f"faltan unos {int(falta // 60)} min", file=sys.stderr, flush=True)
     except Bloqueado:
         _guardar_cache(cache_path, clave, avance)
         raise
