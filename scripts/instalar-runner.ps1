@@ -8,7 +8,7 @@ $ErrorActionPreference = "Stop"
 if ($Token -like "PEGA*" -or $Token -match "[<>]") { throw "Token invalido: pega SOLO el codigo que sale despues de --token, sin texto de ejemplo." }
 $Token = $Token.Trim()
 Write-Host ("Token recibido: {0} caracteres, empieza con '{1}'" -f $Token.Length, $Token.Substring(0,1))
-if ($Token.Length -lt 25 -or $Token.Length -gt 40 -or $Token[0] -ne "A") { throw "El token no parece completo: normalmente tiene ~29 caracteres y empieza con A. Copialo con el boton de copiar de GitHub." }
+if ($Token.Length -lt 25 -or $Token.Length -gt 40) { throw "El token no parece completo: normalmente tiene ~29 caracteres. Copialo con el boton de copiar de GitHub." }
 $rel = Invoke-RestMethod "https://api.github.com/repos/actions/runner/releases/latest"
 $asset = $rel.assets | Where-Object { $_.name -like "actions-runner-win-x64-*.zip" } | Select-Object -First 1
 New-Item -ItemType Directory -Force $Dir | Out-Null
