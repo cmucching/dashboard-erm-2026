@@ -22,3 +22,31 @@ header h1,header .eyebrow{color:var(--ink)!important}
 header .eyebrow{color:var(--teal)!important;letter-spacing:0!important;text-transform:none!important;font-weight:600}
 header .source{color:var(--ink2)!important}header .source a{color:var(--ink)!important}
 header .source strong{background:var(--ink)!important;color:#fff!important}
+
+/* ===== Estilo B para módulos municipales ===== */
+.card,.district-card,.stat,.base-card,.panel,.district-panel,.district-map-panel,.district-detail,.winner,.gap,.rank,.district-top article{border-radius:18px!important;border-color:var(--line)!important;box-shadow:none!important}
+.card,.district-card,.stat,.base-card{border-top:1px solid var(--line)!important;border-top-width:1px!important;background:#fff}
+.card strong,.district-card strong,.stat strong,.base-card strong{font-size:clamp(22px,2.1vw,30px)!important;font-weight:800;font-stretch:108%;letter-spacing:-.03em;line-height:1.05;color:var(--ink)}
+.card span,.district-card,.stat .label,.base-card{color:var(--ink2)}
+.kpis,.district-cards,.stats,.base-cards{gap:14px!important}
+.map-head,.district-map-heading,.panelhead{background:#fff;border-left:0!important}
+.map-head h2,.district-map-heading h3,.panelhead h2,.district-panel h2{font-family:Archivo,sans-serif!important;font-weight:800;font-stretch:108%;letter-spacing:-.01em}
+.mapbar,.district-map-bar{background:var(--ink)!important}
+.district-table th,table th{background:#EDEBE6!important;color:var(--ink)!important;font-weight:800}
+.district-table tbody tr:nth-child(even){background:#FAF9F7}
+select,input[type=search],input[type=text],.district-filters input,.district-filters select,.filters select,.detail select{border-radius:10px!important;border:1px solid #CBC8C0!important;background:#fff}
+.district-actions a,.district-pages button,.district-refresh,.actions a,.reset,.onpebutton,.downloads a{border-radius:999px!important;border:1px solid var(--ink)!important;font-weight:700;background:#fff}
+.district-note,.notice,.warning,.base-note{border-radius:14px!important;background:#FFF1E9!important;border-left:4px solid var(--orange)!important;color:var(--ink)}
+.district-main,main,.base-wrap{max-width:1500px}
+.district-title,.base-title{font-size:clamp(26px,3.2vw,44px)!important;line-height:1.05}
+/* mapa protagonista */
+.grid{grid-template-columns:minmax(0,1.9fr) minmax(360px,1fr)!important}
+.maparea{height:clamp(640px,calc(100vh - 150px),900px)!important}
+.grid>.panel:last-child{position:sticky;top:60px;max-height:calc(100vh - 80px);overflow:auto}
+.district-map-layout{grid-template-columns:minmax(0,1.9fr) minmax(340px,1fr)!important}
+.district-map{height:clamp(640px,calc(100vh - 150px),900px)!important}
+.district-map-layout .district-detail{position:sticky;top:60px;max-height:calc(100vh - 80px);overflow:auto}
+.workspace{grid-template-columns:minmax(0,1.8fr) minmax(360px,.9fr)!important}
+.mapwrap svg{height:clamp(620px,calc(100vh - 160px),880px)!important}
+.mapwrap{min-height:0!important}
+@media(max-width:1000px){.grid,.district-map-layout,.workspace{grid-template-columns:1fr!important}.grid>.panel:last-child,.district-map-layout .district-detail{position:static;max-height:none}.maparea,.district-map{height:520px!important}}
