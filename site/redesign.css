@@ -1,0 +1,80 @@
+/* Capa de rediseño (R1). Se carga después de los estilos de la página; no toca datos ni funciones. */
+:root{--ink:#082F49;--muted:#536B76;--orange:#F45A22;--teal:#008F88;--paper:#F5F3EE;--card:#fff;--line:#DCE3E5;--radius:12px;--gap:20px}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--paper);-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1}
+.stat strong,.metric strong,.rankpct,td,.insight-metrics strong{font-variant-numeric:tabular-nums}
+
+/* 1 · Marca: de banner de ~400 px a una barra delgada */
+.brand-banner{background:var(--ink);max-width:none;margin:0}
+.brand-banner img{display:none}
+.brand-identity{position:static;inset:auto;width:auto;max-width:1460px;margin:auto;padding:9px max(24px,calc((100vw - 1460px)/2));flex-direction:row;align-items:center;gap:14px;background:transparent;color:#fff;flex-wrap:wrap}
+.identity-rule{width:26px;height:3px;background:var(--orange)}
+.identity-label{color:#FFAC7E;font-size:11px;letter-spacing:.8px}
+.brand-identity strong{font-family:Inter,system-ui,Arial,sans-serif;font-size:13px;font-weight:600;line-height:1.3}
+.brand-identity strong br{display:none}
+.brand-identity a{margin-left:auto;font-size:12px;color:#B5DFED}
+
+/* 2 · Cabecera: título primero, fuente como detalle */
+header{background:linear-gradient(180deg,#0B3A58,#082F49);border-top:0;padding-top:28px;padding-bottom:26px}
+h1{font-size:clamp(28px,4vw,44px);letter-spacing:-1px;line-height:1.1}
+.eyebrow{margin-bottom:8px}
+.sourcebar{margin-top:18px}
+.sourcebadge{border-radius:999px;padding:6px 12px}
+
+/* 3 · Pestañas fijas */
+.election-nav{position:sticky;top:0;z-index:40;display:flex;gap:4px!important;padding:0 max(16px,calc((100vw - 1460px)/2))!important;background:rgba(255,255,255,.96)!important;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)!important;overflow-x:auto;scrollbar-width:none;box-shadow:0 2px 10px #082F490d}
+.election-nav::-webkit-scrollbar{display:none}
+.election-nav a{white-space:nowrap;text-decoration:none;padding:15px 16px;font-size:14px;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px}
+.election-nav a:hover{color:var(--ink);background:#F5F3EE}
+.election-nav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--orange)}
+.election-nav a[aria-current="page"] strong{font-weight:700}
+
+/* 4 · Indicadores: una banda, no cuatro tarjetas iguales */
+.stats{gap:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 3px 15px #082F4908}
+.stat{border:0!important;border-radius:0!important;border-right:1px solid var(--line)!important;padding:20px 24px}
+.stat:last-child{border-right:0!important}
+.stat .label{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--muted)}
+.stat strong{font-size:clamp(26px,2.6vw,34px);line-height:1.1;color:var(--ink)}
+.stat small{color:var(--muted)}
+.rangebar{position:relative;height:6px;background:#E5ECEC;border-radius:6px;margin:12px 0 4px}
+.rangebar i{position:absolute;top:0;bottom:0;background:var(--teal);border-radius:6px}
+.rangescale{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+
+/* 5 · Paneles y mapa */
+.panel{border-radius:var(--radius);border:1px solid var(--line)}
+.panelhead{border-left:0;border-top:3px solid var(--orange)}
+.maphelp{background:#0B3A58}
+.mapwrap{background:radial-gradient(circle at 50% 40%,#fff,#F1F4F2)}
+.freshness{border-radius:var(--radius)}
+
+/* 6 · Tabla: búsqueda, orden y barra de ventaja */
+.tabletools{display:flex;gap:12px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);background:#FAFBFA;flex-wrap:wrap}
+.tabletools input{flex:1 1 240px;max-width:360px;padding:10px 12px 10px 36px;border:1px solid #B7C9D2;border-radius:8px;font:inherit;font-size:14px;color:var(--ink);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23536B76' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 4 4'/%3E%3C/svg%3E") 12px 50%/16px no-repeat}
+.tabletools input:focus{outline:3px solid var(--orange);outline-offset:1px}
+.tabletools small{color:var(--muted);font-size:12px}
+th[data-sort]{cursor:pointer;user-select:none}
+th[data-sort]:hover{color:var(--ink)}
+th[data-sort][aria-sort="ascending"]::after{content:" ▲";font-size:10px;color:var(--orange)}
+th[data-sort][aria-sort="descending"]::after{content:" ▼";font-size:10px;color:var(--orange)}
+thead th{position:sticky;top:0;z-index:2}
+.tablewrap{max-height:760px}
+td.lead{min-width:150px}
+.leadbar{height:6px;background:#E9EFEF;border-radius:6px;overflow:hidden;margin-top:6px}
+.leadbar i{display:block;height:100%;background:var(--teal)}
+.leadbar.tight i{background:var(--orange)}
+.leadnum{font-weight:700;font-size:13px}
+.leadtag{font-size:11px;color:#984115;font-weight:600}
+tr[hidden]{display:none}
+
+/* 7 · Móvil */
+@media(max-width:700px){
+  .brand-identity{padding:8px 16px;gap:8px}.identity-label{display:none}.brand-identity a{margin-left:0}
+  header{padding:22px 16px}
+  .stats{display:grid;grid-template-columns:1fr 1fr}
+  .stat{border-right:0!important;border-bottom:1px solid var(--line)!important;padding:16px}
+  .stats .stat:nth-child(3),.stats .stat:nth-child(4){grid-column:1/-1}
+  .stats .stat:last-child{border-bottom:0!important}
+  .election-nav a{padding:13px 12px}
+}
+@media print{.election-nav,.brand-banner,.tabletools,.comments-panel{display:none!important}body{background:#fff}}
+#rowCount{display:none}

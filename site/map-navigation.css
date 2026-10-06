@@ -1,0 +1,19 @@
+.geo-map-host{display:block!important;min-height:0!important;padding:0!important}
+.geo-map{height:610px;width:100%;box-sizing:border-box;background:#E8ECEB;color:#082F49;isolation:isolate;font-family:Arial,sans-serif;outline-offset:-3px}
+.geo-map .leaflet-tile-pane{filter:grayscale(1) saturate(0) brightness(1.06);opacity:.82}
+.mapwrap .geo-map .leaflet-overlay-pane svg,.maparea .geo-map .leaflet-overlay-pane svg{height:auto!important;width:auto!important;padding:0!important;max-height:none!important;max-width:none!important}
+.geo-map .leaflet-control-attribution svg{height:10px!important;width:12px!important;padding:0!important}
+.geo-map .leaflet-overlay-pane svg path.geo-feature{cursor:pointer;transition:none;filter:none;vector-effect:non-scaling-stroke}
+.geo-map .leaflet-overlay-pane svg path.geo-feature:focus-visible{outline:none;stroke:#082F49!important;stroke-width:4!important}
+.geo-map .leaflet-overlay-pane svg defs path{stroke:white;stroke-width:.8;filter:none;transition:none}
+.geo-map .leaflet-control-zoom a,.geo-map .geo-home{color:#082F49!important;background:#fff!important;text-decoration:none;font-family:Arial,sans-serif}
+.geo-home{display:block;width:32px;height:32px;padding:0;border:0;border-radius:3px;font-size:22px;cursor:pointer}
+.geo-map .leaflet-control-zoom a:hover,.geo-home:hover{background:#FFF2E8!important}
+.geo-layer-control{padding:8px 10px;background:#fff;border:1px solid #CBD7DD;border-radius:5px;box-shadow:0 1px 5px #082F491F;color:#082F49;font-size:12px;line-height:1.5}
+.geo-layer-control label{display:flex;gap:6px;align-items:center;cursor:pointer}.geo-layer-control input{accent-color:#F45A22}
+.geo-map .leaflet-control-attribution{background:#ffffffed;color:#45616D;font-size:10px;max-width:95%;padding:3px 6px;line-height:1.5}
+.geo-map .leaflet-control-attribution a{color:#082F49}.geo-map .leaflet-control-scale-line{border-color:#567386;background:#fff;color:#082F49}
+.geo-guidance{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap;padding:8px 16px;background:#F4F7F6;color:#536B76;font:12px/1.5 Arial,sans-serif}
+.geo-feedback{margin:0;padding:8px 16px;color:#804525;background:#FFF3E8;font-size:12px}.geo-feedback:empty{display:none}
+.map-source-ready{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(100%);padding:0!important;pointer-events:none!important}
+@media(max-width:700px){.geo-map{height:510px}.geo-map .leaflet-control-attribution{font-size:9px}.geo-guidance{font-size:11px;padding:8px 12px}}
