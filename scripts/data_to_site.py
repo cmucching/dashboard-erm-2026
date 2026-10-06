@@ -272,6 +272,19 @@ def main():
         "source_cut_from": cuts[0], "source_cut_until": cuts[-1], "retrieved_from": gen, "retrieved_until": gen,
         "expected_provincial": 196, "expected_distrital": esperado_d, "revision": meta["huella"][:24], "published_at": pub_time,
     }
+    # paleta única de partidos: la de regional/provincial manda; los que solo aparecen en distritos reciben color estable
+    import colorsys, hashlib
+
+    def hash_color(n):
+        h = int(hashlib.md5(n.encode()).hexdigest()[:6], 16) % 360 / 360
+        r, g, b = colorsys.hls_to_rgb(h, .43, .6)
+        return "#%02X%02X%02X" % (round(r * 255), round(g * 255), round(b * 255))
+
+    paleta = dict(color)
+    for r in records:
+        for o in r["organizations"]:
+            paleta.setdefault(o["organization"], hash_color(o["organization"]))
+    jdump(API / "party-colors.json", paleta)
     jdump(API / "municipal-data.json", old_mun)
     jdump(API / "municipal-status.json", old_mun["metadata"])
     jdump(API / "update-status.json", old_res["publication"])

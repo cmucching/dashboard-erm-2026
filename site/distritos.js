@@ -1,4 +1,5 @@
-import {partyColor} from './district-map.js';
+import {partyColor as hashColor} from './district-map.js';
+let PALETA={};const partyColor=n=>PALETA[n]||hashColor(n);
 const $=s=>document.querySelector(s),f=(n,d=1)=>Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const tc=s=>String(s||'').toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase());
@@ -44,7 +45,7 @@ function head(m){
  $('#cut').innerHTML=`<i></i><span>Cortes ONPE por distrito: <b>${fmt(us[0])}</b> a <b>${fmt(us[us.length-1])}</b> · hora de Perú (UTC−5). Cada distrito conserva su propia hora de corte.</span>`+(VIEW==='lima'?'':`<span class="pillnote">${m.state==='complete'?'Descarga completa':'Descarga en curso'}</span>`);
 }
 let M=null;
-Promise.all([fetch('api/municipal-data.json',{cache:'no-store'}).then(r=>r.json()),fetch('district-paths.json').then(r=>r.json()),VIEW==='lima'?fetch('lima-metropolitana-onpe.json').then(r=>r.json()):null]).then(([d,paths,lima])=>{
+Promise.all([fetch('api/municipal-data.json',{cache:'no-store'}).then(r=>r.json()),fetch('api/party-colors.json').then(r=>r.json()).then(p=>{PALETA=p}).catch(()=>{}),fetch('district-paths.json').then(r=>r.json()),VIEW==='lima'?fetch('lima-metropolitana-onpe.json').then(r=>r.json()):null]).then(([d,_pal,paths,lima])=>{
  const recs=new Map(d.records.filter(r=>r.level==='distrital').map(r=>[r.ubigeo,r]));
  ALL=d.coverage.filter(scope).map(c=>({id:c.ubigeo,name:c.district,prov:c.province,dep:c.department,status:c.status,d:(paths[c.ubigeo]||{}).d,b:(paths[c.ubigeo]||{}).b,rec:recs.get(c.ubigeo)||null}));
  R=ALL.filter(c=>c.rec&&c.rec.valid_votes>0&&c.rec.organizations.length>0).map(c=>{const r=c.rec,o=[...r.organizations].sort((a,b)=>b.votes-a.votes),t=o.slice(0,2),col=partyColor(t[0].organization);return{id:c.id,name:c.name,prov:c.prov,dep:c.dep,org:t[0].organization,party:t[0].organization,color:col,p1:t[0].pct_valid,p2:t[1]?t[1].pct_valid:0,m:t[0].pct_valid-(t[1]?t[1].pct_valid:0),adv:r.counted_pct,upd:r.source_updated_at,top:t,ca:r.counted_actas,ta:r.total_actas,jee:r.jee_actas,pe:r.pending_actas,org_n:r.organization_count}});
