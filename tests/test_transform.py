@@ -128,5 +128,25 @@ class TestScraperConFetcherFalso(unittest.TestCase):
             self.assertTrue((out / "results.csv").read_text(encoding="utf-8").startswith("﻿"))
 
 
+class TestReanudacion(TestScraperConFetcherFalso):
+    def test_retoma_tras_bloqueo(self):
+        base = self.fetcher()
+        llamadas = {"n": 0, "bloquear": True}
+
+        def f(urls):
+            llamadas["n"] += 1
+            if llamadas["bloquear"] and any("ubigeo_nivel_03" in u for u in urls):
+                raise S.Bloqueado("403 simulado")
+            return base(urls)
+
+        with tempfile.TemporaryDirectory() as d:
+            cache = Path(d) / "avance.json"
+            with self.assertRaises(S.Bloqueado):
+                S.recolectar(f, Path(d), "full", cache_path=cache)
+            llamadas["bloquear"] = False
+            r = S.recolectar(f, Path(d), "full", cache_path=cache)
+            self.assertEqual(r["meta"]["conteo"]["distritos"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -26,7 +26,7 @@ PAGINA_INICIO = f"{BASE}/main/alcance-electoral"
 API = "/presentacion-backend"
 RUTA_UBIGEOS = "/assets/ubig/v1.json"  # verificado: archivo estático en la raíz del sitio
 ID_REGIONAL, ID_MUNICIPAL = 1, 3
-LOTE = 150
+LOTE = 40
 SMOKE_N = 3
 
 NIVEL_FILTRO = {"dep": "ubigeo_nivel_01", "prov": "ubigeo_nivel_02", "dist": "ubigeo_nivel_03"}
@@ -59,6 +59,7 @@ JS_POOL = """
 async ({urls, conc, minMs, maxMs}) => {
   const out = {};
   let i = 0;
+  let parar = false;
   const dormir = ms => new Promise(r => setTimeout(r, ms));
   async function uno(url) {
     for (let intento = 0; intento < 4; intento++) {
@@ -75,9 +76,10 @@ async ({urls, conc, minMs, maxMs}) => {
     return {status: 0, body: null};
   }
   async function worker() {
-    while (i < urls.length) {
+    while (i < urls.length && !parar) {
       const url = urls[i++];
       out[url] = await uno(url);
+      if (out[url].status === 401 || out[url].status === 403) parar = true;
       await dormir(minMs + Math.random() * (maxMs - minMs));
     }
   }
@@ -98,7 +100,7 @@ class FetcherNavegador:
         for i in range(0, len(urls), LOTE):
             lote = urls[i:i + LOTE]
             resultado.update(self.page.evaluate(
-                JS_POOL, {"urls": lote, "conc": 4, "minMs": 120, "maxMs": 350}))
+                JS_POOL, {"urls": lote, "conc": 2, "minMs": 500, "maxMs": 1100}))
             malas = [(u, r) for u, r in resultado.items()
                      if r["status"] in (401, 403) or (r.get("html") and r["status"] == 200)]
             if malas:
@@ -140,7 +142,26 @@ def _leer(ruta: Path) -> list[dict]:
         return []
 
 
-def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None) -> dict:
+def _guardar_cache(path: Path | None, clave: str, regs: dict) -> None:
+    if path is None:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"clave": clave, "regs": regs}, ensure_ascii=False,
+                               separators=(",", ":")), encoding="utf-8")
+
+
+def _cargar_cache(path: Path | None, clave: str) -> dict:
+    if path is None:
+        return {}
+    try:
+        c = json.loads(path.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    return c.get("regs", {}) if c.get("clave") == clave else {}
+
+
+def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
+               cache_path: Path | None = None) -> dict:
     """Lógica completa (sin Playwright): devuelve {archivo: contenido} y un resumen."""
     ahora = ahora or datetime.now(timezone.utc)
     crudo = _datos(fetch([RUTA_UBIGEOS])[RUTA_UBIGEOS])
@@ -158,7 +179,19 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None) -> di
     prev_dist = _leer(out / "municipal_distritos.json")
     consultar, copiar = T.planificar_distritos(prev_prov, provs, prev_dist, ub["dist"],
                                                completo=(modo != "incremental"))
-    dists = consultar_unidades(fetch, ID_MUNICIPAL, "dist", consultar) + copiar
+    # Avance guardado: si ONPE corta (403) a mitad de camino, la siguiente corrida retoma desde aquí.
+    clave = T.huella({"prov": provs, "modo": modo})
+    avance = _cargar_cache(cache_path, clave)
+    pendientes = [d for d in consultar if d["ubigeo"] not in avance]
+    try:
+        for i in range(0, len(pendientes), 100):
+            for r in consultar_unidades(fetch, ID_MUNICIPAL, "dist", pendientes[i:i + 100]):
+                avance[r["ubigeo"]] = r
+            _guardar_cache(cache_path, clave, avance)
+    except Bloqueado:
+        _guardar_cache(cache_path, clave, avance)
+        raise
+    dists = [avance[d["ubigeo"]] for d in consultar] + copiar
     dists.sort(key=lambda r: r["ubigeo"])
 
     problemas = {r["ubigeo"]: r["qc"] for r in deps + provs + dists if r.get("qc")}
@@ -228,7 +261,8 @@ def main(argv: list[str] | None = None) -> int:
             if resp is None or resp.status >= 400:
                 print(f"BLOQUEO: la página de inicio respondió {getattr(resp, 'status', None)}", file=sys.stderr)
                 return EXIT_BLOQUEO
-            resultado = recolectar(FetcherNavegador(page), out, modo)
+            resultado = recolectar(FetcherNavegador(page), out, modo,
+                                   cache_path=Path(".cache") / "avance_distritos.json")
             browser.close()
     except Bloqueado as e:
         print(f"BLOQUEO: {e}. No se evade; se conservan los datos anteriores.", file=sys.stderr)
