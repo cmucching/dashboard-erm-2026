@@ -24,7 +24,7 @@ import transform as T  # noqa: E402
 BASE = "https://resultadoelectoral.onpe.gob.pe"
 PAGINA_INICIO = f"{BASE}/main/alcance-electoral"
 API = "/presentacion-backend"
-RUTA_UBIGEOS = f"{API}/assets/ubig/v1.json"  # [VERIFICAR] ruta exacta si cambia el bundle
+RUTA_UBIGEOS = "/assets/ubig/v1.json"  # verificado: archivo estático en la raíz del sitio
 ID_REGIONAL, ID_MUNICIPAL = 1, 3
 LOTE = 150
 SMOKE_N = 3
@@ -99,7 +99,8 @@ class FetcherNavegador:
             lote = urls[i:i + LOTE]
             resultado.update(self.page.evaluate(
                 JS_POOL, {"urls": lote, "conc": 4, "minMs": 120, "maxMs": 350}))
-            malas = [(u, r) for u, r in resultado.items() if r.get("html") or r["status"] in (401, 403)]
+            malas = [(u, r) for u, r in resultado.items()
+                     if r["status"] in (401, 403) or (r.get("html") and r["status"] == 200)]
             if malas:
                 u, r = malas[0]
                 raise Bloqueado(f"ONPE devolvió estado {r['status']}{' (HTML en vez de JSON)' if r.get('html') else ''} en {u}")
