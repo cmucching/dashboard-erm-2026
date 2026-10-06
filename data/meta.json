@@ -1,13 +1,13 @@
 {
-  "generado_utc": "2026-10-06T17:09:41+00:00",
-  "modo": "smoke",
+  "generado_utc": "2026-10-06T18:59:45+00:00",
+  "modo": "full",
   "fuente": "ONPE – Resultados Electorales ERM 2026 (https://resultadoelectoral.onpe.gob.pe)",
-  "huella": "01201b10b3332f3c926d237aa79cf2e5ed6e248d49c6e08343d790c85c618ece",
+  "huella": "7cdbd7fbe6fe4a234c826ed99f05ad70534ccce4277a8fd382249015cd2daf63",
   "conteo": {
-    "departamentos": 3,
-    "provincias": 3,
-    "distritos": 3,
-    "distritos_consultados": 3,
+    "departamentos": 25,
+    "provincias": 196,
+    "distritos": 1892,
+    "distritos_consultados": 1892,
     "distritos_copiados": 0
   },
   "problemas_qc": {}
