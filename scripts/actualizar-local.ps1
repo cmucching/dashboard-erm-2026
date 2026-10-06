@@ -12,6 +12,8 @@ $extra = @(); if ($Ventana) { $extra += "--headed" }; if ($Chrome) { $extra += "
 $flag = switch ($Modo) { "full" { "--full" } "smoke" { "--smoke" } default { "" } }
 if ($flag) { .\.venv\Scripts\python scraper\onpe_scraper.py --out data $flag @extra } else { .\.venv\Scripts\python scraper\onpe_scraper.py --out data @extra }
 if ($LASTEXITCODE -ne 0) { Write-Host "Scraper termino con codigo $LASTEXITCODE (3=bloqueo ONPE, 2=control de calidad). No se publica nada."; exit $LASTEXITCODE }
+git config --local user.name "dashboard-erm-bot"
+git config --local user.email "actions@users.noreply.github.com"
 git add data
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) { Write-Host "Sin cambios"; exit 0 }
