@@ -148,8 +148,11 @@ def consultar_capitales(fetch, sin_eleccion: list[dict], catalogo: list[dict]) -
     unidades = [por_ub[r["ubigeo"]] for r in sin_eleccion if r["ubigeo"] in por_ub]
     print(f"Capitales de provincia (voto provincial en el distrito): {len(unidades)}", file=sys.stderr, flush=True)
     regs = []
-    for i in range(0, len(unidades), 100):
-        regs += consultar_unidades(fetch, ID_MUNICIPAL, "dist", unidades[i:i + 100])
+    t0 = time.time()
+    for i in range(0, len(unidades), 20):
+        regs += consultar_unidades(fetch, ID_MUNICIPAL, "dist", unidades[i:i + 20])
+        print(f"  capitales {min(i + 20, len(unidades))}/{len(unidades)} ({time.time() - t0:.0f} s)",
+              file=sys.stderr, flush=True)
     return regs
 
 
@@ -301,6 +304,7 @@ def solo_capitales(fetch, out: Path) -> bool:
     if not dists:
         print("No hay data/municipal_distritos.json; corre primero la descarga completa.", file=sys.stderr)
         return False
+    print(f"Leyendo catálogo de ubigeos… ({len(dists)} distritos en data/)", file=sys.stderr, flush=True)
     crudo = _datos(fetch([RUTA_UBIGEOS])[RUTA_UBIGEOS])
     ub = T.parse_ubigeos(crudo)
     caps = consultar_capitales(fetch, [d for d in dists if d.get("sin_eleccion")], ub["dist"])
@@ -391,7 +395,9 @@ def main(argv: list[str] | None = None) -> int:
             opciones = {"headless": not args.headed}
             if args.chrome:
                 opciones["channel"] = "chrome"
+            print("Abriendo navegador…", file=sys.stderr, flush=True)
             browser = pw.chromium.launch(**opciones)
+            print("Cargando página de ONPE (hasta 60 s)…", file=sys.stderr, flush=True)
             ctx = browser.new_context(locale="es-PE", timezone_id="America/Lima")
             page = ctx.new_page()
             resp = page.goto(PAGINA_INICIO, wait_until="networkidle", timeout=60_000)
