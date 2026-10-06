@@ -8,7 +8,7 @@ $env:PYTHONUTF8 = "1"
 Set-Location $Repo
 git pull --rebase --autostash origin main
 if (-not (Test-Path .venv)) { py -3 -m venv .venv; .\.venv\Scripts\python -m pip install -q -r requirements.txt; .\.venv\Scripts\python -m playwright install chromium }
-$extra = @(); if ($Ventana) { $extra += "--headed" }; if ($Chrome) { $extra += "--chrome" } $extra += @("--hilos", "$Hilos", "--pausa-ms", "$PausaMs")
+$extra = @(); if ($Ventana) { $extra += "--headed" }; if ($Chrome) { $extra += "--chrome" }; $extra += @("--hilos", "$Hilos", "--pausa-ms", "$PausaMs")
 $flag = switch ($Modo) { "full" { "--full" } "smoke" { "--smoke" } default { "" } }
 if ($flag) { .\.venv\Scripts\python scraper\onpe_scraper.py --out data $flag @extra } else { .\.venv\Scripts\python scraper\onpe_scraper.py --out data @extra }
 if ($LASTEXITCODE -ne 0) { Write-Host "Scraper termino con codigo $LASTEXITCODE (3=bloqueo ONPE, 2=control de calidad). No se publica nada."; exit $LASTEXITCODE }
