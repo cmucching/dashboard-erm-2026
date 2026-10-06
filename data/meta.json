@@ -1,8 +1,8 @@
 {
-  "generado_utc": "2026-10-06T21:11:48+00:00",
-  "modo": "full",
+  "generado_utc": "2026-10-06T23:43:18+00:00",
+  "modo": "incremental",
   "fuente": "ONPE – Resultados Electorales ERM 2026 (https://resultadoelectoral.onpe.gob.pe)",
-  "huella": "2cc1ead8af8b3b6d4274eb67c4ea6492518166465aae41821c55b270aebaea01",
+  "huella": "64a51e0734b1383d052503162a99e68816efe12b23a58aecd1221b0013ed2569",
   "id_distrital": 4,
   "conteo": {
     "departamentos": 25,
