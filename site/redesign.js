@@ -100,7 +100,8 @@
         '<button type="button" class="insight" data-go="'+esc(low.id)+'"><small>Menos actas contabilizadas</small><b>'+esc(low.region)+' · '+fx(low.actas_contabilizadas,1)+' %</b><span>Su resultado puede moverse más</span></button>'+
         '<button type="button" class="insight" data-tight="1"><small>Ventaja menor a 3 pp</small><b>'+tight.length+' de '+data.length+' regiones</b><span>Ordenar la tabla por ventaja</span></button>'+
       '</div></div>';
-    ws.parentNode.insertBefore(sec,ws);
+    ws.parentNode.insertBefore(sec,ws.nextSibling);
+    buildMapExtras(orgs,data.length);
     sec.addEventListener('click',function(e){
       var t=e.target.closest('.tile');if(t){goSelect(t.getAttribute('data-id'));return;}
       var g=e.target.closest('[data-go]');if(g){goSelect(g.getAttribute('data-go'));return;}
@@ -113,6 +114,27 @@
       }
     });
     syncTiles();
+  }
+  function filterByOrg(name){
+    var pb=$$('.party').filter(function(b){var n=b.querySelector('.name');return n&&n.textContent.trim()===name;})[0];
+    if(pb)pb.click();
+  }
+  function buildMapExtras(orgs,total){
+    var wrap=$('.mapwrap'),panel=wrap&&wrap.closest('.panel');
+    if(!wrap)return;
+    var old=$('.maplegend',wrap);if(old)old.remove();
+    var top=orgs.slice(0,6),rest=orgs.length-top.length;
+    var lg=doc.createElement('div');lg.className='maplegend';
+    lg.innerHTML='<h3>Quién lidera más regiones</h3>'+top.map(function(o){return '<button type="button" data-org="'+esc(o.name)+'" style="--c:'+esc(o.color)+'"><i></i><span>'+esc(o.name)+'</span><b>'+o.n+'</b></button>';}).join('')+(rest>0?'<div class="more">y '+rest+' organizaciones más, en el panorama</div>':'');
+    wrap.appendChild(lg);
+    lg.addEventListener('click',function(e){var b=e.target.closest('button');if(b)filterByOrg(b.getAttribute('data-org'));});
+    var head=panel&&$('.panelhead',panel);
+    if(head&&!$('.fsbtn',head)&&doc.fullscreenEnabled){
+      var fb=doc.createElement('button');fb.type='button';fb.className='fsbtn';fb.innerHTML='<span aria-hidden="true">⛶</span> Pantalla completa';
+      head.insertBefore(fb,head.querySelector('.texture-switch'));
+      fb.addEventListener('click',function(){if(doc.fullscreenElement)doc.exitFullscreen();else panel.requestFullscreen().catch(function(){});});
+      doc.addEventListener('fullscreenchange',function(){fb.innerHTML=doc.fullscreenElement?'<span aria-hidden="true">⤢</span> Salir de pantalla completa':'<span aria-hidden="true">⛶</span> Pantalla completa';setTimeout(function(){window.dispatchEvent(new Event('resize'));},120);});
+    }
   }
   function syncTiles(){
     var sel=selectedId(),f=filterOrg();

@@ -208,3 +208,29 @@ html[data-theme="dark"] .progress{background:var(--line)}
 .chipclear{display:none;padding:6px 12px;border:1px solid var(--orange);border-radius:999px;background:transparent;color:var(--orange);font:600 13px "Archivo",system-ui,sans-serif;cursor:pointer}
 .chipclear[data-on="1"]{display:inline-block}
 .chipclear:hover{background:var(--orange);color:#fff}
+
+/* ───────── Mapa protagonista ───────── */
+.workspace{margin-bottom:22px}
+@media(min-width:1100px){
+  .workspace{grid-template-columns:minmax(0,1fr) 380px!important;gap:18px}
+  body .geo-map,.mapwrap svg#map{height:clamp(640px,calc(100vh - 150px),900px)}
+  .workspace>.panel:last-child{position:sticky;top:62px;max-height:calc(100vh - 78px);overflow:auto;overscroll-behavior:contain}
+}
+.workspace>.panel:first-child{border-radius:18px;overflow:hidden}
+.workspace>.panel:first-child .panelhead{padding:14px 20px}
+.mapwrap{position:relative}
+.maplegend{position:absolute;left:12px;bottom:44px;z-index:5;max-width:min(300px,calc(100% - 24px));padding:10px 10px 8px;background:color-mix(in srgb,var(--surface) 94%,transparent);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);backdrop-filter:blur(6px)}
+.maplegend h3{margin:0 0 6px 4px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.maplegend button{display:flex;align-items:center;gap:9px;width:100%;padding:5px 6px;border:0;border-radius:8px;background:transparent;color:var(--text);font:600 13px/1.2 "Archivo",system-ui,sans-serif;text-align:left;cursor:pointer}
+.maplegend button:hover{background:var(--surface-2)}
+.maplegend i{width:12px;height:12px;border-radius:3px;background:var(--c);flex-shrink:0}
+.maplegend span{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.maplegend b{font-weight:800;font-stretch:108%}
+.maplegend .more{color:var(--muted);font-weight:500;font-size:12px;padding:4px 6px 2px}
+.fsbtn{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font:600 13px "Archivo",system-ui,sans-serif;cursor:pointer}
+.fsbtn:hover{border-color:var(--orange)}
+.panel:fullscreen{border-radius:0;display:flex;flex-direction:column;background:var(--surface)}
+.panel:fullscreen .mapwrap{flex:1;min-height:0}
+.panel:fullscreen .geo-map,.panel:fullscreen .mapwrap svg#map{height:100%!important}
+.panel:fullscreen .mapnote{display:none}
+@media(max-width:700px){.maplegend{display:none}}
