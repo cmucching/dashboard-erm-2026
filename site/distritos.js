@@ -5,13 +5,31 @@ const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const tc=s=>String(s||'').toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase());
 const VIEW=document.body.dataset.view,LIMA='140100';
 const fmt=s=>{try{return new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:true}).format(new Date(s)).replace(',',' ·')}catch(e){return s}};
-let R=[],ALL=[],P={},sel=null,filt=null,dep='',prov='',q='',sortK='margin',limit=30,showPend=false,rank=[];
+let R=[],ALL=[],P={},sel=null,filt=null,dep='',prov='',q='',sortK='margin',limit=30,showPend=false,rank=[],mode='lead',hot=false;
 const svg=$('#map'),maxM=10,tk=[0,2,4,6,8,10];
 $('#sc').innerHTML=tk.map(v=>`<span style="left:${v/maxM*100}%">${v}</span>`).join('');
+// Modo «qué falta contar»: el relleno mide el % de actas aún no contabilizadas (pendientes + JEE).
+const RAMP=[[0,'#EEF1EF','Completo'],[10,'#B5CCD8','Hasta 10 %'],[25,'#6E9DB8','10–25 %'],[50,'#2F6B8F','25–50 %'],[100,'#06263D','Más de 50 %']];
+const falta=r=>Math.max(0,100-r.adv),rampColor=v=>v<=0?RAMP[0][1]:(RAMP.find(x=>x[0]>0&&v<=x[0])||RAMP[4])[1];
+const isHot=r=>r.m<3&&r.adv<100;
+$('.maphead').insertAdjacentHTML('afterend','<div class="mapmode"><div class="seg" id="mode" role="group" aria-label="Qué muestra el mapa"><button data-m="lead" aria-pressed="true">Quién va primero</button><button data-m="falta" aria-pressed="false">Qué falta contar</button></div></div>');
+$('#chips').insertAdjacentHTML('beforebegin','<div class="maplegend" id="legend" hidden></div>');
+function paint(){
+ const by=new Map(R.map(r=>[r.id,r])),all=new Map(ALL.map(c=>[c.id,c])),lead=mode==='lead';
+ svg.querySelectorAll('path').forEach(p=>{const r=by.get(p.dataset.id),c=all.get(p.dataset.id);
+  if(lead){p.style.fill='';p.classList.remove('hot');return}
+  const v=r?falta(r):c?.rec?.total_actas?100-(c.rec.counted_pct||0):null,h=!!r&&isHot(r);
+  p.style.fill=v===null?'':rampColor(v);p.classList.toggle('hot',h);if(h)svg.appendChild(p)});
+ $('.maphead h2').textContent=lead?'Quién va primero, distrito por distrito':'Qué falta contar, distrito por distrito';
+ $('.maphead small').textContent=lead?'Toca un distrito · gris: sin resultados aún':'Más oscuro: más actas por contar · borde naranja: ventaja menor a 3 pp';
+ svg.setAttribute('aria-label',lead?'Mapa de distritos coloreado por organización que lidera':'Mapa de distritos coloreado por porcentaje de actas que falta contabilizar');
+ const n=R.filter(isHot).length,lg=$('#legend');lg.hidden=lead;
+ lg.innerHTML=lead?'':`<span class="lgt">Actas por contabilizar</span>${RAMP.map(x=>`<span><i style="background:${x[1]}"></i>${x[2]}</span>`).join('')}<span><i class="lghot"></i>Ventaja menor a 3 pp y actas por contar</span><button class="chip" id="hot" aria-pressed="${hot}">Ver solo esos distritos<b>${n}</b></button>`;
+}
 const scope=c=>VIEW==='lima'?c.province_code===LIMA&&c.level==='distrital':c.level==='distrital';
-function view(){let a=R.filter(r=>(filt===null||r.org===filt)&&(!dep||r.dep===dep)&&(!prov||r.prov===prov)&&(!q||(r.name+' '+r.prov+' '+r.dep+' '+r.party).toLowerCase().includes(q)));
+function view(){let a=R.filter(r=>(!hot||isHot(r))&&(filt===null||r.org===filt)&&(!dep||r.dep===dep)&&(!prov||r.prov===prov)&&(!q||(r.name+' '+r.prov+' '+r.dep+' '+r.party).toLowerCase().includes(q)));
  a=a.slice().sort({margin:(x,y)=>x.m-y.m,big:(x,y)=>y.m-x.m,actas:(x,y)=>x.adv-y.adv,name:(x,y)=>x.name.localeCompare(y.name,'es')}[sortK]);return a}
-function pend(){const ok=new Set(R.map(r=>r.id));return showPend?ALL.filter(c=>!ok.has(c.id)&&(!dep||c.dep===dep)&&(!prov||c.prov===prov)&&(!q||(c.name+' '+c.prov+' '+c.dep).toLowerCase().includes(q))&&filt===null):[]}
+function pend(){const ok=new Set(R.map(r=>r.id));return showPend?ALL.filter(c=>!ok.has(c.id)&&(!dep||c.dep===dep)&&(!prov||c.prov===prov)&&(!q||(c.name+' '+c.prov+' '+c.dep).toLowerCase().includes(q))&&filt===null&&!hot):[]}
 function rows(){
  const a=view(),pe=pend();const lim=sel&&a.findIndex(r=>r.id===sel)>=limit?Infinity:limit;const v=a.slice(0,lim);
  $('#cnt').textContent=`${a.length} de ${R.length} con resultados`;
@@ -23,7 +41,7 @@ function rows(){
  if(showPend)h+=pe.slice(0,60).map(c=>`<div class="row" style="--c:#C9C6BE"><div class="nm">${esc(tc(c.name))}<small>${esc(tc(c.prov))} · ${esc(tc(c.dep))}</small></div><div class="dumb"><div class="bl" style="bottom:6px;font-style:italic">${c.rec&&c.rec.total_actas?`Sin actas contabilizadas aún · 0 de ${c.rec.total_actas.toLocaleString('en-US')} actas`:c.status==='not_applicable'?'Sin elección distrital propia':'Pendiente de incorporar'}</div></div><div class="mg"><small>—</small></div></div>`).join('');
  $('#rows').innerHTML=h||'<div class="empty2">No hay distritos con ese filtro.</div>';
  $('#more').hidden=!(lim!==Infinity&&a.length>limit);
- const ids=new Set(a.map(r=>r.id)),f_=!!(filt!==null||dep||prov||q);
+ const ids=new Set(a.map(r=>r.id)),f_=!!(filt!==null||dep||prov||q||hot);
  svg.classList.toggle('dim',f_);svg.querySelectorAll('path').forEach(p=>{p.classList.toggle('on',ids.has(p.dataset.id));p.classList.toggle('sel',p.dataset.id===sel)});
 }
 function chips(){const top=rank.slice(0,12);$('#chips').innerHTML=top.map(([o,n])=>{const r=R.find(x=>x.org===o);return `<button class="chip" aria-pressed="${filt===o}" data-o="${esc(o)}"><i style="background:${r.color}"></i>${esc(tc(o))}<b>${n}</b></button>`}).join('')+(rank.length>12?`<span class="pillnote" style="align-self:center">+${rank.length-12} organizaciones más</span>`:'')}
@@ -56,14 +74,16 @@ Promise.all([fetch('api/municipal-data.json',{cache:'no-store'}).then(r=>r.json(
   $('#duelnote').textContent=`Actas contabilizadas: ${f(m.counted_pct,3)} % (${m.counted_actas.toLocaleString('en-US')} de ${m.total_actas.toLocaleString('en-US')}; ${m.jee_actas.toLocaleString('en-US')} para envío al JEE). Corte ONPE: ${fmt(lima.metropolitan.metadata.source_cut_until)}`}
  const deps=[...new Set(ALL.map(c=>c.dep))].sort((a,b)=>a.localeCompare(b,'es'));
  if($('#dep'))deps.forEach(x=>$('#dep').insertAdjacentHTML('beforeend',`<option value="${esc(x)}">${esc(tc(x))}</option>`));
- head(d.metadata);chips();zoom();rows();
+ head(d.metadata);chips();zoom();paint();rows();
 }).catch(e=>{console.error(e);$('#h1').textContent='No se pudo cargar el corte distrital';$('#sub').textContent='Recarga la página en unos minutos.'});
 $('#rows').addEventListener('click',e=>{const r=e.target.closest('.row[data-id]');if(r)pick(r.dataset.id,false)});
 $('#rows').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const r=e.target.closest('.row[data-id]');if(r){e.preventDefault();pick(r.dataset.id,false)}}});
 svg.addEventListener('click',e=>{const p=e.target.closest('path');if(!p)return;if(p.classList.contains('nodata'))return;pick(p.dataset.id,true)});
-const tip=$('#tip');svg.addEventListener('mousemove',e=>{const p=e.target.closest('path');if(!p){tip.style.display='none';return}const r=R.find(x=>x.id===p.dataset.id),c=ALL.find(x=>x.id===p.dataset.id);tip.innerHTML=r?`<b>${esc(tc(r.name))}</b>${esc(tc(r.prov))}<br>1.º ${esc(tc(r.party))} · ${f(r.p1,2)} %<br>Ventaja ${f(r.m,2)} pp`:`<b>${esc(tc(c.name))}</b>${c.status==='not_applicable'?'Sin elección distrital propia':'Resultado pendiente de incorporar'}`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-250)+'px';tip.style.top=(e.clientY+14)+'px'});
+const tip=$('#tip');svg.addEventListener('mousemove',e=>{const p=e.target.closest('path');if(!p){tip.style.display='none';return}const r=R.find(x=>x.id===p.dataset.id),c=ALL.find(x=>x.id===p.dataset.id);tip.innerHTML=r?mode==='falta'?`<b>${esc(tc(r.name))}</b>${esc(tc(r.prov))}<br>Faltan ${(r.ta-r.ca).toLocaleString('en-US')} de ${r.ta.toLocaleString('en-US')} actas (${f(falta(r),1)} %)<br>${r.jee} para JEE · ${r.pe} pendientes<br>1.º ${esc(tc(r.party))} · ventaja ${f(r.m,2)} pp${isHot(r)?'<br>Reñido: puede cambiar':''}`:`<b>${esc(tc(r.name))}</b>${esc(tc(r.prov))}<br>1.º ${esc(tc(r.party))} · ${f(r.p1,2)} %<br>Ventaja ${f(r.m,2)} pp`:`<b>${esc(tc(c.name))}</b>${c.status==='not_applicable'?'Sin elección distrital propia':mode==='falta'&&c.rec?.total_actas?`Sin actas contabilizadas aún · 0 de ${c.rec.total_actas.toLocaleString('en-US')}`:'Resultado pendiente de incorporar'}`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-250)+'px';tip.style.top=(e.clientY+14)+'px'});
 svg.addEventListener('mouseleave',()=>tip.style.display='none');
 $('#sort').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;sortK=b.dataset.k;document.querySelectorAll('#sort button').forEach(x=>x.setAttribute('aria-pressed',x===b));limit=30;rows()});
+$('#mode').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.dataset.m===mode)return;mode=b.dataset.m;if(mode==='lead')hot=false;document.querySelectorAll('#mode button').forEach(x=>x.setAttribute('aria-pressed',x===b));limit=30;paint();rows()});
+$('#legend').addEventListener('click',e=>{if(!e.target.closest('#hot'))return;hot=!hot;limit=30;paint();rows()});
 $('#chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;const o=b.dataset.o;filt=filt===o?null:o;chips();limit=30;rows()});
 $('#dep')?.addEventListener('change',e=>{dep=e.target.value;prov='';sel=null;const ps=[...new Set(ALL.filter(c=>!dep||c.dep===dep).map(c=>c.prov))].sort((a,b)=>a.localeCompare(b,'es'));$('#prov').innerHTML='<option value="">Todas las provincias</option>'+ps.map(x=>`<option value="${esc(x)}">${esc(tc(x))}</option>`).join('');$('#prov').disabled=!dep;zoom();limit=30;rows()});
 $('#prov')?.addEventListener('change',e=>{prov=e.target.value;sel=null;zoom();limit=30;rows()});
