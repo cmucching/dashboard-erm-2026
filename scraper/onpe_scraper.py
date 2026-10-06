@@ -97,12 +97,29 @@ class FetcherNavegador:
     def __init__(self, page):
         self.page = page
 
+    def _lote(self, lote: list[str]) -> dict[str, dict]:
+        """Si la web de ONPE navega/recarga a mitad del lote, espera la carga y reintenta (hasta 4 veces)."""
+        for intento in range(5):
+            try:
+                return self.page.evaluate(
+                    JS_POOL, {"urls": lote, "conc": RITMO["conc"], "minMs": RITMO["min"], "maxMs": RITMO["max"]})
+            except Exception as e:
+                if intento == 4 or not any(k in str(e) for k in ("Execution context", "navigation", "Target closed")):
+                    raise
+                print(f"  (la página se recargó; reintento {intento + 1}/4)", file=sys.stderr, flush=True)
+                try:
+                    self.page.wait_for_load_state("networkidle", timeout=30_000)
+                except Exception:
+                    pass
+                time.sleep(3)
+                if not self.page.url.startswith(BASE) or "alcance-electoral" not in self.page.url:
+                    self.page.goto(PAGINA_INICIO, wait_until="networkidle", timeout=60_000)
+
     def __call__(self, urls: list[str]) -> dict[str, dict]:
         resultado: dict[str, dict] = {}
         for i in range(0, len(urls), LOTE):
             lote = urls[i:i + LOTE]
-            resultado.update(self.page.evaluate(
-                JS_POOL, {"urls": lote, "conc": RITMO["conc"], "minMs": RITMO["min"], "maxMs": RITMO["max"]}))
+            resultado.update(self._lote(lote))
             malas = [(u, r) for u, r in resultado.items()
                      if r["status"] in (401, 403) or (r.get("html") and r["status"] == 200)]
             if malas:
