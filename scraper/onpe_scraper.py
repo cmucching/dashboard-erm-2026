@@ -281,6 +281,35 @@ def descubrir_elecciones(fetch) -> None:
                   f"actas={(tot or {}).get('totalActas')} partic={len(par or [])} | {nombres}", flush=True)
 
 
+def descubrir_campos(page) -> None:
+    """Muestra el JSON crudo de un distrito (elección 4) y las URLs de API que usa la propia web de ONPE."""
+    u = {"dep": "010000", "prov": "010100", "ubigeo": "010102"}
+    fetch = FetcherNavegador(page)
+    for kind in ("totales", "participantes"):
+        url = url_resumen(kind, ID_DISTRITAL, "dist", u)
+        r = fetch([url]).get(url)
+        print(f"\n== {kind} (distrito Asunción, idEleccion={ID_DISTRITAL}) ==", flush=True)
+        print(json.dumps((r or {}).get("body"), ensure_ascii=False)[:1800], flush=True)
+    vistas: dict[str, str] = {}
+
+    def al_responder(resp):
+        if "/presentacion-backend/" in resp.url and resp.url not in vistas:
+            try:
+                vistas[resp.url] = resp.text()[:300]
+            except Exception:
+                vistas[resp.url] = "(sin cuerpo)"
+    page.on("response", al_responder)
+    for ruta in ("/main/elecciones-municipales", "/main/resumen-general-municipal"):
+        try:
+            page.goto(BASE + ruta, wait_until="networkidle", timeout=45_000)
+            page.wait_for_timeout(4000)
+        except Exception as e:
+            print(f"(no cargó {ruta}: {e})", flush=True)
+    print("\n== URLs de API que usa la web ==", flush=True)
+    for url, cuerpo in vistas.items():
+        print(url.replace(BASE, ""), "\n   ", cuerpo[:200].replace("\n", " "), flush=True)
+
+
 # --------------------------------------------------------------------------- main
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
@@ -316,6 +345,7 @@ def main(argv: list[str] | None = None) -> int:
                 return EXIT_BLOQUEO
             if args.descubrir:
                 descubrir_elecciones(FetcherNavegador(page))
+                descubrir_campos(page)
                 browser.close()
                 return 0
             resultado = recolectar(FetcherNavegador(page), out, modo,
