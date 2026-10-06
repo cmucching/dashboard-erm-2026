@@ -15,7 +15,7 @@
   if(busy||(!force&&Date.now()-lastAttempt<interval)||(!force&&document.hidden))return;busy=true;lastAttempt=Date.now();
   const button=box.querySelector('button');if(button)button.disabled=true;
   try{
-   const r=await fetch('/api/update-status',{cache:'no-store'});if(!r.ok)throw Error('Estado no disponible');const s=await r.json();
+   const r=await fetch('api/update-status.json',{cache:'no-store'});if(!r.ok)throw Error('Estado no disponible');const s=await r.json();
    lastStatus=s;render(s);
    if((revision!==undefined&&revision!==s.revision)||(s.complete&&window.displayedElectionRevision!==s.revision))window.dispatchEvent(new CustomEvent('complete-cut-published',{detail:s}));revision=s.revision;
   }catch{

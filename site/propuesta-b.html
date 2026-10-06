@@ -138,7 +138,7 @@ $('#sort').addEventListener('click',e=>{const b=e.target.closest('button');if(!b
 $('#chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;filt=filt===b.dataset.o?null:b.dataset.o;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.o===filt));rows()});
 rows();
 // datos en vivo: si existe /api/results (sitio publicado) se actualiza cada 5 min; si no, queda el corte incrustado
-async function live(){try{const r=await fetch('/api/results',{cache:'no-store'});if(!r.ok)return;const info=await r.json();if(info.regiones?.length!==25)return;
+async function live(){try{const r=await fetch('api/results.json',{cache:'no-store'});if(!r.ok)return;const info=await r.json();if(info.regiones?.length!==25)return;
  DATA.splice(0,25,...info.regiones);prep();head();chips();svg.querySelectorAll('path').forEach(p=>{const d=DATA.find(x=>x.id===p.dataset.id);if(d)p.setAttribute('fill',d.color)});rows()}catch(e){}}
 if(location.protocol.startsWith('http')){live();setInterval(live,300000)}
 </script></body></html>

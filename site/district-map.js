@@ -14,7 +14,7 @@ export async function createDistrictMap({element,scope='',lookup,onSelect,feedba
  let map;
  try{
   if(!window.L)throw Error('El navegador no pudo cargar el mapa.');
-  const [geometryResponse,registryResponse]=await Promise.all([fetch('/district-geography.json',{cache:'force-cache'}),fetch('/provincias.json',{cache:'no-cache'})]);
+  const [geometryResponse,registryResponse]=await Promise.all([fetch('district-geography.json',{cache:'force-cache'}),fetch('provincias.json',{cache:'no-cache'})]);
   if(!geometryResponse.ok)throw Error('La cartografía distrital no está disponible.');
   const geometry=await geometryResponse.json(),features=districtFeatures(geometry,scope);if(!features.length)throw Error('No hay geometría distrital para este ámbito.');
   const colors=new Map();if(registryResponse.ok){const registry=await registryResponse.json();for(const o of registry.organizations||[])if(/^#[0-9A-F]{6}$/i.test(o.color))colors.set(normalize(o.party),o.color);}

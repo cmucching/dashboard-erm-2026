@@ -6,7 +6,7 @@
   const source=document.getElementById(options.sourceId||'map');if(!source||!window.L)return null;
   let wrapper,map,feedback;
   try{
-   const response=await fetch('/map-geography.json');if(!response.ok)throw Error('Cartografía no disponible');
+   const response=await fetch('map-geography.json');if(!response.ok)throw Error('Cartografía no disponible');
    const geography=await response.json(),features=geography[options.kind]?.features;
    if(!Array.isArray(features)||features.length!==(options.kind==='regional'?26:196))throw Error('Cartografía incompleta');
    wrapper=document.createElement('div');wrapper.className='geo-map';wrapper.id='geo-map';wrapper.setAttribute('aria-label',options.kind==='regional'?'Mapa navegable de regiones del Perú':'Mapa navegable de provincias del Perú');

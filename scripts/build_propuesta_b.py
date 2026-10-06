@@ -32,4 +32,6 @@ out.write_text(html, encoding="utf-8"); print(out, f"{out.stat().st_size/1e6:.2f
 SITE_OUT = S / "index.html"
 site = html.replace(b64("banner-marca-personal.jpg", "image/jpeg"), "/banner-marca-personal.jpg").replace(LIVE, "")
 site = site.replace(' · <a href="">tablero en vivo</a>', "").replace("Datos de ejemplo congelados al corte indicado", "Datos al corte indicado")
+import sys; sys.path.insert(0, str(RAIZ / "scripts")); from rel import relativizar
+site = relativizar(site)
 SITE_OUT.write_text(site, encoding="utf-8"); print(SITE_OUT, f"{SITE_OUT.stat().st_size/1e6:.2f} MB")

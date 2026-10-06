@@ -1,8 +1,8 @@
 <!doctype html><html lang="es-PE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Alcaldes provinciales · Perú 2026</title><meta name="description" content="Resultados parciales de alcaldes provinciales del Perú: quién lidera en cada una de las 196 provincias, ventaja del primero sobre el segundo y avance de actas.">
-<link rel="icon" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
-<link rel="stylesheet" href="/shell.css"><link rel="stylesheet" href="/board.css"></head><body>
+<link rel="stylesheet" href="shell.css"><link rel="stylesheet" href="board.css"></head><body>
 <main class="wrap" id="app">
  <section class="lead"><div><h1 id="h1">Cargando provincias…</h1><p id="sub"></p></div><div class="kpis" id="kpis"></div></section>
  <div class="cut" id="cut"></div>
@@ -12,7 +12,7 @@
   <div class="rtools"><select class="sel2" id="dep" aria-label="Departamento"><option value="">Todo el Perú</option></select><input class="search" id="q" type="search" placeholder="Buscar provincia o partido" aria-label="Buscar provincia o partido"><span class="pillnote" id="cnt"></span></div>
   <div class="axis"><span>Provincia</span><div class="sc" id="sc"></div><span style="text-align:right">pp</span></div><div id="rows"></div><button class="moreb" id="more" hidden>Mostrar más provincias</button></div>
  </section>
- <footer class="foot">Fuente: ONPE, resultados parciales de alcaldes provinciales; candidaturas JNE; cartografía INEI 2023. Porcentajes sobre votos válidos. Cada barra mide la ventaja del 1.º sobre el 2.º en puntos porcentuales (pp) con escala hasta 10 pp; la línea naranja marca 3 pp y la marca lateral naranja, las carreras por debajo de ese umbral, que pueden cambiar. Los liderazgos parciales no equivalen a autoridades proclamadas. Cada provincia conserva su propia hora de corte ONPE (UTC−5). <a href="/api/provincial.csv">Descargar CSV</a> · <a href="https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales" target="_blank" rel="noopener">ONPE</a></footer>
+ <footer class="foot">Fuente: ONPE, resultados parciales de alcaldes provinciales; candidaturas JNE; cartografía INEI 2023. Porcentajes sobre votos válidos. Cada barra mide la ventaja del 1.º sobre el 2.º en puntos porcentuales (pp) con escala hasta 10 pp; la línea naranja marca 3 pp y la marca lateral naranja, las carreras por debajo de ese umbral, que pueden cambiar. Los liderazgos parciales no equivalen a autoridades proclamadas. Cada provincia conserva su propia hora de corte ONPE (UTC−5). <a href="api/provincial.csv">Descargar CSV</a> · <a href="https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales" target="_blank" rel="noopener">ONPE</a></footer>
 </main><div class="tip" id="tip"></div>
 <script>
 const $=s=>document.querySelector(s),f=(n,d=1)=>n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
@@ -42,7 +42,7 @@ function rows(){
  <div class="nm">${esc(r.name)}<small>${esc(r.dep)} · ${esc(tc(r.party))}</small></div>
  <div class="dumb"><div class="grid">${tk.slice(1).map(x=>`<i style="left:${x/maxM*100}%"></i>`).join('')}<i class="thr" style="left:${3/maxM*100}%"></i></div><div class="bar" style="width:${Math.min(Math.max(r.m/maxM*100,.8),100)}%${r.m>maxM?';border-radius:0':''}"></div>${r.m>maxM?'<div class="ov">▸ sigue</div>':''}<div class="bl"><b>${f(r.p1,2)}</b> % <span>vs</span> ${f(r.p2,2)} %</div></div>
  <div class="mg"><b>${f(r.m,2)}</b><small>pp · ${f(r.adv,1)} % actas</small><div class="act"><i style="width:${r.adv}%"></i></div></div>
- <div class="more">${r.top.map((c,i)=>`<div class="cand" style="--c:${i?'#8A98A3':r.color}"><img src="${/^https?:/.test(c.symbol)?esc(c.symbol):"/"+esc(c.symbol)}" alt="" onerror="this.style.visibility='hidden'"><div><b>${esc(c.party)}</b><span>${i+1}.º · ${c.candidate?esc(tc(c.candidate)):"Candidato no informado en el corte"}</span><em>${f(c.percent,2)} %</em><span>${c.votes.toLocaleString('en-US')} votos válidos</span><span>Corte ONPE: ${esc(r.upd)}</span></div></div>`).join('')}</div></div>`).join(''):'<div class="empty2">No hay provincias con ese filtro.</div>';
+ <div class="more">${r.top.map((c,i)=>`<div class="cand" style="--c:${i?'#8A98A3':r.color}"><img src="${/^https?:/.test(c.symbol)?esc(c.symbol):esc(c.symbol)}" alt="" onerror="this.style.visibility='hidden'"><div><b>${esc(c.party)}</b><span>${i+1}.º · ${c.candidate?esc(tc(c.candidate)):"Candidato no informado en el corte"}</span><em>${f(c.percent,2)} %</em><span>${c.votes.toLocaleString('en-US')} votos válidos</span><span>Corte ONPE: ${esc(r.upd)}</span></div></div>`).join('')}</div></div>`).join(''):'<div class="empty2">No hay provincias con ese filtro.</div>';
  $('#more').hidden=lim!==Infinity&&a.length>limit;if(!$('#more').hidden){}
  $('#more').hidden=!(lim!==Infinity&&a.length>limit);
  const ids=new Set(a.map(r=>r.id));
@@ -62,10 +62,10 @@ $('#dep').addEventListener('change',e=>{dep=e.target.value;sel=null;zoom();limit
 $('#q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();limit=30;rows()});
 $('#more').addEventListener('click',()=>{limit+=40;rows()});
 function rt(){$('#rt').textContent=dep?`Las carreras de ${dep}`:`Las ${T.length} carreras`}
-fetch('/api/provincial',{cache:'no-store'}).then(r=>r.json()).then(d=>{ORG=d.organizations;
+fetch('api/provincial.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{ORG=d.organizations;
  T=d.territories.filter(t=>t.result&&t.result.top&&t.result.top.length>1).map(t=>{const r=t.result,a=r.top[0],b=r.top[1];return{id:t.id,name:t.province,dep:t.department,bbox:t.bbox,d:t.d,org:a.org,party:a.party,color:(ORG[a.org]||{}).color||'#888',p1:a.percent,p2:b.percent,m:a.percent-b.percent,adv:r.advance,upd:r.updated,top:r.top}});
  svg.innerHTML=T.map(r=>`<path data-id="${r.id}" d="${r.d}" fill="${r.color}"><title>${esc(r.name)}</title></path>`).join('');
  [...new Set(T.map(r=>r.dep))].sort((a,b)=>a.localeCompare(b,'es')).forEach(x=>$('#dep').insertAdjacentHTML('beforeend',`<option>${esc(x)}</option>`));
  head();chips();rows();
 }).catch(()=>{$('#h1').textContent='No se pudo cargar el corte provincial';$('#sub').textContent='Recarga la página en unos minutos.'});
-</script><script src="/shell.js"></script></body></html>
+</script><script src="shell.js"></script></body></html>
