@@ -6,7 +6,7 @@ param([ValidateSet("incremental","full","smoke")][string]$Modo = "incremental",
 $ErrorActionPreference = "Stop"
 $env:PYTHONUTF8 = "1"
 Set-Location $Repo
-git pull --rebase origin main
+git pull --rebase --autostash origin main
 if (-not (Test-Path .venv)) { py -3 -m venv .venv; .\.venv\Scripts\python -m pip install -q -r requirements.txt; .\.venv\Scripts\python -m playwright install chromium }
 $extra = @(); if ($Ventana) { $extra += "--headed" }; if ($Chrome) { $extra += "--chrome" }
 $flag = switch ($Modo) { "full" { "--full" } "smoke" { "--smoke" } default { "" } }
