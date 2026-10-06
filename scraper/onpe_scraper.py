@@ -144,22 +144,27 @@ def _leer(ruta: Path) -> list[dict]:
         return []
 
 
-def _guardar_cache(path: Path | None, clave: str, regs: dict) -> None:
+def _guardar_cache(path: Path | None, modo: str, regs: dict) -> None:
     if path is None:
         return
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({"clave": clave, "regs": regs}, ensure_ascii=False,
+    path.write_text(json.dumps({"modo": modo, "regs": regs}, ensure_ascii=False,
                                separators=(",", ":")), encoding="utf-8")
 
 
-def _cargar_cache(path: Path | None, clave: str) -> dict:
+def _cargar_cache(path: Path | None, modo: str) -> dict:
+    """Reutiliza el avance guardado si es reciente (completo: 3 h; incremental: 20 min).
+    Ya no depende de que los totales provinciales sigan idénticos: ONPE los actualiza sin parar."""
     if path is None:
         return {}
     try:
         c = json.loads(path.read_text(encoding="utf-8"))
+        edad = time.time() - path.stat().st_mtime
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
-    return c.get("regs", {}) if c.get("clave") == clave else {}
+    if c.get("modo") not in (None, modo):
+        return {}
+    return c.get("regs", {}) if edad < (3 * 3600 if modo == "full" else 20 * 60) else {}
 
 
 def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
@@ -182,8 +187,10 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     consultar, copiar = T.planificar_distritos(prev_prov, provs, prev_dist, ub["dist"],
                                                completo=(modo != "incremental"))
     # Avance guardado: si ONPE corta (403) a mitad de camino, la siguiente corrida retoma desde aquí.
-    clave = T.huella({"prov": provs, "modo": modo})
+    clave = modo
     avance = _cargar_cache(cache_path, clave)
+    if avance:
+        print(f"Se reutiliza avance guardado: {len(avance)} distritos", file=sys.stderr, flush=True)
     pendientes = [d for d in consultar if d["ubigeo"] not in avance]
     t0 = time.time()
     total = len(consultar)
@@ -202,6 +209,7 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     except Bloqueado:
         _guardar_cache(cache_path, clave, avance)
         raise
+    print("Descarga terminada; validando y armando archivos…", file=sys.stderr, flush=True)
     dists = [avance[d["ubigeo"]] for d in consultar] + copiar
     dists.sort(key=lambda r: r["ubigeo"])
 
@@ -277,7 +285,11 @@ def main(argv: list[str] | None = None) -> int:
                 return EXIT_BLOQUEO
             resultado = recolectar(FetcherNavegador(page), out, modo,
                                    cache_path=Path(".cache") / "avance_distritos.json")
-            browser.close()
+            print("Cerrando navegador…", file=sys.stderr, flush=True)
+            try:
+                browser.close()
+            except Exception:
+                pass
     except Bloqueado as e:
         print(f"BLOQUEO: {e}. No se evade; se conservan los datos anteriores.", file=sys.stderr)
         return EXIT_BLOQUEO
