@@ -5,6 +5,7 @@ param([Parameter(Mandatory=$true)][string]$Token,
       [string]$Repo = "https://github.com/cmucching/dashboard-erm-2026",
       [string]$Dir = "C:\actions-runner")
 $ErrorActionPreference = "Stop"
+if ($Token -like "PEGA*" -or $Token -match "[<>]") { throw "Token invalido: pega SOLO el codigo que sale despues de --token, sin texto de ejemplo." }
 $rel = Invoke-RestMethod "https://api.github.com/repos/actions/runner/releases/latest"
 $asset = $rel.assets | Where-Object { $_.name -like "actions-runner-win-x64-*.zip" } | Select-Object -First 1
 New-Item -ItemType Directory -Force $Dir | Out-Null
@@ -12,6 +13,7 @@ Set-Location $Dir
 Invoke-WebRequest $asset.browser_download_url -OutFile runner.zip
 Expand-Archive runner.zip -DestinationPath . -Force
 .\config.cmd --url $Repo --token $Token --labels "windows,onpe" --unattended --replace
+if ($LASTEXITCODE -ne 0) { throw "Fallo el registro del runner (token vencido o mal copiado). Genera uno nuevo y reintenta." }
 # Ejecutar como servicio (arranca con Windows). Requiere PowerShell como administrador.
 .\svc.cmd install
 .\svc.cmd start
