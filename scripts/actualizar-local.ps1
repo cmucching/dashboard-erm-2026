@@ -1,14 +1,16 @@
 # Alternativa sin runner: descarga de ONPE desde tu PC y publica en GitHub (usa tus credenciales de Git).
 # Uso manual:  .\actualizar-local.ps1 [-Modo incremental|full|smoke]
 param([ValidateSet("incremental","full","smoke")][string]$Modo = "incremental",
-      [string]$Repo = "C:\erm")
+      [string]$Repo = "C:\erm",
+      [switch]$Ventana, [switch]$Chrome)
 $ErrorActionPreference = "Stop"
 $env:PYTHONUTF8 = "1"
 Set-Location $Repo
 git pull --rebase origin main
 if (-not (Test-Path .venv)) { py -3 -m venv .venv; .\.venv\Scripts\python -m pip install -q -r requirements.txt; .\.venv\Scripts\python -m playwright install chromium }
+$extra = @(); if ($Ventana) { $extra += "--headed" }; if ($Chrome) { $extra += "--chrome" }
 $flag = switch ($Modo) { "full" { "--full" } "smoke" { "--smoke" } default { "" } }
-if ($flag) { .\.venv\Scripts\python scraper\onpe_scraper.py --out data $flag } else { .\.venv\Scripts\python scraper\onpe_scraper.py --out data }
+if ($flag) { .\.venv\Scripts\python scraper\onpe_scraper.py --out data $flag @extra } else { .\.venv\Scripts\python scraper\onpe_scraper.py --out data @extra }
 if ($LASTEXITCODE -ne 0) { Write-Host "Scraper termino con codigo $LASTEXITCODE (3=bloqueo ONPE, 2=control de calidad). No se publica nada."; exit $LASTEXITCODE }
 git add data
 git diff --cached --quiet

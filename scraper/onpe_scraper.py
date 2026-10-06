@@ -99,8 +99,10 @@ class FetcherNavegador:
             lote = urls[i:i + LOTE]
             resultado.update(self.page.evaluate(
                 JS_POOL, {"urls": lote, "conc": 4, "minMs": 120, "maxMs": 350}))
-            if any(r.get("html") or r["status"] in (401, 403) for r in resultado.values()):
-                raise Bloqueado("ONPE devolvió 401/403 o HTML en lugar de JSON (posible desafío)")
+            malas = [(u, r) for u, r in resultado.items() if r.get("html") or r["status"] in (401, 403)]
+            if malas:
+                u, r = malas[0]
+                raise Bloqueado(f"ONPE devolvió estado {r['status']}{' (HTML en vez de JSON)' if r.get('html') else ''} en {u}")
         return resultado
 
 
@@ -204,6 +206,8 @@ def main(argv: list[str] | None = None) -> int:
     g = ap.add_mutually_exclusive_group()
     g.add_argument("--full", action="store_true")
     g.add_argument("--smoke", action="store_true")
+    ap.add_argument("--headed", action="store_true", help="navegador con ventana (no headless)")
+    ap.add_argument("--chrome", action="store_true", help="usar Google Chrome instalado en vez de Chromium")
     ap.add_argument("--dry-run", action="store_true", help="no escribe archivos")
     args = ap.parse_args(argv)
     modo = "smoke" if args.smoke else "full" if args.full else "incremental"
@@ -213,7 +217,10 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         with sync_playwright() as pw:
-            browser = pw.chromium.launch(headless=True)
+            opciones = {"headless": not args.headed}
+            if args.chrome:
+                opciones["channel"] = "chrome"
+            browser = pw.chromium.launch(**opciones)
             ctx = browser.new_context(locale="es-PE", timezone_id="America/Lima")
             page = ctx.new_page()
             resp = page.goto(PAGINA_INICIO, wait_until="networkidle", timeout=60_000)
