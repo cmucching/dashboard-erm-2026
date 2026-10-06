@@ -28,6 +28,7 @@ API = "/presentacion-backend"
 RUTA_UBIGEOS = "/assets/ubig/v1.json"  # verificado: archivo estático en la raíz del sitio
 ID_REGIONAL, ID_MUNICIPAL = 1, 3
 LOTE = 40
+RITMO = {"conc": 2, "min": 500, "max": 1100}  # pedidos en paralelo y pausa (ms); ajustable con --hilos/--pausa-ms
 SMOKE_N = 3
 
 NIVEL_FILTRO = {"dep": "ubigeo_nivel_01", "prov": "ubigeo_nivel_02", "dist": "ubigeo_nivel_03"}
@@ -101,7 +102,7 @@ class FetcherNavegador:
         for i in range(0, len(urls), LOTE):
             lote = urls[i:i + LOTE]
             resultado.update(self.page.evaluate(
-                JS_POOL, {"urls": lote, "conc": 2, "minMs": 500, "maxMs": 1100}))
+                JS_POOL, {"urls": lote, "conc": RITMO["conc"], "minMs": RITMO["min"], "maxMs": RITMO["max"]}))
             malas = [(u, r) for u, r in resultado.items()
                      if r["status"] in (401, 403) or (r.get("html") and r["status"] == 200)]
             if malas:
@@ -252,8 +253,11 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--smoke", action="store_true")
     ap.add_argument("--headed", action="store_true", help="navegador con ventana (no headless)")
     ap.add_argument("--chrome", action="store_true", help="usar Google Chrome instalado en vez de Chromium")
+    ap.add_argument("--hilos", type=int, default=2, help="pedidos en paralelo (por defecto 2; más hilos aumentan el riesgo de 403)")
+    ap.add_argument("--pausa-ms", type=int, default=500, help="pausa mínima entre pedidos de cada hilo (ms)")
     ap.add_argument("--dry-run", action="store_true", help="no escribe archivos")
     args = ap.parse_args(argv)
+    RITMO.update(conc=max(1, min(args.hilos, 6)), min=args.pausa_ms, max=int(args.pausa_ms * 2.2))
     modo = "smoke" if args.smoke else "full" if args.full else "incremental"
     out = Path(args.out)
 
