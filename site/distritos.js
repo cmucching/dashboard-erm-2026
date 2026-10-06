@@ -37,11 +37,11 @@ function head(m){
  if(VIEW==='lima'){const t=M.top;const mg=t[0].pct_valid-t[1].pct_valid;
   $('#h1').innerHTML=`Alcaldía de Lima Metropolitana.<br><em>${tc(t[0].organization)} va primero por ${f(mg,2)} puntos.</em>`;
   $('#sub').textContent=`Con ${f(M.counted_pct,3)} % de actas contabilizadas, ${tc(t[0].organization)} suma ${f(t[0].pct_valid,3)} % de los votos válidos y ${tc(t[1].organization)}, ${f(t[1].pct_valid,3)} %. Abajo, los ${R.length} distritos de la provincia.`}
- else{$('#h1').innerHTML=`${R.length} distritos con resultados.<br><em>${close.length} se deciden por menos de 3 puntos.</em>`;
-  $('#sub').textContent=`La descarga distrital sigue en curso: ${f(done,0)} de ${f(exp,0)} elecciones incorporadas, más ${m.not_applicable} territorios sin elección distrital propia. ${rank.length?tc(rank[0][0])+' lidera en '+rank[0][1]+' distritos.':''}`}
+ else{$('#h1').innerHTML=`${f(R.length,0)} distritos con resultados.<br><em>${close.length} se deciden por menos de 3 puntos.</em>`;
+  $('#sub').textContent=`${m.state==='complete'?'Descarga distrital completa':'La descarga distrital sigue en curso'}: ${f(done,0)} de ${f(exp,0)} elecciones incorporadas, más ${m.not_applicable} territorios sin elección distrital propia. ${rank.length?tc(rank[0][0])+' lidera en '+rank[0][1]+' distritos.':''}`}
  $('#kpis').innerHTML=`<div class="hot"><b>${close.length}</b><span>distritos con ventaja menor a 3 pp</span></div><div><b>${f(done,0)}<small style="font-size:.5em;font-weight:600"> / ${f(exp,0)}</small></b><span>distritos con resultados incorporados</span></div><div><b>${f(mn)}–${f(mx)} %</b><span>actas contabilizadas, según distrito</span></div>`;
  const us=R.map(r=>new Date(r.upd)).filter(d=>!isNaN(d)).sort((a,b)=>a-b);
- $('#cut').innerHTML=`<i></i><span>Cortes ONPE por distrito: <b>${fmt(us[0])}</b> a <b>${fmt(us[us.length-1])}</b> · hora de Perú (UTC−5). Cada distrito conserva su propia hora de corte.</span>`+(VIEW==='lima'?'':`<span class="pillnote">Descarga en curso</span>`);
+ $('#cut').innerHTML=`<i></i><span>Cortes ONPE por distrito: <b>${fmt(us[0])}</b> a <b>${fmt(us[us.length-1])}</b> · hora de Perú (UTC−5). Cada distrito conserva su propia hora de corte.</span>`+(VIEW==='lima'?'':`<span class="pillnote">${m.state==='complete'?'Descarga completa':'Descarga en curso'}</span>`);
 }
 let M=null;
 Promise.all([fetch('/api/municipal-data',{cache:'no-store'}).then(r=>r.json()),fetch('/district-paths.json').then(r=>r.json()),VIEW==='lima'?fetch('/lima-metropolitana-onpe.json').then(r=>r.json()):null]).then(([d,paths,lima])=>{

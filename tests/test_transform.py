@@ -57,7 +57,8 @@ class TestFormato(unittest.TestCase):
 
     def test_nombres(self):
         self.assertEqual(T.titulo_es("MADRE DE DIOS"), "Madre de Dios")
-        self.assertEqual(T.nombre_region("LIMA", "150000"), "Lima región")
+        self.assertEqual(T.nombre_region("LIMA", "140000"), "Lima región")
+        self.assertEqual(T.nombre_region("LORETO", "150000"), "Loreto")
         self.assertEqual(T.slug_cartilla("SAN MARTÍN", "220000"), "san-martin")
 
     def test_top2_y_csv(self):

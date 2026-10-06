@@ -122,14 +122,14 @@ def titulo_es(texto: str) -> str:
 
 
 def nombre_region(nombre_dep: str, ubigeo: str) -> str:
-    # En el dashboard actual el departamento Lima (sin Lima Metropolitana) es "Lima región"
-    if ubigeo == "150000":
+    # Códigos de ubigeo de ONPE: 140000 = Lima (sin Lima Metropolitana → "Lima región"); 150000 = Loreto
+    if ubigeo == "140000":
         return "Lima región"
     return titulo_es(nombre_dep)
 
 
 def slug_cartilla(nombre_dep: str, ubigeo: str) -> str:
-    if ubigeo == "150000":
+    if ubigeo == "140000":
         return "lima-provincias"
     sin_tildes = unicodedata.normalize("NFD", nombre_dep.lower())
     sin_tildes = "".join(c for c in sin_tildes if unicodedata.category(c) != "Mn")

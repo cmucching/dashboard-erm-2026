@@ -1,393 +1,393 @@
-﻿"Elección","Departamento","Provincia","Código INEI","Puesto","Organización","Candidato JNE","Votos","Porcentaje votos válidos","Total votos válidos","Actas contabilizadas %","Corte ONPE (Perú UTC-5)"
-"Alcalde provincial","Amazonas","Chachapoyas","0101","1","MOVIMIENTO REGIONAL VICTORIA AMAZONENSE","VICTOR RAUL CULQUI PUERTA","9967","33.798","29490","95.266","05/10/2026 · 11:26:00 p. m."
-"Alcalde provincial","Amazonas","Chachapoyas","0101","2","ALIANZA PARA EL PROGRESO","JOSE CHAPPA VILLACORTA","6968","23.628","29490","95.266","05/10/2026 · 11:26:00 p. m."
-"Alcalde provincial","Amazonas","Bagua","0102","1","ALIANZA PARA EL PROGRESO","NILTON RAMOS BECERRA","9154","26.415","34655","94.400","05/10/2026 · 11:22:00 p. m."
-"Alcalde provincial","Amazonas","Bagua","0102","2","MOVIMIENTO REGIONAL VICTORIA AMAZONENSE","WALTER FLORES CHAVEZ","7631","22.020","34655","94.400","05/10/2026 · 11:22:00 p. m."
-"Alcalde provincial","Amazonas","Bongara","0103","1","MOVIMIENTO REGIONAL VICTORIA AMAZONENSE","JOSE TELMO HERNANDEZ ZELADA","5185","34.363","15089","98.824","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Bongara","0103","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","EDILBERTO DELGADO BARBOZA","4289","28.425","15089","98.824","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Condorcanqui","0104","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","6286","30.852","20375","91.379","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Condorcanqui","0104","2","MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO","","2767","13.580","20375","91.379","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Luya","0105","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","EDWIN MORI LLANCA","8718","32.122","27140","100.000","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Luya","0105","2","MOVIMIENTO REGIONAL VICTORIA AMAZONENSE","DIOGENES HUMBERTO ZAVALETA TENORIO","8571","31.581","27140","100.000","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Rodriguez De Mendoza","0106","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","MANUEL ASENCION FERNANDEZ YOPLAC","6481","37.978","17065","97.938","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Rodriguez De Mendoza","0106","2","MOVIMIENTO REGIONAL VICTORIA AMAZONENSE","EDER ALCIDES GRANDEZ MUÑOZ","5164","30.261","17065","97.938","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Utcubamba","0107","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","ROSINALDO VILLEGAS CAMPOS","18843","32.601","57799","98.498","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Amazonas","Utcubamba","0107","2","MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO","VICTOR MANUEL CAMPOS TORRES","14551","25.175","57799","98.498","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Huaraz","0201","1","PODEMOS PERÚ","JABICO PRUDENCIO ROBLES BLACIDO","16180","18.629","86852","98.920","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Huaraz","0201","2","PARTIDO PAÍS PARA TODOS","HERBERT ALEX CORDERO CUISANO","16003","18.426","86852","98.920","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Aija","0202","1","PARTIDO PAÍS PARA TODOS","MILLER OMAR CAMONES MAGUIÑA","2059","44.722","4604","100.000","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Aija","0202","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","MAGALY BERTHA ROLDAN CAMONES","1108","24.066","4604","100.000","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Antonio Raymondi","0203","1","PODEMOS PERÚ","LENIN BORIS SALINAS VILLAORDUÑA","2028","30.821","6580","95.556","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Antonio Raymondi","0203","2","PARTIDO PAÍS PARA TODOS","NELSON JENNY GREGORIO TREJO","1941","29.498","6580","95.556","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Asuncion","0204","1","PARTIDO DEMÓCRATA VERDE","EDUARDO BELLO MAQUIN","1491","42.226","3531","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Asuncion","0204","2","ALIANZA PARA EL PROGRESO","WASHINGTON SEGUNDO LOPEZ LOPEZ","873","24.724","3531","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Bolognesi","0205","1","PARTIDO DEMÓCRATA VERDE","CARMEN ROSA RIOS ORTIZ","5128","39.274","13057","98.810","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Bolognesi","0205","2","PODEMOS PERÚ","GUDBERTO CARRERA PADILLA","3752","28.736","13057","98.810","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Carhuaz","0206","1","PARTIDO DEMÓCRATA VERDE","AGUSTIN MAURO BERROSPI ORTIZ","7537","27.140","27771","97.973","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Carhuaz","0206","2","PARTIDO PAÍS PARA TODOS","FREDY ROMEL CADILLO ROSAS","4618","16.629","27771","97.973","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Carlos Fermin Fitzcarrald","0207","1","RENOVACIÓN POPULAR PERÚ","MATEO EMILIO JULCA OBREGON","3726","43.110","8643","98.246","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Carlos Fermin Fitzcarrald","0207","2","ALIANZA PARA EL PROGRESO","HUMBERTO ENRIQUE SAMANES MELGAREJO","3084","35.682","8643","98.246","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Casma","0208","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","GONZALO ALFREDO TRUJILLO ROSALES","9131","32.852","27794","97.902","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Casma","0208","2","RENOVACIÓN POPULAR PERÚ","DAVID HOMERO ALCANTARA MAGUIÑA","7657","27.549","27794","97.902","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Corongo","0209","1","PODEMOS PERÚ","CARLOS MANUEL PINEDO ALEJOS","1471","35.592","4133","100.000","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Corongo","0209","2","PARTIDO DEMÓCRATA VERDE","JAPHET CELESTINO VALENCIA FLORES","1195","28.914","4133","100.000","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Huari","0210","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","HARON ULPIANO OSORIO VEGA","16121","33.520","48093","97.569","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Huari","0210","2","ACCIÓN POPULAR","MANUEL ESPINOZA VILLARREAL","15417","32.057","48093","97.569","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Huarmey","0211","1","PARTIDO FRENTE DE LA ESPERANZA 2021","GABRIEL QUIRINO MELGAREJO ALVAREZ","4905","26.522","18494","97.872","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Huarmey","0211","2","PODEMOS PERÚ","GERSON DANIEL ARGÜELLES NEIRA","4333","23.429","18494","97.872","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Huaylas","0212","1","ALIANZA PARA EL PROGRESO","EDUARDO JHON MILLA FLORES","6258","21.364","29292","98.817","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Huaylas","0212","2","PARTIDO DEMÓCRATA VERDE","ROCIO DEL CARMEN ANGELES VARGAS","4539","15.496","29292","98.817","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Mariscal Luzuriaga","0213","1","PARTIDO DEMÓCRATA VERDE","JOEL LUCAS ORTIZ ZAVALA","3586","32.225","11128","98.592","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Mariscal Luzuriaga","0213","2","ALIANZA PARA EL PROGRESO","MARIO FORTUNATO VIDAL MORENO","3065","27.543","11128","98.592","05/10/2026 · 11:32:00 p. m."
-"Alcalde provincial","Ancash","Ocros","0214","1","PARTIDO POLÍTICO PERÚ PRIMERO","JOSÉ MIGUEL REVOREDO ESPINOZA","1784","40.545","4400","96.667","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Ocros","0214","2","ALIANZA PARA EL PROGRESO","HABACUC OSWALDO SANCHEZ LIRIO","1462","33.227","4400","96.667","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Pallasca","0215","1","ACCIÓN POPULAR","FABIOLA JUANA PANTOJA MIRANDA","2266","22.649","10005","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Pallasca","0215","2","PODEMOS PERÚ","YOHANNA TERESITA ARANDA MURILLO","2226","22.249","10005","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Pomabamba","0216","1","PARTIDO POLÍTICO PERÚ PRIMERO","JUAN MAXIMO MALPARTIDA VIDAL","4324","37.347","11578","98.684","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Pomabamba","0216","2","PARTIDO DEMÓCRATA VERDE","EDGARD ALCIDES VIA MELGAREJO","2515","21.722","11578","98.684","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Recuay","0217","1","PARTIDO PAÍS PARA TODOS","IVAN PAVEL RAMIREZ ESPINOZA","3273","30.577","10704","98.507","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Recuay","0217","2","PARTIDO DEMÓCRATA VERDE","HECTOR EDUARDO MARTINEZ BRONCANO","3041","28.410","10704","98.507","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Santa","0218","1","ALIANZA PARA EL PROGRESO","WALTER JESUS SOTO CAMPOS","106419","45.592","233414","97.188","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Santa","0218","2","PODEMOS PERÚ","JOSE INOCENTE FARRO CORONADO","28406","12.170","233414","97.188","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Sihuas","0219","1","PODEMOS PERÚ","ABANTO CHAVARRIA ESTRADA","4941","36.272","13622","98.876","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Sihuas","0219","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","ABDON CASIMIRO CASAHUAMAN CASAHUAMAN","3696","27.133","13622","98.876","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Yungay","0220","1","PODEMOS PERÚ","MARCO ANTONIO ROMERO RAMIREZ","11932","40.906","29169","98.830","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Ancash","Yungay","0220","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","EFRAIN NUÑOS JULCA REGALADO","7480","25.644","29169","98.830","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Abancay","0301","1","PROGRESEMOS","ELIO MAURO VIDAL ROBLES","19126","31.822","60103","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Abancay","0301","2","ACCIÓN POPULAR","JOHN VASCONES SORIA","18102","30.118","60103","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Andahuaylas","0302","1","PROGRESEMOS","PARMI LISTER HUACCAYCACHACC VARGAS","26286","31.734","82832","98.891","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Andahuaylas","0302","2","ACCIÓN POPULAR","REYNALDO MALPARTIDA TINCOPA","24254","29.281","82832","98.891","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Antabamba","0303","1","PROGRESEMOS","JIMMY HERBERT SARMIENTO MALDONADO","3301","48.169","6853","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Antabamba","0303","2","ACCIÓN POPULAR","ROGER ROQUE SALAS DELGADO","1501","21.903","6853","100.000","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Aymaraes","0304","1","AHORA NACIÓN - AN","LUIS ALBERTO RIMASCCA CRUZ","6488","38.578","16818","96.117","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Aymaraes","0304","2","ALIANZA PARA EL PROGRESO","JOSE ALBERTO ARGOTE CARDENAS","3606","21.441","16818","96.117","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Cotabambas","0305","1","ACCIÓN POPULAR","VALENTIN QUISPE FLORES","12664","44.642","28368","98.788","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Cotabambas","0305","2","ALIANZA PARA EL PROGRESO","","5244","18.486","28368","98.788","05/10/2026 · 11:36:00 p. m."
-"Alcalde provincial","Apurimac","Chincheros","0306","1","AHORA NACIÓN - AN","HEBER HUARHUACHI ISLACHIN","12786","46.251","27645","97.351","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Apurimac","Chincheros","0306","2","ACCIÓN POPULAR","HENRY IVAN BARBARAN LLACCTAS","8541","30.895","27645","97.351","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Apurimac","Grau","0307","1","AHORA NACIÓN - AN","MILTON RAFAELE ROBLES","6115","47.220","12950","100.000","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Apurimac","Grau","0307","2","ALIANZA PARA EL PROGRESO","VLADIMIRO SUCAPUCA QUINTO","2969","22.927","12950","100.000","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Arequipa","0401","1","FUERZA AREQUIPEÑA","MANUEL ENRIQUE VERA PAREDES","128345","19.286","665499","99.254","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Arequipa","0401","2","AHORA NACIÓN - AN","ALFREDO WILLY BENAVENTE GODOY","104532","15.707","665499","99.254","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Camana","0402","1","ACCIÓN POPULAR","LUZ MARIA CARAZAS CARNERO","7607","21.954","34650","99.444","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Camana","0402","2","RENOVACIÓN POPULAR PERÚ","JONATHAN RONNY MACHADO RIVERA","5670","16.364","34650","99.444","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Caraveli","0403","1","PROGRESEMOS","ROBERTO GERARDO VASQUEZ PISCO","7021","37.477","18734","97.368","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Caraveli","0403","2","PODEMOS PERÚ","TULIO ERNESTO NAVARRO NEYRA","2884","15.394","18734","97.368","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Castilla","0404","1","PROGRESEMOS","ANTONIO MANUEL QUISPE YAURI","4452","27.201","16367","98.095","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Castilla","0404","2","FUERZA AREQUIPEÑA","HECTOR RAUL CACERES MUÑOZ","4205","25.692","16367","98.095","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Caylloma","0405","1","PARTIDO POLÍTICO PERÚ PRIMERO","JULIO CESAR CALSINA ORTIZ","10165","18.797","54078","96.970","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Caylloma","0405","2","ALIANZA PARA EL PROGRESO","JENNIFFER MARITZA NEIRA GONZALES","7870","14.553","54078","96.970","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Condesuyos","0406","1","AHORA NACIÓN - AN","RONAL MARCOS MEDINA TEJADA","3341","38.513","8675","100.000","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Condesuyos","0406","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","TOMAS WUILE AYÑAYANQUE ROSAS","2586","29.810","8675","100.000","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","Islay","0407","1","YO AREQUIPA","","7503","21.157","35463","98.870","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Arequipa","Islay","0407","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","EDILBERTO DE LA CRUZ CESAREO SALAZAR ZENDER","6142","17.319","35463","98.870","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Arequipa","La Union","0408","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","ANTONIO DIONICIO CASTRO FLORES","2294","39.702","5778","97.959","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Arequipa","La Union","0408","2","ALIANZA PARA EL PROGRESO","ETNER MOTA LOAIZA","1143","19.782","5778","97.959","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Huamanga","0501","1","LIBERTAD POPULAR","CARLOS HERMINIO HERENCIA GALLEGOS","47525","31.156","152540","99.234","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Huamanga","0501","2","PODEMOS PERÚ","RICHARD PRADO RAMOS","37436","24.542","152540","99.234","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Cangallo","0502","1","LIBERTAD POPULAR","ROTIER GOMEZ HINOSTROZA","10371","57.355","18082","99.091","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Cangallo","0502","2","PODEMOS PERÚ","EDGAR GAMANIEL BERROCAL FERNANDEZ","5525","30.555","18082","99.091","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Huanca Sancos","0503","1","LIBERTAD POPULAR","NEMESIO PACHECO VILCHEZ","1977","42.082","4698","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Huanca Sancos","0503","2","PODEMOS PERÚ","BARTOLOME FERNANDEZ LOPEZ","1535","32.673","4698","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Huanta","0504","1","PODEMOS PERÚ","OMER SINCHITULLO RUIZ","18229","39.131","46585","95.341","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Huanta","0504","2","APP - TRABAJA AYACUCHO","EDWIN ALFREDO BUSTIOS SAAVEDRA","15348","32.946","46585","95.341","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","La Mar","0505","1","APP - TRABAJA AYACUCHO","ROMEL PEÑA ATAO","16499","42.356","38953","99.554","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","La Mar","0505","2","PARTIDO FRENTE DE LA ESPERANZA 2021","CIRO GAVILAN PALOMINO","6108","15.680","38953","99.554","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Lucanas","0506","1","PODEMOS PERÚ","GUILLERMO LOPEZ CANTORAL","5427","23.506","23088","96.914","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Lucanas","0506","2","LIBERTAD POPULAR","IVAN ERASMO GARCIA ROJAS","4608","19.958","23088","96.914","05/10/2026 · 11:40:33 p. m."
-"Alcalde provincial","Ayacucho","Parinacochas","0507","1","PODEMOS PERÚ","JOHON EDWARD HUACHACA AMAO","3274","30.425","10761","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Parinacochas","0507","2","PARTIDO POLÍTICO PERÚ PRIMERO","GARY GABRIEL PACHECO HUAMANI","3041","28.259","10761","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Paucar Del Sara Sara","0508","1","PODEMOS PERÚ","ROY ELIAS MAMANI BARRIGA","1956","40.589","4819","96.970","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Paucar Del Sara Sara","0508","2","APP - TRABAJA AYACUCHO","EDMUNDO POLICARPO RETAMOZO GALLEGOS","984","20.419","4819","96.970","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Sucre","0509","1","APP - TRABAJA AYACUCHO","YONY RAMOS FLORES","2615","46.772","5591","97.368","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Sucre","0509","2","PODEMOS PERÚ","MILCIADES ARONE TOMAYLLA","1753","31.354","5591","97.368","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Victor Fajardo","0510","1","LIBERTAD POPULAR","CASIANO RAMIREZ HUAMAN","4302","34.203","12578","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Victor Fajardo","0510","2","PODEMOS PERÚ","UBALDO HUAMANI LESCANO","2702","21.482","12578","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Vilcas Huaman","0511","1","PODEMOS PERÚ","ALFREDO GOMEZ MARTINEZ","5837","49.145","11877","98.592","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Ayacucho","Vilcas Huaman","0511","2","APP - TRABAJA AYACUCHO","EDGAR MENDOZA GAMBOA","3927","33.064","11877","98.592","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Cajamarca","0601","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","SERGIO SANCHEZ IBAÑEZ","59237","30.854","191994","97.165","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Cajamarca","0601","2","ALIANZA PARA EL PROGRESO","EDINSON ARMANDO TERAN MEDINA","39315","20.477","191994","97.165","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Cajabamba","0602","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","RICHARD OBANDO BARAHONA","10305","31.543","32670","96.330","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Cajabamba","0602","2","PARTIDO POLÍTICO PERÚ PRIMERO","JUAN EFRAÍN CORTEGANA RONCAL","9893","30.282","32670","96.330","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Celendin","0603","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","EDWIN RAMOS DIAZ","19754","43.850","45049","99.251","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Celendin","0603","2","PARTIDO POLÍTICO PERÚ PRIMERO","DEYNER ARAUJO CHAVEZ","7255","16.105","45049","99.251","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Chota","0604","1","MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE","NEPTALI TICLLA RAFAEL","25438","31.060","81899","98.276","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Chota","0604","2","ALIANZA PARA EL PROGRESO","DANTE LUIS TIRAVANTI DELGADO","24176","29.519","81899","98.276","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Contumaza","0605","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","JAMES NOE TANTALEAN TERAN","5297","37.400","14163","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Contumaza","0605","2","MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE","OSCAR DANIEL SUAREZ AGUILAR","4749","33.531","14163","100.000","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Cajamarca","Cutervo","0606","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","31086","50.555","61489","99.213","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Cutervo","0606","2","ALIANZA PARA EL PROGRESO","JOSE GERARDO DELGADO SALAZAR","12954","21.067","61489","99.213","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Hualgayoc","0607","1","ALIANZA PARA EL PROGRESO","JORGE ZAMORA RUIZ","21792","52.370","41612","99.242","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Hualgayoc","0607","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","ERICKSON RUIZ FERNANDEZ","8450","20.307","41612","99.242","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Jaen","0608","1","ALIANZA PARA EL PROGRESO","CLEYVER AGUILAR VILLENA","37305","33.362","111820","98.017","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Jaen","0608","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","RONY LAVAN GUERRERO","22471","20.096","111820","98.017","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Ignacio","0609","1","ALIANZA PARA EL PROGRESO","RONALD GARCIA BURE","23144","33.752","68571","98.284","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Ignacio","0609","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","DARWIN EILEEN BAIQUE QUEVEDO","18770","27.373","68571","98.284","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Marcos","0610","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","CARLOS WILLAN ACOSTA ENCO","9706","38.021","25528","98.765","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Marcos","0610","2","PARTIDO POLÍTICO PERÚ PRIMERO","CHANEL TORIBIO RUIZ VARGAS","8838","34.621","25528","98.765","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Miguel","0611","1","PARTIDO POLÍTICO PERÚ PRIMERO","EMILIO JAMES CUEVA MENDOZA","9145","32.302","28311","100.000","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Miguel","0611","2","MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE","NIXON HENRY HOYOS GALLARDO","9066","32.023","28311","100.000","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Pablo","0612","1","MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE","FILADELFO VASQUEZ VALDEZ","6186","45.880","13483","98.630","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","San Pablo","0612","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","CARLOS ENRIQUE CHAVARRY SÁNCHEZ","3282","24.342","13483","98.630","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Santa Cruz","0613","1","MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE","JOSÉ MARINO DÍAZ ALARCÓN","6265","26.171","23939","100.000","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cajamarca","Santa Cruz","0613","2","ALIANZA PARA EL PROGRESO","JOSE NERCY ALARCON DAVILA","6160","25.732","23939","100.000","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Callao","Callao","0701","1","RENOVACIÓN POPULAR PERÚ","","293372","55.683","526859","97.655","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Callao","Callao","0701","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","95266","18.082","526859","97.655","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Cusco","Cusco","0801","1","PARTIDO POLÍTICO PRIN","","59280","24.908","237993","98.643","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Cusco","0801","2","PARTIDO POLÍTICO PERÚ PRIMERO","","45843","19.262","237993","98.643","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Acomayo","0802","1","AHORA NACIÓN - AN","","4091","31.120","13146","100.000","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Acomayo","0802","2","FRENTE REGIONAL TÚPAC","","2596","19.747","13146","100.000","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Anta","0803","1","AHORA NACIÓN - AN","","13891","36.737","37812","99.476","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Anta","0803","2","PARTIDO POLÍTICO PERÚ PRIMERO","","11198","29.615","37812","99.476","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Calca","0804","1","PARTIDO POLÍTICO PRIN","","11237","29.049","38683","98.565","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Calca","0804","2","JUNTOS POR EL PERÚ","","11021","28.491","38683","98.565","05/10/2026 · 11:52:01 p. m."
-"Alcalde provincial","Cusco","Canas","0805","1","AHORA NACIÓN - AN","","7017","33.744","20795","100.000","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Canas","0805","2","PARTIDO POLÍTICO PRIN","","6543","31.464","20795","100.000","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Canchis","0806","1","PARTIDO POLÍTICO PERÚ PRIMERO","","15352","27.761","55301","98.955","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Canchis","0806","2","PARTIDO POLÍTICO PRIN","","12851","23.238","55301","98.955","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Chumbivilcas","0807","1","ALIANZA ELECTORAL VENCEREMOS","","14814","36.023","41124","99.145","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Chumbivilcas","0807","2","PARTIDO POLÍTICO PERÚ PRIMERO","","8859","21.542","41124","99.145","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Espinar","0808","1","ALIANZA ELECTORAL VENCEREMOS","","8445","19.667","42940","98.611","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Espinar","0808","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","7112","16.563","42940","98.611","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","La Convencion","0809","1","AHORA NACIÓN - AN","","19162","30.509","62808","62.945","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","La Convencion","0809","2","JUNTOS POR EL PERÚ","","18002","28.662","62808","62.945","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Paruro","0810","1","AHORA NACIÓN - AN","","5555","30.971","17936","98.058","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Paruro","0810","2","PROGRESEMOS","","4559","25.418","17936","98.058","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Paucartambo","0811","1","AHORA NACIÓN - AN","","7497","28.008","26767","98.601","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Paucartambo","0811","2","ACCIÓN POPULAR","","6421","23.988","26767","98.601","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Quispicanchi","0812","1","PARTIDO POLÍTICO PRIN","","15547","31.017","50124","99.270","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Quispicanchi","0812","2","PARTIDO POLÍTICO PERÚ PRIMERO","","11957","23.855","50124","99.270","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Urubamba","0813","1","AHORA NACIÓN - AN","","13573","31.977","42446","99.537","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Cusco","Urubamba","0813","2","PROGRESEMOS","","12234","28.823","42446","99.537","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Huancavelica","0901","1","ALIANZA PARA EL PROGRESO","","23620","32.943","71699","99.478","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Huancavelica","0901","2","PARTIDO POLÍTICO PERÚ PRIMERO","","23572","32.876","71699","99.478","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Acobamba","0902","1","ALIANZA PARA EL PROGRESO","","11819","44.977","26278","100.000","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Acobamba","0902","2","PARTIDO POLÍTICO PERÚ PRIMERO","","11113","42.290","26278","100.000","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Angaraes","0903","1","ALIANZA PARA EL PROGRESO","","11179","40.419","27658","100.000","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Angaraes","0903","2","PODEMOS PERÚ","","7691","27.808","27658","100.000","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Castrovirreyna","0904","1","PARTIDO POLÍTICO PERÚ PRIMERO","","3695","31.964","11560","97.015","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Castrovirreyna","0904","2","ALIANZA PARA EL PROGRESO","","3095","26.773","11560","97.015","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Churcampa","0905","1","ALIANZA PARA EL PROGRESO","","7696","36.594","21031","95.833","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huancavelica","Churcampa","0905","2","PARTIDO POLÍTICO PERÚ PRIMERO","","5119","24.340","21031","95.833","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huancavelica","Huaytara","0906","1","PARTIDO POLÍTICO PERÚ PRIMERO","","4048","28.964","13976","97.590","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Huaytara","0906","2","ALIANZA PARA EL PROGRESO","","3105","22.217","13976","97.590","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Tayacaja","0907","1","ACCIÓN POPULAR","","22536","39.501","57052","98.058","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huancavelica","Tayacaja","0907","2","ALIANZA PARA EL PROGRESO","","17687","31.002","57052","98.058","05/10/2026 · 11:56:01 p. m."
-"Alcalde provincial","Huanuco","Huanuco","1001","1","PARTIDO PAÍS PARA TODOS","","43048","27.452","156813","97.780","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Huanuco","1001","2","RENOVACIÓN POPULAR PERÚ","","21560","13.749","156813","97.780","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Ambo","1002","1","PARTIDO PAÍS PARA TODOS","","7149","22.560","31689","96.552","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Ambo","1002","2","PARTIDO POLÍTICO PERÚ PRIMERO","","6536","20.625","31689","96.552","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Dos De Mayo","1003","1","PARTIDO POLÍTICO PERÚ PRIMERO","","8460","46.043","18374","97.541","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Dos De Mayo","1003","2","PARTIDO PAÍS PARA TODOS","","6689","36.405","18374","97.541","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Huacaybamba","1004","1","PARTIDO POLÍTICO PERÚ PRIMERO","","2444","33.261","7348","98.148","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Huanuco","Huacaybamba","1004","2","PARTIDO PAÍS PARA TODOS","","2176","29.614","7348","98.148","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Huanuco","Huamalies","1005","1","AHORA NACIÓN - AN","","6502","23.176","28055","97.701","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Huanuco","Huamalies","1005","2","PARTIDO PAÍS PARA TODOS","","6351","22.638","28055","97.701","05/10/2026 · 11:46:01 p. m."
-"Alcalde provincial","Huanuco","Leoncio Prado","1006","1","RENOVACIÓN POPULAR PERÚ","","16658","24.188","68868","98.187","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Leoncio Prado","1006","2","PARTIDO PAÍS PARA TODOS","","16531","24.004","68868","98.187","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Marañon","1007","1","PARTIDO PAÍS PARA TODOS","","5785","40.474","14293","98.925","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Marañon","1007","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","3543","24.788","14293","98.925","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Pachitea","1008","1","PARTIDO PAÍS PARA TODOS","","11927","42.595","28001","98.160","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Pachitea","1008","2","RENOVACIÓN POPULAR PERÚ","","6284","22.442","28001","98.160","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Puerto Inca","1009","1","PARTIDO PAÍS PARA TODOS","","6421","40.688","15781","94.068","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Puerto Inca","1009","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","4938","31.291","15781","94.068","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Lauricocha","1010","1","PARTIDO PAÍS PARA TODOS","","4465","41.091","10866","75.949","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Lauricocha","1010","2","ALIANZA PARA EL PROGRESO","","2664","24.517","10866","75.949","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Yarowilca","1011","1","PARTIDO POLÍTICO PERÚ PRIMERO","","7948","50.900","15615","83.784","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Huanuco","Yarowilca","1011","2","RENOVACIÓN POPULAR PERÚ","","2657","17.016","15615","83.784","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Ica","1101","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","JOSE LUIS GALVEZ CHAVEZ","62131","27.256","227953","96.667","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Ica","1101","2","RENOVACIÓN POPULAR PERÚ","ROMULO FERNANDO TRIVEÑO GARCIA","41011","17.991","227953","96.667","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Chincha","1102","1","ALIANZA PARA EL PROGRESO","BERTHA ROSALYN PEÑA ORMEÑO","37305","27.882","133797","96.389","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Chincha","1102","2","PROGRESEMOS","YONGCHAO CHAI","21202","15.846","133797","96.389","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Nasca","1103","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","JULIO OSCAR ELIAS LUCANA","9845","25.971","37907","95.833","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Nasca","1103","2","RENOVACIÓN POPULAR PERÚ","GABRIEL ROGER SARMIENTO GARRIAZO","6960","18.361","37907","95.833","06/10/2026 · 12:02:00 a. m."
-"Alcalde provincial","Ica","Palpa","1104","1","ACCIÓN POPULAR","MALCO BARRIOS AQUISE","2821","30.027","9395","100.000","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Ica","Palpa","1104","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","JOSE ABEL BENDEZU SARMIENTO","2069","22.022","9395","100.000","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Ica","Pisco","1105","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","JESUS FELIPE ECHEGARAY NIETO","30966","34.343","90166","96.471","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Ica","Pisco","1105","2","ACCIÓN POPULAR","JOHNY OLIVARES LANDEO","25821","28.637","90166","96.471","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Huancayo","1201","1","PODEMOS PERÚ","","96020","30.907","310672","99.116","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Huancayo","1201","2","ALIANZA PARA EL PROGRESO","","67448","21.710","310672","99.116","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Concepcion","1202","1","RENOVACIÓN POPULAR PERÚ","","9083","26.692","34029","98.378","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Concepcion","1202","2","ALIANZA PARA EL PROGRESO","","7378","21.682","34029","98.378","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Chanchamayo","1203","1","ALIANZA PARA EL PROGRESO","","26136","33.530","77949","96.855","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","Junin","Chanchamayo","1203","2","PODEMOS PERÚ","","14212","18.232","77949","96.855","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","Junin","Jauja","1204","1","ALIANZA PARA EL PROGRESO","","14704","29.999","49015","99.628","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Jauja","1204","2","PODEMOS PERÚ","","13077","26.680","49015","99.628","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Junin","1205","1","ALIANZA PARA EL PROGRESO","","3897","35.967","10835","100.000","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Junin","1205","2","PODEMOS PERÚ","","2990","27.596","10835","100.000","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Satipo","1206","1","ALIANZA PARA EL PROGRESO","","28439","33.219","85610","94.505","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","Junin","Satipo","1206","2","BATALLA PERÚ","","16143","18.856","85610","94.505","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","Junin","Tarma","1207","1","RENOVACIÓN POPULAR PERÚ","","13550","27.343","49556","99.615","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Tarma","1207","2","PODEMOS PERÚ","","13323","26.885","49556","99.615","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Yauli","1208","1","PROGRESEMOS","","5069","25.942","19540","100.000","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Yauli","1208","2","PARTIDO POLÍTICO PERÚ PRIMERO","","3809","19.493","19540","100.000","06/10/2026 · 12:06:01 a. m."
-"Alcalde provincial","Junin","Chupaca","1209","1","RENOVACIÓN POPULAR PERÚ","","10129","26.429","38325","100.000","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","Junin","Chupaca","1209","2","ALIANZA PARA EL PROGRESO","","9269","24.185","38325","100.000","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Trujillo","1301","1","PARTIDO PATRIÓTICO DEL PERÚ","","145336","26.565","547095","97.863","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Trujillo","1301","2","PODEMOS PERÚ","","95288","17.417","547095","97.863","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Ascope","1302","1","PODEMOS PERÚ","","12657","20.246","62516","97.661","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Ascope","1302","2","PARTIDO APRISTA PERUANO","","9165","14.660","62516","97.661","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Bolivar","1303","1","ALIANZA PARA EL PROGRESO","","2920","48.328","6042","97.826","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Bolivar","1303","2","PODEMOS PERÚ","","2473","40.930","6042","97.826","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Chepen","1304","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","13895","31.218","44510","99.583","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Chepen","1304","2","PODEMOS PERÚ","","9758","21.923","44510","99.583","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Julcan","1305","1","PARTIDO APRISTA PERUANO","","6173","39.419","15660","96.774","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Julcan","1305","2","PODEMOS PERÚ","","5440","34.738","15660","96.774","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Otuzco","1306","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","14487","31.546","45923","95.753","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Otuzco","1306","2","ACCIÓN POPULAR","","13738","29.915","45923","95.753","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Pacasmayo","1307","1","PODEMOS PERÚ","","14843","30.578","48542","98.969","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Pacasmayo","1307","2","ALIANZA PARA EL PROGRESO","","12341","25.423","48542","98.969","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Pataz","1308","1","PODEMOS PERÚ","","11044","38.013","29053","92.308","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Pataz","1308","2","ALIANZA PARA EL PROGRESO","","7292","25.099","29053","92.308","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Sanchez Carrion","1309","1","ALIANZA PARA EL PROGRESO","","23242","35.000","66406","97.183","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Sanchez Carrion","1309","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","21940","33.039","66406","97.183","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Santiago De Chuco","1310","1","ALIANZA PARA EL PROGRESO","","7578","28.566","26528","99.351","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Santiago De Chuco","1310","2","PODEMOS PERÚ","","6836","25.769","26528","99.351","06/10/2026 · 12:12:01 a. m."
-"Alcalde provincial","La Libertad","Gran Chimu","1311","1","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","3735","33.271","11226","83.133","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Gran Chimu","1311","2","PODEMOS PERÚ","","3685","32.826","11226","83.133","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Viru","1312","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","10589","19.638","53921","97.561","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","La Libertad","Viru","1312","2","PARTIDO APRISTA PERUANO","","9444","17.515","53921","97.561","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","Lambayeque","Chiclayo","1401","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","149236","32.754","455624","98.069","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","Lambayeque","Chiclayo","1401","2","ALIANZA PARA EL PROGRESO","","79917","17.540","455624","98.069","06/10/2026 · 12:16:01 a. m."
-"Alcalde provincial","Lambayeque","Ferreñafe","1402","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","18700","33.527","55776","98.371","06/10/2026 · 12:20:35 a. m."
-"Alcalde provincial","Lambayeque","Ferreñafe","1402","2","ALIANZA PARA EL PROGRESO","","13316","23.874","55776","98.371","06/10/2026 · 12:20:35 a. m."
-"Alcalde provincial","Lambayeque","Lambayeque","1403","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","33970","19.523","174004","97.987","06/10/2026 · 12:20:35 a. m."
-"Alcalde provincial","Lambayeque","Lambayeque","1403","2","FUERZA POPULAR","","29958","17.217","174004","97.987","06/10/2026 · 12:20:35 a. m."
-"Alcalde provincial","Lima","Lima","1501","1","RENOVACIÓN POPULAR PERÚ","","1444201","27.703","5213223","92.710","06/10/2026 · 10:26:01 a. m."
-"Alcalde provincial","Lima","Lima","1501","2","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","1399280","26.841","5213223","92.710","06/10/2026 · 10:26:01 a. m."
-"Alcalde provincial","Lima","Barranca","1502","1","PARTIDO POLÍTICO PERÚ PRIMERO","","18234","22.715","80273","98.100","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Barranca","1502","2","APP - LA CHOLITA","","18045","22.480","80273","98.100","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Cajatambo","1503","1","APP - LA CHOLITA","","1189","33.721","3526","100.000","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Cajatambo","1503","2","CONCERTACIÓN PARA EL DESARROLLO REGIONAL - LIMA","","974","27.623","3526","100.000","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Canta","1504","1","ALIANZA RENOVACIÓN POPULAR Y TORO","","1982","22.729","8720","95.833","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Canta","1504","2","AHORA NACIÓN - AN","","1965","22.534","8720","95.833","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Cañete","1505","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","24530","17.898","137051","97.623","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Cañete","1505","2","ALIANZA RENOVACIÓN POPULAR Y TORO","","23597","17.218","137051","97.623","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Huaral","1506","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","21878","20.918","104591","97.297","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Huaral","1506","2","PARTIDO POLÍTICO PERÚ PRIMERO","","17147","16.394","104591","97.297","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Huarochiri","1507","1","FUERZA POPULAR","","14930","24.505","60926","96.512","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Huarochiri","1507","2","ALIANZA RENOVACIÓN POPULAR Y TORO","","10662","17.500","60926","96.512","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Huaura","1508","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","24465","19.637","124585","98.626","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Huaura","1508","2","AHORA NACIÓN - AN","","22061","17.708","124585","98.626","06/10/2026 · 12:26:00 a. m."
-"Alcalde provincial","Lima","Oyon","1509","1","PARTIDO APRISTA PERUANO","","2157","28.079","7682","98.000","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Oyon","1509","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","2000","26.035","7682","98.000","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Yauyos","1510","1","APP - LA CHOLITA","","4945","28.605","17287","99.099","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Lima","Yauyos","1510","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","4803","27.784","17287","99.099","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Maynas","1601","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","68499","33.530","204292","92.787","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Maynas","1601","2","ALIANZA PARA EL PROGRESO","","33215","16.259","204292","92.787","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Alto Amazonas","1602","1","ALIANZA PARA EL PROGRESO","","22334","50.135","44548","70.380","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Alto Amazonas","1602","2","RENOVACIÓN POPULAR PERÚ","","9785","21.965","44548","70.380","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Loreto","1603","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","6467","30.690","21072","66.502","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Loreto","1603","2","ALIANZA PARA EL PROGRESO","","6334","30.059","21072","66.502","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Mariscal Ramon Castilla","1604","1","FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ","","8033","33.460","24008","95.408","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Loreto","Mariscal Ramon Castilla","1604","2","RENOVACIÓN POPULAR PERÚ","","6811","28.370","24008","95.408","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Loreto","Requena","1605","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","12371","54.715","22610","67.876","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Requena","1605","2","ALIANZA PARA EL PROGRESO","","5575","24.657","22610","67.876","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Ucayali","1606","1","ALIANZA PARA EL PROGRESO","","7768","28.334","27416","90.576","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Ucayali","1606","2","FUERZA POPULAR","","6555","23.909","27416","90.576","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Datem Del Marañon","1607","1","ALIANZA PARA EL PROGRESO","","1047","33.270","3147","9.901","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Datem Del Marañon","1607","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","647","20.559","3147","9.901","06/10/2026 · 12:32:01 a. m."
-"Alcalde provincial","Loreto","Putumayo","1608","1","ALIANZA PARA EL PROGRESO","","75","35.047","214","6.667","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Loreto","Putumayo","1608","2","FUERZA POPULAR","","72","33.645","214","6.667","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Madre De Dios","Tambopata","1701","1","AHORA NACIÓN - AN","","22498","33.072","68027","98.020","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Madre De Dios","Tambopata","1701","2","ALIANZA LIBERTAD MADREDIOSENSE","","13350","19.625","68027","98.020","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Madre De Dios","Manu","1702","1","AHORA NACIÓN - AN","","2017","31.131","6479","80.282","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Madre De Dios","Manu","1702","2","PROGRESEMOS","","1860","28.708","6479","80.282","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Madre De Dios","Tahuamanu","1703","1","AHORA NACIÓN - AN","","1964","34.091","5761","97.222","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Madre De Dios","Tahuamanu","1703","2","PROGRESEMOS","","1584","27.495","5761","97.222","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Moquegua","Mariscal Nieto","1801","1","ACCIÓN POPULAR","","17094","29.249","58443","98.932","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Moquegua","Mariscal Nieto","1801","2","AHORA NACIÓN - AN","","14722","25.190","58443","98.932","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Moquegua","General Sanchez Cerro","1802","1","PARTIDO POLÍTICO PERÚ PRIMERO","","2827","27.940","10118","96.667","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Moquegua","General Sanchez Cerro","1802","2","ACCIÓN POPULAR","","2607","25.766","10118","96.667","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Moquegua","Ilo","1803","1","PARTIDO PATRIÓTICO DEL PERÚ","","12187","25.936","46988","98.701","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Moquegua","Ilo","1803","2","PARTIDO FRENTE DE LA ESPERANZA 2021","","11867","25.255","46988","98.701","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Pasco","Pasco","1901","1","PODEMOS PERÚ","","20213","31.098","64997","99.200","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Pasco","Pasco","1901","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","14080","21.663","64997","99.200","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Pasco","Daniel Alcides Carrion","1902","1","PODEMOS PERÚ","","5166","29.185","17701","98.113","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Pasco","Daniel Alcides Carrion","1902","2","PARTIDO FRENTE DE LA ESPERANZA 2021","","4633","26.174","17701","98.113","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Pasco","Oxapampa","1903","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","11874","24.729","48016","99.351","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Pasco","Oxapampa","1903","2","PODEMOS PERÚ","","9740","20.285","48016","99.351","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Piura","2001","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","78697","20.203","389524","95.912","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Piura","2001","2","PODEMOS PERÚ","","72506","18.614","389524","95.912","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Ayabaca","2002","1","MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL","","31498","50.191","62756","99.235","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Ayabaca","2002","2","PODEMOS PERÚ","","22333","35.587","62756","99.235","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Huancabamba","2003","1","ALIANZA PARA EL PROGRESO","","24470","41.569","58866","98.050","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Huancabamba","2003","2","PARTIDO POLÍTICO PERÚ PRIMERO","","19884","33.778","58866","98.050","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Morropon","2004","1","RENOVACIÓN POPULAR PERÚ","","22471","25.618","87717","93.548","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Morropon","2004","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","19898","22.684","87717","93.548","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Paita","2005","1","PARTIDO PAÍS PARA TODOS","","16660","23.214","71768","99.140","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Paita","2005","2","PODEMOS PERÚ","","13353","18.606","71768","99.140","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Sullana","2006","1","ALIANZA PARA EL PROGRESO","","42985","26.141","164438","97.188","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Sullana","2006","2","MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL","","29917","18.193","164438","97.188","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Talara","2007","1","ALIANZA PARA EL PROGRESO","","22608","32.789","68949","96.094","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Talara","2007","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","18997","27.552","68949","96.094","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Sechura","2008","1","PODEMOS PERÚ","","20431","44.134","46293","99.074","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Piura","Sechura","2008","2","ALIANZA PARA EL PROGRESO","","16785","36.258","46293","99.074","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Puno","2101","1","ASI - JUNTOS POR EL PERÚ","","32929","25.307","130118","99.218","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Puno","2101","2","PARTIDO PAÍS PARA TODOS","","25776","19.810","130118","99.218","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Azangaro","2102","1","ASI - JUNTOS POR EL PERÚ","","26669","37.079","71925","97.521","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Azangaro","2102","2","AHORA NACIÓN - AN","","17974","24.990","71925","97.521","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Carabaya","2103","1","ASI - JUNTOS POR EL PERÚ","","13471","40.349","33386","99.471","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Carabaya","2103","2","PROGRESEMOS","","9470","28.365","33386","99.471","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Chucuito","2104","1","PROGRESEMOS","","10691","24.596","43466","100.000","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Chucuito","2104","2","ASI - JUNTOS POR EL PERÚ","","10423","23.980","43466","100.000","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","El Collao","2105","1","PROGRESEMOS","","10624","28.460","37329","97.884","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","El Collao","2105","2","ASI - JUNTOS POR EL PERÚ","","8929","23.920","37329","97.884","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Huancane","2106","1","AHORA NACIÓN - AN","","12569","30.947","40615","100.000","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Huancane","2106","2","PROGRESEMOS","","9122","22.460","40615","100.000","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Lampa","2107","1","AHORA NACIÓN - AN","","11874","41.928","28320","98.507","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Lampa","2107","2","ASI - JUNTOS POR EL PERÚ","","7811","27.581","28320","98.507","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Melgar","2108","1","ASI - JUNTOS POR EL PERÚ","","10297","25.774","39951","98.500","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Melgar","2108","2","PARTIDO POLÍTICO PERÚ PRIMERO","","10232","25.611","39951","98.500","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Moho","2109","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","5126","35.563","14414","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Moho","2109","2","AHORA NACIÓN - AN","","2892","20.064","14414","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","San Antonio De Putina","2110","1","ASI - JUNTOS POR EL PERÚ","","5447","30.886","17636","97.701","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","San Antonio De Putina","2110","2","AHORA NACIÓN - AN","","3920","22.227","17636","97.701","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","San Roman","2111","1","AHORA NACIÓN - AN","","53914","31.216","172710","99.486","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","San Roman","2111","2","PROGRESEMOS","","37803","21.888","172710","99.486","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","Puno","Sandia","2112","1","SALVEMOS AL PERÚ","","7753","26.050","29762","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Sandia","2112","2","ASI - JUNTOS POR EL PERÚ","","7700","25.872","29762","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Yunguyo","2113","1","ASI - JUNTOS POR EL PERÚ","","7488","40.094","18676","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Puno","Yunguyo","2113","2","PARTIDO PAÍS PARA TODOS","","7365","39.436","18676","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Moyobamba","2201","1","ALIANZA PARA EL PROGRESO","","32041","45.958","69718","99.737","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Moyobamba","2201","2","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","13775","19.758","69718","99.737","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Bellavista","2202","1","RENOVACIÓN POPULAR PERÚ","","9693","30.369","31917","96.552","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Bellavista","2202","2","ALIANZA PARA EL PROGRESO","","8577","26.873","31917","96.552","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","El Dorado","2203","1","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","7282","34.500","21107","96.522","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","El Dorado","2203","2","RENOVACIÓN POPULAR PERÚ","","5447","25.807","21107","96.522","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Huallaga","2204","1","RENOVACIÓN POPULAR PERÚ","","6969","39.944","17447","97.778","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","San Martin","Huallaga","2204","2","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","6363","36.470","17447","97.778","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","San Martin","Lamas","2205","1","FUERZA POPULAR","","14108","28.330","49798","98.084","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Lamas","2205","2","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","12988","26.081","49798","98.084","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Mariscal Caceres","2206","1","ALIANZA PARA EL PROGRESO","","10749","31.310","34331","96.809","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","San Martin","Mariscal Caceres","2206","2","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","9230","26.885","34331","96.809","06/10/2026 · 12:36:01 a. m."
-"Alcalde provincial","San Martin","Picota","2207","1","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","9594","38.927","24646","96.183","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Picota","2207","2","RENOVACIÓN POPULAR PERÚ","","5975","24.243","24646","96.183","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Rioja","2208","1","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","35122","47.507","73930","99.738","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Rioja","2208","2","ALIANZA PARA EL PROGRESO","","17036","23.043","73930","99.738","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","San Martin","2209","1","AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL","","32223","29.053","110913","98.427","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","San Martin","2209","2","RENOVACIÓN POPULAR PERÚ","","29644","26.727","110913","98.427","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Tocache","2210","1","PARTIDO POLÍTICO PERÚ PRIMERO","","9922","25.286","39239","97.845","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","San Martin","Tocache","2210","2","RENOVACIÓN POPULAR PERÚ","","9521","24.264","39239","97.845","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Tacna","2301","1","ALIANZA PARA EL PROGRESO","","53300","28.029","190163","98.832","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Tacna","2301","2","AHORA NACIÓN - AN","","42361","22.276","190163","98.832","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Candarave","2302","1","ALIANZA PARA EL PROGRESO","","1975","42.786","4616","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Candarave","2302","2","PROGRESEMOS","","1441","31.218","4616","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Jorge Basadre","2303","1","PODEMOS PERÚ","","2754","32.723","8416","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Jorge Basadre","2303","2","PERÚ MODERNO","","1911","22.707","8416","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Tarata","2304","1","PROGRESEMOS","","1760","34.023","5173","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tacna","Tarata","2304","2","PARTIDO PAÍS PARA TODOS","","1745","33.733","5173","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tumbes","Tumbes","2401","1","FE EN EL PERÚ","","28275","35.463","79731","97.882","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tumbes","Tumbes","2401","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","11585","14.530","79731","97.882","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tumbes","Contralmirante Villar","2402","1","ALIANZA PARA EL PROGRESO","","4734","38.572","12273","98.361","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tumbes","Contralmirante Villar","2402","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","2781","22.659","12273","98.361","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tumbes","Zarumilla","2403","1","PARTIDO POLÍTICO TODO CON EL PUEBLO","","8120","31.606","25691","97.037","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Tumbes","Zarumilla","2403","2","ALIANZA PARA EL PROGRESO","","4159","16.189","25691","97.037","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Coronel Portillo","2501","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","53360","28.441","187615","96.370","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Coronel Portillo","2501","2","ACCIÓN POPULAR","","29754","15.859","187615","96.370","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Atalaya","2502","1","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","5021","25.130","19980","91.329","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Atalaya","2502","2","FUERZA POPULAR","","3586","17.948","19980","91.329","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Padre Abad","2503","1","ALIANZA PARA EL PROGRESO","","10790","30.277","35638","95.455","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Padre Abad","2503","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","10282","28.851","35638","95.455","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Purus","2504","1","ALIANZA PARA EL PROGRESO","","438","26.954","1625","100.000","06/10/2026 · 12:42:00 a. m."
-"Alcalde provincial","Ucayali","Purus","2504","2","PARTIDO DEMOCRÁTICO SOMOS PERÚ","","417","25.662","1625","100.000","06/10/2026 · 12:42:00 a. m."
+﻿Elección,Departamento,Provincia,Código INEI,Puesto,Organización,Candidato JNE,Votos,Porcentaje votos válidos,Total votos válidos,Actas contabilizadas %,Corte ONPE (Perú UTC-5)
+Alcalde provincial,Amazonas,Chachapoyas,0101,1,MOVIMIENTO REGIONAL VICTORIA AMAZONENSE,Victor Raul Culqui Puerta,10097,33.986,29709,96.450,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Chachapoyas,0101,2,ALIANZA PARA EL PROGRESO,Jose Chappa Villacorta,6989,23.525,29709,96.450,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Bagua,0102,1,ALIANZA PARA EL PROGRESO,Nilton Ramos Becerra,9154,26.415,34655,94.400,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Bagua,0102,2,MOVIMIENTO REGIONAL VICTORIA AMAZONENSE,Walter Flores Chavez,7631,22.020,34655,94.400,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Bongara,0103,1,MOVIMIENTO REGIONAL VICTORIA AMAZONENSE,Jose Telmo Hernandez Zelada,5185,34.363,15089,98.824,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Bongara,0103,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Edilberto Delgado Barboza,4289,28.425,15089,98.824,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Condorcanqui,0104,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Candidato no informado en el corte,6322,30.631,20639,93.103,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Condorcanqui,0104,2,MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO,Edwin Timias Mateca,2880,13.954,20639,93.103,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Luya,0105,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Edwin Mori Llanca,8718,32.122,27140,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Luya,0105,2,MOVIMIENTO REGIONAL VICTORIA AMAZONENSE,Diogenes Humberto Zavaleta Tenorio,8571,31.581,27140,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Rodriguez De Mendoza,0106,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Manuel Asencion Fernandez Yoplac,6481,37.978,17065,97.938,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Rodriguez De Mendoza,0106,2,MOVIMIENTO REGIONAL VICTORIA AMAZONENSE,Eder Alcides Grandez Muñoz,5164,30.261,17065,97.938,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Utcubamba,0107,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Rosinaldo Villegas Campos,18843,32.601,57799,98.498,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Amazonas,Utcubamba,0107,2,MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO,Victor Manuel Campos Torres,14551,25.175,57799,98.498,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huaraz,0201,1,PODEMOS PERÚ,Jabico Prudencio Robles Blacido,16180,18.629,86852,98.920,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huaraz,0201,2,PARTIDO PAÍS PARA TODOS,Herbert Alex Cordero Cuisano,16003,18.426,86852,98.920,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Aija,0202,1,PARTIDO PAÍS PARA TODOS,Miller Omar Camones Maguiña,2059,44.722,4604,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Aija,0202,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Magaly Bertha Roldan Camones,1108,24.066,4604,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Antonio Raymondi,0203,1,PODEMOS PERÚ,Lenin Boris Salinas Villaorduña,2028,30.821,6580,95.556,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Antonio Raymondi,0203,2,PARTIDO PAÍS PARA TODOS,Nelson Jenny Gregorio Trejo,1941,29.498,6580,95.556,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Asuncion,0204,1,PARTIDO DEMÓCRATA VERDE,Eduardo Bello Maquin,1491,42.226,3531,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Asuncion,0204,2,ALIANZA PARA EL PROGRESO,Washington Segundo Lopez Lopez,873,24.724,3531,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Bolognesi,0205,1,PARTIDO DEMÓCRATA VERDE,Carmen Rosa Rios Ortiz,5128,39.274,13057,98.810,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Bolognesi,0205,2,PODEMOS PERÚ,Gudberto Carrera Padilla,3752,28.736,13057,98.810,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Carhuaz,0206,1,PARTIDO DEMÓCRATA VERDE,Agustin Mauro Berrospi Ortiz,7537,27.140,27771,97.973,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Carhuaz,0206,2,PARTIDO PAÍS PARA TODOS,Fredy Romel Cadillo Rosas,4618,16.629,27771,97.973,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Carlos Fermin Fitzcarrald,0207,1,RENOVACIÓN POPULAR PERÚ,Mateo Emilio Julca Obregon,3726,43.110,8643,98.246,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Carlos Fermin Fitzcarrald,0207,2,ALIANZA PARA EL PROGRESO,Humberto Enrique Samanes Melgarejo,3084,35.682,8643,98.246,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Casma,0208,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Gonzalo Alfredo Trujillo Rosales,9131,32.852,27794,97.902,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Casma,0208,2,RENOVACIÓN POPULAR PERÚ,David Homero Alcantara Maguiña,7657,27.549,27794,97.902,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Corongo,0209,1,PODEMOS PERÚ,Carlos Manuel Pinedo Alejos,1471,35.592,4133,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Corongo,0209,2,PARTIDO DEMÓCRATA VERDE,Japhet Celestino Valencia Flores,1195,28.914,4133,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huari,0210,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Haron Ulpiano Osorio Vega,16121,33.520,48093,97.569,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huari,0210,2,ACCIÓN POPULAR,Manuel Espinoza Villarreal,15417,32.057,48093,97.569,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huarmey,0211,1,PARTIDO FRENTE DE LA ESPERANZA 2021,Gabriel Quirino Melgarejo Alvarez,4905,26.522,18494,97.872,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huarmey,0211,2,PODEMOS PERÚ,Gerson Daniel Argüelles Neira,4333,23.429,18494,97.872,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huaylas,0212,1,ALIANZA PARA EL PROGRESO,Eduardo Jhon Milla Flores,6258,21.364,29292,98.817,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Huaylas,0212,2,PARTIDO DEMÓCRATA VERDE,Rocio del Carmen Angeles Vargas,4539,15.496,29292,98.817,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Mariscal Luzuriaga,0213,1,PARTIDO DEMÓCRATA VERDE,Joel Lucas Ortiz Zavala,3586,32.225,11128,98.592,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Mariscal Luzuriaga,0213,2,ALIANZA PARA EL PROGRESO,Mario Fortunato Vidal Moreno,3065,27.543,11128,98.592,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Ocros,0214,1,PARTIDO POLÍTICO PERÚ PRIMERO,José Miguel Revoredo Espinoza,1784,40.545,4400,96.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Ocros,0214,2,ALIANZA PARA EL PROGRESO,Habacuc Oswaldo Sanchez Lirio,1462,33.227,4400,96.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Pallasca,0215,1,ACCIÓN POPULAR,Fabiola Juana Pantoja Miranda,2266,22.649,10005,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Pallasca,0215,2,PODEMOS PERÚ,Yohanna Teresita Aranda Murillo,2226,22.249,10005,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Pomabamba,0216,1,PARTIDO POLÍTICO PERÚ PRIMERO,Juan Maximo Malpartida Vidal,4324,37.347,11578,98.684,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Pomabamba,0216,2,PARTIDO DEMÓCRATA VERDE,Edgard Alcides Via Melgarejo,2515,21.722,11578,98.684,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Recuay,0217,1,PARTIDO PAÍS PARA TODOS,Ivan Pavel Ramirez Espinoza,3273,30.577,10704,98.507,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Recuay,0217,2,PARTIDO DEMÓCRATA VERDE,Hector Eduardo Martinez Broncano,3041,28.410,10704,98.507,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Santa,0218,1,ALIANZA PARA EL PROGRESO,Walter Jesus Soto Campos,106419,45.592,233414,97.188,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Santa,0218,2,PODEMOS PERÚ,Jose Inocente Farro Coronado,28406,12.170,233414,97.188,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Sihuas,0219,1,PODEMOS PERÚ,Abanto Chavarria Estrada,4941,36.272,13622,98.876,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Sihuas,0219,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Abdon Casimiro Casahuaman Casahuaman,3696,27.133,13622,98.876,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Yungay,0220,1,PODEMOS PERÚ,Marco Antonio Romero Ramirez,11932,40.906,29169,98.830,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ancash,Yungay,0220,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Efrain Nuños Julca Regalado,7480,25.644,29169,98.830,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Abancay,0301,1,PROGRESEMOS,Elio Mauro Vidal Robles,19126,31.822,60103,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Abancay,0301,2,ACCIÓN POPULAR,John Vascones Soria,18102,30.118,60103,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Andahuaylas,0302,1,PROGRESEMOS,Parmi Lister Huaccaycachacc Vargas,26286,31.734,82832,98.891,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Andahuaylas,0302,2,ACCIÓN POPULAR,Reynaldo Malpartida Tincopa,24254,29.281,82832,98.891,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Antabamba,0303,1,PROGRESEMOS,Jimmy Herbert Sarmiento Maldonado,3301,48.169,6853,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Antabamba,0303,2,ACCIÓN POPULAR,Roger Roque Salas Delgado,1501,21.903,6853,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Aymaraes,0304,1,AHORA NACIÓN - AN,Luis Alberto Rimascca Cruz,6488,38.578,16818,96.117,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Aymaraes,0304,2,ALIANZA PARA EL PROGRESO,Jose Alberto Argote Cardenas,3606,21.441,16818,96.117,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Cotabambas,0305,1,ACCIÓN POPULAR,Valentin Quispe Flores,12664,44.642,28368,98.788,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Cotabambas,0305,2,ALIANZA PARA EL PROGRESO,Candidato no informado en el corte,5244,18.486,28368,98.788,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Chincheros,0306,1,AHORA NACIÓN - AN,Heber Huarhuachi Islachin,12786,46.251,27645,97.351,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Chincheros,0306,2,ACCIÓN POPULAR,Henry Ivan Barbaran Llacctas,8541,30.895,27645,97.351,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Grau,0307,1,AHORA NACIÓN - AN,Milton Rafaele Robles,6115,47.220,12950,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Apurimac,Grau,0307,2,ALIANZA PARA EL PROGRESO,Vladimiro Sucapuca Quinto,2969,22.927,12950,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Arequipa,0401,1,FUERZA AREQUIPEÑA,Manuel Enrique Vera Paredes,128345,19.286,665499,99.254,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Arequipa,0401,2,AHORA NACIÓN - AN,Alfredo Willy Benavente Godoy,104532,15.707,665499,99.254,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Camana,0402,1,ACCIÓN POPULAR,Luz Maria Carazas Carnero,7607,21.954,34650,99.444,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Camana,0402,2,RENOVACIÓN POPULAR PERÚ,Jonathan Ronny Machado Rivera,5670,16.364,34650,99.444,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Caraveli,0403,1,PROGRESEMOS,Roberto Gerardo Vasquez Pisco,7021,37.477,18734,97.368,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Caraveli,0403,2,PODEMOS PERÚ,Tulio Ernesto Navarro Neyra,2884,15.394,18734,97.368,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Castilla,0404,1,PROGRESEMOS,Antonio Manuel Quispe Yauri,4452,27.201,16367,98.095,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Castilla,0404,2,FUERZA AREQUIPEÑA,Hector Raul Caceres Muñoz,4205,25.692,16367,98.095,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Caylloma,0405,1,PARTIDO POLÍTICO PERÚ PRIMERO,Julio Cesar Calsina Ortiz,10165,18.797,54078,96.970,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Caylloma,0405,2,ALIANZA PARA EL PROGRESO,Jenniffer Maritza Neira Gonzales,7870,14.553,54078,96.970,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Condesuyos,0406,1,AHORA NACIÓN - AN,Ronal Marcos Medina Tejada,3341,38.513,8675,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Condesuyos,0406,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Tomas Wuile Ayñayanque Rosas,2586,29.810,8675,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Islay,0407,1,YO AREQUIPA,Candidato no informado en el corte,7503,21.157,35463,98.870,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,Islay,0407,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Edilberto de la Cruz Cesareo Salazar Zender,6142,17.319,35463,98.870,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,La Union,0408,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Antonio Dionicio Castro Flores,2294,39.702,5778,97.959,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Arequipa,La Union,0408,2,ALIANZA PARA EL PROGRESO,Etner Mota Loaiza,1143,19.782,5778,97.959,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Huamanga,0501,1,LIBERTAD POPULAR,Carlos Herminio Herencia Gallegos,47702,31.150,153135,99.617,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Huamanga,0501,2,PODEMOS PERÚ,Richard Prado Ramos,37587,24.545,153135,99.617,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Cangallo,0502,1,LIBERTAD POPULAR,Rotier Gomez Hinostroza,10371,57.355,18082,99.091,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Cangallo,0502,2,PODEMOS PERÚ,Edgar Gamaniel Berrocal Fernandez,5525,30.555,18082,99.091,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Huanca Sancos,0503,1,LIBERTAD POPULAR,Nemesio Pacheco Vilchez,1977,42.082,4698,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Huanca Sancos,0503,2,PODEMOS PERÚ,Bartolome Fernandez Lopez,1535,32.673,4698,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Huanta,0504,1,PODEMOS PERÚ,Omer Sinchitullo Ruiz,18966,39.256,48314,99.283,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Huanta,0504,2,APP - TRABAJA AYACUCHO,Edwin Alfredo Bustios Saavedra,15667,32.427,48314,99.283,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,La Mar,0505,1,APP - TRABAJA AYACUCHO,Romel Peña Atao,16499,42.356,38953,99.554,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,La Mar,0505,2,PARTIDO FRENTE DE LA ESPERANZA 2021,Ciro Gavilan Palomino,6108,15.680,38953,99.554,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Lucanas,0506,1,PODEMOS PERÚ,Guillermo Lopez Cantoral,5427,23.506,23088,96.914,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Lucanas,0506,2,LIBERTAD POPULAR,Ivan Erasmo Garcia Rojas,4608,19.958,23088,96.914,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Parinacochas,0507,1,PODEMOS PERÚ,Johon Edward Huachaca Amao,3274,30.425,10761,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Parinacochas,0507,2,PARTIDO POLÍTICO PERÚ PRIMERO,Gary Gabriel Pacheco Huamani,3041,28.259,10761,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Paucar Del Sara Sara,0508,1,PODEMOS PERÚ,Roy Elias Mamani Barriga,1956,40.589,4819,96.970,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Paucar Del Sara Sara,0508,2,APP - TRABAJA AYACUCHO,Edmundo Policarpo Retamozo Gallegos,984,20.419,4819,96.970,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Sucre,0509,1,APP - TRABAJA AYACUCHO,Yony Ramos Flores,2615,46.772,5591,97.368,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Sucre,0509,2,PODEMOS PERÚ,Milciades Arone Tomaylla,1753,31.354,5591,97.368,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Victor Fajardo,0510,1,LIBERTAD POPULAR,Casiano Ramirez Huaman,4302,34.203,12578,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Victor Fajardo,0510,2,PODEMOS PERÚ,Ubaldo Huamani Lescano,2702,21.482,12578,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Vilcas Huaman,0511,1,PODEMOS PERÚ,Alfredo Gomez Martinez,5837,49.145,11877,98.592,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ayacucho,Vilcas Huaman,0511,2,APP - TRABAJA AYACUCHO,Edgar Mendoza Gamboa,3927,33.064,11877,98.592,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Cajamarca,0601,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Sergio Sanchez Ibañez,59237,30.854,191994,97.165,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Cajamarca,0601,2,ALIANZA PARA EL PROGRESO,Edinson Armando Teran Medina,39315,20.477,191994,97.165,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Cajabamba,0602,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Richard Obando Barahona,10305,31.543,32670,96.330,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Cajabamba,0602,2,PARTIDO POLÍTICO PERÚ PRIMERO,Juan Efraín Cortegana Roncal,9893,30.282,32670,96.330,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Celendin,0603,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Edwin Ramos Diaz,19754,43.850,45049,99.251,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Celendin,0603,2,PARTIDO POLÍTICO PERÚ PRIMERO,Deyner Araujo Chavez,7255,16.105,45049,99.251,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Chota,0604,1,MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE,Neptali Ticlla Rafael,25438,31.060,81899,98.276,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Chota,0604,2,ALIANZA PARA EL PROGRESO,Dante Luis Tiravanti Delgado,24176,29.519,81899,98.276,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Contumaza,0605,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,James Noe Tantalean Teran,5297,37.400,14163,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Contumaza,0605,2,MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE,Oscar Daniel Suarez Aguilar,4749,33.531,14163,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Cutervo,0606,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Candidato no informado en el corte,31086,50.555,61489,99.213,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Cutervo,0606,2,ALIANZA PARA EL PROGRESO,Jose Gerardo Delgado Salazar,12954,21.067,61489,99.213,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Hualgayoc,0607,1,ALIANZA PARA EL PROGRESO,Candidato no informado en el corte,21792,52.370,41612,99.242,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Hualgayoc,0607,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Erickson Ruiz Fernandez,8450,20.307,41612,99.242,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Jaen,0608,1,ALIANZA PARA EL PROGRESO,Cleyver Aguilar Villena,37305,33.362,111820,98.017,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Jaen,0608,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Rony Lavan Guerrero,22471,20.096,111820,98.017,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Ignacio,0609,1,ALIANZA PARA EL PROGRESO,Ronald Garcia Bure,23144,33.752,68571,98.284,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Ignacio,0609,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Darwin Eileen Baique Quevedo,18770,27.373,68571,98.284,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Marcos,0610,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Carlos Willan Acosta Enco,9706,38.021,25528,98.765,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Marcos,0610,2,PARTIDO POLÍTICO PERÚ PRIMERO,Chanel Toribio Ruiz Vargas,8838,34.621,25528,98.765,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Miguel,0611,1,PARTIDO POLÍTICO PERÚ PRIMERO,Emilio James Cueva Mendoza,9145,32.302,28311,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Miguel,0611,2,MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE,Nixon Henry Hoyos Gallardo,9066,32.023,28311,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Pablo,0612,1,MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE,Filadelfo Vasquez Valdez,6186,45.880,13483,98.630,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,San Pablo,0612,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Carlos Enrique Chavarry Sánchez,3282,24.342,13483,98.630,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Santa Cruz,0613,1,MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE,José Marino Díaz Alarcón,6265,26.171,23939,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cajamarca,Santa Cruz,0613,2,ALIANZA PARA EL PROGRESO,Jose Nercy Alarcon Davila,6160,25.732,23939,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Callao,Callao,0701,1,RENOVACIÓN POPULAR PERÚ,Cesar Gaston Perez Barriga,293372,55.683,526859,97.655,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Callao,Callao,0701,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Guillermo Augusto Aguilar Velasquez,95266,18.082,526859,97.655,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Cusco,0801,1,PARTIDO POLÍTICO PRIN,Albert Anibal Arenas Yabar,59280,24.908,237993,98.643,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Cusco,0801,2,PARTIDO POLÍTICO PERÚ PRIMERO,William Peña Farfan,45843,19.262,237993,98.643,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Acomayo,0802,1,AHORA NACIÓN - AN,Hooper Reynalds Ccajavilca Choqquemamani,4091,31.120,13146,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Acomayo,0802,2,FRENTE REGIONAL TÚPAC,Santiago Nina Mayorga,2596,19.747,13146,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Anta,0803,1,AHORA NACIÓN - AN,Daniel Aparicio Masias Olivera,13891,36.737,37812,99.476,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Anta,0803,2,PARTIDO POLÍTICO PERÚ PRIMERO,Franklin Estrada Gallegos,11198,29.615,37812,99.476,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Calca,0804,1,PARTIDO POLÍTICO PRIN,Sergio Palacios Figueroa,11237,29.049,38683,98.565,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Calca,0804,2,JUNTOS POR EL PERÚ,Ciriaco Condori Cruz,11021,28.491,38683,98.565,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Canas,0805,1,AHORA NACIÓN - AN,Williams Nahuamel Cordova,7017,33.744,20795,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Canas,0805,2,PARTIDO POLÍTICO PRIN,Valerio Pacuala Huillca,6543,31.464,20795,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Canchis,0806,1,PARTIDO POLÍTICO PERÚ PRIMERO,Franklin Bejar Miranda,15352,27.761,55301,98.955,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Canchis,0806,2,PARTIDO POLÍTICO PRIN,Elmer Juan Yucra Mendoza,12851,23.238,55301,98.955,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Chumbivilcas,0807,1,ALIANZA ELECTORAL VENCEREMOS,Mario Ancalla Sivincha,14814,36.023,41124,99.145,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Chumbivilcas,0807,2,PARTIDO POLÍTICO PERÚ PRIMERO,Walter Enriquez Marquez,8859,21.542,41124,99.145,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Espinar,0808,1,ALIANZA ELECTORAL VENCEREMOS,Augusto Walter Florez Leiva,8445,19.667,42940,98.611,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Espinar,0808,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Marco Antonio Ccallo Nina,7112,16.563,42940,98.611,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,La Convencion,0809,1,AHORA NACIÓN - AN,Domenico Pacheco Huacac,21897,32.741,66879,67.314,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,La Convencion,0809,2,JUNTOS POR EL PERÚ,Alexander Hidalgo Zamalloa,19056,28.493,66879,67.314,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Paruro,0810,1,AHORA NACIÓN - AN,Cosme Sullca Quispe,5555,30.971,17936,98.058,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Paruro,0810,2,PROGRESEMOS,Edgar Quispe Chuyacama,4559,25.418,17936,98.058,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Paucartambo,0811,1,AHORA NACIÓN - AN,Alberto Gonzalo Curasi,7497,28.008,26767,98.601,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Paucartambo,0811,2,ACCIÓN POPULAR,Fredy Puma Sumeri,6421,23.988,26767,98.601,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Quispicanchi,0812,1,PARTIDO POLÍTICO PRIN,Ruben Castillo Vargas,15547,31.017,50124,99.270,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Quispicanchi,0812,2,PARTIDO POLÍTICO PERÚ PRIMERO,Grimaldo Quispe Qquenaya,11957,23.855,50124,99.270,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Urubamba,0813,1,AHORA NACIÓN - AN,Leocadio Madera Guardanaula,13573,31.977,42446,99.537,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Cusco,Urubamba,0813,2,PROGRESEMOS,Rolando Levita Cjuiro,12234,28.823,42446,99.537,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Huancavelica,0901,1,ALIANZA PARA EL PROGRESO,Rodolfo Jaime Ortiz Zuasnabar,23620,32.943,71699,99.478,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Huancavelica,0901,2,PARTIDO POLÍTICO PERÚ PRIMERO,Guillermo Quispe Torres,23572,32.876,71699,99.478,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Acobamba,0902,1,ALIANZA PARA EL PROGRESO,Raul Alfonso Zambrano Ochoa,11819,44.977,26278,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Acobamba,0902,2,PARTIDO POLÍTICO PERÚ PRIMERO,Maykolt Josue Andrade Riveros,11113,42.290,26278,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Angaraes,0903,1,ALIANZA PARA EL PROGRESO,Orlando Valenzuela Ore,11179,40.419,27658,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Angaraes,0903,2,PODEMOS PERÚ,Antonio Marcañaupa Arotoma,7691,27.808,27658,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Castrovirreyna,0904,1,PARTIDO POLÍTICO PERÚ PRIMERO,Rafael Dario Campos Flores,3695,31.964,11560,97.015,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Castrovirreyna,0904,2,ALIANZA PARA EL PROGRESO,Luis Alberto Revatta Nolverto,3095,26.773,11560,97.015,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Churcampa,0905,1,ALIANZA PARA EL PROGRESO,Wilber Roy Morales Guillen,7696,36.594,21031,95.833,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Churcampa,0905,2,PARTIDO POLÍTICO PERÚ PRIMERO,Yanet Meza Aguirre,5119,24.340,21031,95.833,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Huaytara,0906,1,PARTIDO POLÍTICO PERÚ PRIMERO,Jimmy Walter Araoz Soto,4048,28.964,13976,97.590,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Huaytara,0906,2,ALIANZA PARA EL PROGRESO,Cassius Jair Chauca Rojas,3105,22.217,13976,97.590,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Tayacaja,0907,1,ACCIÓN POPULAR,Raydo Gavilan Tello,22536,39.501,57052,98.058,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huancavelica,Tayacaja,0907,2,ALIANZA PARA EL PROGRESO,Nelfa Comun Gavilan,17687,31.002,57052,98.058,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Huanuco,1001,1,PARTIDO PAÍS PARA TODOS,Adler Ponce Adan,43048,27.452,156813,97.780,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Huanuco,1001,2,RENOVACIÓN POPULAR PERÚ,Juan Manuel Vivanco Osorio,21560,13.749,156813,97.780,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Ambo,1002,1,PARTIDO PAÍS PARA TODOS,Aaron Ruiz Luna,7149,22.560,31689,96.552,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Ambo,1002,2,PARTIDO POLÍTICO PERÚ PRIMERO,Wilder Bravo Iturri,6536,20.625,31689,96.552,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Dos De Mayo,1003,1,PARTIDO POLÍTICO PERÚ PRIMERO,Diego Oscar Palacios Capcha,8460,46.043,18374,97.541,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Dos De Mayo,1003,2,PARTIDO PAÍS PARA TODOS,Lucio Pajuelo Godoy,6689,36.405,18374,97.541,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Huacaybamba,1004,1,PARTIDO POLÍTICO PERÚ PRIMERO,Rafael Cespedes Gamarra,2444,33.261,7348,98.148,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Huacaybamba,1004,2,PARTIDO PAÍS PARA TODOS,Hitler Agurto Espinoza,2176,29.614,7348,98.148,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Huamalies,1005,1,AHORA NACIÓN - AN,Ciro Trinidad Rojas,6502,23.176,28055,97.701,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Huamalies,1005,2,PARTIDO PAÍS PARA TODOS,Jorge Valois Prado Garcia,6351,22.638,28055,97.701,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Leoncio Prado,1006,1,RENOVACIÓN POPULAR PERÚ,Tito Josip Jaime Hidalgo,16658,24.188,68868,98.187,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Leoncio Prado,1006,2,PARTIDO PAÍS PARA TODOS,Hernan Namuche Rodriguez,16531,24.004,68868,98.187,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Marañon,1007,1,PARTIDO PAÍS PARA TODOS,Wilder Miguel Cervantes Pimentel,5785,40.474,14293,98.925,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Marañon,1007,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Candidato no informado en el corte,3543,24.788,14293,98.925,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Pachitea,1008,1,PARTIDO PAÍS PARA TODOS,Raul Primo Liberato,11927,42.595,28001,98.160,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Pachitea,1008,2,RENOVACIÓN POPULAR PERÚ,Jean Kevin Sumaran Lino,6284,22.442,28001,98.160,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Puerto Inca,1009,1,PARTIDO PAÍS PARA TODOS,Ronal William Espinoza Retes,6421,40.688,15781,94.068,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Puerto Inca,1009,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Joel Rosales Paulino,4938,31.291,15781,94.068,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Lauricocha,1010,1,PARTIDO PAÍS PARA TODOS,Luis Alberto Juipa Peña,4465,41.091,10866,75.949,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Lauricocha,1010,2,ALIANZA PARA EL PROGRESO,Candidato no informado en el corte,2664,24.517,10866,75.949,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Yarowilca,1011,1,PARTIDO POLÍTICO PERÚ PRIMERO,Milher Gustavo Dionisio Salis,7948,50.900,15615,83.784,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Huanuco,Yarowilca,1011,2,RENOVACIÓN POPULAR PERÚ,Wilfredo Cecilio Cabrera,2657,17.016,15615,83.784,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Ica,1101,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Jose Luis Galvez Chavez,62131,27.256,227953,96.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Ica,1101,2,RENOVACIÓN POPULAR PERÚ,Romulo Fernando Triveño Garcia,41011,17.991,227953,96.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Chincha,1102,1,ALIANZA PARA EL PROGRESO,Bertha Rosalyn Peña Ormeño,37305,27.882,133797,96.389,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Chincha,1102,2,PROGRESEMOS,Yongchao Chai Null,21202,15.846,133797,96.389,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Nasca,1103,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Julio Oscar Elias Lucana,9845,25.971,37907,95.833,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Nasca,1103,2,RENOVACIÓN POPULAR PERÚ,Gabriel Roger Sarmiento Garriazo,6960,18.361,37907,95.833,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Palpa,1104,1,ACCIÓN POPULAR,Malco Barrios Aquise,2821,30.027,9395,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Palpa,1104,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Jose Abel Bendezu Sarmiento,2069,22.022,9395,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Pisco,1105,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Jesus Felipe Echegaray Nieto,30966,34.343,90166,96.471,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ica,Pisco,1105,2,ACCIÓN POPULAR,Johny Olivares Landeo,25821,28.637,90166,96.471,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Huancayo,1201,1,PODEMOS PERÚ,Emerson Nolasco Delgado,96020,30.907,310672,99.116,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Huancayo,1201,2,ALIANZA PARA EL PROGRESO,Julio Cesar de la Rosa Lujan,67448,21.710,310672,99.116,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Concepcion,1202,1,RENOVACIÓN POPULAR PERÚ,Renzo Stalin Yupanqui Garcia,9083,26.692,34029,98.378,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Concepcion,1202,2,ALIANZA PARA EL PROGRESO,Joel Bernardo Pimentel Marin,7378,21.682,34029,98.378,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Chanchamayo,1203,1,ALIANZA PARA EL PROGRESO,Raul Aliaga Sotomayor,26136,33.530,77949,96.855,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Chanchamayo,1203,2,PODEMOS PERÚ,Victor Alfredo Navarro Castro,14212,18.232,77949,96.855,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Jauja,1204,1,ALIANZA PARA EL PROGRESO,Eugenio Pio Peña Cairampoma,14704,29.999,49015,99.628,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Jauja,1204,2,PODEMOS PERÚ,Luis Alonso Balvin Ñahuis,13077,26.680,49015,99.628,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Junin,1205,1,ALIANZA PARA EL PROGRESO,Jorge Luis Tejeda Pucuhuaranga,3897,35.967,10835,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Junin,1205,2,PODEMOS PERÚ,Yon Fidel Chuco Tello,2990,27.596,10835,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Satipo,1206,1,ALIANZA PARA EL PROGRESO,Ivan Roger Cisneros Quispe,28439,33.219,85610,94.505,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Satipo,1206,2,BATALLA PERÚ,Oscar Villazana Rojas,16143,18.856,85610,94.505,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Tarma,1207,1,RENOVACIÓN POPULAR PERÚ,Jose Luis Damian Zarate,13550,27.343,49556,99.615,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Tarma,1207,2,PODEMOS PERÚ,Jose Carlos Aguilar Bernardillo,13323,26.885,49556,99.615,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Yauli,1208,1,PROGRESEMOS,Angel Roberto Aylas Jara,5069,25.942,19540,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Yauli,1208,2,PARTIDO POLÍTICO PERÚ PRIMERO,Orlando Walter Mateo Sabroso,3809,19.493,19540,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Chupaca,1209,1,RENOVACIÓN POPULAR PERÚ,Juan Carlos Inga Barrera,10129,26.429,38325,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Junin,Chupaca,1209,2,ALIANZA PARA EL PROGRESO,Luis Gerardo Ochoa Aliaga,9269,24.185,38325,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Trujillo,1301,1,PARTIDO PATRIÓTICO DEL PERÚ,Roy Charlie Arbaiza Corcuera,145391,26.566,547292,97.898,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Trujillo,1301,2,PODEMOS PERÚ,Victor Robert de la Cruz Rosas,95321,17.417,547292,97.898,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Ascope,1302,1,PODEMOS PERÚ,John Roman Vargas Campos,12657,20.246,62516,97.661,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Ascope,1302,2,PARTIDO APRISTA PERUANO,Carlos Alfredo Alza Moncada,9165,14.660,62516,97.661,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Bolivar,1303,1,ALIANZA PARA EL PROGRESO,Silos Mariñas Vergaray,2920,48.328,6042,97.826,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Bolivar,1303,2,PODEMOS PERÚ,Luis Alberto Moreno Echeverria,2473,40.930,6042,97.826,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Chepen,1304,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Carlos Enrique Paredes Silva,13895,31.218,44510,99.583,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Chepen,1304,2,PODEMOS PERÚ,Cesar Cegnili Cerna Cruzado,9758,21.923,44510,99.583,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Julcan,1305,1,PARTIDO APRISTA PERUANO,Jhosver Breidy Rodriguez Salirrosas,6173,39.419,15660,96.774,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Julcan,1305,2,PODEMOS PERÚ,Jhon Manuel Rodriguez Espejo,5440,34.738,15660,96.774,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Otuzco,1306,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Heli Adan Verde Rodriguez,14487,31.546,45923,95.753,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Otuzco,1306,2,ACCIÓN POPULAR,Luis Francisco Rodriguez Rodriguez,13738,29.915,45923,95.753,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Pacasmayo,1307,1,PODEMOS PERÚ,Jhonatan Manuel Ventura Javier,14843,30.578,48542,98.969,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Pacasmayo,1307,2,ALIANZA PARA EL PROGRESO,Cesar Augusto Chavez Paz,12341,25.423,48542,98.969,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Pataz,1308,1,PODEMOS PERÚ,Clever Johnny Lopez Medina,11044,38.013,29053,92.308,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Pataz,1308,2,ALIANZA PARA EL PROGRESO,Candidato no informado en el corte,7292,25.099,29053,92.308,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Sanchez Carrion,1309,1,ALIANZA PARA EL PROGRESO,Joel Jesus Espinoza Alayo,23242,35.000,66406,97.183,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Sanchez Carrion,1309,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Carlos Arturo Rebaza Lopez,21940,33.039,66406,97.183,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Santiago De Chuco,1310,1,ALIANZA PARA EL PROGRESO,César Daniel Vásquez Infantes,7578,28.566,26528,99.351,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Santiago De Chuco,1310,2,PODEMOS PERÚ,Candidato no informado en el corte,6836,25.769,26528,99.351,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Gran Chimu,1311,1,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Homero Javier Lescano Nureña,3735,33.271,11226,83.133,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Gran Chimu,1311,2,PODEMOS PERÚ,Carlos Humberto Diaz Lezama,3685,32.826,11226,83.133,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Viru,1312,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Joselito Alejandro Afiler Horna,10589,19.638,53921,97.561,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,La Libertad,Viru,1312,2,PARTIDO APRISTA PERUANO,Ney Heli Gamez Espinoza,9444,17.515,53921,97.561,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lambayeque,Chiclayo,1401,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Elber Requejo Sanchez,149236,32.754,455624,98.069,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lambayeque,Chiclayo,1401,2,ALIANZA PARA EL PROGRESO,Edwin Gonzalo Vasquez Sanchez,79917,17.540,455624,98.069,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lambayeque,Ferreñafe,1402,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Candidato no informado en el corte,18700,33.527,55776,98.371,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lambayeque,Ferreñafe,1402,2,ALIANZA PARA EL PROGRESO,Violeta Patricia Muro Mesones,13316,23.874,55776,98.371,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lambayeque,Lambayeque,1403,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Joaquin Teodomiro Chavez Siancas,33970,19.523,174004,97.987,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lambayeque,Lambayeque,1403,2,FUERZA POPULAR,Jose Antonio Eneque Soraluz,29958,17.217,174004,97.987,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Lima,1501,1,RENOVACIÓN POPULAR PERÚ,Candidato no informado en el corte,1444201,27.703,5213223,92.710,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Lima,1501,2,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Francis James Allison Oyague,1399280,26.841,5213223,92.710,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Barranca,1502,1,PARTIDO POLÍTICO PERÚ PRIMERO,Hermann Richard Principe Salvador,18234,22.715,80273,98.100,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Barranca,1502,2,APP - LA CHOLITA,Soonye Jonathan Malpica Rosales,18045,22.480,80273,98.100,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Cajatambo,1503,1,APP - LA CHOLITA,Luis Alberto Vizarres Alvarado,1189,33.721,3526,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Cajatambo,1503,2,CONCERTACIÓN PARA EL DESARROLLO REGIONAL - LIMA,Johel Ivan Graciano Arce,974,27.623,3526,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Canta,1504,1,ALIANZA RENOVACIÓN POPULAR Y TORO,Victor Rafael Riqueros Astudillo,1982,22.729,8720,95.833,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Canta,1504,2,AHORA NACIÓN - AN,Abelardo Gabriel Sanchez Ygreda,1965,22.534,8720,95.833,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Cañete,1505,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Javier Eugenio Castillo Ñiquen,24530,17.898,137051,97.623,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Cañete,1505,2,ALIANZA RENOVACIÓN POPULAR Y TORO,Carlos Alberto Faustino Calderon,23597,17.218,137051,97.623,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Huaral,1506,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Fernando Augusto Mora Aguilar,21878,20.918,104591,97.297,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Huaral,1506,2,PARTIDO POLÍTICO PERÚ PRIMERO,Daniel Eugenio Hernandez Buitron,17147,16.394,104591,97.297,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Huarochiri,1507,1,FUERZA POPULAR,Eveling Geovanna Feliciano Ordoñez,14930,24.505,60926,96.512,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Huarochiri,1507,2,ALIANZA RENOVACIÓN POPULAR Y TORO,Luis Juan Ñahuis Candiotti,10662,17.500,60926,96.512,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Huaura,1508,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Pompeyo Prisciliano Vergara Guadalupe,24465,19.637,124585,98.626,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Huaura,1508,2,AHORA NACIÓN - AN,Alfredo Tomas Zurita Barrenechea,22061,17.708,124585,98.626,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Oyon,1509,1,PARTIDO APRISTA PERUANO,Edgardo Huaraz Ugarte,2157,28.079,7682,98.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Oyon,1509,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Ali Max Espinoza Salinas,2000,26.035,7682,98.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Yauyos,1510,1,APP - LA CHOLITA,Erwin Milder Tacsa Pascual,4945,28.605,17287,99.099,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Lima,Yauyos,1510,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Cesar Elias Arbizu Sierra,4803,27.784,17287,99.099,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Maynas,1601,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Roger Cristobal Gronerth Pinedo,68500,33.498,204488,92.938,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Maynas,1601,2,ALIANZA PARA EL PROGRESO,Joel Ronal Parimango Alvarez,33278,16.274,204488,92.938,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Alto Amazonas,1602,1,ALIANZA PARA EL PROGRESO,Hugo Araujo del Aguila,22776,49.801,45734,72.283,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Alto Amazonas,1602,2,RENOVACIÓN POPULAR PERÚ,Abdiel Estanislao Arevalo Saavedra,9973,21.807,45734,72.283,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Loreto,1603,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Guido Miguel Coronel Zumaeta,6661,30.751,21661,68.473,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Loreto,1603,2,ALIANZA PARA EL PROGRESO,Jagner Chumbe Manihuari,6551,30.243,21661,68.473,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Mariscal Ramon Castilla,1604,1,FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ,Luis Alberto Meza Ccolla,8033,33.460,24008,95.408,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Mariscal Ramon Castilla,1604,2,RENOVACIÓN POPULAR PERÚ,Candidato no informado en el corte,6811,28.370,24008,95.408,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Requena,1605,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Candidato no informado en el corte,13835,53.421,25898,78.238,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Requena,1605,2,ALIANZA PARA EL PROGRESO,Juan Carlos Rengifo Zambrano,6692,25.840,25898,78.238,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Ucayali,1606,1,ALIANZA PARA EL PROGRESO,Luis Segundo Abensur Ruiz,7988,28.541,27988,93.717,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Ucayali,1606,2,FUERZA POPULAR,Ronald Panduro Curitima,6784,24.239,27988,93.717,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Datem Del Marañon,1607,1,ALIANZA PARA EL PROGRESO,Royner Requejo Cabrera,1047,33.270,3147,9.901,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Datem Del Marañon,1607,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Wagner Musoline Acho,647,20.559,3147,9.901,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Putumayo,1608,1,ALIANZA PARA EL PROGRESO,Arlen Ribeira Calderon,75,35.047,214,6.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Loreto,Putumayo,1608,2,FUERZA POPULAR,Segundo Leopoldo Julca Ramos,72,33.645,214,6.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Madre De Dios,Tambopata,1701,1,AHORA NACIÓN - AN,Juan Ticona Quispe,22498,33.072,68027,98.020,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Madre De Dios,Tambopata,1701,2,ALIANZA LIBERTAD MADREDIOSENSE,Richard Martin Chacacanta Estrada,13350,19.625,68027,98.020,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Madre De Dios,Manu,1702,1,AHORA NACIÓN - AN,Wilber Nina Calla,2493,30.645,8135,98.592,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Madre De Dios,Manu,1702,2,PROGRESEMOS,Jaime Quispe Cucchi,1919,23.589,8135,98.592,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Madre De Dios,Tahuamanu,1703,1,AHORA NACIÓN - AN,Yilmer Gonzales Khan,1964,34.091,5761,97.222,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Madre De Dios,Tahuamanu,1703,2,PROGRESEMOS,Alfonso Bernardo Cardozo Mouzully,1584,27.495,5761,97.222,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Moquegua,Mariscal Nieto,1801,1,ACCIÓN POPULAR,Jakelin Galvan Ninaraqui Pelaiza,17094,29.249,58443,98.932,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Moquegua,Mariscal Nieto,1801,2,AHORA NACIÓN - AN,Freddy Porfirio Niebles Cuayla,14722,25.190,58443,98.932,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Moquegua,General Sanchez Cerro,1802,1,PARTIDO POLÍTICO PERÚ PRIMERO,Prescilio Alejandro Mamani Eugenio,2827,27.940,10118,96.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Moquegua,General Sanchez Cerro,1802,2,ACCIÓN POPULAR,Maximo Rolando Ramos Apaza,2607,25.766,10118,96.667,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Moquegua,Ilo,1803,1,PARTIDO PATRIÓTICO DEL PERÚ,Blademir Acero Oliva,12187,25.936,46988,98.701,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Moquegua,Ilo,1803,2,PARTIDO FRENTE DE LA ESPERANZA 2021,Richard Guillermo Revollar Null,11867,25.255,46988,98.701,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Pasco,Pasco,1901,1,PODEMOS PERÚ,Rudy Edwin Callupe Gora,20213,31.098,64997,99.200,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Pasco,Pasco,1901,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Julio Cayetano Cajahuaman Quispe,14080,21.663,64997,99.200,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Pasco,Daniel Alcides Carrion,1902,1,PODEMOS PERÚ,Jose Yaban Meza Sarmiento,5166,29.185,17701,98.113,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Pasco,Daniel Alcides Carrion,1902,2,PARTIDO FRENTE DE LA ESPERANZA 2021,Luis Rosmel Valerio Callupe,4633,26.174,17701,98.113,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Pasco,Oxapampa,1903,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Edwin Jhoel Diaz Monago,11874,24.729,48016,99.351,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Pasco,Oxapampa,1903,2,PODEMOS PERÚ,Leon Alfredo Raymundo Justiniano,9740,20.285,48016,99.351,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Piura,2001,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Miguel Gerardo Cueva Celi,78697,20.203,389524,95.912,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Piura,2001,2,PODEMOS PERÚ,Walther Guerrero Silva,72506,18.614,389524,95.912,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Ayabaca,2002,1,MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL,Santos Evaristo Castillo Castillo,31498,50.191,62756,99.235,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Ayabaca,2002,2,PODEMOS PERÚ,Deyner Ivan Quinde Rivera,22333,35.587,62756,99.235,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Huancabamba,2003,1,ALIANZA PARA EL PROGRESO,Jose Abel Rivera Melendres,24470,41.569,58866,98.050,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Huancabamba,2003,2,PARTIDO POLÍTICO PERÚ PRIMERO,Segundo Alfonso Huayama Neira,19884,33.778,58866,98.050,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Morropon,2004,1,RENOVACIÓN POPULAR PERÚ,Hernan Pasapera Ramirez,22471,25.618,87717,93.548,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Morropon,2004,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Nelson Mio Reyes,19898,22.684,87717,93.548,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Paita,2005,1,PARTIDO PAÍS PARA TODOS,Maria Edelfilia Atoche de Jaramillo,16660,23.214,71768,99.140,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Paita,2005,2,PODEMOS PERÚ,Justo Juarez Nima,13353,18.606,71768,99.140,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Sullana,2006,1,ALIANZA PARA EL PROGRESO,Jose Hildebrando Crisanto Vilela,42985,26.141,164438,97.188,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Sullana,2006,2,MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL,Charlys Hilton Arevalo Mauricio,29917,18.193,164438,97.188,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Talara,2007,1,ALIANZA PARA EL PROGRESO,Rodolfo Miguel Sanchez Suyon,22608,32.789,68949,96.094,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Talara,2007,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Harold Aleman Saavedra,18997,27.552,68949,96.094,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Sechura,2008,1,PODEMOS PERÚ,Santos Valentin Querevalu Periche,20431,44.134,46293,99.074,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Piura,Sechura,2008,2,ALIANZA PARA EL PROGRESO,Boris Alexander Montaño Tume,16785,36.258,46293,99.074,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Puno,2101,1,ASI - JUNTOS POR EL PERÚ,Jorge Antonio Zuñiga Pineda,32929,25.307,130118,99.218,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Puno,2101,2,PARTIDO PAÍS PARA TODOS,Martin Ticona Maquera,25776,19.810,130118,99.218,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Azangaro,2102,1,ASI - JUNTOS POR EL PERÚ,Fredy Ronald Vilcapaza Mamani,26669,37.079,71925,97.521,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Azangaro,2102,2,AHORA NACIÓN - AN,Carlos Alberto Yucra Chambi,17974,24.990,71925,97.521,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Carabaya,2103,1,ASI - JUNTOS POR EL PERÚ,Hugo Raul Tapara Saya,13471,40.349,33386,99.471,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Carabaya,2103,2,PROGRESEMOS,Jaime Huisa Caceres,9470,28.365,33386,99.471,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Chucuito,2104,1,PROGRESEMOS,Hector Sarmiento Huayta,10691,24.596,43466,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Chucuito,2104,2,ASI - JUNTOS POR EL PERÚ,Fredy Gualberto Castillo Venegas,10423,23.980,43466,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,El Collao,2105,1,PROGRESEMOS,Abelardo Pompeyo Quispe Huanacuni,10624,28.460,37329,97.884,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,El Collao,2105,2,ASI - JUNTOS POR EL PERÚ,Juan Zurita Chura,8929,23.920,37329,97.884,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Huancane,2106,1,AHORA NACIÓN - AN,Americo Portillo Chuquimamani,12569,30.947,40615,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Huancane,2106,2,PROGRESEMOS,Regner Aljovin Layme Justo,9122,22.460,40615,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Lampa,2107,1,AHORA NACIÓN - AN,Moises Guillermo Apaza Ahumada,11874,41.928,28320,98.507,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Lampa,2107,2,ASI - JUNTOS POR EL PERÚ,Wilfredo Molina Quiza,7811,27.581,28320,98.507,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Melgar,2108,1,ASI - JUNTOS POR EL PERÚ,Claudio Teodoro Vilca Luna,10297,25.774,39951,98.500,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Melgar,2108,2,PARTIDO POLÍTICO PERÚ PRIMERO,Mario Jesus Ortega Zea,10232,25.611,39951,98.500,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Moho,2109,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Josue Quispe Capajaña,5126,35.563,14414,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Moho,2109,2,AHORA NACIÓN - AN,Victor Raul Quispe Condori,2892,20.064,14414,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,San Antonio De Putina,2110,1,ASI - JUNTOS POR EL PERÚ,Edgar Abel Mamani Ticona,5447,30.886,17636,97.701,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,San Antonio De Putina,2110,2,AHORA NACIÓN - AN,Serapio Sucasaire Sucasaire,3920,22.227,17636,97.701,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,San Roman,2111,1,AHORA NACIÓN - AN,Maximo Ramon Lanza Umiña,53914,31.216,172710,99.486,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,San Roman,2111,2,PROGRESEMOS,Jhon Efraim Espejo Vilca,37803,21.888,172710,99.486,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Sandia,2112,1,SALVEMOS AL PERÚ,Victor Ugarte Chambi,7753,26.050,29762,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Sandia,2112,2,ASI - JUNTOS POR EL PERÚ,Angel Ticona Monrroy,7700,25.872,29762,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Yunguyo,2113,1,ASI - JUNTOS POR EL PERÚ,Cesar Beto Canahuire Quispe,7488,40.094,18676,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Puno,Yunguyo,2113,2,PARTIDO PAÍS PARA TODOS,Javier Salas Calle,7365,39.436,18676,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Moyobamba,2201,1,ALIANZA PARA EL PROGRESO,Segundo Herminio Vasquez Montenegro,32041,45.958,69718,99.737,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Moyobamba,2201,2,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Luis Miguel Alvarado Sepulveda,13775,19.758,69718,99.737,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Bellavista,2202,1,RENOVACIÓN POPULAR PERÚ,Jorge Rafael Cobos Angulo,9693,30.369,31917,96.552,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Bellavista,2202,2,ALIANZA PARA EL PROGRESO,Bryan Ruiz Infante,8577,26.873,31917,96.552,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,El Dorado,2203,1,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Wilmer Sanchez Muñoz,7282,34.500,21107,96.522,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,El Dorado,2203,2,RENOVACIÓN POPULAR PERÚ,Candidato no informado en el corte,5447,25.807,21107,96.522,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Huallaga,2204,1,RENOVACIÓN POPULAR PERÚ,Frank Cristian Puelles Cardenas,6969,39.944,17447,97.778,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Huallaga,2204,2,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Aristides Grandez Peñaherrera,6363,36.470,17447,97.778,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Lamas,2205,1,FUERZA POPULAR,Candidato no informado en el corte,14108,28.330,49798,98.084,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Lamas,2205,2,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Antolin Guerrero Cordova,12988,26.081,49798,98.084,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Mariscal Caceres,2206,1,ALIANZA PARA EL PROGRESO,Robert Pinedo Angulo,10749,31.310,34331,96.809,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Mariscal Caceres,2206,2,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Imer Irene Silva,9230,26.885,34331,96.809,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Picota,2207,1,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Juan Dedicacion Tocto Pilco,9594,38.927,24646,96.183,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Picota,2207,2,RENOVACIÓN POPULAR PERÚ,Nestor Jorge Tuesta Melendez,5975,24.243,24646,96.183,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Rioja,2208,1,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Candidato no informado en el corte,35122,47.507,73930,99.738,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Rioja,2208,2,ALIANZA PARA EL PROGRESO,Francisco Guevara Cachay,17036,23.043,73930,99.738,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,San Martin,2209,1,AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL,Juan Manuel Garcia Ramirez,32223,29.053,110913,98.427,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,San Martin,2209,2,RENOVACIÓN POPULAR PERÚ,Javier Sinti Flores,29644,26.727,110913,98.427,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Tocache,2210,1,PARTIDO POLÍTICO PERÚ PRIMERO,Orleer Medina Barrios,9922,25.286,39239,97.845,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,San Martin,Tocache,2210,2,RENOVACIÓN POPULAR PERÚ,César Aliaga Bazán,9521,24.264,39239,97.845,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Tacna,2301,1,ALIANZA PARA EL PROGRESO,Niel Brham Zavala Meza,53492,28.043,190748,99.151,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Tacna,2301,2,AHORA NACIÓN - AN,Edgar Rogelio Concori Coaquira,42478,22.269,190748,99.151,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Candarave,2302,1,ALIANZA PARA EL PROGRESO,Daniel Agapito Romero Machaca,1975,42.786,4616,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Candarave,2302,2,PROGRESEMOS,Candidato no informado en el corte,1441,31.218,4616,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Jorge Basadre,2303,1,PODEMOS PERÚ,Edilberto Artemio Parihuana Mamani,2754,32.723,8416,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Jorge Basadre,2303,2,PERÚ MODERNO,Juan Santos Ordoñez Miranda,1911,22.707,8416,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Tarata,2304,1,PROGRESEMOS,Jesus Cesar Chavez Nieto,1760,34.023,5173,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tacna,Tarata,2304,2,PARTIDO PAÍS PARA TODOS,Orlando Mendoza Mendoza,1745,33.733,5173,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tumbes,Tumbes,2401,1,FE EN EL PERÚ,Patricio Habel Aliaga Infante,28275,35.463,79731,97.882,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tumbes,Tumbes,2401,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Guillermo Arturo Arenas Roncal,11585,14.530,79731,97.882,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tumbes,Contralmirante Villar,2402,1,ALIANZA PARA EL PROGRESO,Francisco Javier Pazo Eche,4734,38.572,12273,98.361,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tumbes,Contralmirante Villar,2402,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Aldo Mariano Castañeda Palacios,2781,22.659,12273,98.361,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tumbes,Zarumilla,2403,1,PARTIDO POLÍTICO TODO CON EL PUEBLO,Elmer Antonio Saavedra Reyes,8120,31.606,25691,97.037,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Tumbes,Zarumilla,2403,2,ALIANZA PARA EL PROGRESO,Cesar Enrique Chapoñan Diaz,4159,16.189,25691,97.037,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Coronel Portillo,2501,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Segundo Leonidas Perez Collazos,53360,28.441,187615,96.370,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Coronel Portillo,2501,2,ACCIÓN POPULAR,Leo Igor Jeri Cardozo,29754,15.859,187615,96.370,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Atalaya,2502,1,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Jorge Lenin Escudero Viera,5186,24.834,20883,97.110,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Atalaya,2502,2,FUERZA POPULAR,Pruhl de Pinho Rios,3618,17.325,20883,97.110,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Padre Abad,2503,1,ALIANZA PARA EL PROGRESO,Jose Luis Maguiña Paredes,10790,30.277,35638,95.455,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Padre Abad,2503,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Eli Herson Ruiz Montecinos,10282,28.851,35638,95.455,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Purus,2504,1,ALIANZA PARA EL PROGRESO,Aquiles Ricopa Sajami,438,26.954,1625,100.000,06/10/2026 · 01:56:01 p. m.
+Alcalde provincial,Ucayali,Purus,2504,2,PARTIDO DEMOCRÁTICO SOMOS PERÚ,Domingo Rios Lozano,417,25.662,1625,100.000,06/10/2026 · 01:56:01 p. m.
