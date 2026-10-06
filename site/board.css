@@ -81,3 +81,8 @@ nav.top a[aria-current]{color:var(--ink);font-weight:800;border-color:var(--oran
 .kpis b{font-size:clamp(22px,2.3vw,32px)!important;white-space:nowrap}
 .axis,.row{grid-template-columns:200px 1fr 80px}
 @media(max-width:620px){.row{grid-template-columns:1fr 64px}}
+.mapcard path.nodata{fill:#E4E2DC;cursor:default}.mapcard svg.dim path.nodata{opacity:.5}
+.mapcard svg path{stroke-width:.5px}
+.duel{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 18px}.duel .cand{background:#fff;border:1px solid var(--line);border-top:4px solid var(--c)}.duel .cand em{font-size:26px}.duelnote{grid-column:1/-1;font-size:13px;color:var(--ink2);margin:2px 0 0}
+@media(max-width:700px){.duel{grid-template-columns:1fr}}
+.chk{display:flex;gap:6px;align-items:center;font:600 13px Archivo,sans-serif;color:var(--ink2)}
