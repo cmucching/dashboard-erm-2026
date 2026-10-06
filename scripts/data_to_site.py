@@ -19,6 +19,10 @@ SYM_URL = "https://resultadoelectoral.onpe.gob.pe/assets/img-reales/partidos/{:0
 FALLBACK = ["#6B7C93", "#8C5E3C", "#4E8F6F", "#9B6BA8", "#B08D2A", "#3F7CAC", "#A9483B", "#5C6B2E"]
 
 
+# False mientras el scraper no pida la elección distrital (ver `--descubrir`).
+DISTRITAL_DESDE_DATA = False
+
+
 def jload(p):
     return json.loads(Path(p).read_text(encoding="utf-8"))
 
@@ -237,6 +241,13 @@ def main():
         pn = names_prov.get(p["prov"], p["nombre"])
         records.append(registro("provincial", p, dn, pn, ""))
     n_prov = len(records)
+    if not DISTRITAL_DESDE_DATA:
+        # La descarga actual trae la elección PROVINCIAL por distrito, no la distrital. Se conservan
+        # los resultados distritales ya publicados hasta que el scraper pida la elección correcta.
+        records += [r for r in old_mun["records"] if r["level"] == "distrital"]
+        cov = [c for c in old_mun["coverage"] if c["level"] == "distrital"]
+        dist = []
+        n_dist = sum(1 for r in records if r["level"] == "distrital")
     for d in dist:
         key = f'distrital:{d["ubigeo"]}'
         oc = old_cov.get(key)
@@ -255,9 +266,11 @@ def main():
     for c in old_mun["coverage"]:
         if c["level"] == "provincial":
             cov.append({**c, "status": "downloaded", "reason": ""})
+    if not DISTRITAL_DESDE_DATA:
+        pass
     # distritos no devueltos por la descarga conservan su estado previo como pendientes
     seen = {c["key"] for c in cov}
-    for c in old_mun["coverage"]:
+    for c in ([] if not DISTRITAL_DESDE_DATA else old_mun["coverage"]):
         if c["key"] not in seen:
             cov.append({**c, "status": "pending" if c["status"] != "not_applicable" else c["status"]})
     pend = sum(1 for c in cov if c["status"] == "pending")
@@ -268,9 +281,9 @@ def main():
     esperado_d = sum(1 for c in cov if c["level"] == "distrital" and c["status"] != "not_applicable")
     old_mun["metadata"] = {
         "provincial": n_prov, "distrital": n_dist, "not_applicable": na, "pending": pend,
-        "organization_rows": sum(len(r["organizations"]) for r in records), "state": "complete" if pend == 0 else "partial",
+        "organization_rows": sum(len(r["organizations"]) for r in records), "state": "complete" if pend == 0 else "downloading",
         "source_cut_from": cuts[0], "source_cut_until": cuts[-1], "retrieved_from": gen, "retrieved_until": gen,
-        "expected_provincial": 196, "expected_distrital": esperado_d, "revision": meta["huella"][:24], "published_at": pub_time,
+        "expected_provincial": 196, "expected_distrital": 1696 if not DISTRITAL_DESDE_DATA else esperado_d, "revision": meta["huella"][:24], "published_at": pub_time,
     }
     # paleta única de partidos: la de regional/provincial manda; los que solo aparecen en distritos reciben color estable
     import colorsys, hashlib
@@ -321,7 +334,8 @@ def main():
         lima["metropolitan"]["metadata"]["source_cut_until"] = reg_lima["source_updated_at"]
         lima["metropolitan"]["metadata"]["last_saved_at"] = gen
     lima_d = [r for r in records if r["level"] == "distrital" and r["province_code"] == "140100"]
-    lima["district_mayors"]["records"] = lima_d
+    if DISTRITAL_DESDE_DATA:
+        lima["district_mayors"]["records"] = lima_d
     jdump(lp, lima)
 
     print(f"Regional {len(regs)} · provincial {n_ok} · distrital {n_dist} (pendientes {pend}, no aplica {na}) · Lima distritales {len(lima_d)}")

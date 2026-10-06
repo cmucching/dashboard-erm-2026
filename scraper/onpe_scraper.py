@@ -252,6 +252,29 @@ def escribir(out: Path, resultado: dict) -> bool:
     return True
 
 
+# --------------------------------------------------------------------------- diagnóstico
+def descubrir_elecciones(fetch) -> None:
+    """Para idEleccion 1..12 muestra totales/participantes a nivel nación, provincia y distrito de prueba."""
+    prueba_prov = {"dep": "010000", "prov": "010100", "ubigeo": "010100"}
+    prueba_dist = {"dep": "010000", "prov": "010100", "ubigeo": "010102"}  # Asunción (Chachapoyas, Amazonas)
+    for ide in range(1, 13):
+        for etiqueta, nivel, u in (("nación", "nacion", None), ("provincia Chachapoyas", "prov", prueba_prov),
+                                   ("distrito Asunción", "dist", prueba_dist)):
+            try:
+                tot = _datos(fetch([url_resumen("totales", ide, nivel, u)]).get(url_resumen("totales", ide, nivel, u)))
+                par = _datos(fetch([url_resumen("participantes", ide, nivel, u)]).get(url_resumen("participantes", ide, nivel, u)))
+            except Bloqueado as e:
+                print(f"idEleccion={ide:2d} {etiqueta}: BLOQUEO {e}", flush=True)
+                return
+            if not tot and not par:
+                print(f"idEleccion={ide:2d} {etiqueta}: sin datos", flush=True)
+                continue
+            nombres = ", ".join(f"{(p.get('nombreAgrupacionPolitica') or '')[:22]}={p.get('totalVotosValidos')}"
+                                for p in sorted(par or [], key=lambda p: -(p.get('totalVotosValidos') or 0))[:3])
+            print(f"idEleccion={ide:2d} {etiqueta}: válidos={(tot or {}).get('totalVotosValidos')} "
+                  f"actas={(tot or {}).get('totalActas')} partic={len(par or [])} | {nombres}", flush=True)
+
+
 # --------------------------------------------------------------------------- main
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
@@ -264,6 +287,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--hilos", type=int, default=2, help="pedidos en paralelo (por defecto 2; más hilos aumentan el riesgo de 403)")
     ap.add_argument("--pausa-ms", type=int, default=500, help="pausa mínima entre pedidos de cada hilo (ms)")
     ap.add_argument("--dry-run", action="store_true", help="no escribe archivos")
+    ap.add_argument("--descubrir", action="store_true",
+                    help="diagnóstico: muestra qué idEleccion de ONPE corresponde a cada elección (no escribe nada)")
     args = ap.parse_args(argv)
     RITMO.update(conc=max(1, min(args.hilos, 6)), min=args.pausa_ms, max=int(args.pausa_ms * 2.2))
     modo = "smoke" if args.smoke else "full" if args.full else "incremental"
@@ -283,6 +308,10 @@ def main(argv: list[str] | None = None) -> int:
             if resp is None or resp.status >= 400:
                 print(f"BLOQUEO: la página de inicio respondió {getattr(resp, 'status', None)}", file=sys.stderr)
                 return EXIT_BLOQUEO
+            if args.descubrir:
+                descubrir_elecciones(FetcherNavegador(page))
+                browser.close()
+                return 0
             resultado = recolectar(FetcherNavegador(page), out, modo,
                                    cache_path=Path(".cache") / "avance_distritos.json")
             print("Cerrando navegador…", file=sys.stderr, flush=True)
