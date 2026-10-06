@@ -23,7 +23,7 @@ export async function createDistrictMap({element,scope='',lookup,onSelect,feedba
   element.replaceChildren();map=L.map(element,{zoomControl:false,minZoom:4,maxZoom:15,zoomSnap:.25,scrollWheelZoom:true,touchZoom:true,keyboard:true,zoomAnimation:!matchMedia('(prefers-reduced-motion: reduce)').matches,maxBounds:[[-50,-100],[15,-45]],maxBoundsViscosity:.6}).setView([-9.19,-75.015],5);
   L.control.zoom({position:'topleft',zoomInTitle:'Acercar (+)',zoomOutTitle:'Alejar (−)'}).addTo(map);L.control.scale({position:'bottomleft',imperial:false,maxWidth:100}).addTo(map);
   let baseLoaded=0,baseErrors=0,selectedKey=null,visibleKeys=null;
-  const base=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,noWrap:true,keepBuffer:1,updateWhenIdle:true,updateWhenZooming:false,bounds:[[-50,-100],[15,-45]],attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>'});
+  const base=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,maxNativeZoom:16,noWrap:true,keepBuffer:1,updateWhenIdle:true,updateWhenZooming:false,bounds:[[-50,-100],[15,-45]],attribution:'Fondo: Esri, HERE, Garmin, © colaboradores de OpenStreetMap'});
   base.on('tileload',()=>{baseLoaded++;feedback.textContent='';});base.on('tileerror',()=>{baseErrors++;if(!baseLoaded&&baseErrors>=3)feedback.textContent='El fondo cartográfico no está disponible; los resultados distritales siguen visibles.';});
   const layers=new Map(),renderer=L.svg({padding:.4});
   function tooltip(feature){
