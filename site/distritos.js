@@ -11,7 +11,7 @@ $('#sc').innerHTML=tk.map(v=>`<span style="left:${v/maxM*100}%">${v}</span>`).jo
 const scope=c=>VIEW==='lima'?c.province_code===LIMA&&c.level==='distrital':c.level==='distrital';
 function view(){let a=R.filter(r=>(filt===null||r.org===filt)&&(!dep||r.dep===dep)&&(!prov||r.prov===prov)&&(!q||(r.name+' '+r.prov+' '+r.dep+' '+r.party).toLowerCase().includes(q)));
  a=a.slice().sort({margin:(x,y)=>x.m-y.m,big:(x,y)=>y.m-x.m,actas:(x,y)=>x.adv-y.adv,name:(x,y)=>x.name.localeCompare(y.name,'es')}[sortK]);return a}
-function pend(){return showPend?ALL.filter(c=>!c.rec&&(!dep||c.dep===dep)&&(!prov||c.prov===prov)&&(!q||(c.name+' '+c.prov+' '+c.dep).toLowerCase().includes(q))&&filt===null):[]}
+function pend(){const ok=new Set(R.map(r=>r.id));return showPend?ALL.filter(c=>!ok.has(c.id)&&(!dep||c.dep===dep)&&(!prov||c.prov===prov)&&(!q||(c.name+' '+c.prov+' '+c.dep).toLowerCase().includes(q))&&filt===null):[]}
 function rows(){
  const a=view(),pe=pend();const lim=sel&&a.findIndex(r=>r.id===sel)>=limit?Infinity:limit;const v=a.slice(0,lim);
  $('#cnt').textContent=`${a.length} de ${R.length} con resultados`;
@@ -20,7 +20,7 @@ function rows(){
  <div class="dumb"><div class="grid">${tk.slice(1).map(x=>`<i style="left:${x/maxM*100}%"></i>`).join('')}<i class="thr" style="left:${3/maxM*100}%"></i></div><div class="bar" style="width:${Math.min(Math.max(r.m/maxM*100,.8),100)}%${r.m>maxM?';border-radius:0':''}"></div>${r.m>maxM?'<div class="ov">▸ sigue</div>':''}<div class="bl"><b>${f(r.p1,2)}</b> % <span>vs</span> ${f(r.p2,2)} %</div></div>
  <div class="mg"><b>${f(r.m,2)}</b><small>pp · ${f(r.adv,1)} % actas</small><div class="act"><i style="width:${r.adv}%"></i></div></div>
  <div class="more">${r.top.map((c,i)=>`<div class="cand" style="--c:${i?'#8A98A3':r.color}"><img src="${esc(c.symbol_url||'')}" alt="" onerror="this.style.visibility='hidden'"><div><b>${esc(c.organization)}</b><span>${i+1}.º lugar</span><em>${f(c.pct_valid,2)} %</em><span>${c.votes.toLocaleString('en-US')} votos válidos</span></div></div>`).join('')}<div class="cand" style="--c:#C9C6BE;grid-column:1/-1"><div><span>Actas: ${r.ca.toLocaleString('en-US')} contabilizadas de ${r.ta.toLocaleString('en-US')} · ${r.jee} para JEE · ${r.pe} pendientes · ${r.org_n} organizaciones</span><span>Corte ONPE: ${esc(fmt(r.upd))}</span></div></div></div></div>`).join('');
- if(showPend)h+=pe.slice(0,60).map(c=>`<div class="row" style="--c:#C9C6BE"><div class="nm">${esc(tc(c.name))}<small>${esc(tc(c.prov))} · ${esc(tc(c.dep))}</small></div><div class="dumb"><div class="bl" style="bottom:6px;font-style:italic">${c.status==='not_applicable'?'Sin elección distrital propia':'Pendiente de incorporar'}</div></div><div class="mg"><small>—</small></div></div>`).join('');
+ if(showPend)h+=pe.slice(0,60).map(c=>`<div class="row" style="--c:#C9C6BE"><div class="nm">${esc(tc(c.name))}<small>${esc(tc(c.prov))} · ${esc(tc(c.dep))}</small></div><div class="dumb"><div class="bl" style="bottom:6px;font-style:italic">${c.rec&&c.rec.total_actas?`Sin actas contabilizadas aún · 0 de ${c.rec.total_actas.toLocaleString('en-US')} actas`:c.status==='not_applicable'?'Sin elección distrital propia':'Pendiente de incorporar'}</div></div><div class="mg"><small>—</small></div></div>`).join('');
  $('#rows').innerHTML=h||'<div class="empty2">No hay distritos con ese filtro.</div>';
  $('#more').hidden=!(lim!==Infinity&&a.length>limit);
  const ids=new Set(a.map(r=>r.id)),f_=!!(filt!==null||dep||prov||q);
