@@ -95,10 +95,7 @@
       '<ul class="standings">'+stand+'</ul>'+
       '<h2 style="margin-top:22px;font-size:17px">Lectura rápida</h2>'+
       '<div class="insights">'+
-        '<button type="button" class="insight" data-go="'+esc(close.id)+'"><small>Más reñida</small><b>'+esc(close.region)+' · '+fx(margin(close),2)+' pp</b><span>'+esc(close.organizacion)+' frente a '+esc(tc(close.top[1].party))+'</span></button>'+
         '<button type="button" class="insight" data-go="'+esc(wide.id)+'"><small>Mayor ventaja</small><b>'+esc(wide.region)+' · '+fx(margin(wide),2)+' pp</b><span>'+esc(wide.organizacion)+'</span></button>'+
-        '<button type="button" class="insight" data-go="'+esc(low.id)+'"><small>Menos actas contabilizadas</small><b>'+esc(low.region)+' · '+fx(low.actas_contabilizadas,1)+' %</b><span>Su resultado puede moverse más</span></button>'+
-        '<button type="button" class="insight" data-tight="1"><small>Ventaja menor a 3 pp</small><b>'+tight.length+' de '+data.length+' regiones</b><span>Ordenar la tabla por ventaja</span></button>'+
       '</div></div>';
     ws.parentNode.insertBefore(sec,ws.nextSibling);
     buildMapExtras(orgs,data.length);

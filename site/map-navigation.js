@@ -17,7 +17,7 @@
    L.control.zoom({position:'topleft',zoomInTitle:'Acercar (+)',zoomOutTitle:'Alejar (−)'}).addTo(map);
    L.control.scale({position:'bottomleft',imperial:false,maxWidth:100}).addTo(map);
    let visible=null,tilesLoaded=0,tileErrors=0,baseEnabled=true;
-   const basemap=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,noWrap:true,keepBuffer:1,updateWhenIdle:true,updateWhenZooming:false,bounds:[[-50,-100],[15,-45]],attribution:'© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">Informar un error del fondo</a>'});
+   const basemap=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,maxNativeZoom:16,noWrap:true,keepBuffer:1,updateWhenIdle:true,updateWhenZooming:false,bounds:[[-50,-100],[15,-45]],attribution:'Fondo: Esri, HERE, Garmin, © colaboradores de OpenStreetMap'});
    basemap.on('tileload',()=>{tilesLoaded++;feedback.textContent='';});
    basemap.on('tileerror',()=>{tileErrors++;if(!tilesLoaded&&tileErrors>=3)feedback.textContent='El fondo cartográfico no está disponible. Los resultados electorales y la navegación siguen visibles.';});
    const renderer=L.svg({padding:.4}),layers=new Map();
