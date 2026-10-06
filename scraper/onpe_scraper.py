@@ -142,6 +142,17 @@ def consultar_unidades(fetch, id_eleccion: int, nivel: str, unidades: list[dict]
     return registros
 
 
+def consultar_capitales(fetch, sin_eleccion: list[dict], catalogo: list[dict]) -> list[dict]:
+    """Elección provincial (id 3) a nivel de distrito para los distritos sin elección distrital."""
+    por_ub = {d["ubigeo"]: d for d in catalogo}
+    unidades = [por_ub[r["ubigeo"]] for r in sin_eleccion if r["ubigeo"] in por_ub]
+    print(f"Capitales de provincia (voto provincial en el distrito): {len(unidades)}", file=sys.stderr, flush=True)
+    regs = []
+    for i in range(0, len(unidades), 100):
+        regs += consultar_unidades(fetch, ID_MUNICIPAL, "dist", unidades[i:i + 100])
+    return regs
+
+
 def _leer(ruta: Path) -> list[dict]:
     try:
         return json.loads(ruta.read_text(encoding="utf-8"))
@@ -218,11 +229,15 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     dists = [avance[d["ubigeo"]] for d in consultar] + copiar
     dists.sort(key=lambda r: r["ubigeo"])
 
-    problemas = {r["ubigeo"]: r["qc"] for r in deps + provs + dists if r.get("qc")}
+    # Distritos capitales de provincia: no tienen alcalde distrital (ONPE responde 204), pero su votación
+    # (elección provincial dentro del distrito) sí existe y se muestra de forma individualizada.
+    capitales = consultar_capitales(fetch, [d for d in dists if d.get("sin_eleccion")], ub["dist"])
+    problemas = {r["ubigeo"]: r["qc"] for r in deps + provs + dists + capitales if r.get("qc")}
     archivos = {
         "regional_departamentos.json": deps,
         "municipal_provincias.json": provs,
         "municipal_distritos.json": dists,
+        "municipal_capitales.json": capitales,
     }
     h = T.huella(archivos)
     csv_top2 = T.a_csv(T.top2_regional(deps))
@@ -279,6 +294,23 @@ def descubrir_elecciones(fetch) -> None:
                                 for p in sorted(par or [], key=lambda p: -(p.get('totalVotosValidos') or 0))[:3])
             print(f"idEleccion={ide:2d} {etiqueta}: válidos={(tot or {}).get('totalVotosValidos')} "
                   f"actas={(tot or {}).get('totalActas')} partic={len(par or [])} | {nombres}", flush=True)
+
+
+def solo_capitales(fetch, out: Path) -> bool:
+    dists = _leer(out / "municipal_distritos.json")
+    if not dists:
+        print("No hay data/municipal_distritos.json; corre primero la descarga completa.", file=sys.stderr)
+        return False
+    crudo = _datos(fetch([RUTA_UBIGEOS])[RUTA_UBIGEOS])
+    ub = T.parse_ubigeos(crudo)
+    caps = consultar_capitales(fetch, [d for d in dists if d.get("sin_eleccion")], ub["dist"])
+    malos = {r["ubigeo"]: r["qc"] for r in caps if r.get("qc")}
+    if malos:
+        print(f"QC: {len(malos)} capitales con problemas: {list(malos.items())[:5]}", file=sys.stderr)
+        return False
+    (out / "municipal_capitales.json").write_text(json.dumps(caps, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"Capitales guardadas: {len(caps)}")
+    return True
 
 
 def verificar_distritos(fetch, ubigeos: list[str]) -> None:
@@ -341,6 +373,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--hilos", type=int, default=2, help="pedidos en paralelo (por defecto 2; más hilos aumentan el riesgo de 403)")
     ap.add_argument("--pausa-ms", type=int, default=500, help="pausa mínima entre pedidos de cada hilo (ms)")
     ap.add_argument("--dry-run", action="store_true", help="no escribe archivos")
+    ap.add_argument("--solo-capitales", action="store_true",
+                    help="rápido (~5 min): descarga solo el voto provincial de los distritos capitales y lo guarda en data/")
     ap.add_argument("--verificar", nargs="+", metavar="UBIGEO",
                     help="consulta en vivo estos distritos (p. ej. 010601 150411) y muestra lo que ONPE devuelve")
     ap.add_argument("--descubrir", action="store_true",
@@ -364,6 +398,10 @@ def main(argv: list[str] | None = None) -> int:
             if resp is None or resp.status >= 400:
                 print(f"BLOQUEO: la página de inicio respondió {getattr(resp, 'status', None)}", file=sys.stderr)
                 return EXIT_BLOQUEO
+            if args.solo_capitales:
+                ok = solo_capitales(FetcherNavegador(page), out)
+                browser.close()
+                return 0 if ok else EXIT_QC
             if args.verificar:
                 verificar_distritos(FetcherNavegador(page), args.verificar)
                 browser.close()

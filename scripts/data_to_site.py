@@ -269,8 +269,24 @@ def main():
     for c in old_mun["coverage"]:
         if c["level"] == "provincial":
             cov.append({**c, "status": "downloaded", "reason": ""})
-    if not DISTRITAL_DESDE_DATA:
-        pass
+    # Capitales de provincia: sin alcalde distrital, pero con su votación (voto provincial en el distrito)
+    n_cap = 0
+    cap_path = ROOT / "data" / "municipal_capitales.json"
+    if DISTRITAL_DESDE_DATA and cap_path.exists():
+        cov = [c for c in cov if not (c["level"] == "distrital" and c["status"] == "not_applicable")]
+        for d in jload(cap_path):
+            oc = old_cov.get(f'distrital:{d["ubigeo"]}')
+            if not oc or not d.get("participantes") or not d.get("totales"):
+                if oc:
+                    cov.append({**oc, "status": "not_applicable", "reason": "Capital de provincia sin datos en la descarga."})
+                continue
+            rec = registro("distrital", d, oc["department"], oc["province"], oc["district"])
+            rec["eleccion_fuente"] = "provincial"
+            rec["heading"] = "Elecciones Municipales - Alcalde provincial (votación en el distrito)"
+            records.append(rec)
+            cov.append({**oc, "status": "downloaded",
+                        "reason": "Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito."})
+            n_cap += 1
     # distritos no devueltos por la descarga conservan su estado previo como pendientes
     seen = {c["key"] for c in cov}
     for c in ([] if not DISTRITAL_DESDE_DATA else old_mun["coverage"]):
@@ -283,10 +299,10 @@ def main():
     old_mun["coverage"] = cov
     esperado_d = sum(1 for c in cov if c["level"] == "distrital" and c["status"] != "not_applicable")
     old_mun["metadata"] = {
-        "provincial": n_prov, "distrital": n_dist, "not_applicable": na, "pending": pend,
+        "provincial": n_prov, "distrital": n_dist + n_cap, "capitales_provincial": n_cap, "not_applicable": na, "pending": pend,
         "organization_rows": sum(len(r["organizations"]) for r in records), "state": "complete" if pend == 0 else "downloading",
         "source_cut_from": cuts[0], "source_cut_until": cuts[-1], "retrieved_from": gen, "retrieved_until": gen,
-        "expected_provincial": 196, "expected_distrital": 1696 if not DISTRITAL_DESDE_DATA else esperado_d, "revision": meta["huella"][:24], "published_at": pub_time,
+        "expected_provincial": 196, "expected_distrital": 1696 if not DISTRITAL_DESDE_DATA else esperado_d + 0, "revision": meta["huella"][:24], "published_at": pub_time,
     }
     # paleta única de partidos: la de regional/provincial manda; los que solo aparecen en distritos reciben color estable
     import colorsys, hashlib

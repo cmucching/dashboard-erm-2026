@@ -1,5 +1,4 @@
 ﻿level,ubigeo,department,province,district,status,reason
-distrital,010101,AMAZONAS,CHACHAPOYAS,CHACHAPOYAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010102,AMAZONAS,CHACHAPOYAS,ASUNCIÓN,downloaded,
 distrital,010103,AMAZONAS,CHACHAPOYAS,BALSAS,downloaded,
 distrital,010104,AMAZONAS,CHACHAPOYAS,CHETO,downloaded,
@@ -24,9 +23,7 @@ distrital,010201,AMAZONAS,BAGUA,LA PECA,downloaded,
 distrital,010202,AMAZONAS,BAGUA,ARAMANGO,downloaded,
 distrital,010203,AMAZONAS,BAGUA,COPALLIN,downloaded,
 distrital,010204,AMAZONAS,BAGUA,EL PARCO,downloaded,
-distrital,010205,AMAZONAS,BAGUA,BAGUA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010206,AMAZONAS,BAGUA,IMAZA,downloaded,
-distrital,010301,AMAZONAS,BONGARÁ,JUMBILLA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010302,AMAZONAS,BONGARÁ,COROSHA,downloaded,
 distrital,010303,AMAZONAS,BONGARÁ,CUISPES,downloaded,
 distrital,010304,AMAZONAS,BONGARÁ,CHISQUILLA,downloaded,
@@ -38,7 +35,6 @@ distrital,010309,AMAZONAS,BONGARÁ,SHIPASBAMBA,downloaded,
 distrital,010310,AMAZONAS,BONGARÁ,VALERA,downloaded,
 distrital,010311,AMAZONAS,BONGARÁ,YAMBRASBAMBA,downloaded,
 distrital,010312,AMAZONAS,BONGARÁ,JAZAN,downloaded,
-distrital,010401,AMAZONAS,LUYA,LAMUD,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010402,AMAZONAS,LUYA,CAMPORREDONDO,downloaded,
 distrital,010403,AMAZONAS,LUYA,COCABAMBA,downloaded,
 distrital,010404,AMAZONAS,LUYA,COLCAMAR,downloaded,
@@ -61,7 +57,6 @@ distrital,010420,AMAZONAS,LUYA,SANTO TOMÁS,downloaded,
 distrital,010421,AMAZONAS,LUYA,TINGO,downloaded,
 distrital,010422,AMAZONAS,LUYA,TRITA,downloaded,
 distrital,010423,AMAZONAS,LUYA,PROVIDENCIA,downloaded,
-distrital,010501,AMAZONAS,RODRÍGUEZ DE MENDOZA,SAN NICOLÁS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010502,AMAZONAS,RODRÍGUEZ DE MENDOZA,COCHAMAL,downloaded,
 distrital,010503,AMAZONAS,RODRÍGUEZ DE MENDOZA,CHIRIMOTO,downloaded,
 distrital,010504,AMAZONAS,RODRÍGUEZ DE MENDOZA,HUAMBO,downloaded,
@@ -73,17 +68,14 @@ distrital,010509,AMAZONAS,RODRÍGUEZ DE MENDOZA,OMIA,downloaded,
 distrital,010510,AMAZONAS,RODRÍGUEZ DE MENDOZA,SANTA ROSA,downloaded,
 distrital,010511,AMAZONAS,RODRÍGUEZ DE MENDOZA,TOTORA,downloaded,
 distrital,010512,AMAZONAS,RODRÍGUEZ DE MENDOZA,VISTA ALEGRE,downloaded,
-distrital,010601,AMAZONAS,CONDORCANQUI,NIEVA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010602,AMAZONAS,CONDORCANQUI,RÍO SANTIAGO,downloaded,
 distrital,010603,AMAZONAS,CONDORCANQUI,EL CENEPA,downloaded,
-distrital,010701,AMAZONAS,UTCUBAMBA,BAGUA GRANDE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,010702,AMAZONAS,UTCUBAMBA,CAJARURO,downloaded,
 distrital,010703,AMAZONAS,UTCUBAMBA,CUMBA,downloaded,
 distrital,010704,AMAZONAS,UTCUBAMBA,EL MILAGRO,downloaded,
 distrital,010705,AMAZONAS,UTCUBAMBA,JAMALCA,downloaded,
 distrital,010706,AMAZONAS,UTCUBAMBA,LONYA GRANDE,downloaded,
 distrital,010707,AMAZONAS,UTCUBAMBA,YAMON,downloaded,
-distrital,020101,ÁNCASH,HUARAZ,HUARAZ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020102,ÁNCASH,HUARAZ,INDEPENDENCIA,downloaded,
 distrital,020103,ÁNCASH,HUARAZ,COCHABAMBA,downloaded,
 distrital,020104,ÁNCASH,HUARAZ,COLCABAMBA,downloaded,
@@ -95,12 +87,10 @@ distrital,020109,ÁNCASH,HUARAZ,PAMPAS GRANDE,downloaded,
 distrital,020110,ÁNCASH,HUARAZ,PARIACOTO,downloaded,
 distrital,020111,ÁNCASH,HUARAZ,PIRA,downloaded,
 distrital,020112,ÁNCASH,HUARAZ,TARICA,downloaded,
-distrital,020201,ÁNCASH,AIJA,AIJA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020203,ÁNCASH,AIJA,CORIS,downloaded,
 distrital,020205,ÁNCASH,AIJA,HUACLLAN,downloaded,
 distrital,020206,ÁNCASH,AIJA,LA MERCED,downloaded,
 distrital,020208,ÁNCASH,AIJA,SUCCHA,downloaded,
-distrital,020301,ÁNCASH,BOLOGNESI,CHIQUIAN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020302,ÁNCASH,BOLOGNESI,ABELARDO PARDO LEZAMETA,downloaded,
 distrital,020304,ÁNCASH,BOLOGNESI,AQUIA,downloaded,
 distrital,020305,ÁNCASH,BOLOGNESI,CAJACAY,downloaded,
@@ -115,7 +105,6 @@ distrital,020322,ÁNCASH,BOLOGNESI,CANIS,downloaded,
 distrital,020323,ÁNCASH,BOLOGNESI,COLQUIOC,downloaded,
 distrital,020324,ÁNCASH,BOLOGNESI,LA PRIMAVERA,downloaded,
 distrital,020325,ÁNCASH,BOLOGNESI,HUALLANCA,downloaded,
-distrital,020401,ÁNCASH,CARHUAZ,CARHUAZ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020402,ÁNCASH,CARHUAZ,ACOPAMPA,downloaded,
 distrital,020403,ÁNCASH,CARHUAZ,AMASHCA,downloaded,
 distrital,020404,ÁNCASH,CARHUAZ,ANTA,downloaded,
@@ -126,18 +115,15 @@ distrital,020408,ÁNCASH,CARHUAZ,SAN MIGUEL DE ACO,downloaded,
 distrital,020409,ÁNCASH,CARHUAZ,SHILLA,downloaded,
 distrital,020410,ÁNCASH,CARHUAZ,TINCO,downloaded,
 distrital,020411,ÁNCASH,CARHUAZ,YUNGAR,downloaded,
-distrital,020501,ÁNCASH,CASMA,CASMA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020502,ÁNCASH,CASMA,BUENA VISTA ALTA,downloaded,
 distrital,020503,ÁNCASH,CASMA,COMANDANTE NOEL,downloaded,
 distrital,020505,ÁNCASH,CASMA,YAUTAN,downloaded,
-distrital,020601,ÁNCASH,CORONGO,CORONGO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020602,ÁNCASH,CORONGO,ACO,downloaded,
 distrital,020603,ÁNCASH,CORONGO,BAMBAS,downloaded,
 distrital,020604,ÁNCASH,CORONGO,CUSCA,downloaded,
 distrital,020605,ÁNCASH,CORONGO,LA PAMPA,downloaded,
 distrital,020606,ÁNCASH,CORONGO,YANAC,downloaded,
 distrital,020607,ÁNCASH,CORONGO,YUPAN,downloaded,
-distrital,020701,ÁNCASH,HUAYLAS,CARAZ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020702,ÁNCASH,HUAYLAS,HUALLANCA,downloaded,
 distrital,020703,ÁNCASH,HUAYLAS,HUATA,downloaded,
 distrital,020704,ÁNCASH,HUAYLAS,HUAYLAS,downloaded,
@@ -147,7 +133,6 @@ distrital,020707,ÁNCASH,HUAYLAS,PUEBLO LIBRE,downloaded,
 distrital,020708,ÁNCASH,HUAYLAS,SANTA CRUZ,downloaded,
 distrital,020709,ÁNCASH,HUAYLAS,YURACMARCA,downloaded,
 distrital,020710,ÁNCASH,HUAYLAS,SANTO TORIBIO,downloaded,
-distrital,020801,ÁNCASH,HUARI,HUARI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020802,ÁNCASH,HUARI,CAJAY,downloaded,
 distrital,020803,ÁNCASH,HUARI,CHAVÍN DE HUÁNTAR,downloaded,
 distrital,020804,ÁNCASH,HUARI,HUACACHI,downloaded,
@@ -163,7 +148,6 @@ distrital,020813,ÁNCASH,HUARI,SAN MARCOS,downloaded,
 distrital,020814,ÁNCASH,HUARI,SAN PEDRO DE CHANA,downloaded,
 distrital,020815,ÁNCASH,HUARI,UCO,downloaded,
 distrital,020816,ÁNCASH,HUARI,ANRA,downloaded,
-distrital,020901,ÁNCASH,MARISCAL LUZURIAGA,PISCOBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,020902,ÁNCASH,MARISCAL LUZURIAGA,CASCA,downloaded,
 distrital,020903,ÁNCASH,MARISCAL LUZURIAGA,LUCMA,downloaded,
 distrital,020904,ÁNCASH,MARISCAL LUZURIAGA,FIDEL OLIVAS ESCUDERO,downloaded,
@@ -171,7 +155,6 @@ distrital,020905,ÁNCASH,MARISCAL LUZURIAGA,LLAMA,downloaded,
 distrital,020906,ÁNCASH,MARISCAL LUZURIAGA,LLUMPA,downloaded,
 distrital,020907,ÁNCASH,MARISCAL LUZURIAGA,MUSGA,downloaded,
 distrital,020908,ÁNCASH,MARISCAL LUZURIAGA,ELEAZAR GUZMÁN BARRÓN,downloaded,
-distrital,021001,ÁNCASH,PALLASCA,CABANA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021002,ÁNCASH,PALLASCA,BOLOGNESI,downloaded,
 distrital,021003,ÁNCASH,PALLASCA,CONCHUCOS,downloaded,
 distrital,021004,ÁNCASH,PALLASCA,HUACASCHUQUE,downloaded,
@@ -182,11 +165,9 @@ distrital,021008,ÁNCASH,PALLASCA,PALLASCA,downloaded,
 distrital,021009,ÁNCASH,PALLASCA,PAMPAS,downloaded,
 distrital,021010,ÁNCASH,PALLASCA,SANTA ROSA,downloaded,
 distrital,021011,ÁNCASH,PALLASCA,TAUCA,downloaded,
-distrital,021101,ÁNCASH,POMABAMBA,POMABAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021102,ÁNCASH,POMABAMBA,HUAYLLAN,downloaded,
 distrital,021103,ÁNCASH,POMABAMBA,PAROBAMBA,downloaded,
 distrital,021104,ÁNCASH,POMABAMBA,QUINUABAMBA,downloaded,
-distrital,021201,ÁNCASH,RECUAY,RECUAY,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021202,ÁNCASH,RECUAY,COTAPARACO,downloaded,
 distrital,021203,ÁNCASH,RECUAY,HUAYLLAPAMPA,downloaded,
 distrital,021204,ÁNCASH,RECUAY,MARCA,downloaded,
@@ -196,7 +177,6 @@ distrital,021207,ÁNCASH,RECUAY,TAPACOCHA,downloaded,
 distrital,021208,ÁNCASH,RECUAY,TICAPAMPA,downloaded,
 distrital,021209,ÁNCASH,RECUAY,LLACLLIN,downloaded,
 distrital,021210,ÁNCASH,RECUAY,CATAC,downloaded,
-distrital,021301,ÁNCASH,SANTA,CHIMBOTE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021302,ÁNCASH,SANTA,CACERES DEL PERÚ,downloaded,
 distrital,021303,ÁNCASH,SANTA,MACATE,downloaded,
 distrital,021304,ÁNCASH,SANTA,MORO,downloaded,
@@ -205,7 +185,6 @@ distrital,021306,ÁNCASH,SANTA,SAMANCO,downloaded,
 distrital,021307,ÁNCASH,SANTA,SANTA,downloaded,
 distrital,021308,ÁNCASH,SANTA,COISHCO,downloaded,
 distrital,021309,ÁNCASH,SANTA,NUEVO CHIMBOTE,downloaded,
-distrital,021401,ÁNCASH,SIHUAS,SIHUAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021402,ÁNCASH,SIHUAS,ALFONSO UGARTE,downloaded,
 distrital,021403,ÁNCASH,SIHUAS,CHINGALPO,downloaded,
 distrital,021404,ÁNCASH,SIHUAS,HUAYLLABAMBA,downloaded,
@@ -215,7 +194,6 @@ distrital,021407,ÁNCASH,SIHUAS,ACOBAMBA,downloaded,
 distrital,021408,ÁNCASH,SIHUAS,CASHAPAMPA,downloaded,
 distrital,021409,ÁNCASH,SIHUAS,RAGASH,downloaded,
 distrital,021410,ÁNCASH,SIHUAS,SAN JUAN,downloaded,
-distrital,021501,ÁNCASH,YUNGAY,YUNGAY,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021502,ÁNCASH,YUNGAY,CASCAPARA,downloaded,
 distrital,021503,ÁNCASH,YUNGAY,MANCOS,downloaded,
 distrital,021504,ÁNCASH,YUNGAY,MATACOTO,downloaded,
@@ -223,18 +201,14 @@ distrital,021505,ÁNCASH,YUNGAY,QUILLO,downloaded,
 distrital,021506,ÁNCASH,YUNGAY,RANRAHIRCA,downloaded,
 distrital,021507,ÁNCASH,YUNGAY,SHUPLUY,downloaded,
 distrital,021508,ÁNCASH,YUNGAY,YANAMA,downloaded,
-distrital,021601,ÁNCASH,ANTONIO RAIMONDI,LLAMELLIN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021602,ÁNCASH,ANTONIO RAIMONDI,ACZO,downloaded,
 distrital,021603,ÁNCASH,ANTONIO RAIMONDI,CHACCHO,downloaded,
 distrital,021604,ÁNCASH,ANTONIO RAIMONDI,CHINGAS,downloaded,
 distrital,021605,ÁNCASH,ANTONIO RAIMONDI,MIRGAS,downloaded,
 distrital,021606,ÁNCASH,ANTONIO RAIMONDI,SAN JUAN DE RONTOY,downloaded,
-distrital,021701,ÁNCASH,CARLOS FERMÍN FITZCARRALD,SAN LUIS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021702,ÁNCASH,CARLOS FERMÍN FITZCARRALD,YAUYA,downloaded,
 distrital,021703,ÁNCASH,CARLOS FERMÍN FITZCARRALD,SAN NICOLÁS,downloaded,
-distrital,021801,ÁNCASH,ASUNCIÓN,CHACAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021802,ÁNCASH,ASUNCIÓN,ACOCHACA,downloaded,
-distrital,021901,ÁNCASH,HUARMEY,HUARMEY,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,021902,ÁNCASH,HUARMEY,COCHAPETI,downloaded,
 distrital,021903,ÁNCASH,HUARMEY,HUAYAN,downloaded,
 distrital,021904,ÁNCASH,HUARMEY,MALVAS,downloaded,
@@ -245,11 +219,9 @@ distrital,022003,ÁNCASH,OCROS,CARHUAPAMPA,downloaded,
 distrital,022004,ÁNCASH,OCROS,COCHAS,downloaded,
 distrital,022005,ÁNCASH,OCROS,CONGAS,downloaded,
 distrital,022006,ÁNCASH,OCROS,LLIPA,downloaded,
-distrital,022007,ÁNCASH,OCROS,OCROS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,022008,ÁNCASH,OCROS,SAN CRISTÓBAL DE RAJAN,downloaded,
 distrital,022009,ÁNCASH,OCROS,SAN PEDRO,downloaded,
 distrital,022010,ÁNCASH,OCROS,SANTIAGO DE CHILCAS,downloaded,
-distrital,030101,APURÍMAC,ABANCAY,ABANCAY,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030102,APURÍMAC,ABANCAY,CIRCA,downloaded,
 distrital,030103,APURÍMAC,ABANCAY,CURAHUASI,downloaded,
 distrital,030104,APURÍMAC,ABANCAY,CHACOCHE,downloaded,
@@ -258,7 +230,6 @@ distrital,030106,APURÍMAC,ABANCAY,LAMBRAMA,downloaded,
 distrital,030107,APURÍMAC,ABANCAY,PICHIRHUA,downloaded,
 distrital,030108,APURÍMAC,ABANCAY,SAN PEDRO DE CACHORA,downloaded,
 distrital,030109,APURÍMAC,ABANCAY,TAMBURCO,downloaded,
-distrital,030201,APURÍMAC,AYMARAES,CHALHUANCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030202,APURÍMAC,AYMARAES,CAPAYA,downloaded,
 distrital,030203,APURÍMAC,AYMARAES,CARAYBAMBA,downloaded,
 distrital,030204,APURÍMAC,AYMARAES,COLCABAMBA,downloaded,
@@ -275,7 +246,6 @@ distrital,030214,APURÍMAC,AYMARAES,TORAYA,downloaded,
 distrital,030215,APURÍMAC,AYMARAES,YANACA,downloaded,
 distrital,030216,APURÍMAC,AYMARAES,SAN JUAN DE CHACÑA,downloaded,
 distrital,030217,APURÍMAC,AYMARAES,JUSTO APU SAHUARAURA,downloaded,
-distrital,030301,APURÍMAC,ANDAHUAYLAS,ANDAHUAYLAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030302,APURÍMAC,ANDAHUAYLAS,ANDARAPA,downloaded,
 distrital,030303,APURÍMAC,ANDAHUAYLAS,CHIARA,downloaded,
 distrital,030304,APURÍMAC,ANDAHUAYLAS,HUANCARAMA,downloaded,
@@ -295,20 +265,17 @@ distrital,030317,APURÍMAC,ANDAHUAYLAS,HUAYANA,downloaded,
 distrital,030318,APURÍMAC,ANDAHUAYLAS,SAN MIGUEL DE CHACCRAMPA,downloaded,
 distrital,030319,APURÍMAC,ANDAHUAYLAS,KAQUIABAMBA,downloaded,
 distrital,030320,APURÍMAC,ANDAHUAYLAS,JOSÉ MARIA ARGUEDAS,downloaded,
-distrital,030401,APURÍMAC,ANTABAMBA,ANTABAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030402,APURÍMAC,ANTABAMBA,EL ORO,downloaded,
 distrital,030403,APURÍMAC,ANTABAMBA,HUAQUIRCA,downloaded,
 distrital,030404,APURÍMAC,ANTABAMBA,JUAN ESPINOZA MEDRANO,downloaded,
 distrital,030405,APURÍMAC,ANTABAMBA,OROPESA,downloaded,
 distrital,030406,APURÍMAC,ANTABAMBA,PACHACONAS,downloaded,
 distrital,030407,APURÍMAC,ANTABAMBA,SABAINO,downloaded,
-distrital,030501,APURÍMAC,COTABAMBAS,TAMBOBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030502,APURÍMAC,COTABAMBAS,COYLLURQUI,downloaded,
 distrital,030503,APURÍMAC,COTABAMBAS,COTABAMBAS,downloaded,
 distrital,030504,APURÍMAC,COTABAMBAS,HAQUIRA,downloaded,
 distrital,030505,APURÍMAC,COTABAMBAS,MARA,downloaded,
 distrital,030506,APURÍMAC,COTABAMBAS,CHALLHUAHUACHO,downloaded,
-distrital,030601,APURÍMAC,GRAU,CHUQUIBAMBILLA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030602,APURÍMAC,GRAU,CURPAHUASI,downloaded,
 distrital,030603,APURÍMAC,GRAU,HUAYLLATI,downloaded,
 distrital,030604,APURÍMAC,GRAU,MAMARA,downloaded,
@@ -322,7 +289,6 @@ distrital,030611,APURÍMAC,GRAU,VILCABAMBA,downloaded,
 distrital,030612,APURÍMAC,GRAU,VIRUNDO,downloaded,
 distrital,030613,APURÍMAC,GRAU,SANTA ROSA,downloaded,
 distrital,030614,APURÍMAC,GRAU,CURASCO,downloaded,
-distrital,030701,APURÍMAC,CHINCHEROS,CHINCHEROS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,030702,APURÍMAC,CHINCHEROS,ONGOY,downloaded,
 distrital,030703,APURÍMAC,CHINCHEROS,OCOBAMBA,downloaded,
 distrital,030704,APURÍMAC,CHINCHEROS,COCHARCAS,downloaded,
@@ -334,7 +300,6 @@ distrital,030709,APURÍMAC,CHINCHEROS,ROCCHACC,downloaded,
 distrital,030710,APURÍMAC,CHINCHEROS,EL PORVENIR,downloaded,
 distrital,030711,APURÍMAC,CHINCHEROS,LOS CHANKAS,downloaded,
 distrital,030712,APURÍMAC,CHINCHEROS,AHUAYRO,downloaded,
-distrital,040101,AREQUIPA,AREQUIPA,AREQUIPA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040102,AREQUIPA,AREQUIPA,CAYMA,downloaded,
 distrital,040103,AREQUIPA,AREQUIPA,CERRO COLORADO,downloaded,
 distrital,040104,AREQUIPA,AREQUIPA,CHARACATO,downloaded,
@@ -363,7 +328,6 @@ distrital,040126,AREQUIPA,AREQUIPA,MARIANO MELGAR,downloaded,
 distrital,040127,AREQUIPA,AREQUIPA,JACOBO HUNTER,downloaded,
 distrital,040128,AREQUIPA,AREQUIPA,ALTO SELVA ALEGRE,downloaded,
 distrital,040129,AREQUIPA,AREQUIPA,JOSÉ LUIS BUSTAMANTE Y RIVERO,downloaded,
-distrital,040201,AREQUIPA,CAYLLOMA,CHIVAY,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040202,AREQUIPA,CAYLLOMA,ACHOMA,downloaded,
 distrital,040203,AREQUIPA,CAYLLOMA,CABANACONDE,downloaded,
 distrital,040204,AREQUIPA,CAYLLOMA,CAYLLOMA,downloaded,
@@ -383,7 +347,6 @@ distrital,040217,AREQUIPA,CAYLLOMA,TISCO,downloaded,
 distrital,040218,AREQUIPA,CAYLLOMA,TUTI,downloaded,
 distrital,040219,AREQUIPA,CAYLLOMA,YANQUE,downloaded,
 distrital,040220,AREQUIPA,CAYLLOMA,MAJES,downloaded,
-distrital,040301,AREQUIPA,CAMANÁ,CAMANÁ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040302,AREQUIPA,CAMANÁ,JOSÉ MARIA QUIMPER,downloaded,
 distrital,040303,AREQUIPA,CAMANÁ,MARIANO NICOLÁS VALCARCEL,downloaded,
 distrital,040304,AREQUIPA,CAMANÁ,MARISCAL CÁCERES,downloaded,
@@ -391,7 +354,6 @@ distrital,040305,AREQUIPA,CAMANÁ,NICOLÁS DE PIEROLA,downloaded,
 distrital,040306,AREQUIPA,CAMANÁ,OCOÑA,downloaded,
 distrital,040307,AREQUIPA,CAMANÁ,QUILCA,downloaded,
 distrital,040308,AREQUIPA,CAMANÁ,SAMUEL PASTOR,downloaded,
-distrital,040401,AREQUIPA,CARAVELÍ,CARAVELÍ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040402,AREQUIPA,CARAVELÍ,ACARI,downloaded,
 distrital,040403,AREQUIPA,CARAVELÍ,ATICO,downloaded,
 distrital,040404,AREQUIPA,CARAVELÍ,ATIQUIPA,downloaded,
@@ -404,7 +366,6 @@ distrital,040410,AREQUIPA,CARAVELÍ,JAQUI,downloaded,
 distrital,040411,AREQUIPA,CARAVELÍ,LOMAS,downloaded,
 distrital,040412,AREQUIPA,CARAVELÍ,QUICACHA,downloaded,
 distrital,040413,AREQUIPA,CARAVELÍ,YAUCA,downloaded,
-distrital,040501,AREQUIPA,CASTILLA,APLAO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040502,AREQUIPA,CASTILLA,ANDAGUA,downloaded,
 distrital,040503,AREQUIPA,CASTILLA,AYO,downloaded,
 distrital,040504,AREQUIPA,CASTILLA,CHACHAS,downloaded,
@@ -418,7 +379,6 @@ distrital,040511,AREQUIPA,CASTILLA,TIPAN,downloaded,
 distrital,040512,AREQUIPA,CASTILLA,URACA,downloaded,
 distrital,040513,AREQUIPA,CASTILLA,UÑON,downloaded,
 distrital,040514,AREQUIPA,CASTILLA,VIRACO,downloaded,
-distrital,040601,AREQUIPA,CONDESUYOS,CHUQUIBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040602,AREQUIPA,CONDESUYOS,ANDARAY,downloaded,
 distrital,040603,AREQUIPA,CONDESUYOS,CAYARANI,downloaded,
 distrital,040604,AREQUIPA,CONDESUYOS,CHICHAS,downloaded,
@@ -426,13 +386,11 @@ distrital,040605,AREQUIPA,CONDESUYOS,IRAY,downloaded,
 distrital,040606,AREQUIPA,CONDESUYOS,SALAMANCA,downloaded,
 distrital,040607,AREQUIPA,CONDESUYOS,YANAQUIHUA,downloaded,
 distrital,040608,AREQUIPA,CONDESUYOS,RÍO GRANDE,downloaded,
-distrital,040701,AREQUIPA,ISLAY,MOLLENDO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040702,AREQUIPA,ISLAY,COCACHACRA,downloaded,
 distrital,040703,AREQUIPA,ISLAY,DEÁN VALDIVIA,downloaded,
 distrital,040704,AREQUIPA,ISLAY,ISLAY,downloaded,
 distrital,040705,AREQUIPA,ISLAY,MEJÍA,downloaded,
 distrital,040706,AREQUIPA,ISLAY,PUNTA DE BOMBÓN,downloaded,
-distrital,040801,AREQUIPA,LA UNIÓN,COTAHUASI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,040802,AREQUIPA,LA UNIÓN,ALCA,downloaded,
 distrital,040803,AREQUIPA,LA UNIÓN,CHARCANA,downloaded,
 distrital,040804,AREQUIPA,LA UNIÓN,HUAYNACOTAS,downloaded,
@@ -443,7 +401,6 @@ distrital,040808,AREQUIPA,LA UNIÓN,SAYLA,downloaded,
 distrital,040809,AREQUIPA,LA UNIÓN,TAURIA,downloaded,
 distrital,040810,AREQUIPA,LA UNIÓN,TOMEPAMPA,downloaded,
 distrital,040811,AREQUIPA,LA UNIÓN,TORO,downloaded,
-distrital,050101,AYACUCHO,HUAMANGA,AYACUCHO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050102,AYACUCHO,HUAMANGA,ACOS VINCHOS,downloaded,
 distrital,050103,AYACUCHO,HUAMANGA,CARMEN ALTO,downloaded,
 distrital,050104,AYACUCHO,HUAMANGA,CHIARA,downloaded,
@@ -459,13 +416,11 @@ distrital,050113,AYACUCHO,HUAMANGA,OCROS,downloaded,
 distrital,050114,AYACUCHO,HUAMANGA,PACAYCASA,downloaded,
 distrital,050115,AYACUCHO,HUAMANGA,JESÚS NAZARENO,downloaded,
 distrital,050116,AYACUCHO,HUAMANGA,ANDRÉS AVELINO CÁCERES DORREGARAY,downloaded,
-distrital,050201,AYACUCHO,CANGALLO,CANGALLO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050204,AYACUCHO,CANGALLO,CHUSCHI,downloaded,
 distrital,050206,AYACUCHO,CANGALLO,LOS MOROCHUCOS,downloaded,
 distrital,050207,AYACUCHO,CANGALLO,PARAS,downloaded,
 distrital,050208,AYACUCHO,CANGALLO,TOTOS,downloaded,
 distrital,050211,AYACUCHO,CANGALLO,MARÍA PARADO DE BELLIDO,downloaded,
-distrital,050301,AYACUCHO,HUANTA,HUANTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050302,AYACUCHO,HUANTA,AYAHUANCO,downloaded,
 distrital,050303,AYACUCHO,HUANTA,HUAMANGUILLA,downloaded,
 distrital,050304,AYACUCHO,HUANTA,IGUAIN,downloaded,
@@ -478,7 +433,6 @@ distrital,050311,AYACUCHO,HUANTA,UCHURACCAY,downloaded,
 distrital,050312,AYACUCHO,HUANTA,PUCACOLPA,downloaded,
 distrital,050313,AYACUCHO,HUANTA,CHACA,downloaded,
 distrital,050314,AYACUCHO,HUANTA,PUTIS,downloaded,
-distrital,050401,AYACUCHO,LA MAR,SAN MIGUEL,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050402,AYACUCHO,LA MAR,ANCO,downloaded,
 distrital,050403,AYACUCHO,LA MAR,AYNA,downloaded,
 distrital,050404,AYACUCHO,LA MAR,CHILCAS,downloaded,
@@ -493,7 +447,6 @@ distrital,050412,AYACUCHO,LA MAR,UNIÓN PROGRESO,downloaded,
 distrital,050413,AYACUCHO,LA MAR,PATIBAMBA,downloaded,
 distrital,050414,AYACUCHO,LA MAR,NINABAMBA,downloaded,
 distrital,050415,AYACUCHO,LA MAR,RÍO MAGDALENA,downloaded,
-distrital,050501,AYACUCHO,LUCANAS,PUQUIO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050502,AYACUCHO,LUCANAS,AUCARA,downloaded,
 distrital,050503,AYACUCHO,LUCANAS,CABANA,downloaded,
 distrital,050504,AYACUCHO,LUCANAS,CARMEN SALCEDO,downloaded,
@@ -514,7 +467,6 @@ distrital,050525,AYACUCHO,LUCANAS,SANTA LUCÍA,downloaded,
 distrital,050529,AYACUCHO,LUCANAS,SAISA,downloaded,
 distrital,050531,AYACUCHO,LUCANAS,SAN PEDRO DE PALCO,downloaded,
 distrital,050532,AYACUCHO,LUCANAS,SAN CRISTÓBAL,downloaded,
-distrital,050601,AYACUCHO,PARINACOCHAS,CORACORA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050604,AYACUCHO,PARINACOCHAS,CORONEL CASTAÑEDA,downloaded,
 distrital,050605,AYACUCHO,PARINACOCHAS,CHUMPI,downloaded,
 distrital,050608,AYACUCHO,PARINACOCHAS,PACAPAUSA,downloaded,
@@ -522,7 +474,6 @@ distrital,050611,AYACUCHO,PARINACOCHAS,PULLO,downloaded,
 distrital,050612,AYACUCHO,PARINACOCHAS,PUYUSCA,downloaded,
 distrital,050615,AYACUCHO,PARINACOCHAS,SAN FRANCISCO DE RIVACAYCO,downloaded,
 distrital,050616,AYACUCHO,PARINACOCHAS,UPAHUACHO,downloaded,
-distrital,050701,AYACUCHO,VÍCTOR FAJARDO,HUANCAPI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050702,AYACUCHO,VÍCTOR FAJARDO,ALCAMENCA,downloaded,
 distrital,050703,AYACUCHO,VÍCTOR FAJARDO,APONGO,downloaded,
 distrital,050704,AYACUCHO,VÍCTOR FAJARDO,CANARIA,downloaded,
@@ -534,11 +485,9 @@ distrital,050710,AYACUCHO,VÍCTOR FAJARDO,HUANCARAYLLA,downloaded,
 distrital,050713,AYACUCHO,VÍCTOR FAJARDO,SARHUA,downloaded,
 distrital,050714,AYACUCHO,VÍCTOR FAJARDO,VILCANCHOS,downloaded,
 distrital,050715,AYACUCHO,VÍCTOR FAJARDO,ASQUIPATA,downloaded,
-distrital,050801,AYACUCHO,HUANCA SANCOS,SANCOS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050802,AYACUCHO,HUANCA SANCOS,SACSAMARCA,downloaded,
 distrital,050803,AYACUCHO,HUANCA SANCOS,SANTIAGO DE LUCANAMARCA,downloaded,
 distrital,050804,AYACUCHO,HUANCA SANCOS,CARAPO,downloaded,
-distrital,050901,AYACUCHO,VILCAS HUAMÁN,VILCAS HUAMÁN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,050902,AYACUCHO,VILCAS HUAMÁN,VISCHONGO,downloaded,
 distrital,050903,AYACUCHO,VILCAS HUAMÁN,ACCOMARCA,downloaded,
 distrital,050904,AYACUCHO,VILCAS HUAMÁN,CARHUANCA,downloaded,
@@ -546,7 +495,6 @@ distrital,050905,AYACUCHO,VILCAS HUAMÁN,CONCEPCIÓN,downloaded,
 distrital,050906,AYACUCHO,VILCAS HUAMÁN,HUAMBALPA,downloaded,
 distrital,050907,AYACUCHO,VILCAS HUAMÁN,SAURAMA,downloaded,
 distrital,050908,AYACUCHO,VILCAS HUAMÁN,INDEPENDENCIA,downloaded,
-distrital,051001,AYACUCHO,PÁUCAR DEL SARA SARA,PAUSA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,051002,AYACUCHO,PÁUCAR DEL SARA SARA,COLTA,downloaded,
 distrital,051003,AYACUCHO,PÁUCAR DEL SARA SARA,CORCULLA,downloaded,
 distrital,051004,AYACUCHO,PÁUCAR DEL SARA SARA,LAMPA,downloaded,
@@ -556,7 +504,6 @@ distrital,051007,AYACUCHO,PÁUCAR DEL SARA SARA,PARARCA,downloaded,
 distrital,051008,AYACUCHO,PÁUCAR DEL SARA SARA,SAN JAVIER DE ALPABAMBA,downloaded,
 distrital,051009,AYACUCHO,PÁUCAR DEL SARA SARA,SAN JOSÉ DE USHUA,downloaded,
 distrital,051010,AYACUCHO,PÁUCAR DEL SARA SARA,SARA SARA,downloaded,
-distrital,051101,AYACUCHO,SUCRE,QUEROBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,051102,AYACUCHO,SUCRE,BELÉN,downloaded,
 distrital,051103,AYACUCHO,SUCRE,CHALCOS,downloaded,
 distrital,051104,AYACUCHO,SUCRE,SAN SALVADOR DE QUIJE,downloaded,
@@ -567,7 +514,6 @@ distrital,051108,AYACUCHO,SUCRE,SORAS,downloaded,
 distrital,051109,AYACUCHO,SUCRE,HUACAÑA,downloaded,
 distrital,051110,AYACUCHO,SUCRE,CHILCAYOC,downloaded,
 distrital,051111,AYACUCHO,SUCRE,MORCOLLA,downloaded,
-distrital,060101,CAJAMARCA,CAJAMARCA,CAJAMARCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060102,CAJAMARCA,CAJAMARCA,ASUNCIÓN,downloaded,
 distrital,060103,CAJAMARCA,CAJAMARCA,COSPAN,downloaded,
 distrital,060104,CAJAMARCA,CAJAMARCA,CHETILLA,downloaded,
@@ -579,11 +525,9 @@ distrital,060109,CAJAMARCA,CAJAMARCA,MAGDALENA,downloaded,
 distrital,060110,CAJAMARCA,CAJAMARCA,MATARA,downloaded,
 distrital,060111,CAJAMARCA,CAJAMARCA,NAMORA,downloaded,
 distrital,060112,CAJAMARCA,CAJAMARCA,SAN JUAN,downloaded,
-distrital,060201,CAJAMARCA,CAJABAMBA,CAJABAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060202,CAJAMARCA,CAJABAMBA,CACHACHI,downloaded,
 distrital,060203,CAJAMARCA,CAJABAMBA,CONDEBAMBA,downloaded,
 distrital,060205,CAJAMARCA,CAJABAMBA,SITACOCHA,downloaded,
-distrital,060301,CAJAMARCA,CELENDÍN,CELENDÍN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060302,CAJAMARCA,CELENDÍN,CORTEGANA,downloaded,
 distrital,060303,CAJAMARCA,CELENDÍN,CHUMUCH,downloaded,
 distrital,060304,CAJAMARCA,CELENDÍN,HUASMÍN,downloaded,
@@ -595,7 +539,6 @@ distrital,060309,CAJAMARCA,CELENDÍN,SOROCHUCO,downloaded,
 distrital,060310,CAJAMARCA,CELENDÍN,SUCRE,downloaded,
 distrital,060311,CAJAMARCA,CELENDÍN,UTCO,downloaded,
 distrital,060312,CAJAMARCA,CELENDÍN,LA LIBERTAD DE PALLÁN,downloaded,
-distrital,060401,CAJAMARCA,CONTUMAZA,CONTUMAZA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060403,CAJAMARCA,CONTUMAZA,CHILETE,downloaded,
 distrital,060404,CAJAMARCA,CONTUMAZA,GUZMANGO,downloaded,
 distrital,060405,CAJAMARCA,CONTUMAZA,SAN BENITO,downloaded,
@@ -603,7 +546,6 @@ distrital,060406,CAJAMARCA,CONTUMAZA,CUPISNIQUE,downloaded,
 distrital,060407,CAJAMARCA,CONTUMAZA,TANTARICA,downloaded,
 distrital,060408,CAJAMARCA,CONTUMAZA,YONÁN,downloaded,
 distrital,060409,CAJAMARCA,CONTUMAZA,SANTA CRUZ DE TOLED,downloaded,
-distrital,060501,CAJAMARCA,CUTERVO,CUTERVO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060502,CAJAMARCA,CUTERVO,CALLAYUC,downloaded,
 distrital,060503,CAJAMARCA,CUTERVO,CUJILLO,downloaded,
 distrital,060504,CAJAMARCA,CUTERVO,CHOROS,downloaded,
@@ -618,7 +560,6 @@ distrital,060512,CAJAMARCA,CUTERVO,SANTO DOMINGO DE LA CAPILLA,downloaded,
 distrital,060513,CAJAMARCA,CUTERVO,SANTO TOMÁS,downloaded,
 distrital,060514,CAJAMARCA,CUTERVO,SOCOTA,downloaded,
 distrital,060515,CAJAMARCA,CUTERVO,TORIBIO CASANOVA,downloaded,
-distrital,060601,CAJAMARCA,CHOTA,CHOTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060602,CAJAMARCA,CHOTA,ANGUÍA,downloaded,
 distrital,060603,CAJAMARCA,CHOTA,COCHABAMBA,downloaded,
 distrital,060604,CAJAMARCA,CHOTA,CONCHÁN,downloaded,
@@ -637,10 +578,8 @@ distrital,060616,CAJAMARCA,CHOTA,TOCMOCHE,downloaded,
 distrital,060617,CAJAMARCA,CHOTA,SAN JUAN DE LICUPIS,downloaded,
 distrital,060618,CAJAMARCA,CHOTA,CHOROPAMPA,downloaded,
 distrital,060619,CAJAMARCA,CHOTA,CHALAMARCA,downloaded,
-distrital,060701,CAJAMARCA,HUALGAYOC,BAMBAMARCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060702,CAJAMARCA,HUALGAYOC,CHUGUR,downloaded,
 distrital,060703,CAJAMARCA,HUALGAYOC,HUALGAYOC,downloaded,
-distrital,060801,CAJAMARCA,JAÉN,JAÉN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060802,CAJAMARCA,JAÉN,BELLAVISTA,downloaded,
 distrital,060803,CAJAMARCA,JAÉN,COLASAY,downloaded,
 distrital,060804,CAJAMARCA,JAÉN,CHONTALÍ,downloaded,
@@ -652,7 +591,6 @@ distrital,060809,CAJAMARCA,JAÉN,SAN JOSÉ DEL ALTO,downloaded,
 distrital,060810,CAJAMARCA,JAÉN,SANTA ROSA,downloaded,
 distrital,060811,CAJAMARCA,JAÉN,LAS PIRIAS,downloaded,
 distrital,060812,CAJAMARCA,JAÉN,HUABAL,downloaded,
-distrital,060901,CAJAMARCA,SANTA CRUZ,SANTA CRUZ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,060902,CAJAMARCA,SANTA CRUZ,CATACHE,downloaded,
 distrital,060903,CAJAMARCA,SANTA CRUZ,CHANCAYBAÑOS,downloaded,
 distrital,060904,CAJAMARCA,SANTA CRUZ,LA ESPERANZA,downloaded,
@@ -663,7 +601,6 @@ distrital,060908,CAJAMARCA,SANTA CRUZ,UTICYACU,downloaded,
 distrital,060909,CAJAMARCA,SANTA CRUZ,YAUYUCAN,downloaded,
 distrital,060910,CAJAMARCA,SANTA CRUZ,ANDABAMBA,downloaded,
 distrital,060911,CAJAMARCA,SANTA CRUZ,SAUCEPAMPA,downloaded,
-distrital,061001,CAJAMARCA,SAN MIGUEL,SAN MIGUEL,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,061002,CAJAMARCA,SAN MIGUEL,CALQUIS,downloaded,
 distrital,061003,CAJAMARCA,SAN MIGUEL,LA FLORIDA,downloaded,
 distrital,061004,CAJAMARCA,SAN MIGUEL,LLAPA,downloaded,
@@ -676,25 +613,21 @@ distrital,061010,CAJAMARCA,SAN MIGUEL,UNIÓN AGUA BLANCA,downloaded,
 distrital,061011,CAJAMARCA,SAN MIGUEL,TONGOD,downloaded,
 distrital,061012,CAJAMARCA,SAN MIGUEL,CATILLUC,downloaded,
 distrital,061013,CAJAMARCA,SAN MIGUEL,BOLÍVAR,downloaded,
-distrital,061101,CAJAMARCA,SAN IGNACIO,SAN IGNACIO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,061102,CAJAMARCA,SAN IGNACIO,CHIRINOS,downloaded,
 distrital,061103,CAJAMARCA,SAN IGNACIO,HUARANGO,downloaded,
 distrital,061104,CAJAMARCA,SAN IGNACIO,NAMBALLE,downloaded,
 distrital,061105,CAJAMARCA,SAN IGNACIO,LA COIPA,downloaded,
 distrital,061106,CAJAMARCA,SAN IGNACIO,SAN JOSÉ DE LOURDES,downloaded,
 distrital,061107,CAJAMARCA,SAN IGNACIO,TABACONAS,downloaded,
-distrital,061201,CAJAMARCA,SAN MARCOS,PEDRO GÁLVEZ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,061202,CAJAMARCA,SAN MARCOS,ICHOCÁN,downloaded,
 distrital,061203,CAJAMARCA,SAN MARCOS,GREGORIO PITA,downloaded,
 distrital,061204,CAJAMARCA,SAN MARCOS,JOSÉ MANUEL QUIRÓZ,downloaded,
 distrital,061205,CAJAMARCA,SAN MARCOS,EDUARDO VILLANUEVA,downloaded,
 distrital,061206,CAJAMARCA,SAN MARCOS,JOSÉ SABOGAL,downloaded,
 distrital,061207,CAJAMARCA,SAN MARCOS,CHANCAY,downloaded,
-distrital,061301,CAJAMARCA,SAN PABLO,SAN PABLO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,061302,CAJAMARCA,SAN PABLO,SAN BERNARDINO,downloaded,
 distrital,061303,CAJAMARCA,SAN PABLO,SAN LUIS,downloaded,
 distrital,061304,CAJAMARCA,SAN PABLO,TUMBADÉN,downloaded,
-distrital,070101,CUSCO,CUSCO,CUSCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070102,CUSCO,CUSCO,CCORCA,downloaded,
 distrital,070103,CUSCO,CUSCO,POROY,downloaded,
 distrital,070104,CUSCO,CUSCO,SAN JERÓNIMO,downloaded,
@@ -702,14 +635,12 @@ distrital,070105,CUSCO,CUSCO,SAN SEBASTIÁN,downloaded,
 distrital,070106,CUSCO,CUSCO,SANTIAGO,downloaded,
 distrital,070107,CUSCO,CUSCO,SAYLLA,downloaded,
 distrital,070108,CUSCO,CUSCO,WANCHAQ,downloaded,
-distrital,070201,CUSCO,ACOMAYO,ACOMAYO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070202,CUSCO,ACOMAYO,ACOPIA,downloaded,
 distrital,070203,CUSCO,ACOMAYO,ACOS,downloaded,
 distrital,070204,CUSCO,ACOMAYO,POMACANCHI,downloaded,
 distrital,070205,CUSCO,ACOMAYO,RONDOCAN,downloaded,
 distrital,070206,CUSCO,ACOMAYO,SANGARARA,downloaded,
 distrital,070207,CUSCO,ACOMAYO,MOSOC LLACTA,downloaded,
-distrital,070301,CUSCO,ANTA,ANTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070302,CUSCO,ANTA,CHINCHAYPUJIO,downloaded,
 distrital,070303,CUSCO,ANTA,HUAROCONDO,downloaded,
 distrital,070304,CUSCO,ANTA,LIMATAMBO,downloaded,
@@ -718,7 +649,6 @@ distrital,070306,CUSCO,ANTA,PUCYURA,downloaded,
 distrital,070307,CUSCO,ANTA,ZURITE,downloaded,
 distrital,070308,CUSCO,ANTA,CACHIMAYO,downloaded,
 distrital,070309,CUSCO,ANTA,ANCAHUASI,downloaded,
-distrital,070401,CUSCO,CALCA,CALCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070402,CUSCO,CALCA,COYA,downloaded,
 distrital,070403,CUSCO,CALCA,LAMAY,downloaded,
 distrital,070404,CUSCO,CALCA,LARES,downloaded,
@@ -726,7 +656,6 @@ distrital,070405,CUSCO,CALCA,PISAC,downloaded,
 distrital,070406,CUSCO,CALCA,SAN SALVADOR,downloaded,
 distrital,070407,CUSCO,CALCA,TARAY,downloaded,
 distrital,070408,CUSCO,CALCA,YANATILE,downloaded,
-distrital,070501,CUSCO,CANAS,YANAOCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070502,CUSCO,CANAS,CHECCA,downloaded,
 distrital,070503,CUSCO,CANAS,KUNTURKANKI,downloaded,
 distrital,070504,CUSCO,CANAS,LANGUI,downloaded,
@@ -734,7 +663,6 @@ distrital,070505,CUSCO,CANAS,LAYO,downloaded,
 distrital,070506,CUSCO,CANAS,PAMPAMARCA,downloaded,
 distrital,070507,CUSCO,CANAS,QUEHUE,downloaded,
 distrital,070508,CUSCO,CANAS,TÚPAC AMARU,downloaded,
-distrital,070601,CUSCO,CANCHIS,SICUANI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070602,CUSCO,CANCHIS,COMBAPATA,downloaded,
 distrital,070603,CUSCO,CANCHIS,CHECACUPE,downloaded,
 distrital,070604,CUSCO,CANCHIS,MARANGANI,downloaded,
@@ -742,7 +670,6 @@ distrital,070605,CUSCO,CANCHIS,PITUMARCA,downloaded,
 distrital,070606,CUSCO,CANCHIS,SAN PABLO,downloaded,
 distrital,070607,CUSCO,CANCHIS,SAN PEDRO,downloaded,
 distrital,070608,CUSCO,CANCHIS,TINTA,downloaded,
-distrital,070701,CUSCO,CHUMBIVILCAS,SANTO TOMÁS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070702,CUSCO,CHUMBIVILCAS,CAPACMARCA,downloaded,
 distrital,070703,CUSCO,CHUMBIVILCAS,COLQUEMARCA,downloaded,
 distrital,070704,CUSCO,CHUMBIVILCAS,CHAMACA,downloaded,
@@ -750,7 +677,6 @@ distrital,070705,CUSCO,CHUMBIVILCAS,LIVITACA,downloaded,
 distrital,070706,CUSCO,CHUMBIVILCAS,LLUSCO,downloaded,
 distrital,070707,CUSCO,CHUMBIVILCAS,QUIÑOTA,downloaded,
 distrital,070708,CUSCO,CHUMBIVILCAS,VELILLE,downloaded,
-distrital,070801,CUSCO,ESPINAR,ESPINAR,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070802,CUSCO,ESPINAR,CONDOROMA,downloaded,
 distrital,070803,CUSCO,ESPINAR,COPORAQUE,downloaded,
 distrital,070804,CUSCO,ESPINAR,OCORURO,downloaded,
@@ -758,7 +684,6 @@ distrital,070805,CUSCO,ESPINAR,PALLPATA,downloaded,
 distrital,070806,CUSCO,ESPINAR,PICHIGUA,downloaded,
 distrital,070807,CUSCO,ESPINAR,SUYCKUTAMBO,downloaded,
 distrital,070808,CUSCO,ESPINAR,ALTO PICHIGUA,downloaded,
-distrital,070901,CUSCO,LA CONVENCIÓN,SANTA ANA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,070902,CUSCO,LA CONVENCIÓN,ECHARATE,downloaded,
 distrital,070903,CUSCO,LA CONVENCIÓN,HUAYOPATA,downloaded,
 distrital,070904,CUSCO,LA CONVENCIÓN,MARANURA,downloaded,
@@ -776,7 +701,6 @@ distrital,070916,CUSCO,LA CONVENCIÓN,KUMPIRUSHIATO,downloaded,
 distrital,070917,CUSCO,LA CONVENCIÓN,CIELO PUNCO,downloaded,
 distrital,070918,CUSCO,LA CONVENCIÓN,MANITEA,downloaded,
 distrital,070919,CUSCO,LA CONVENCIÓN,UNIÓN ASHÁNINKA,downloaded,
-distrital,071001,CUSCO,PARURO,PARURO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,071002,CUSCO,PARURO,ACCHA,downloaded,
 distrital,071003,CUSCO,PARURO,CCAPI,downloaded,
 distrital,071004,CUSCO,PARURO,COLCHA,downloaded,
@@ -785,13 +709,11 @@ distrital,071006,CUSCO,PARURO,OMACHA,downloaded,
 distrital,071007,CUSCO,PARURO,YAURISQUE,downloaded,
 distrital,071008,CUSCO,PARURO,PACCARITAMBO,downloaded,
 distrital,071009,CUSCO,PARURO,PILLPINTO,downloaded,
-distrital,071101,CUSCO,PAUCARTAMBO,PAUCARTAMBO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,071102,CUSCO,PAUCARTAMBO,CAICAY,downloaded,
 distrital,071103,CUSCO,PAUCARTAMBO,COLQUEPATA,downloaded,
 distrital,071104,CUSCO,PAUCARTAMBO,CHALLABAMBA,downloaded,
 distrital,071105,CUSCO,PAUCARTAMBO,KOSÑIPATA,downloaded,
 distrital,071106,CUSCO,PAUCARTAMBO,HUANCARANI,downloaded,
-distrital,071201,CUSCO,QUISPICANCHI,URCOS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,071202,CUSCO,QUISPICANCHI,ANDAHUAYLILLAS,downloaded,
 distrital,071203,CUSCO,QUISPICANCHI,CAMANTI,downloaded,
 distrital,071204,CUSCO,QUISPICANCHI,CCARHUAYO,downloaded,
@@ -803,14 +725,12 @@ distrital,071209,CUSCO,QUISPICANCHI,MARCAPATA,downloaded,
 distrital,071210,CUSCO,QUISPICANCHI,OCONGATE,downloaded,
 distrital,071211,CUSCO,QUISPICANCHI,OROPESA,downloaded,
 distrital,071212,CUSCO,QUISPICANCHI,QUIQUIJANA,downloaded,
-distrital,071301,CUSCO,URUBAMBA,URUBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,071302,CUSCO,URUBAMBA,CHINCHERO,downloaded,
 distrital,071303,CUSCO,URUBAMBA,HUAYLLABAMBA,downloaded,
 distrital,071304,CUSCO,URUBAMBA,MACHUPICCHU,downloaded,
 distrital,071305,CUSCO,URUBAMBA,MARAS,downloaded,
 distrital,071306,CUSCO,URUBAMBA,OLLANTAYTAMBO,downloaded,
 distrital,071307,CUSCO,URUBAMBA,YUCAY,downloaded,
-distrital,080101,HUANCAVELICA,HUANCAVELICA,HUANCAVELICA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080102,HUANCAVELICA,HUANCAVELICA,ACOBAMBILLA,downloaded,
 distrital,080103,HUANCAVELICA,HUANCAVELICA,ACORIA,downloaded,
 distrital,080104,HUANCAVELICA,HUANCAVELICA,CONAYCA,downloaded,
@@ -829,7 +749,6 @@ distrital,080117,HUANCAVELICA,HUANCAVELICA,VILCA,downloaded,
 distrital,080118,HUANCAVELICA,HUANCAVELICA,YAULI,downloaded,
 distrital,080119,HUANCAVELICA,HUANCAVELICA,ASCENSIÓN,downloaded,
 distrital,080120,HUANCAVELICA,HUANCAVELICA,HUANDO,downloaded,
-distrital,080201,HUANCAVELICA,ACOBAMBA,ACOBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080202,HUANCAVELICA,ACOBAMBA,ANTA,downloaded,
 distrital,080203,HUANCAVELICA,ACOBAMBA,ANDABAMBA,downloaded,
 distrital,080204,HUANCAVELICA,ACOBAMBA,CAJA,downloaded,
@@ -837,7 +756,6 @@ distrital,080205,HUANCAVELICA,ACOBAMBA,MARCAS,downloaded,
 distrital,080206,HUANCAVELICA,ACOBAMBA,PAUCARA,downloaded,
 distrital,080207,HUANCAVELICA,ACOBAMBA,POMACOCHA,downloaded,
 distrital,080208,HUANCAVELICA,ACOBAMBA,ROSARIO,downloaded,
-distrital,080301,HUANCAVELICA,ANGARAES,LIRCAY,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080302,HUANCAVELICA,ANGARAES,ANCHONGA,downloaded,
 distrital,080303,HUANCAVELICA,ANGARAES,CALLANMARCA,downloaded,
 distrital,080304,HUANCAVELICA,ANGARAES,CONGALLA,downloaded,
@@ -849,7 +767,6 @@ distrital,080309,HUANCAVELICA,ANGARAES,SAN ANTONIO DE ANTAPARCO,downloaded,
 distrital,080310,HUANCAVELICA,ANGARAES,SANTO TOMÁS DE PATA,downloaded,
 distrital,080311,HUANCAVELICA,ANGARAES,SECCLLA,downloaded,
 distrital,080312,HUANCAVELICA,ANGARAES,CCOCHACCASA,downloaded,
-distrital,080401,HUANCAVELICA,CASTROVIRREYNA,CASTROVIRREYNA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080402,HUANCAVELICA,CASTROVIRREYNA,ARMA,downloaded,
 distrital,080403,HUANCAVELICA,CASTROVIRREYNA,AURAHUA,downloaded,
 distrital,080405,HUANCAVELICA,CASTROVIRREYNA,CAPILLAS,downloaded,
@@ -862,7 +779,6 @@ distrital,080422,HUANCAVELICA,CASTROVIRREYNA,SAN JUAN,downloaded,
 distrital,080427,HUANCAVELICA,CASTROVIRREYNA,TANTARA,downloaded,
 distrital,080428,HUANCAVELICA,CASTROVIRREYNA,TICRAPO,downloaded,
 distrital,080429,HUANCAVELICA,CASTROVIRREYNA,SANTA ANA,downloaded,
-distrital,080501,HUANCAVELICA,TAYACAJA,PAMPAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080502,HUANCAVELICA,TAYACAJA,ACOSTAMBO,downloaded,
 distrital,080503,HUANCAVELICA,TAYACAJA,ACRAQUIA,downloaded,
 distrital,080504,HUANCAVELICA,TAYACAJA,AHUAYCHA,downloaded,
@@ -888,7 +804,6 @@ distrital,080534,HUANCAVELICA,TAYACAJA,COCHABAMBA,downloaded,
 distrital,080601,HUANCAVELICA,HUAYTARA,AYAVI,downloaded,
 distrital,080602,HUANCAVELICA,HUAYTARA,CÓRDOVA,downloaded,
 distrital,080603,HUANCAVELICA,HUAYTARA,HUAYACUNDO ARMA,downloaded,
-distrital,080604,HUANCAVELICA,HUAYTARA,HUAYTARA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080605,HUANCAVELICA,HUAYTARA,LARAMARCA,downloaded,
 distrital,080606,HUANCAVELICA,HUAYTARA,OCOYO,downloaded,
 distrital,080607,HUANCAVELICA,HUAYTARA,PILPICHACA,downloaded,
@@ -901,7 +816,6 @@ distrital,080613,HUANCAVELICA,HUAYTARA,SANTIAGO DE CHOCORVOS,downloaded,
 distrital,080614,HUANCAVELICA,HUAYTARA,SANTIAGO DE QUIRAHUARA,downloaded,
 distrital,080615,HUANCAVELICA,HUAYTARA,SANTO DOMINGO DE CAPILLAS,downloaded,
 distrital,080616,HUANCAVELICA,HUAYTARA,TAMBO,downloaded,
-distrital,080701,HUANCAVELICA,CHURCAMPA,CHURCAMPA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,080702,HUANCAVELICA,CHURCAMPA,ANCO,downloaded,
 distrital,080703,HUANCAVELICA,CHURCAMPA,CHINCHIHUASI,downloaded,
 distrital,080704,HUANCAVELICA,CHURCAMPA,EL CARMEN,downloaded,
@@ -912,7 +826,6 @@ distrital,080708,HUANCAVELICA,CHURCAMPA,SAN MIGUEL DE MAYOCC,downloaded,
 distrital,080709,HUANCAVELICA,CHURCAMPA,SAN PEDRO DE CORIS,downloaded,
 distrital,080710,HUANCAVELICA,CHURCAMPA,PACHAMARCA,downloaded,
 distrital,080711,HUANCAVELICA,CHURCAMPA,COSME,downloaded,
-distrital,090101,HUÁNUCO,HUÁNUCO,HUÁNUCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090102,HUÁNUCO,HUÁNUCO,CHINCHAO,downloaded,
 distrital,090103,HUÁNUCO,HUÁNUCO,CHURUBAMBA,downloaded,
 distrital,090104,HUÁNUCO,HUÁNUCO,MARGOS,downloaded,
@@ -925,7 +838,6 @@ distrital,090110,HUÁNUCO,HUÁNUCO,AMARILIS,downloaded,
 distrital,090111,HUÁNUCO,HUÁNUCO,PILLCO MARCA,downloaded,
 distrital,090112,HUÁNUCO,HUÁNUCO,YACUS,downloaded,
 distrital,090113,HUÁNUCO,HUÁNUCO,SAN PABLO DE PILLAO,downloaded,
-distrital,090201,HUÁNUCO,AMBO,AMBO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090202,HUÁNUCO,AMBO,CAYNA,downloaded,
 distrital,090203,HUÁNUCO,AMBO,COLPAS,downloaded,
 distrital,090204,HUÁNUCO,AMBO,CONCHAMARCA,downloaded,
@@ -933,7 +845,6 @@ distrital,090205,HUÁNUCO,AMBO,HUACAR,downloaded,
 distrital,090206,HUÁNUCO,AMBO,SAN FRANCISCO,downloaded,
 distrital,090207,HUÁNUCO,AMBO,SAN RAFAEL,downloaded,
 distrital,090208,HUÁNUCO,AMBO,TOMAY - KICHWA,downloaded,
-distrital,090301,HUÁNUCO,DOS DE MAYO,LA UNIÓN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090307,HUÁNUCO,DOS DE MAYO,CHUQUIS,downloaded,
 distrital,090312,HUÁNUCO,DOS DE MAYO,MARÍAS,downloaded,
 distrital,090314,HUÁNUCO,DOS DE MAYO,PACHAS,downloaded,
@@ -942,7 +853,6 @@ distrital,090317,HUÁNUCO,DOS DE MAYO,RIPÁN,downloaded,
 distrital,090321,HUÁNUCO,DOS DE MAYO,SHUNQUI,downloaded,
 distrital,090322,HUÁNUCO,DOS DE MAYO,SILLAPATA,downloaded,
 distrital,090323,HUÁNUCO,DOS DE MAYO,YANAS,downloaded,
-distrital,090401,HUÁNUCO,HUAMALIES,LLATA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090402,HUÁNUCO,HUAMALIES,ARANCAY,downloaded,
 distrital,090403,HUÁNUCO,HUAMALIES,CHAVÍN DE PARIARCA,downloaded,
 distrital,090404,HUÁNUCO,HUAMALIES,JACAS GRANDE,downloaded,
@@ -953,12 +863,10 @@ distrital,090408,HUÁNUCO,HUAMALIES,PUNCHAO,downloaded,
 distrital,090409,HUÁNUCO,HUAMALIES,PUÑOS,downloaded,
 distrital,090410,HUÁNUCO,HUAMALIES,SINGA,downloaded,
 distrital,090411,HUÁNUCO,HUAMALIES,TANTAMAYO,downloaded,
-distrital,090501,HUÁNUCO,MARAÑÓN,HUACRACHUCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090502,HUÁNUCO,MARAÑÓN,CHOLÓN,downloaded,
 distrital,090505,HUÁNUCO,MARAÑÓN,SAN BUENAVENTURA,downloaded,
 distrital,090506,HUÁNUCO,MARAÑÓN,LA MORADA,downloaded,
 distrital,090507,HUÁNUCO,MARAÑÓN,SANTA ROSA DE ALTO YANAJANCA,downloaded,
-distrital,090601,HUÁNUCO,LEONCIO PRADO,RUPA-RUPA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090602,HUÁNUCO,LEONCIO PRADO,DANIEL ALOMÍA ROBLES,downloaded,
 distrital,090603,HUÁNUCO,LEONCIO PRADO,HERMILIO VALDIZÁN,downloaded,
 distrital,090604,HUÁNUCO,LEONCIO PRADO,LUYANDO,downloaded,
@@ -968,27 +876,22 @@ distrital,090607,HUÁNUCO,LEONCIO PRADO,PUCAYACU,downloaded,
 distrital,090608,HUÁNUCO,LEONCIO PRADO,CASTILLO GRANDE,downloaded,
 distrital,090609,HUÁNUCO,LEONCIO PRADO,PUEBLO NUEVO,downloaded,
 distrital,090610,HUÁNUCO,LEONCIO PRADO,SANTO DOMINGO DE ANDA,downloaded,
-distrital,090701,HUÁNUCO,PACHITEA,PANAO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090702,HUÁNUCO,PACHITEA,CHAGLLA,downloaded,
 distrital,090704,HUÁNUCO,PACHITEA,MOLINO,downloaded,
 distrital,090706,HUÁNUCO,PACHITEA,UMARI,downloaded,
 distrital,090801,HUÁNUCO,PUERTO INCA,HONORIA,downloaded,
-distrital,090802,HUÁNUCO,PUERTO INCA,PUERTO INCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090803,HUÁNUCO,PUERTO INCA,CODO DEL POZUZO,downloaded,
 distrital,090804,HUÁNUCO,PUERTO INCA,TOURNAVISTA,downloaded,
 distrital,090805,HUÁNUCO,PUERTO INCA,YUYAPICHIS,downloaded,
-distrital,090901,HUÁNUCO,HUACAYBAMBA,HUACAYBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,090902,HUÁNUCO,HUACAYBAMBA,PINRA,downloaded,
 distrital,090903,HUÁNUCO,HUACAYBAMBA,CANCHABAMBA,downloaded,
 distrital,090904,HUÁNUCO,HUACAYBAMBA,COCHABAMBA,downloaded,
-distrital,091001,HUÁNUCO,LAURICOCHA,JESÚS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,091002,HUÁNUCO,LAURICOCHA,BAÑOS,downloaded,
 distrital,091003,HUÁNUCO,LAURICOCHA,SAN FRANCISCO DE ASÍS,downloaded,
 distrital,091004,HUÁNUCO,LAURICOCHA,QUEROPALCA,downloaded,
 distrital,091005,HUÁNUCO,LAURICOCHA,SAN MIGUEL DE CAURI,downloaded,
 distrital,091006,HUÁNUCO,LAURICOCHA,RONDOS,downloaded,
 distrital,091007,HUÁNUCO,LAURICOCHA,JIVIA,downloaded,
-distrital,091101,HUÁNUCO,YAROWILCA,CHAVINILLO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,091102,HUÁNUCO,YAROWILCA,APARICIO POMARES,downloaded,
 distrital,091103,HUÁNUCO,YAROWILCA,CAHUAC,downloaded,
 distrital,091104,HUÁNUCO,YAROWILCA,CHACABAMBA,downloaded,
@@ -996,7 +899,6 @@ distrital,091105,HUÁNUCO,YAROWILCA,JACAS CHICO,downloaded,
 distrital,091106,HUÁNUCO,YAROWILCA,OBAS,downloaded,
 distrital,091107,HUÁNUCO,YAROWILCA,PAMPAMARCA,downloaded,
 distrital,091108,HUÁNUCO,YAROWILCA,CHORAS,downloaded,
-distrital,100101,ICA,ICA,ICA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,100102,ICA,ICA,LA TINGUIÑA,downloaded,
 distrital,100103,ICA,ICA,LOS AQUIJES,downloaded,
 distrital,100104,ICA,ICA,PARCONA,downloaded,
@@ -1010,7 +912,6 @@ distrital,100111,ICA,ICA,YAUCA DEL ROSARIO,downloaded,
 distrital,100112,ICA,ICA,TATE,downloaded,
 distrital,100113,ICA,ICA,PACHACUTEC,downloaded,
 distrital,100114,ICA,ICA,OCUCAJE,downloaded,
-distrital,100201,ICA,CHINCHA,CHINCHA ALTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,100202,ICA,CHINCHA,CHAVÍN,downloaded,
 distrital,100203,ICA,CHINCHA,CHINCHA BAJA,downloaded,
 distrital,100204,ICA,CHINCHA,EL CARMEN,downloaded,
@@ -1021,12 +922,10 @@ distrital,100208,ICA,CHINCHA,TAMBO DE MORA,downloaded,
 distrital,100209,ICA,CHINCHA,ALTO LARAN,downloaded,
 distrital,100210,ICA,CHINCHA,PUEBLO NUEVO,downloaded,
 distrital,100211,ICA,CHINCHA,SAN JUAN DE YANAC,downloaded,
-distrital,100301,ICA,NASCA,NASCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,100302,ICA,NASCA,CHANGUILLO,downloaded,
 distrital,100303,ICA,NASCA,EL INGENIO,downloaded,
 distrital,100304,ICA,NASCA,MARCONA,downloaded,
 distrital,100305,ICA,NASCA,VISTA ALEGRE,downloaded,
-distrital,100401,ICA,PISCO,PISCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,100402,ICA,PISCO,HUANCANO,downloaded,
 distrital,100403,ICA,PISCO,HUMAY,downloaded,
 distrital,100404,ICA,PISCO,INDEPENDENCIA,downloaded,
@@ -1034,12 +933,10 @@ distrital,100405,ICA,PISCO,PARACAS,downloaded,
 distrital,100406,ICA,PISCO,SAN ANDRÉS,downloaded,
 distrital,100407,ICA,PISCO,SAN CLEMENTE,downloaded,
 distrital,100408,ICA,PISCO,TUPAC AMARU INCA,downloaded,
-distrital,100501,ICA,PALPA,PALPA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,100502,ICA,PALPA,LLIPATA,downloaded,
 distrital,100503,ICA,PALPA,RÍO GRANDE,downloaded,
 distrital,100504,ICA,PALPA,SANTA CRUZ,downloaded,
 distrital,100505,ICA,PALPA,TIBILLO,downloaded,
-distrital,110101,JUNÍN,HUANCAYO,HUANCAYO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110103,JUNÍN,HUANCAYO,CARHUACALLANGA,downloaded,
 distrital,110104,JUNÍN,HUANCAYO,COLCA,downloaded,
 distrital,110105,JUNÍN,HUANCAYO,CULLHUAS,downloaded,
@@ -1067,7 +964,6 @@ distrital,110132,JUNÍN,HUANCAYO,SAÑO,downloaded,
 distrital,110133,JUNÍN,HUANCAYO,SAPALLANGA,downloaded,
 distrital,110134,JUNÍN,HUANCAYO,SICAYA,downloaded,
 distrital,110136,JUNÍN,HUANCAYO,VIQUES,downloaded,
-distrital,110201,JUNÍN,CONCEPCIÓN,CONCEPCIÓN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110202,JUNÍN,CONCEPCIÓN,ACO,downloaded,
 distrital,110203,JUNÍN,CONCEPCIÓN,ANDAMARCA,downloaded,
 distrital,110204,JUNÍN,CONCEPCIÓN,COMAS,downloaded,
@@ -1082,7 +978,6 @@ distrital,110212,JUNÍN,CONCEPCIÓN,NUEVE DE JULIO,downloaded,
 distrital,110213,JUNÍN,CONCEPCIÓN,ORCOTUNA,downloaded,
 distrital,110214,JUNÍN,CONCEPCIÓN,SANTA ROSA DE OCOPA,downloaded,
 distrital,110215,JUNÍN,CONCEPCIÓN,SAN JOSÉ DE QUERO,downloaded,
-distrital,110301,JUNÍN,JAUJA,JAUJA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110302,JUNÍN,JAUJA,ACOLLA,downloaded,
 distrital,110303,JUNÍN,JAUJA,APATA,downloaded,
 distrital,110304,JUNÍN,JAUJA,ATAURA,downloaded,
@@ -1116,11 +1011,9 @@ distrital,110331,JUNÍN,JAUJA,CURICACA,downloaded,
 distrital,110332,JUNÍN,JAUJA,MASMA CHICCHE,downloaded,
 distrital,110333,JUNÍN,JAUJA,SAUSA,downloaded,
 distrital,110334,JUNÍN,JAUJA,YAUYOS,downloaded,
-distrital,110401,JUNÍN,JUNÍN,JUNÍN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110402,JUNÍN,JUNÍN,CARHUAMAYO,downloaded,
 distrital,110403,JUNÍN,JUNÍN,ONDORES,downloaded,
 distrital,110404,JUNÍN,JUNÍN,ULCUMAYO,downloaded,
-distrital,110501,JUNÍN,TARMA,TARMA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110502,JUNÍN,TARMA,ACOBAMBA,downloaded,
 distrital,110503,JUNÍN,TARMA,HUARICOLCA,downloaded,
 distrital,110504,JUNÍN,TARMA,HUASAHUASI,downloaded,
@@ -1129,7 +1022,6 @@ distrital,110506,JUNÍN,TARMA,PALCA,downloaded,
 distrital,110507,JUNÍN,TARMA,PALCAMAYO,downloaded,
 distrital,110508,JUNÍN,TARMA,SAN PEDRO DE CAJAS,downloaded,
 distrital,110509,JUNÍN,TARMA,TAPO,downloaded,
-distrital,110601,JUNÍN,YAULI,LA OROYA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110602,JUNÍN,YAULI,CHACAPALPA,downloaded,
 distrital,110603,JUNÍN,YAULI,HUAY-HUAY,downloaded,
 distrital,110604,JUNÍN,YAULI,MARCAPOMACOCHA,downloaded,
@@ -1139,7 +1031,6 @@ distrital,110607,JUNÍN,YAULI,SANTA BÁRBARA DE CARHUACAYÁN,downloaded,
 distrital,110608,JUNÍN,YAULI,SUITUCANCHA,downloaded,
 distrital,110609,JUNÍN,YAULI,YAULI,downloaded,
 distrital,110610,JUNÍN,YAULI,SANTA ROSA DE SACCO,downloaded,
-distrital,110701,JUNÍN,SATIPO,SATIPO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110702,JUNÍN,SATIPO,COVIRIALI,downloaded,
 distrital,110703,JUNÍN,SATIPO,LLAYLLA,downloaded,
 distrital,110704,JUNÍN,SATIPO,MAZAMARI,downloaded,
@@ -1148,13 +1039,11 @@ distrital,110706,JUNÍN,SATIPO,PANGOA,downloaded,
 distrital,110707,JUNÍN,SATIPO,RÍO NEGRO,downloaded,
 distrital,110708,JUNÍN,SATIPO,RÍO TAMBO,downloaded,
 distrital,110709,JUNÍN,SATIPO,VIZCATÁN DEL ENE,downloaded,
-distrital,110801,JUNÍN,CHANCHAMAYO,CHANCHAMAYO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110802,JUNÍN,CHANCHAMAYO,SAN RAMÓN,downloaded,
 distrital,110803,JUNÍN,CHANCHAMAYO,VITOC,downloaded,
 distrital,110804,JUNÍN,CHANCHAMAYO,SAN LUIS DE SHUARO,downloaded,
 distrital,110805,JUNÍN,CHANCHAMAYO,PICHANAQUI,downloaded,
 distrital,110806,JUNÍN,CHANCHAMAYO,PERENÉ,downloaded,
-distrital,110901,JUNÍN,CHUPACA,CHUPACA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,110902,JUNÍN,CHUPACA,AHUAC,downloaded,
 distrital,110903,JUNÍN,CHUPACA,CHONGOS BAJO,downloaded,
 distrital,110904,JUNÍN,CHUPACA,HUACHAC,downloaded,
@@ -1163,7 +1052,6 @@ distrital,110906,JUNÍN,CHUPACA,SAN JUAN DE ISCOS,downloaded,
 distrital,110907,JUNÍN,CHUPACA,SAN JUAN DE JARPA,downloaded,
 distrital,110908,JUNÍN,CHUPACA,TRES DE DICIEMBRE,downloaded,
 distrital,110909,JUNÍN,CHUPACA,YANACANCHA,downloaded,
-distrital,120101,LA LIBERTAD,TRUJILLO,TRUJILLO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120102,LA LIBERTAD,TRUJILLO,HUANCHACO,downloaded,
 distrital,120103,LA LIBERTAD,TRUJILLO,LAREDO,downloaded,
 distrital,120104,LA LIBERTAD,TRUJILLO,MOCHE,downloaded,
@@ -1175,13 +1063,11 @@ distrital,120110,LA LIBERTAD,TRUJILLO,EL PORVENIR,downloaded,
 distrital,120111,LA LIBERTAD,TRUJILLO,LA ESPERANZA,downloaded,
 distrital,120112,LA LIBERTAD,TRUJILLO,FLORENCIA DE MORA,downloaded,
 distrital,120113,LA LIBERTAD,TRUJILLO,ALTO TRUJILLO,downloaded,
-distrital,120201,LA LIBERTAD,BOLÍVAR,BOLÍVAR,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120202,LA LIBERTAD,BOLÍVAR,BAMBAMARCA,downloaded,
 distrital,120203,LA LIBERTAD,BOLÍVAR,CONDORMARCA,downloaded,
 distrital,120204,LA LIBERTAD,BOLÍVAR,LONGOTEA,downloaded,
 distrital,120205,LA LIBERTAD,BOLÍVAR,UCUNCHA,downloaded,
 distrital,120206,LA LIBERTAD,BOLÍVAR,UCHUMARCA,downloaded,
-distrital,120301,LA LIBERTAD,SÁNCHEZ CARRIÓN,HUAMACHUCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120302,LA LIBERTAD,SÁNCHEZ CARRIÓN,COCHORCO,downloaded,
 distrital,120303,LA LIBERTAD,SÁNCHEZ CARRIÓN,CURGOS,downloaded,
 distrital,120304,LA LIBERTAD,SÁNCHEZ CARRIÓN,CHUGAY,downloaded,
@@ -1189,7 +1075,6 @@ distrital,120305,LA LIBERTAD,SÁNCHEZ CARRIÓN,MARCABAL,downloaded,
 distrital,120306,LA LIBERTAD,SÁNCHEZ CARRIÓN,SANAGORÁN,downloaded,
 distrital,120307,LA LIBERTAD,SÁNCHEZ CARRIÓN,SARÍN,downloaded,
 distrital,120308,LA LIBERTAD,SÁNCHEZ CARRIÓN,SARTIMBAMBA,downloaded,
-distrital,120401,LA LIBERTAD,OTUZCO,OTUZCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120402,LA LIBERTAD,OTUZCO,AGALLPAMPA,downloaded,
 distrital,120403,LA LIBERTAD,OTUZCO,CHARAT,downloaded,
 distrital,120404,LA LIBERTAD,OTUZCO,HUARANCHAL,downloaded,
@@ -1199,12 +1084,10 @@ distrital,120409,LA LIBERTAD,OTUZCO,SALPO,downloaded,
 distrital,120410,LA LIBERTAD,OTUZCO,SINSICAP,downloaded,
 distrital,120411,LA LIBERTAD,OTUZCO,USQUIL,downloaded,
 distrital,120413,LA LIBERTAD,OTUZCO,MACHE,downloaded,
-distrital,120501,LA LIBERTAD,PACASMAYO,SAN PEDRO DE LLOC,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120503,LA LIBERTAD,PACASMAYO,GUADALUPE,downloaded,
 distrital,120504,LA LIBERTAD,PACASMAYO,JEQUETEPEQUE,downloaded,
 distrital,120506,LA LIBERTAD,PACASMAYO,PACASMAYO,downloaded,
 distrital,120508,LA LIBERTAD,PACASMAYO,SAN JOSÉ,downloaded,
-distrital,120601,LA LIBERTAD,PATAZ,TAYABAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120602,LA LIBERTAD,PATAZ,BULDIBUYO,downloaded,
 distrital,120603,LA LIBERTAD,PATAZ,CHILLIA,downloaded,
 distrital,120604,LA LIBERTAD,PATAZ,HUAYLILLAS,downloaded,
@@ -1217,7 +1100,6 @@ distrital,120610,LA LIBERTAD,PATAZ,PIÁS,downloaded,
 distrital,120611,LA LIBERTAD,PATAZ,TAURIJA,downloaded,
 distrital,120612,LA LIBERTAD,PATAZ,URPAY,downloaded,
 distrital,120613,LA LIBERTAD,PATAZ,SANTIAGO DE CHALLAS,downloaded,
-distrital,120701,LA LIBERTAD,SANTIAGO DE CHUCO,SANTIAGO DE CHUCO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120702,LA LIBERTAD,SANTIAGO DE CHUCO,CACHICADAN,downloaded,
 distrital,120703,LA LIBERTAD,SANTIAGO DE CHUCO,MOLLEBAMBA,downloaded,
 distrital,120704,LA LIBERTAD,SANTIAGO DE CHUCO,MOLLEPATA,downloaded,
@@ -1225,7 +1107,6 @@ distrital,120705,LA LIBERTAD,SANTIAGO DE CHUCO,QUIRUVILCA,downloaded,
 distrital,120706,LA LIBERTAD,SANTIAGO DE CHUCO,SANTA CRUZ DE CHUCA,downloaded,
 distrital,120707,LA LIBERTAD,SANTIAGO DE CHUCO,SITABAMBA,downloaded,
 distrital,120708,LA LIBERTAD,SANTIAGO DE CHUCO,ANGASMARCA,downloaded,
-distrital,120801,LA LIBERTAD,ASCOPE,ASCOPE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120802,LA LIBERTAD,ASCOPE,CHICAMA,downloaded,
 distrital,120803,LA LIBERTAD,ASCOPE,CHOCOPE,downloaded,
 distrital,120804,LA LIBERTAD,ASCOPE,SANTIAGO DE CAO,downloaded,
@@ -1233,21 +1114,16 @@ distrital,120805,LA LIBERTAD,ASCOPE,MAGDALENA DE CAO,downloaded,
 distrital,120806,LA LIBERTAD,ASCOPE,PAIJÁN,downloaded,
 distrital,120807,LA LIBERTAD,ASCOPE,RÁZURI,downloaded,
 distrital,120808,LA LIBERTAD,ASCOPE,CASA GRANDE,downloaded,
-distrital,120901,LA LIBERTAD,CHEPÉN,CHEPÉN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,120902,LA LIBERTAD,CHEPÉN,PACANGA,downloaded,
 distrital,120903,LA LIBERTAD,CHEPÉN,PUEBLO NUEVO,downloaded,
-distrital,121001,LA LIBERTAD,JULCÁN,JULCÁN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,121002,LA LIBERTAD,JULCÁN,CARABAMBA,downloaded,
 distrital,121003,LA LIBERTAD,JULCÁN,CALAMARCA,downloaded,
 distrital,121004,LA LIBERTAD,JULCÁN,HUASO,downloaded,
-distrital,121101,LA LIBERTAD,GRAN CHIMÚ,CASCAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,121102,LA LIBERTAD,GRAN CHIMÚ,LUCMA,downloaded,
 distrital,121103,LA LIBERTAD,GRAN CHIMÚ,MARMOT,downloaded,
 distrital,121104,LA LIBERTAD,GRAN CHIMÚ,SAYAPULLO,downloaded,
-distrital,121201,LA LIBERTAD,VIRÚ,VIRÚ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,121202,LA LIBERTAD,VIRÚ,CHAO,downloaded,
 distrital,121203,LA LIBERTAD,VIRÚ,GUADALUPITO,downloaded,
-distrital,130101,LAMBAYEQUE,CHICLAYO,CHICLAYO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,130102,LAMBAYEQUE,CHICLAYO,CHONGOYAPE,downloaded,
 distrital,130103,LAMBAYEQUE,CHICLAYO,ETEN,downloaded,
 distrital,130104,LAMBAYEQUE,CHICLAYO,ETEN PUERTO,downloaded,
@@ -1267,13 +1143,11 @@ distrital,130117,LAMBAYEQUE,CHICLAYO,PÁTAPO,downloaded,
 distrital,130118,LAMBAYEQUE,CHICLAYO,POMALCA,downloaded,
 distrital,130119,LAMBAYEQUE,CHICLAYO,PUCALÁ,downloaded,
 distrital,130120,LAMBAYEQUE,CHICLAYO,TUMÁN,downloaded,
-distrital,130201,LAMBAYEQUE,FERREÑAFE,FERREÑAFE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,130202,LAMBAYEQUE,FERREÑAFE,INCAHUASI,downloaded,
 distrital,130203,LAMBAYEQUE,FERREÑAFE,CAÑARIS,downloaded,
 distrital,130204,LAMBAYEQUE,FERREÑAFE,PITIPO,downloaded,
 distrital,130205,LAMBAYEQUE,FERREÑAFE,PUEBLO NUEVO,downloaded,
 distrital,130206,LAMBAYEQUE,FERREÑAFE,MANUEL ANTONIO MESONES MURO,downloaded,
-distrital,130301,LAMBAYEQUE,LAMBAYEQUE,LAMBAYEQUE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,130302,LAMBAYEQUE,LAMBAYEQUE,CHOCHOPE,downloaded,
 distrital,130303,LAMBAYEQUE,LAMBAYEQUE,ÍLLIMO,downloaded,
 distrital,130304,LAMBAYEQUE,LAMBAYEQUE,JAYANCA,downloaded,
@@ -1285,7 +1159,6 @@ distrital,130309,LAMBAYEQUE,LAMBAYEQUE,PACORA,downloaded,
 distrital,130310,LAMBAYEQUE,LAMBAYEQUE,SALAS,downloaded,
 distrital,130311,LAMBAYEQUE,LAMBAYEQUE,SAN JOSÉ,downloaded,
 distrital,130312,LAMBAYEQUE,LAMBAYEQUE,TÚCUME,downloaded,
-distrital,140101,LIMA,LIMA,LIMA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140102,LIMA,LIMA,ANCÓN,downloaded,
 distrital,140103,LIMA,LIMA,ATE,downloaded,
 distrital,140104,LIMA,LIMA,BREÑA,downloaded,
@@ -1328,19 +1201,16 @@ distrital,140140,LIMA,LIMA,SAN BORJA,downloaded,
 distrital,140141,LIMA,LIMA,VILLA EL SALVADOR,downloaded,
 distrital,140142,LIMA,LIMA,LOS OLIVOS,downloaded,
 distrital,140143,LIMA,LIMA,SANTA ANITA,downloaded,
-distrital,140201,LIMA,CAJATAMBO,CAJATAMBO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140205,LIMA,CAJATAMBO,COPA,downloaded,
 distrital,140206,LIMA,CAJATAMBO,GORGOR,downloaded,
 distrital,140207,LIMA,CAJATAMBO,HUANCAPON,downloaded,
 distrital,140208,LIMA,CAJATAMBO,MANAS,downloaded,
-distrital,140301,LIMA,CANTA,CANTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140302,LIMA,CANTA,ARAHUAY,downloaded,
 distrital,140303,LIMA,CANTA,HUAMANTANGA,downloaded,
 distrital,140304,LIMA,CANTA,HUAROS,downloaded,
 distrital,140305,LIMA,CANTA,LACHAQUI,downloaded,
 distrital,140306,LIMA,CANTA,SAN BUENAVENTURA,downloaded,
 distrital,140307,LIMA,CANTA,SANTA ROSA DE QUIVES,downloaded,
-distrital,140401,LIMA,CAÑETE,SAN VICENTE DE CAÑETE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140402,LIMA,CAÑETE,CALANGO,downloaded,
 distrital,140403,LIMA,CAÑETE,CERRO AZUL,downloaded,
 distrital,140404,LIMA,CAÑETE,COAYLLO,downloaded,
@@ -1356,7 +1226,6 @@ distrital,140413,LIMA,CAÑETE,SAN LUIS,downloaded,
 distrital,140414,LIMA,CAÑETE,SANTA CRUZ DE FLORES,downloaded,
 distrital,140415,LIMA,CAÑETE,ZUÑIGA,downloaded,
 distrital,140416,LIMA,CAÑETE,ASIA,downloaded,
-distrital,140501,LIMA,HUAURA,HUACHO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140502,LIMA,HUAURA,AMBAR,downloaded,
 distrital,140504,LIMA,HUAURA,CALETA DE CARQUIN,downloaded,
 distrital,140505,LIMA,HUAURA,CHECRAS,downloaded,
@@ -1368,7 +1237,6 @@ distrital,140511,LIMA,HUAURA,SANTA LEONOR,downloaded,
 distrital,140512,LIMA,HUAURA,SANTA MARÍA,downloaded,
 distrital,140513,LIMA,HUAURA,SAYAN,downloaded,
 distrital,140516,LIMA,HUAURA,VEGUETA,downloaded,
-distrital,140601,LIMA,HUAROCHIRÍ,MATUCANA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140602,LIMA,HUAROCHIRÍ,ANTIOQUIA,downloaded,
 distrital,140603,LIMA,HUAROCHIRÍ,CALLAHUANCA,downloaded,
 distrital,140604,LIMA,HUAROCHIRÍ,CARAMPOMA,downloaded,
@@ -1400,7 +1268,6 @@ distrital,140629,LIMA,HUAROCHIRÍ,SURCO,downloaded,
 distrital,140630,LIMA,HUAROCHIRÍ,HUACHUPAMPA,downloaded,
 distrital,140631,LIMA,HUAROCHIRÍ,SAN PEDRO DE LARAOS,downloaded,
 distrital,140632,LIMA,HUAROCHIRÍ,SAN JUAN DE IRIS,downloaded,
-distrital,140701,LIMA,YAUYOS,YAUYOS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140702,LIMA,YAUYOS,ALIS,downloaded,
 distrital,140703,LIMA,YAUYOS,ALLAUCA,downloaded,
 distrital,140704,LIMA,YAUYOS,AYAVIRI,downloaded,
@@ -1433,7 +1300,6 @@ distrital,140730,LIMA,YAUYOS,HONGOS,downloaded,
 distrital,140731,LIMA,YAUYOS,MADEAN,downloaded,
 distrital,140732,LIMA,YAUYOS,PUTINZA,downloaded,
 distrital,140733,LIMA,YAUYOS,CATAHUASI,downloaded,
-distrital,140801,LIMA,HUARAL,HUARAL,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140802,LIMA,HUARAL,ATAVILLOS ALTO,downloaded,
 distrital,140803,LIMA,HUARAL,ATAVILLOS BAJO,downloaded,
 distrital,140804,LIMA,HUARAL,AUCALLAMA,downloaded,
@@ -1445,18 +1311,15 @@ distrital,140809,LIMA,HUARAL,SAN MIGUEL DE ACOS,downloaded,
 distrital,140810,LIMA,HUARAL,VEINTISIETE DE NOVIEMBRE,downloaded,
 distrital,140811,LIMA,HUARAL,SANTA CRUZ DE ANDAMARCA,downloaded,
 distrital,140812,LIMA,HUARAL,SUMBILCA,downloaded,
-distrital,140901,LIMA,BARRANCA,BARRANCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,140902,LIMA,BARRANCA,PARAMONGA,downloaded,
 distrital,140903,LIMA,BARRANCA,PATIVILCA,downloaded,
 distrital,140904,LIMA,BARRANCA,SUPE,downloaded,
 distrital,140905,LIMA,BARRANCA,SUPE PUERTO,downloaded,
-distrital,141001,LIMA,OYÓN,OYÓN,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,141002,LIMA,OYÓN,NAVAN,downloaded,
 distrital,141003,LIMA,OYÓN,CAUJUL,downloaded,
 distrital,141004,LIMA,OYÓN,ANDAJES,downloaded,
 distrital,141005,LIMA,OYÓN,PACHANGARA,downloaded,
 distrital,141006,LIMA,OYÓN,COCHAMARCA,downloaded,
-distrital,150101,LORETO,MAYNAS,IQUITOS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150102,LORETO,MAYNAS,ALTO NANAY,downloaded,
 distrital,150103,LORETO,MAYNAS,FERNANDO LORES,downloaded,
 distrital,150104,LORETO,MAYNAS,LAS AMAZONAS,downloaded,
@@ -1467,18 +1330,15 @@ distrital,150110,LORETO,MAYNAS,INDIANA,downloaded,
 distrital,150111,LORETO,MAYNAS,PUNCHANA,downloaded,
 distrital,150112,LORETO,MAYNAS,BELÉN,downloaded,
 distrital,150113,LORETO,MAYNAS,SAN JUAN BAUTISTA,downloaded,
-distrital,150201,LORETO,ALTO AMAZONAS,YURIMAGUAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150202,LORETO,ALTO AMAZONAS,BALSAPUERTO,downloaded,
 distrital,150205,LORETO,ALTO AMAZONAS,JEBEROS,downloaded,
 distrital,150206,LORETO,ALTO AMAZONAS,LAGUNAS,downloaded,
 distrital,150210,LORETO,ALTO AMAZONAS,SANTA CRUZ,downloaded,
 distrital,150211,LORETO,ALTO AMAZONAS,TENIENTE CÉSAR LÓPEZ ROJAS,downloaded,
-distrital,150301,LORETO,LORETO,NAUTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150302,LORETO,LORETO,PARINARI,downloaded,
 distrital,150303,LORETO,LORETO,TIGRE,downloaded,
 distrital,150304,LORETO,LORETO,URARINAS,downloaded,
 distrital,150305,LORETO,LORETO,TROMPETEROS,downloaded,
-distrital,150401,LORETO,REQUENA,REQUENA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150402,LORETO,REQUENA,ALTO TAPICHE,downloaded,
 distrital,150403,LORETO,REQUENA,CAPELO,downloaded,
 distrital,150404,LORETO,REQUENA,EMILIO SAN MARTÍN,downloaded,
@@ -1489,46 +1349,37 @@ distrital,150408,LORETO,REQUENA,SOPLIN,downloaded,
 distrital,150409,LORETO,REQUENA,TAPICHE,downloaded,
 distrital,150410,LORETO,REQUENA,JENARO HERRERA,downloaded,
 distrital,150411,LORETO,REQUENA,YAQUERANA,downloaded,
-distrital,150501,LORETO,UCAYALI,CONTAMANA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150502,LORETO,UCAYALI,VARGAS GUERRA,downloaded,
 distrital,150503,LORETO,UCAYALI,PADRE MÁRQUEZ,downloaded,
 distrital,150504,LORETO,UCAYALI,PAMPA HERMOSA,downloaded,
 distrital,150505,LORETO,UCAYALI,SARAYACU,downloaded,
 distrital,150506,LORETO,UCAYALI,INAHUAYA,downloaded,
-distrital,150601,LORETO,MARISCAL RAMÓN CASTILLA,RAMÓN CASTILLA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150602,LORETO,MARISCAL RAMÓN CASTILLA,PEBAS,downloaded,
 distrital,150603,LORETO,MARISCAL RAMÓN CASTILLA,YAVARI,downloaded,
 distrital,150604,LORETO,MARISCAL RAMÓN CASTILLA,SAN PABLO,downloaded,
 distrital,150605,LORETO,MARISCAL RAMÓN CASTILLA,SANTA ROSA DE LORETO,downloaded,
-distrital,150701,LORETO,DATEM DEL MARAÑÓN,BARRANCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150702,LORETO,DATEM DEL MARAÑÓN,ANDOAS,downloaded,
 distrital,150703,LORETO,DATEM DEL MARAÑÓN,CAHUAPANAS,downloaded,
 distrital,150704,LORETO,DATEM DEL MARAÑÓN,MANSERICHE,downloaded,
 distrital,150705,LORETO,DATEM DEL MARAÑÓN,MORONA,downloaded,
 distrital,150706,LORETO,DATEM DEL MARAÑÓN,PASTAZA,downloaded,
-distrital,150901,LORETO,PUTUMAYO,PUTUMAYO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,150902,LORETO,PUTUMAYO,ROSA PANDURO,downloaded,
 distrital,150903,LORETO,PUTUMAYO,TENIENTE MANUEL CLAVERO,downloaded,
 distrital,150904,LORETO,PUTUMAYO,YAGUAS,downloaded,
-distrital,160101,MADRE DE DIOS,TAMBOPATA,TAMBOPATA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,160102,MADRE DE DIOS,TAMBOPATA,INAMBARI,downloaded,
 distrital,160103,MADRE DE DIOS,TAMBOPATA,LAS PIEDRAS,downloaded,
 distrital,160104,MADRE DE DIOS,TAMBOPATA,LABERINTO,downloaded,
-distrital,160201,MADRE DE DIOS,MANÚ,MANÚ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,160202,MADRE DE DIOS,MANÚ,FITZCARRALD,downloaded,
 distrital,160203,MADRE DE DIOS,MANÚ,MADRE DE DIOS,downloaded,
 distrital,160204,MADRE DE DIOS,MANÚ,HUEPETUHE,downloaded,
-distrital,160301,MADRE DE DIOS,TAHUAMANÚ,IÑAPARÍ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,160302,MADRE DE DIOS,TAHUAMANÚ,IBERIA,downloaded,
 distrital,160303,MADRE DE DIOS,TAHUAMANÚ,TAHUAMANÚ,downloaded,
-distrital,170101,MOQUEGUA,MARISCAL NIETO,MOQUEGUA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,170102,MOQUEGUA,MARISCAL NIETO,CARUMAS,downloaded,
 distrital,170103,MOQUEGUA,MARISCAL NIETO,CUCHUMBAYA,downloaded,
 distrital,170104,MOQUEGUA,MARISCAL NIETO,SAN CRISTÓBAL,downloaded,
 distrital,170105,MOQUEGUA,MARISCAL NIETO,TORATA,downloaded,
 distrital,170106,MOQUEGUA,MARISCAL NIETO,SAMEGUA,downloaded,
 distrital,170107,MOQUEGUA,MARISCAL NIETO,SAN ANTONIO,downloaded,
-distrital,170201,MOQUEGUA,GENERAL SÁNCHEZ CERRO,OMATE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,170202,MOQUEGUA,GENERAL SÁNCHEZ CERRO,COALAQUE,downloaded,
 distrital,170203,MOQUEGUA,GENERAL SÁNCHEZ CERRO,CHOJATA,downloaded,
 distrital,170204,MOQUEGUA,GENERAL SÁNCHEZ CERRO,ICHUÑA,downloaded,
@@ -1539,10 +1390,8 @@ distrital,170208,MOQUEGUA,GENERAL SÁNCHEZ CERRO,PUQUINA,downloaded,
 distrital,170209,MOQUEGUA,GENERAL SÁNCHEZ CERRO,QUINISTAQUILLAS,downloaded,
 distrital,170210,MOQUEGUA,GENERAL SÁNCHEZ CERRO,UBINAS,downloaded,
 distrital,170211,MOQUEGUA,GENERAL SÁNCHEZ CERRO,YUNGA,downloaded,
-distrital,170301,MOQUEGUA,ILO,ILO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,170302,MOQUEGUA,ILO,EL ALGARROBAL,downloaded,
 distrital,170303,MOQUEGUA,ILO,PACOCHA,downloaded,
-distrital,180101,PASCO,PASCO,CHAUPIMARCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,180103,PASCO,PASCO,HUACHÓN,downloaded,
 distrital,180104,PASCO,PASCO,HUARIACA,downloaded,
 distrital,180105,PASCO,PASCO,HUAYLLAY,downloaded,
@@ -1555,7 +1404,6 @@ distrital,180111,PASCO,PASCO,TICLACAYÁN,downloaded,
 distrital,180112,PASCO,PASCO,TINYAHUARCO,downloaded,
 distrital,180113,PASCO,PASCO,VICCO,downloaded,
 distrital,180114,PASCO,PASCO,YANACANCHA,downloaded,
-distrital,180201,PASCO,DANIEL ALCIDES CARRIÓN,YANAHUANCA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,180202,PASCO,DANIEL ALCIDES CARRIÓN,CHACAYÁN,downloaded,
 distrital,180203,PASCO,DANIEL ALCIDES CARRIÓN,GOYLLARISQUIZGA,downloaded,
 distrital,180204,PASCO,DANIEL ALCIDES CARRIÓN,PAUCAR,downloaded,
@@ -1563,7 +1411,6 @@ distrital,180205,PASCO,DANIEL ALCIDES CARRIÓN,SAN PEDRO DE PILLAO,downloaded,
 distrital,180206,PASCO,DANIEL ALCIDES CARRIÓN,SANTA ANA DE TUSI,downloaded,
 distrital,180207,PASCO,DANIEL ALCIDES CARRIÓN,TAPUC,downloaded,
 distrital,180208,PASCO,DANIEL ALCIDES CARRIÓN,VILCABAMBA,downloaded,
-distrital,180301,PASCO,OXAPAMPA,OXAPAMPA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,180302,PASCO,OXAPAMPA,CHONTABAMBA,downloaded,
 distrital,180303,PASCO,OXAPAMPA,HUANCABAMBA,downloaded,
 distrital,180304,PASCO,OXAPAMPA,PUERTO BERMÚDEZ,downloaded,
@@ -1571,7 +1418,6 @@ distrital,180305,PASCO,OXAPAMPA,VILLA RICA,downloaded,
 distrital,180306,PASCO,OXAPAMPA,POZUZO,downloaded,
 distrital,180307,PASCO,OXAPAMPA,PALCAZU,downloaded,
 distrital,180308,PASCO,OXAPAMPA,CONSTITUCIÓN,downloaded,
-distrital,190101,PIURA,PIURA,PIURA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190103,PIURA,PIURA,CASTILLA,downloaded,
 distrital,190104,PIURA,PIURA,CATACAOS,downloaded,
 distrital,190105,PIURA,PIURA,LA ARENA,downloaded,
@@ -1581,7 +1427,6 @@ distrital,190109,PIURA,PIURA,TAMBO GRANDE,downloaded,
 distrital,190113,PIURA,PIURA,CURA MORI,downloaded,
 distrital,190114,PIURA,PIURA,EL TALLÁN,downloaded,
 distrital,190115,PIURA,PIURA,VEINTISÉIS DE OCTUBRE,downloaded,
-distrital,190201,PIURA,AYABACA,AYABACA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190202,PIURA,AYABACA,FRÍAS,downloaded,
 distrital,190203,PIURA,AYABACA,LAGUNAS,downloaded,
 distrital,190204,PIURA,AYABACA,MONTERO,downloaded,
@@ -1591,7 +1436,6 @@ distrital,190207,PIURA,AYABACA,SICCHEZ,downloaded,
 distrital,190208,PIURA,AYABACA,SUYO,downloaded,
 distrital,190209,PIURA,AYABACA,JILILÍ,downloaded,
 distrital,190210,PIURA,AYABACA,PAIMAS,downloaded,
-distrital,190301,PIURA,HUANCABAMBA,HUANCABAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190302,PIURA,HUANCABAMBA,CANCHAQUE,downloaded,
 distrital,190303,PIURA,HUANCABAMBA,HUARMACA,downloaded,
 distrital,190304,PIURA,HUANCABAMBA,SONDOR,downloaded,
@@ -1599,7 +1443,6 @@ distrital,190305,PIURA,HUANCABAMBA,SONDORILLO,downloaded,
 distrital,190306,PIURA,HUANCABAMBA,EL CARMEN DE LA FRONTERA,downloaded,
 distrital,190307,PIURA,HUANCABAMBA,SAN MIGUEL DE EL FAIQUE,downloaded,
 distrital,190308,PIURA,HUANCABAMBA,LALAQUIZ,downloaded,
-distrital,190401,PIURA,MORROPÓN,CHULUCANAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190402,PIURA,MORROPÓN,BUENOS AIRES,downloaded,
 distrital,190403,PIURA,MORROPÓN,CHALACO,downloaded,
 distrital,190404,PIURA,MORROPÓN,MORROPÓN,downloaded,
@@ -1609,14 +1452,12 @@ distrital,190407,PIURA,MORROPÓN,SANTO DOMINGO,downloaded,
 distrital,190408,PIURA,MORROPÓN,LA MATANZA,downloaded,
 distrital,190409,PIURA,MORROPÓN,YAMANGO,downloaded,
 distrital,190410,PIURA,MORROPÓN,SAN JUAN DE BIGOTE,downloaded,
-distrital,190501,PIURA,PAITA,PAITA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190502,PIURA,PAITA,AMOTAPE,downloaded,
 distrital,190503,PIURA,PAITA,ARENAL,downloaded,
 distrital,190504,PIURA,PAITA,LA HUACA,downloaded,
 distrital,190505,PIURA,PAITA,COLÁN,downloaded,
 distrital,190506,PIURA,PAITA,TAMARINDO,downloaded,
 distrital,190507,PIURA,PAITA,VICHAYAL,downloaded,
-distrital,190601,PIURA,SULLANA,SULLANA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190602,PIURA,SULLANA,BELLAVISTA,downloaded,
 distrital,190603,PIURA,SULLANA,LANCONES,downloaded,
 distrital,190604,PIURA,SULLANA,MARCAVELICA,downloaded,
@@ -1624,19 +1465,16 @@ distrital,190605,PIURA,SULLANA,MIGUEL CHECA,downloaded,
 distrital,190606,PIURA,SULLANA,QUERECOTILLO,downloaded,
 distrital,190607,PIURA,SULLANA,SALITRAL,downloaded,
 distrital,190608,PIURA,SULLANA,IGNACIO ESCUDERO,downloaded,
-distrital,190701,PIURA,TALARA,PARIÑAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190702,PIURA,TALARA,EL ALTO,downloaded,
 distrital,190703,PIURA,TALARA,LA BREA,downloaded,
 distrital,190704,PIURA,TALARA,LOBITOS,downloaded,
 distrital,190705,PIURA,TALARA,MÁNCORA,downloaded,
 distrital,190706,PIURA,TALARA,LOS ÓRGANOS,downloaded,
-distrital,190801,PIURA,SECHURA,SECHURA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,190802,PIURA,SECHURA,VICE,downloaded,
 distrital,190803,PIURA,SECHURA,BERNAL,downloaded,
 distrital,190804,PIURA,SECHURA,BELLAVISTA DE LA UNIÓN,downloaded,
 distrital,190805,PIURA,SECHURA,CRISTO NOS VALGA,downloaded,
 distrital,190806,PIURA,SECHURA,RINCONADA LLICUAR,downloaded,
-distrital,200101,PUNO,PUNO,PUNO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200102,PUNO,PUNO,ACORA,downloaded,
 distrital,200103,PUNO,PUNO,ATUNCOLLA,downloaded,
 distrital,200104,PUNO,PUNO,CAPACHICA,downloaded,
@@ -1651,7 +1489,6 @@ distrital,200112,PUNO,PUNO,TIQUILLACA,downloaded,
 distrital,200113,PUNO,PUNO,VILQUE,downloaded,
 distrital,200114,PUNO,PUNO,PLATERIA,downloaded,
 distrital,200115,PUNO,PUNO,AMANTANI,downloaded,
-distrital,200201,PUNO,AZÁNGARO,AZÁNGARO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200202,PUNO,AZÁNGARO,ACHAYA,downloaded,
 distrital,200203,PUNO,AZÁNGARO,ARAPA,downloaded,
 distrital,200204,PUNO,AZÁNGARO,ASILLO,downloaded,
@@ -1666,7 +1503,6 @@ distrital,200214,PUNO,AZÁNGARO,SAN JOSÉ,downloaded,
 distrital,200215,PUNO,AZÁNGARO,SAN JUAN DE SALINAS,downloaded,
 distrital,200216,PUNO,AZÁNGARO,SANTIAGO DE PUPUJA,downloaded,
 distrital,200217,PUNO,AZÁNGARO,TIRAPATA,downloaded,
-distrital,200301,PUNO,CARABAYA,MACUSANI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200302,PUNO,CARABAYA,AJOYANI,downloaded,
 distrital,200303,PUNO,CARABAYA,AYAPATA,downloaded,
 distrital,200304,PUNO,CARABAYA,COASA,downloaded,
@@ -1676,14 +1512,12 @@ distrital,200307,PUNO,CARABAYA,ITUATA,downloaded,
 distrital,200308,PUNO,CARABAYA,OLLACHEA,downloaded,
 distrital,200309,PUNO,CARABAYA,SAN GABÁN,downloaded,
 distrital,200310,PUNO,CARABAYA,USICAYOS,downloaded,
-distrital,200401,PUNO,CHUCUITO,JULI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200402,PUNO,CHUCUITO,DESAGUADERO,downloaded,
 distrital,200403,PUNO,CHUCUITO,HUACULLANI,downloaded,
 distrital,200406,PUNO,CHUCUITO,PISACOMA,downloaded,
 distrital,200407,PUNO,CHUCUITO,POMATA,downloaded,
 distrital,200410,PUNO,CHUCUITO,ZEPITA,downloaded,
 distrital,200412,PUNO,CHUCUITO,KELLUYO,downloaded,
-distrital,200501,PUNO,HUANCANÉ,HUANCANÉ,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200502,PUNO,HUANCANÉ,COJATA,downloaded,
 distrital,200504,PUNO,HUANCANÉ,INCHUPALLA,downloaded,
 distrital,200506,PUNO,HUANCANÉ,PUSI,downloaded,
@@ -1691,7 +1525,6 @@ distrital,200507,PUNO,HUANCANÉ,ROSASPATA,downloaded,
 distrital,200508,PUNO,HUANCANÉ,TARACO,downloaded,
 distrital,200509,PUNO,HUANCANÉ,VILQUE CHICO,downloaded,
 distrital,200511,PUNO,HUANCANÉ,HUATASANI,downloaded,
-distrital,200601,PUNO,LAMPA,LAMPA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200602,PUNO,LAMPA,CABANILLA,downloaded,
 distrital,200603,PUNO,LAMPA,CALAPUJA,downloaded,
 distrital,200604,PUNO,LAMPA,NICASIO,downloaded,
@@ -1701,7 +1534,6 @@ distrital,200607,PUNO,LAMPA,PARATIA,downloaded,
 distrital,200608,PUNO,LAMPA,PUCARA,downloaded,
 distrital,200609,PUNO,LAMPA,SANTA LUCÍA,downloaded,
 distrital,200610,PUNO,LAMPA,VILAVILA,downloaded,
-distrital,200701,PUNO,MELGAR,AYAVIRI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200702,PUNO,MELGAR,ANTAUTA,downloaded,
 distrital,200703,PUNO,MELGAR,CUPI,downloaded,
 distrital,200704,PUNO,MELGAR,LLALLI,downloaded,
@@ -1710,7 +1542,6 @@ distrital,200706,PUNO,MELGAR,NUÑOA,downloaded,
 distrital,200707,PUNO,MELGAR,ORURILLO,downloaded,
 distrital,200708,PUNO,MELGAR,SANTA ROSA,downloaded,
 distrital,200709,PUNO,MELGAR,UMACHIRI,downloaded,
-distrital,200801,PUNO,SANDIA,SANDIA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200803,PUNO,SANDIA,CUYOCUYO,downloaded,
 distrital,200804,PUNO,SANDIA,LIMBANI,downloaded,
 distrital,200805,PUNO,SANDIA,PHARA,downloaded,
@@ -1720,45 +1551,37 @@ distrital,200808,PUNO,SANDIA,SAN JUAN DEL ORO,downloaded,
 distrital,200810,PUNO,SANDIA,YANAHUAYA,downloaded,
 distrital,200811,PUNO,SANDIA,ALTO INAMBARI,downloaded,
 distrital,200812,PUNO,SANDIA,SAN PEDRO DE PUTINA PUNCO,downloaded,
-distrital,200901,PUNO,SAN ROMÁN,JULIACA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,200902,PUNO,SAN ROMÁN,CABANA,downloaded,
 distrital,200903,PUNO,SAN ROMÁN,CABANILLAS,downloaded,
 distrital,200904,PUNO,SAN ROMÁN,CARACOTO,downloaded,
 distrital,200905,PUNO,SAN ROMÁN,SAN MIGUEL,downloaded,
-distrital,201001,PUNO,YUNGUYO,YUNGUYO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,201002,PUNO,YUNGUYO,UNICACHI,downloaded,
 distrital,201003,PUNO,YUNGUYO,ANAPIA,downloaded,
 distrital,201004,PUNO,YUNGUYO,COPANI,downloaded,
 distrital,201005,PUNO,YUNGUYO,CUTURAPI,downloaded,
 distrital,201006,PUNO,YUNGUYO,OLLARAYA,downloaded,
 distrital,201007,PUNO,YUNGUYO,TINICACHI,downloaded,
-distrital,201101,PUNO,SAN ANTONIO DE PUTINA,PUTINA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,201102,PUNO,SAN ANTONIO DE PUTINA,PEDRO VILCA APAZA,downloaded,
 distrital,201103,PUNO,SAN ANTONIO DE PUTINA,QUILCAPUNCU,downloaded,
 distrital,201104,PUNO,SAN ANTONIO DE PUTINA,ANANEA,downloaded,
 distrital,201105,PUNO,SAN ANTONIO DE PUTINA,SINA,downloaded,
-distrital,201201,PUNO,EL COLLAO,ILAVE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,201202,PUNO,EL COLLAO,PILCUYO,downloaded,
 distrital,201203,PUNO,EL COLLAO,SANTA ROSA,downloaded,
 distrital,201204,PUNO,EL COLLAO,CAPASO,downloaded,
 distrital,201205,PUNO,EL COLLAO,CONDURIRI,downloaded,
-distrital,201301,PUNO,MOHO,MOHO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,201302,PUNO,MOHO,CONIMA,downloaded,
 distrital,201303,PUNO,MOHO,TILALI,downloaded,
 distrital,201304,PUNO,MOHO,HUAYRAPATA,downloaded,
-distrital,210101,SAN MARTÍN,MOYOBAMBA,MOYOBAMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210102,SAN MARTÍN,MOYOBAMBA,CALZADA,downloaded,
 distrital,210103,SAN MARTÍN,MOYOBAMBA,HABANA,downloaded,
 distrital,210104,SAN MARTÍN,MOYOBAMBA,JEPELACIO,downloaded,
 distrital,210105,SAN MARTÍN,MOYOBAMBA,SORITOR,downloaded,
 distrital,210106,SAN MARTÍN,MOYOBAMBA,YANTALÓ,downloaded,
-distrital,210201,SAN MARTÍN,HUALLAGA,SAPOSOA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210202,SAN MARTÍN,HUALLAGA,PISCOYACU,downloaded,
 distrital,210203,SAN MARTÍN,HUALLAGA,SACANCHE,downloaded,
 distrital,210204,SAN MARTÍN,HUALLAGA,TINGO DE SAPOSOA,downloaded,
 distrital,210205,SAN MARTÍN,HUALLAGA,ALTO SAPOSOA,downloaded,
 distrital,210206,SAN MARTÍN,HUALLAGA,EL ESLABÓN,downloaded,
-distrital,210301,SAN MARTÍN,LAMAS,LAMAS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210303,SAN MARTÍN,LAMAS,BARRANQUITA,downloaded,
 distrital,210304,SAN MARTÍN,LAMAS,CAYNARACHI,downloaded,
 distrital,210305,SAN MARTÍN,LAMAS,CUÑUMBUQUI,downloaded,
@@ -1769,12 +1592,10 @@ distrital,210313,SAN MARTÍN,LAMAS,TABALOSOS,downloaded,
 distrital,210314,SAN MARTÍN,LAMAS,ZAPATERO,downloaded,
 distrital,210315,SAN MARTÍN,LAMAS,ALONSO DE ALVARADO,downloaded,
 distrital,210316,SAN MARTÍN,LAMAS,SAN ROQUE DE CUMBAZA,downloaded,
-distrital,210401,SAN MARTÍN,MARISCAL CÁCERES,JUANJUI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210402,SAN MARTÍN,MARISCAL CÁCERES,CAMPANILLA,downloaded,
 distrital,210403,SAN MARTÍN,MARISCAL CÁCERES,HUICUNGO,downloaded,
 distrital,210404,SAN MARTÍN,MARISCAL CÁCERES,PACHIZA,downloaded,
 distrital,210405,SAN MARTÍN,MARISCAL CÁCERES,PAJARILLO,downloaded,
-distrital,210501,SAN MARTÍN,RIOJA,RIOJA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210502,SAN MARTÍN,RIOJA,POSIC,downloaded,
 distrital,210503,SAN MARTÍN,RIOJA,YORONGOS,downloaded,
 distrital,210504,SAN MARTÍN,RIOJA,YURACYACU,downloaded,
@@ -1783,7 +1604,6 @@ distrital,210506,SAN MARTÍN,RIOJA,ELÍAS SOPLÍN VARGAS,downloaded,
 distrital,210507,SAN MARTÍN,RIOJA,SAN FERNANDO,downloaded,
 distrital,210508,SAN MARTÍN,RIOJA,PARDO MIGUEL,downloaded,
 distrital,210509,SAN MARTÍN,RIOJA,AWAJUN,downloaded,
-distrital,210601,SAN MARTÍN,SAN MARTÍN,TARAPOTO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210602,SAN MARTÍN,SAN MARTÍN,ALBERTO LEVEAU,downloaded,
 distrital,210604,SAN MARTÍN,SAN MARTÍN,CACATACHI,downloaded,
 distrital,210606,SAN MARTÍN,SAN MARTÍN,CHAZUTA,downloaded,
@@ -1797,19 +1617,16 @@ distrital,210616,SAN MARTÍN,SAN MARTÍN,SAN ANTONIO,downloaded,
 distrital,210619,SAN MARTÍN,SAN MARTÍN,SAUCE,downloaded,
 distrital,210620,SAN MARTÍN,SAN MARTÍN,SHAPAJA,downloaded,
 distrital,210621,SAN MARTÍN,SAN MARTÍN,LA BANDA DE SHILCAYO,downloaded,
-distrital,210701,SAN MARTÍN,BELLAVISTA,BELLAVISTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210702,SAN MARTÍN,BELLAVISTA,SAN RAFAEL,downloaded,
 distrital,210703,SAN MARTÍN,BELLAVISTA,SAN PABLO,downloaded,
 distrital,210704,SAN MARTÍN,BELLAVISTA,ALTO BIAVO,downloaded,
 distrital,210705,SAN MARTÍN,BELLAVISTA,HUALLAGA,downloaded,
 distrital,210706,SAN MARTÍN,BELLAVISTA,BAJO BIAVO,downloaded,
-distrital,210801,SAN MARTÍN,TOCACHE,TOCACHE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210802,SAN MARTÍN,TOCACHE,NUEVO PROGRESO,downloaded,
 distrital,210803,SAN MARTÍN,TOCACHE,PÓLVORA,downloaded,
 distrital,210804,SAN MARTÍN,TOCACHE,SHUNTE,downloaded,
 distrital,210805,SAN MARTÍN,TOCACHE,UCHIZA,downloaded,
 distrital,210806,SAN MARTÍN,TOCACHE,SANTA LUCÍA,downloaded,
-distrital,210901,SAN MARTÍN,PICOTA,PICOTA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,210902,SAN MARTÍN,PICOTA,BUENOS AIRES,downloaded,
 distrital,210903,SAN MARTÍN,PICOTA,CASPISAPA,downloaded,
 distrital,210904,SAN MARTÍN,PICOTA,PILLUANA,downloaded,
@@ -1819,12 +1636,10 @@ distrital,210907,SAN MARTÍN,PICOTA,SAN HILARIÓN,downloaded,
 distrital,210908,SAN MARTÍN,PICOTA,TINGO DE PONASA,downloaded,
 distrital,210909,SAN MARTÍN,PICOTA,TRES UNIDOS,downloaded,
 distrital,210910,SAN MARTÍN,PICOTA,SHAMBOYACU,downloaded,
-distrital,211001,SAN MARTÍN,EL DORADO,SAN JOSÉ DE SISA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,211002,SAN MARTÍN,EL DORADO,AGUA BLANCA,downloaded,
 distrital,211003,SAN MARTÍN,EL DORADO,SHATOJA,downloaded,
 distrital,211004,SAN MARTÍN,EL DORADO,SAN MARTÍN,downloaded,
 distrital,211005,SAN MARTÍN,EL DORADO,SANTA ROSA,downloaded,
-distrital,220101,TACNA,TACNA,TACNA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,220102,TACNA,TACNA,CALANA,downloaded,
 distrital,220104,TACNA,TACNA,INCLÁN,downloaded,
 distrital,220107,TACNA,TACNA,PACHIA,downloaded,
@@ -1835,7 +1650,6 @@ distrital,220111,TACNA,TACNA,ALTO DE LA ALIANZA,downloaded,
 distrital,220112,TACNA,TACNA,CIUDAD NUEVA,downloaded,
 distrital,220113,TACNA,TACNA,CORONEL GREGORIO ALBARRACÍN LANCHIPA,downloaded,
 distrital,220114,TACNA,TACNA,LA YARADA LOS PALOS,downloaded,
-distrital,220201,TACNA,TARATA,TARATA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,220205,TACNA,TARATA,HÉROES ALBARRACÍN,downloaded,
 distrital,220206,TACNA,TARATA,ESTIQUE,downloaded,
 distrital,220207,TACNA,TARATA,ESTIQUE PAMPA,downloaded,
@@ -1843,54 +1657,44 @@ distrital,220210,TACNA,TARATA,SITAJARA,downloaded,
 distrital,220211,TACNA,TARATA,SUSAPAYA,downloaded,
 distrital,220212,TACNA,TARATA,TARUCACHI,downloaded,
 distrital,220213,TACNA,TARATA,TICACO,downloaded,
-distrital,220301,TACNA,JORGE BASADRE,LOCUMBA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,220302,TACNA,JORGE BASADRE,ITE,downloaded,
 distrital,220303,TACNA,JORGE BASADRE,ILABAYA,downloaded,
-distrital,220401,TACNA,CANDARAVE,CANDARAVE,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,220402,TACNA,CANDARAVE,CAIRANI,downloaded,
 distrital,220403,TACNA,CANDARAVE,CURIBAYA,downloaded,
 distrital,220404,TACNA,CANDARAVE,HUANUARA,downloaded,
 distrital,220405,TACNA,CANDARAVE,QUILAHUANI,downloaded,
 distrital,220406,TACNA,CANDARAVE,CAMILACA,downloaded,
-distrital,230101,TUMBES,TUMBES,TUMBES,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,230102,TUMBES,TUMBES,CORRALES,downloaded,
 distrital,230103,TUMBES,TUMBES,LA CRUZ,downloaded,
 distrital,230104,TUMBES,TUMBES,PAMPAS DE HOSPITAL,downloaded,
 distrital,230105,TUMBES,TUMBES,SAN JACINTO,downloaded,
 distrital,230106,TUMBES,TUMBES,SAN JUAN DE LA VIRGEN,downloaded,
-distrital,230201,TUMBES,CONTRALMIRANTE VILLAR,ZORRITOS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,230202,TUMBES,CONTRALMIRANTE VILLAR,CASITAS,downloaded,
 distrital,230203,TUMBES,CONTRALMIRANTE VILLAR,CANOAS DE PUNTA SAL,downloaded,
-distrital,230301,TUMBES,ZARUMILLA,ZARUMILLA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,230302,TUMBES,ZARUMILLA,MATAPALO,downloaded,
 distrital,230303,TUMBES,ZARUMILLA,PAPAYAL,downloaded,
 distrital,230304,TUMBES,ZARUMILLA,AGUAS VERDES,downloaded,
-distrital,240101,CALLAO,CALLAO,CALLAO,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,240102,CALLAO,CALLAO,BELLAVISTA,downloaded,
 distrital,240103,CALLAO,CALLAO,LA PUNTA,downloaded,
 distrital,240104,CALLAO,CALLAO,CARMEN DE LA LEGUA - REYNOSO,downloaded,
 distrital,240105,CALLAO,CALLAO,LA PERLA,downloaded,
 distrital,240106,CALLAO,CALLAO,VENTANILLA,downloaded,
 distrital,240107,CALLAO,CALLAO,MI PERÚ,downloaded,
-distrital,250101,UCAYALI,CORONEL PORTILLO,CALLERIA,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,250102,UCAYALI,CORONEL PORTILLO,YARINACOCHA,downloaded,
 distrital,250103,UCAYALI,CORONEL PORTILLO,MASISEA,downloaded,
 distrital,250104,UCAYALI,CORONEL PORTILLO,CAMPOVERDE,downloaded,
 distrital,250105,UCAYALI,CORONEL PORTILLO,IPARÍA,downloaded,
 distrital,250106,UCAYALI,CORONEL PORTILLO,NUEVA REQUENA,downloaded,
 distrital,250107,UCAYALI,CORONEL PORTILLO,MANANTAY,downloaded,
-distrital,250201,UCAYALI,PADRE ABAD,PADRE ABAD,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,250202,UCAYALI,PADRE ABAD,IRAZOLA,downloaded,
 distrital,250203,UCAYALI,PADRE ABAD,CURIMANÁ,downloaded,
 distrital,250204,UCAYALI,PADRE ABAD,NESHUYA,downloaded,
 distrital,250205,UCAYALI,PADRE ABAD,ALEXANDER VON HUMBOLDT,downloaded,
 distrital,250206,UCAYALI,PADRE ABAD,BOQUERÓN,downloaded,
 distrital,250207,UCAYALI,PADRE ABAD,HUIPOCA,downloaded,
-distrital,250301,UCAYALI,ATALAYA,RAIMONDI,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 distrital,250302,UCAYALI,ATALAYA,TAHUANIA,downloaded,
 distrital,250303,UCAYALI,ATALAYA,YURÚA,downloaded,
 distrital,250304,UCAYALI,ATALAYA,SEPAHUA,downloaded,
-distrital,250401,UCAYALI,PURÚS,PURÚS,not_applicable,No figura como elección municipal distrital en las opciones oficiales de su provincia.
 provincial,010100,AMAZONAS,CHACHAPOYAS,,downloaded,
 provincial,010200,AMAZONAS,BAGUA,,downloaded,
 provincial,010300,AMAZONAS,BONGARÁ,,downloaded,
@@ -2087,3 +1891,199 @@ provincial,250100,UCAYALI,CORONEL PORTILLO,,downloaded,
 provincial,250200,UCAYALI,PADRE ABAD,,downloaded,
 provincial,250300,UCAYALI,ATALAYA,,downloaded,
 provincial,250400,UCAYALI,PURÚS,,downloaded,
+distrital,010101,AMAZONAS,CHACHAPOYAS,CHACHAPOYAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,010205,AMAZONAS,BAGUA,BAGUA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,010301,AMAZONAS,BONGARÁ,JUMBILLA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,010401,AMAZONAS,LUYA,LAMUD,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,010501,AMAZONAS,RODRÍGUEZ DE MENDOZA,SAN NICOLÁS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,010601,AMAZONAS,CONDORCANQUI,NIEVA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,010701,AMAZONAS,UTCUBAMBA,BAGUA GRANDE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020101,ÁNCASH,HUARAZ,HUARAZ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020201,ÁNCASH,AIJA,AIJA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020301,ÁNCASH,BOLOGNESI,CHIQUIAN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020401,ÁNCASH,CARHUAZ,CARHUAZ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020501,ÁNCASH,CASMA,CASMA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020601,ÁNCASH,CORONGO,CORONGO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020701,ÁNCASH,HUAYLAS,CARAZ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020801,ÁNCASH,HUARI,HUARI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,020901,ÁNCASH,MARISCAL LUZURIAGA,PISCOBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021001,ÁNCASH,PALLASCA,CABANA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021101,ÁNCASH,POMABAMBA,POMABAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021201,ÁNCASH,RECUAY,RECUAY,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021301,ÁNCASH,SANTA,CHIMBOTE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021401,ÁNCASH,SIHUAS,SIHUAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021501,ÁNCASH,YUNGAY,YUNGAY,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021601,ÁNCASH,ANTONIO RAIMONDI,LLAMELLIN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021701,ÁNCASH,CARLOS FERMÍN FITZCARRALD,SAN LUIS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021801,ÁNCASH,ASUNCIÓN,CHACAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,021901,ÁNCASH,HUARMEY,HUARMEY,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,022007,ÁNCASH,OCROS,OCROS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030101,APURÍMAC,ABANCAY,ABANCAY,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030201,APURÍMAC,AYMARAES,CHALHUANCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030301,APURÍMAC,ANDAHUAYLAS,ANDAHUAYLAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030401,APURÍMAC,ANTABAMBA,ANTABAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030501,APURÍMAC,COTABAMBAS,TAMBOBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030601,APURÍMAC,GRAU,CHUQUIBAMBILLA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,030701,APURÍMAC,CHINCHEROS,CHINCHEROS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040101,AREQUIPA,AREQUIPA,AREQUIPA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040201,AREQUIPA,CAYLLOMA,CHIVAY,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040301,AREQUIPA,CAMANÁ,CAMANÁ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040401,AREQUIPA,CARAVELÍ,CARAVELÍ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040501,AREQUIPA,CASTILLA,APLAO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040601,AREQUIPA,CONDESUYOS,CHUQUIBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040701,AREQUIPA,ISLAY,MOLLENDO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,040801,AREQUIPA,LA UNIÓN,COTAHUASI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050101,AYACUCHO,HUAMANGA,AYACUCHO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050201,AYACUCHO,CANGALLO,CANGALLO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050301,AYACUCHO,HUANTA,HUANTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050401,AYACUCHO,LA MAR,SAN MIGUEL,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050501,AYACUCHO,LUCANAS,PUQUIO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050601,AYACUCHO,PARINACOCHAS,CORACORA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050701,AYACUCHO,VÍCTOR FAJARDO,HUANCAPI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050801,AYACUCHO,HUANCA SANCOS,SANCOS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,050901,AYACUCHO,VILCAS HUAMÁN,VILCAS HUAMÁN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,051001,AYACUCHO,PÁUCAR DEL SARA SARA,PAUSA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,051101,AYACUCHO,SUCRE,QUEROBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060101,CAJAMARCA,CAJAMARCA,CAJAMARCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060201,CAJAMARCA,CAJABAMBA,CAJABAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060301,CAJAMARCA,CELENDÍN,CELENDÍN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060401,CAJAMARCA,CONTUMAZA,CONTUMAZA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060501,CAJAMARCA,CUTERVO,CUTERVO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060601,CAJAMARCA,CHOTA,CHOTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060701,CAJAMARCA,HUALGAYOC,BAMBAMARCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060801,CAJAMARCA,JAÉN,JAÉN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,060901,CAJAMARCA,SANTA CRUZ,SANTA CRUZ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,061001,CAJAMARCA,SAN MIGUEL,SAN MIGUEL,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,061101,CAJAMARCA,SAN IGNACIO,SAN IGNACIO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,061201,CAJAMARCA,SAN MARCOS,PEDRO GÁLVEZ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,061301,CAJAMARCA,SAN PABLO,SAN PABLO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070101,CUSCO,CUSCO,CUSCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070201,CUSCO,ACOMAYO,ACOMAYO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070301,CUSCO,ANTA,ANTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070401,CUSCO,CALCA,CALCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070501,CUSCO,CANAS,YANAOCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070601,CUSCO,CANCHIS,SICUANI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070701,CUSCO,CHUMBIVILCAS,SANTO TOMÁS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070801,CUSCO,ESPINAR,ESPINAR,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,070901,CUSCO,LA CONVENCIÓN,SANTA ANA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,071001,CUSCO,PARURO,PARURO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,071101,CUSCO,PAUCARTAMBO,PAUCARTAMBO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,071201,CUSCO,QUISPICANCHI,URCOS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,071301,CUSCO,URUBAMBA,URUBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080101,HUANCAVELICA,HUANCAVELICA,HUANCAVELICA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080201,HUANCAVELICA,ACOBAMBA,ACOBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080301,HUANCAVELICA,ANGARAES,LIRCAY,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080401,HUANCAVELICA,CASTROVIRREYNA,CASTROVIRREYNA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080501,HUANCAVELICA,TAYACAJA,PAMPAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080604,HUANCAVELICA,HUAYTARA,HUAYTARA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,080701,HUANCAVELICA,CHURCAMPA,CHURCAMPA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090101,HUÁNUCO,HUÁNUCO,HUÁNUCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090201,HUÁNUCO,AMBO,AMBO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090301,HUÁNUCO,DOS DE MAYO,LA UNIÓN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090401,HUÁNUCO,HUAMALIES,LLATA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090501,HUÁNUCO,MARAÑÓN,HUACRACHUCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090601,HUÁNUCO,LEONCIO PRADO,RUPA-RUPA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090701,HUÁNUCO,PACHITEA,PANAO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090802,HUÁNUCO,PUERTO INCA,PUERTO INCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,090901,HUÁNUCO,HUACAYBAMBA,HUACAYBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,091001,HUÁNUCO,LAURICOCHA,JESÚS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,091101,HUÁNUCO,YAROWILCA,CHAVINILLO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,100101,ICA,ICA,ICA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,100201,ICA,CHINCHA,CHINCHA ALTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,100301,ICA,NASCA,NASCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,100401,ICA,PISCO,PISCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,100501,ICA,PALPA,PALPA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110101,JUNÍN,HUANCAYO,HUANCAYO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110201,JUNÍN,CONCEPCIÓN,CONCEPCIÓN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110301,JUNÍN,JAUJA,JAUJA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110401,JUNÍN,JUNÍN,JUNÍN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110501,JUNÍN,TARMA,TARMA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110601,JUNÍN,YAULI,LA OROYA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110701,JUNÍN,SATIPO,SATIPO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110801,JUNÍN,CHANCHAMAYO,CHANCHAMAYO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,110901,JUNÍN,CHUPACA,CHUPACA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120101,LA LIBERTAD,TRUJILLO,TRUJILLO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120201,LA LIBERTAD,BOLÍVAR,BOLÍVAR,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120301,LA LIBERTAD,SÁNCHEZ CARRIÓN,HUAMACHUCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120401,LA LIBERTAD,OTUZCO,OTUZCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120501,LA LIBERTAD,PACASMAYO,SAN PEDRO DE LLOC,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120601,LA LIBERTAD,PATAZ,TAYABAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120701,LA LIBERTAD,SANTIAGO DE CHUCO,SANTIAGO DE CHUCO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120801,LA LIBERTAD,ASCOPE,ASCOPE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,120901,LA LIBERTAD,CHEPÉN,CHEPÉN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,121001,LA LIBERTAD,JULCÁN,JULCÁN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,121101,LA LIBERTAD,GRAN CHIMÚ,CASCAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,121201,LA LIBERTAD,VIRÚ,VIRÚ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,130101,LAMBAYEQUE,CHICLAYO,CHICLAYO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,130201,LAMBAYEQUE,FERREÑAFE,FERREÑAFE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,130301,LAMBAYEQUE,LAMBAYEQUE,LAMBAYEQUE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140101,LIMA,LIMA,LIMA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140201,LIMA,CAJATAMBO,CAJATAMBO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140301,LIMA,CANTA,CANTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140401,LIMA,CAÑETE,SAN VICENTE DE CAÑETE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140501,LIMA,HUAURA,HUACHO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140601,LIMA,HUAROCHIRÍ,MATUCANA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140701,LIMA,YAUYOS,YAUYOS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140801,LIMA,HUARAL,HUARAL,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,140901,LIMA,BARRANCA,BARRANCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,141001,LIMA,OYÓN,OYÓN,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150101,LORETO,MAYNAS,IQUITOS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150201,LORETO,ALTO AMAZONAS,YURIMAGUAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150301,LORETO,LORETO,NAUTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150401,LORETO,REQUENA,REQUENA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150501,LORETO,UCAYALI,CONTAMANA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150601,LORETO,MARISCAL RAMÓN CASTILLA,RAMÓN CASTILLA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150701,LORETO,DATEM DEL MARAÑÓN,BARRANCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,150901,LORETO,PUTUMAYO,PUTUMAYO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,160101,MADRE DE DIOS,TAMBOPATA,TAMBOPATA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,160201,MADRE DE DIOS,MANÚ,MANÚ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,160301,MADRE DE DIOS,TAHUAMANÚ,IÑAPARÍ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,170101,MOQUEGUA,MARISCAL NIETO,MOQUEGUA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,170201,MOQUEGUA,GENERAL SÁNCHEZ CERRO,OMATE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,170301,MOQUEGUA,ILO,ILO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,180101,PASCO,PASCO,CHAUPIMARCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,180201,PASCO,DANIEL ALCIDES CARRIÓN,YANAHUANCA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,180301,PASCO,OXAPAMPA,OXAPAMPA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190101,PIURA,PIURA,PIURA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190201,PIURA,AYABACA,AYABACA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190301,PIURA,HUANCABAMBA,HUANCABAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190401,PIURA,MORROPÓN,CHULUCANAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190501,PIURA,PAITA,PAITA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190601,PIURA,SULLANA,SULLANA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190701,PIURA,TALARA,PARIÑAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,190801,PIURA,SECHURA,SECHURA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200101,PUNO,PUNO,PUNO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200201,PUNO,AZÁNGARO,AZÁNGARO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200301,PUNO,CARABAYA,MACUSANI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200401,PUNO,CHUCUITO,JULI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200501,PUNO,HUANCANÉ,HUANCANÉ,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200601,PUNO,LAMPA,LAMPA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200701,PUNO,MELGAR,AYAVIRI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200801,PUNO,SANDIA,SANDIA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,200901,PUNO,SAN ROMÁN,JULIACA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,201001,PUNO,YUNGUYO,YUNGUYO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,201101,PUNO,SAN ANTONIO DE PUTINA,PUTINA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,201201,PUNO,EL COLLAO,ILAVE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,201301,PUNO,MOHO,MOHO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210101,SAN MARTÍN,MOYOBAMBA,MOYOBAMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210201,SAN MARTÍN,HUALLAGA,SAPOSOA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210301,SAN MARTÍN,LAMAS,LAMAS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210401,SAN MARTÍN,MARISCAL CÁCERES,JUANJUI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210501,SAN MARTÍN,RIOJA,RIOJA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210601,SAN MARTÍN,SAN MARTÍN,TARAPOTO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210701,SAN MARTÍN,BELLAVISTA,BELLAVISTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210801,SAN MARTÍN,TOCACHE,TOCACHE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,210901,SAN MARTÍN,PICOTA,PICOTA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,211001,SAN MARTÍN,EL DORADO,SAN JOSÉ DE SISA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,220101,TACNA,TACNA,TACNA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,220201,TACNA,TARATA,TARATA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,220301,TACNA,JORGE BASADRE,LOCUMBA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,220401,TACNA,CANDARAVE,CANDARAVE,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,230101,TUMBES,TUMBES,TUMBES,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,230201,TUMBES,CONTRALMIRANTE VILLAR,ZORRITOS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,230301,TUMBES,ZARUMILLA,ZARUMILLA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,240101,CALLAO,CALLAO,CALLAO,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,250101,UCAYALI,CORONEL PORTILLO,CALLERIA,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,250201,UCAYALI,PADRE ABAD,PADRE ABAD,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,250301,UCAYALI,ATALAYA,RAIMONDI,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
+distrital,250401,UCAYALI,PURÚS,PURÚS,downloaded,Capital de provincia: sin alcalde distrital; se muestra la votación provincial en el distrito.
