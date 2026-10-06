@@ -5,8 +5,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 S = RAIZ / "site"
 LIVE = "https://peru-regionales-onpe-carlos-mucching.netlify.app"
 
-h = (S / "index.html").read_text(encoding="utf-8")
-DATA = json.loads(re.search(r"let DATA=(\[.*?\]);\n", h, re.S).group(1))
+DATA = json.loads((S / "api" / "results.json").read_text(encoding="utf-8"))["regiones"]
 
 def b64(p, mime): return f"data:{mime};base64," + base64.b64encode((S / p).read_bytes()).decode()
 sym = {}
@@ -28,3 +27,9 @@ html = (html.replace("__DATA__", json.dumps(DATA, ensure_ascii=False))
             .replace("__LIVE__", LIVE))
 out = RAIZ / "dist" / "propuesta-b.html"; out.parent.mkdir(exist_ok=True)
 out.write_text(html, encoding="utf-8"); print(out, f"{out.stat().st_size/1e6:.2f} MB")
+
+# versión para el sitio (rutas relativas, banner externo)
+SITE_OUT = S / "index.html"
+site = html.replace(b64("banner-marca-personal.jpg", "image/jpeg"), "/banner-marca-personal.jpg").replace(LIVE, "")
+site = site.replace(' · <a href="">tablero en vivo</a>', "").replace("Datos de ejemplo congelados al corte indicado", "Datos al corte indicado")
+SITE_OUT.write_text(site, encoding="utf-8"); print(SITE_OUT, f"{SITE_OUT.stat().st_size/1e6:.2f} MB")

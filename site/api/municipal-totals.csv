@@ -1,0 +1,933 @@
+﻿level,ubigeo,department,province,district,organization_count,valid_votes,emitted_votes,blank_votes,null_votes,total_actas,counted_actas,jee_actas,pending_actas,counted_pct,source_updated_at,retrieved_at,source_url
+distrital,010102,AMAZONAS,CHACHAPOYAS,ASUNCIÓN,2,232,253,7,14,2,2,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:47:20.210Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010103,AMAZONAS,CHACHAPOYAS,BALSAS,5,871,921,27,23,5,5,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:47:26.151Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010104,AMAZONAS,CHACHAPOYAS,CHETO,3,536,579,17,26,3,3,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:47:32.081Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010105,AMAZONAS,CHACHAPOYAS,CHILIQUIN,3,713,777,51,13,4,4,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:47:38.038Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010106,AMAZONAS,CHACHAPOYAS,CHUQUIBAMBA,4,888,970,51,31,8,7,0,1,87.5,2026-10-06T00:42:00-05:00,2026-10-06T05:47:43.951Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010107,AMAZONAS,CHACHAPOYAS,GRANADA,2,470,493,13,10,2,2,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:47:49.909Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010108,AMAZONAS,CHACHAPOYAS,HUANCAS,5,648,719,30,41,3,3,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:48:05.197Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010109,AMAZONAS,CHACHAPOYAS,LA JALCA,4,3219,3513,144,150,17,17,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:48:11.135Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010110,AMAZONAS,CHACHAPOYAS,LEIMEBAMBA,4,1736,1906,65,105,10,9,1,0,90,2026-10-06T00:46:00-05:00,2026-10-06T05:48:17.085Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010111,AMAZONAS,CHACHAPOYAS,LEVANTO,4,933,984,23,28,4,4,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:48:23.032Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010112,AMAZONAS,CHACHAPOYAS,MAGDALENA,4,417,452,22,13,3,2,1,0,66.667,2026-10-06T00:46:00-05:00,2026-10-06T05:48:28.992Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010113,AMAZONAS,CHACHAPOYAS,MARISCAL CASTILLA,4,662,721,24,35,4,4,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:48:34.932Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010114,AMAZONAS,CHACHAPOYAS,MOLINOPAMPA,4,1497,1597,58,42,8,7,1,0,87.5,2026-10-06T00:46:00-05:00,2026-10-06T05:48:40.868Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010115,AMAZONAS,CHACHAPOYAS,MONTEVIDEO,3,555,578,15,8,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:48:46.815Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010116,AMAZONAS,CHACHAPOYAS,OLLEROS,2,374,390,12,4,2,2,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:13.903Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010117,AMAZONAS,CHACHAPOYAS,QUINJALCA,2,380,457,52,25,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:19.852Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010118,AMAZONAS,CHACHAPOYAS,SAN FRANCISCO DE DAGUAS,4,299,309,4,6,2,2,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:25.805Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010119,AMAZONAS,CHACHAPOYAS,SAN ISIDRO DE MAINO,4,583,607,11,13,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:34.336Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010120,AMAZONAS,CHACHAPOYAS,SOLOCO,4,1199,1279,43,37,6,6,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:40.256Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010121,AMAZONAS,CHACHAPOYAS,SONCHE,2,290,321,16,15,2,2,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:46.168Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010201,AMAZONAS,BAGUA,LA PECA,5,4316,4604,168,120,25,25,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:50:19.571Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010202,AMAZONAS,BAGUA,ARAMANGO,6,5818,6300,226,256,35,35,0,0,100,2026-10-05T22:56:01-05:00,2026-10-06T04:14:55.023Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010203,AMAZONAS,BAGUA,COPALLIN,5,3256,3539,150,133,16,16,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:49:55.291Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010204,AMAZONAS,BAGUA,EL PARCO,5,1061,1121,40,20,6,5,1,0,83.333,2026-10-06T00:46:00-05:00,2026-10-06T05:50:01.218Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010206,AMAZONAS,BAGUA,IMAZA,18,10867,12486,835,784,96,85,3,8,88.542,2026-10-06T00:46:00-05:00,2026-10-06T05:50:13.635Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010302,AMAZONAS,BONGARÁ,COROSHA,4,532,558,7,19,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:50:42.820Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010303,AMAZONAS,BONGARÁ,CUISPES,5,642,688,28,18,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:50:48.755Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010304,AMAZONAS,BONGARÁ,CHISQUILLA,4,347,372,16,9,2,2,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:50:30.939Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010305,AMAZONAS,BONGARÁ,CHURUJA,2,246,269,10,13,2,2,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:50:36.891Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010306,AMAZONAS,BONGARÁ,FLORIDA,4,3235,3490,132,123,17,16,1,0,94.118,2026-10-06T00:46:00-05:00,2026-10-06T05:50:54.705Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010307,AMAZONAS,BONGARÁ,RECTA,1,104,138,25,9,2,1,1,0,50,2026-10-06T00:46:00-05:00,2026-10-06T05:51:16.665Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010308,AMAZONAS,BONGARÁ,SAN CARLOS,3,459,496,22,15,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:51:22.603Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010309,AMAZONAS,BONGARÁ,SHIPASBAMBA,4,1084,1173,42,47,6,6,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:51:28.538Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010310,AMAZONAS,BONGARÁ,VALERA,4,862,901,22,17,4,4,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:51:34.464Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010311,AMAZONAS,BONGARÁ,YAMBRASBAMBA,4,3508,3794,182,104,19,19,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:51:40.374Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010312,AMAZONAS,BONGARÁ,JAZAN,4,3568,3981,217,196,21,21,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:51:00.620Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010402,AMAZONAS,LUYA,CAMPORREDONDO,5,3724,3973,141,108,20,19,1,0,95,2026-10-06T00:46:00-05:00,2026-10-06T05:51:49.547Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010403,AMAZONAS,LUYA,COCABAMBA,5,967,1031,36,28,7,7,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:51:55.486Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010404,AMAZONAS,LUYA,COLCAMAR,5,1148,1255,63,44,7,6,1,0,85.714,2026-10-06T00:46:00-05:00,2026-10-06T05:52:01.422Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010405,AMAZONAS,LUYA,CONILA,3,1184,1319,100,35,6,6,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:17.776Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010406,AMAZONAS,LUYA,INGUILPATA,4,513,535,20,2,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:23.696Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010407,AMAZONAS,LUYA,LONGUITA,4,660,705,33,12,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:29.650Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010408,AMAZONAS,LUYA,LONYA CHICO,4,673,711,20,18,3,3,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:35.576Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010409,AMAZONAS,LUYA,LUYA,4,2299,2547,158,90,12,12,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:41.522Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010410,AMAZONAS,LUYA,LUYA VIEJO,3,359,372,9,4,2,2,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:47.463Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010411,AMAZONAS,LUYA,MARÍA,4,446,482,18,18,3,2,1,0,66.667,2026-10-06T00:46:00-05:00,2026-10-06T05:52:53.421Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010412,AMAZONAS,LUYA,OCALLI,5,2093,2290,121,76,10,10,0,0,100,2026-10-06T00:46:00-05:00,2026-10-06T05:52:59.386Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010413,AMAZONAS,LUYA,OCUMAL,4,2076,2275,107,92,11,11,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:20.442Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010414,AMAZONAS,LUYA,PISUQUIA,4,2412,2703,144,147,18,18,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:26.379Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010415,AMAZONAS,LUYA,SAN CRISTÓBAL,4,498,521,8,15,3,3,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:38.281Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010416,AMAZONAS,LUYA,SAN FRANCISCO DEL YESO,4,506,542,22,14,3,3,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:44.239Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010417,AMAZONAS,LUYA,SAN JERÓNIMO,4,833,897,33,31,4,4,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:50.175Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010418,AMAZONAS,LUYA,SAN JUAN DE LOPECANCHA,3,382,411,19,10,2,2,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:56.132Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010419,AMAZONAS,LUYA,SANTA CATALINA,4,1416,1486,34,36,7,7,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:54:02.069Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010420,AMAZONAS,LUYA,SANTO TOMÁS,4,1668,1812,92,52,11,11,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:58:56.331Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010421,AMAZONAS,LUYA,TINGO,4,1080,1146,30,36,5,5,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:59:02.272Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010422,AMAZONAS,LUYA,TRITA,3,913,971,36,22,4,4,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:59:08.212Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010423,AMAZONAS,LUYA,PROVIDENCIA,4,976,1029,39,14,5,5,0,0,100,2026-10-06T00:52:00-05:00,2026-10-06T05:53:32.318Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010502,AMAZONAS,RODRÍGUEZ DE MENDOZA,COCHAMAL,3,575,612,19,18,3,3,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T05:59:23.031Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010503,AMAZONAS,RODRÍGUEZ DE MENDOZA,CHIRIMOTO,3,1368,1507,105,34,8,8,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T05:59:17.095Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010504,AMAZONAS,RODRÍGUEZ DE MENDOZA,HUAMBO,4,1699,1854,79,76,9,9,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T05:59:28.962Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010505,AMAZONAS,RODRÍGUEZ DE MENDOZA,LIMABAMBA,4,1024,1119,58,37,5,5,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:00:15.343Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010506,AMAZONAS,RODRÍGUEZ DE MENDOZA,LONGAR,3,1183,1252,42,27,6,6,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:00:24.574Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010507,AMAZONAS,RODRÍGUEZ DE MENDOZA,MILPUCC,3,484,519,26,9,3,3,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:00:36.438Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010508,AMAZONAS,RODRÍGUEZ DE MENDOZA,MARISCAL BENAVIDES,4,1269,1371,47,55,6,6,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:00:30.503Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010509,AMAZONAS,RODRÍGUEZ DE MENDOZA,OMIA,4,4185,4643,278,180,28,26,2,0,92.857,2026-10-06T00:56:00-05:00,2026-10-06T06:00:42.397Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010510,AMAZONAS,RODRÍGUEZ DE MENDOZA,SANTA ROSA,3,450,478,18,10,2,2,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:00:48.341Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010511,AMAZONAS,RODRÍGUEZ DE MENDOZA,TOTORA,2,414,420,3,3,2,2,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:02:23.398Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010512,AMAZONAS,RODRÍGUEZ DE MENDOZA,VISTA ALEGRE,4,1837,1923,46,40,10,10,0,0,100,2026-10-06T00:56:00-05:00,2026-10-06T06:02:29.332Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010602,AMAZONAS,CONDORCANQUI,RÍO SANTIAGO,13,6414,7152,378,360,47,45,2,0,95.745,2026-10-06T00:56:00-05:00,2026-10-06T06:02:44.130Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010603,AMAZONAS,CONDORCANQUI,EL CENEPA,10,5222,5454,114,118,42,31,3,8,73.81,2026-10-06T00:56:00-05:00,2026-10-06T06:02:38.192Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010702,AMAZONAS,UTCUBAMBA,CAJARURO,8,12687,14239,910,642,76,75,1,0,98.684,2026-10-06T00:56:00-05:00,2026-10-06T06:02:56.133Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010703,AMAZONAS,UTCUBAMBA,CUMBA,5,4952,5325,217,156,26,25,1,0,96.154,2026-10-06T00:56:00-05:00,2026-10-06T06:03:02.079Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010704,AMAZONAS,UTCUBAMBA,EL MILAGRO,6,3660,4101,247,194,19,19,0,0,100,2026-10-06T01:00:32-05:00,2026-10-06T06:04:36.186Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010705,AMAZONAS,UTCUBAMBA,JAMALCA,5,4265,4617,206,146,21,21,0,0,100,2026-10-06T01:00:32-05:00,2026-10-06T06:04:42.098Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010706,AMAZONAS,UTCUBAMBA,LONYA GRANDE,6,5290,5707,250,167,28,26,2,0,92.857,2026-10-06T01:00:32-05:00,2026-10-06T06:04:48.078Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,010707,AMAZONAS,UTCUBAMBA,YAMON,6,2240,2420,128,52,12,12,0,0,100,2026-10-06T01:00:32-05:00,2026-10-06T06:04:53.985Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020102,ÁNCASH,HUARAZ,INDEPENDENCIA,12,35149,41931,3529,3253,186,183,3,0,98.387,2026-10-06T01:46:00-05:00,2026-10-06T06:53:39.625Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020103,ÁNCASH,HUARAZ,COCHABAMBA,4,1120,1319,169,30,7,7,0,0,100,2026-10-06T01:00:32-05:00,2026-10-06T06:05:04.191Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020104,ÁNCASH,HUARAZ,COLCABAMBA,3,237,260,21,2,2,2,0,0,100,2026-10-06T01:00:32-05:00,2026-10-06T06:05:10.142Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020105,ÁNCASH,HUARAZ,HUANCHAY,4,1205,1423,174,44,8,8,0,0,100,2026-10-06T01:40:32-05:00,2026-10-06T06:49:37.613Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020106,ÁNCASH,HUARAZ,JANGAS,5,2941,3354,260,153,16,14,2,0,87.5,2026-10-06T01:50:32-05:00,2026-10-06T06:54:06.444Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020107,ÁNCASH,HUARAZ,LA LIBERTAD,7,846,919,46,27,5,4,1,0,80,2026-10-06T01:50:32-05:00,2026-10-06T06:55:19.555Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020108,ÁNCASH,HUARAZ,OLLEROS,4,1950,2344,285,109,10,10,0,0,100,2026-10-06T01:50:32-05:00,2026-10-06T06:55:25.980Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020109,ÁNCASH,HUARAZ,PAMPAS GRANDE,7,827,938,82,29,5,5,0,0,100,2026-10-06T01:50:32-05:00,2026-10-06T06:57:15.513Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020110,ÁNCASH,HUARAZ,PARIACOTO,10,2690,3091,242,159,16,15,1,0,93.75,2026-10-06T02:16:00-05:00,2026-10-06T07:22:19.586Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020111,ÁNCASH,HUARAZ,PIRA,6,2844,3223,282,97,16,16,0,0,100,2026-10-06T02:16:00-05:00,2026-10-06T07:22:26.282Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020112,ÁNCASH,HUARAZ,TARICA,11,3888,4534,386,260,21,21,0,0,100,2026-10-06T02:16:00-05:00,2026-10-06T07:22:32.885Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020203,ÁNCASH,AIJA,CORIS,5,1038,1176,85,53,6,6,0,0,100,2026-10-06T10:40:32-05:00,2026-10-06T15:43:44.771Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020205,ÁNCASH,AIJA,HUACLLAN,3,452,497,27,18,2,2,0,0,100,2026-10-06T10:36:01-05:00,2026-10-06T15:43:55.770Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020206,ÁNCASH,AIJA,LA MERCED,5,1461,1610,64,85,9,9,0,0,100,2026-10-06T10:36:01-05:00,2026-10-06T15:44:02.925Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020208,ÁNCASH,AIJA,SUCCHA,5,511,597,65,21,3,3,0,0,100,2026-10-06T10:40:32-05:00,2026-10-06T15:44:09.991Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020302,ÁNCASH,BOLOGNESI,ABELARDO PARDO LEZAMETA,2,176,184,8,0,1,1,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:01.461Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020304,ÁNCASH,BOLOGNESI,AQUIA,6,1167,1372,125,80,8,8,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:15.219Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020305,ÁNCASH,BOLOGNESI,CAJACAY,4,1017,1120,61,42,6,6,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:26.704Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020310,ÁNCASH,BOLOGNESI,HUAYLLACAYAN,4,668,778,75,35,5,5,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:58:05.398Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020311,ÁNCASH,BOLOGNESI,HUASTA,5,1027,1117,32,58,7,7,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:58.557Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020313,ÁNCASH,BOLOGNESI,MANGAS,4,509,533,19,5,3,3,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:58:19.128Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020315,ÁNCASH,BOLOGNESI,PACLLON,4,676,741,29,36,4,4,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:58:30.270Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020317,ÁNCASH,BOLOGNESI,SAN MIGUEL DE CORPANQUI,3,299,324,22,3,2,2,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:58:37.065Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020320,ÁNCASH,BOLOGNESI,TICLLOS,6,357,396,26,13,3,3,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:58:43.843Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020321,ÁNCASH,BOLOGNESI,ANTONIO RAYMONDI,5,920,1003,59,24,6,6,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:08.277Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020322,ÁNCASH,BOLOGNESI,CANIS,3,329,361,17,15,2,2,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:33.644Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020323,ÁNCASH,BOLOGNESI,COLQUIOC,4,1287,1415,83,45,7,7,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:40.588Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020324,ÁNCASH,BOLOGNESI,LA PRIMAVERA,5,248,260,7,5,2,2,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:58:12.266Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020325,ÁNCASH,BOLOGNESI,HUALLANCA,4,3191,3509,207,111,17,17,0,0,100,2026-10-06T10:52:00-05:00,2026-10-06T15:57:47.479Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020402,ÁNCASH,CARHUAZ,ACOPAMPA,5,1592,1915,199,124,8,8,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:59:33.754Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020403,ÁNCASH,CARHUAZ,AMASHCA,6,1225,1448,124,99,6,6,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:59:40.550Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020404,ÁNCASH,CARHUAZ,ANTA,6,1651,1960,183,126,8,8,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T15:59:47.353Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020405,ÁNCASH,CARHUAZ,ATAQUERO,4,983,1166,155,28,6,5,1,0,83.333,2026-10-06T10:56:01-05:00,2026-10-06T15:59:54.196Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020406,ÁNCASH,CARHUAZ,MARCARA,6,5663,6898,698,537,31,30,1,0,96.774,2026-10-06T10:56:01-05:00,2026-10-06T16:00:04.133Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020407,ÁNCASH,CARHUAZ,PARIAHUANCA,5,1011,1118,84,23,5,5,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:00:16.641Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020408,ÁNCASH,CARHUAZ,SAN MIGUEL DE ACO,5,1694,1935,176,65,9,9,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:00:23.495Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020409,ÁNCASH,CARHUAZ,SHILLA,6,2006,2438,274,158,11,11,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:00:30.294Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020410,ÁNCASH,CARHUAZ,TINCO,6,1622,1909,195,92,10,8,2,0,80,2026-10-06T10:56:01-05:00,2026-10-06T16:00:37.028Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020411,ÁNCASH,CARHUAZ,YUNGAR,4,2268,2550,211,71,11,11,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:00:43.732Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020502,ÁNCASH,CASMA,BUENA VISTA ALTA,7,3209,3634,277,148,15,15,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:00:57.900Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020503,ÁNCASH,CASMA,COMANDANTE NOEL,7,1909,2153,134,110,9,9,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:04.692Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020505,ÁNCASH,CASMA,YAUTAN,7,4912,5599,461,226,24,24,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:11.451Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020602,ÁNCASH,CORONGO,ACO,2,224,267,35,8,2,2,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:24.029Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020603,ÁNCASH,CORONGO,BAMBAS,3,268,306,25,13,2,2,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:33.207Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020604,ÁNCASH,CORONGO,CUSCA,4,1899,1998,58,41,9,9,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:40.050Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020605,ÁNCASH,CORONGO,LA PAMPA,8,660,721,45,16,4,4,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:46.894Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020606,ÁNCASH,CORONGO,YANAC,3,426,480,41,13,3,3,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:01:53.918Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020607,ÁNCASH,CORONGO,YUPAN,3,265,277,10,2,2,2,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:02:06.678Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020702,ÁNCASH,HUAYLAS,HUALLANCA,5,755,861,87,19,4,4,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:02:15.473Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020703,ÁNCASH,HUAYLAS,HUATA,6,890,1061,125,46,5,5,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:02:22.583Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020704,ÁNCASH,HUAYLAS,HUAYLAS,4,823,997,153,21,5,5,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:02:29.556Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020705,ÁNCASH,HUAYLAS,MATO,8,1154,1424,200,70,7,7,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:02:36.641Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020706,ÁNCASH,HUAYLAS,PAMPAROMAS,10,4146,4893,510,237,28,27,1,0,96.429,2026-10-06T10:56:01-05:00,2026-10-06T16:02:47.757Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020707,ÁNCASH,HUAYLAS,PUEBLO LIBRE,9,4575,5453,642,236,23,23,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:02:54.894Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020708,ÁNCASH,HUAYLAS,SANTA CRUZ,10,2755,3466,443,268,16,16,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:03:01.810Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020709,ÁNCASH,HUAYLAS,YURACMARCA,8,1363,1546,133,50,9,8,1,0,88.889,2026-10-06T11:00:34-05:00,2026-10-06T16:03:15.675Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020710,ÁNCASH,HUAYLAS,SANTO TORIBIO,4,557,675,90,28,4,4,0,0,100,2026-10-06T10:56:01-05:00,2026-10-06T16:03:08.812Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020802,ÁNCASH,HUARI,CAJAY,4,2765,3019,147,107,14,13,1,0,92.857,2026-10-06T11:00:34-05:00,2026-10-06T16:03:53.162Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020803,ÁNCASH,HUARI,CHAVÍN DE HUÁNTAR,5,5360,5784,234,190,30,29,0,1,96.667,2026-10-06T10:56:01-05:00,2026-10-06T16:04:00.181Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020804,ÁNCASH,HUARI,HUACACHI,5,1997,2104,79,28,11,10,1,0,90.909,2026-10-06T10:56:01-05:00,2026-10-06T16:04:07.234Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020805,ÁNCASH,HUARI,HUACHIS,5,3896,4180,201,83,21,21,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:04:26.488Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020806,ÁNCASH,HUARI,HUACCHIS,5,1747,1907,101,59,9,9,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:04:14.347Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020807,ÁNCASH,HUARI,HUANTAR,7,1853,2014,105,56,11,10,1,0,90.909,2026-10-06T10:56:01-05:00,2026-10-06T16:04:33.664Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020808,ÁNCASH,HUARI,MASIN,5,1435,1598,70,93,8,8,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:04:40.896Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020809,ÁNCASH,HUARI,PAUCAS,5,1740,1843,62,41,9,9,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:04:48.064Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020810,ÁNCASH,HUARI,PONTO,4,3037,3286,175,74,17,16,1,0,94.118,2026-10-06T11:00:34-05:00,2026-10-06T16:04:55.187Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020811,ÁNCASH,HUARI,RAHUAPAMPA,4,736,800,48,16,4,4,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:05:13.233Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020812,ÁNCASH,HUARI,RAPAYAN,4,1594,1699,61,44,8,8,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:05:20.300Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020813,ÁNCASH,HUARI,SAN MARCOS,8,15877,17147,628,642,94,89,5,0,94.681,2026-10-06T11:00:34-05:00,2026-10-06T16:05:27.261Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020814,ÁNCASH,HUARI,SAN PEDRO DE CHANA,5,2338,2500,96,66,13,13,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:05:34.281Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020815,ÁNCASH,HUARI,UCO,5,1412,1519,60,47,7,7,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:05:41.214Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020816,ÁNCASH,HUARI,ANRA,5,1730,1857,56,71,10,10,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:03:46.209Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020902,ÁNCASH,MARISCAL LUZURIAGA,CASCA,4,2593,2933,202,138,14,14,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:05:55.669Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020903,ÁNCASH,MARISCAL LUZURIAGA,LUCMA,4,1725,1965,128,112,10,10,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:06:36.845Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020904,ÁNCASH,MARISCAL LUZURIAGA,FIDEL OLIVAS ESCUDERO,4,1196,1412,125,91,8,8,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:06:09.716Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020905,ÁNCASH,MARISCAL LUZURIAGA,LLAMA,7,765,884,71,48,4,4,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:06:16.804Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020906,ÁNCASH,MARISCAL LUZURIAGA,LLUMPA,6,2901,3521,346,274,18,18,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:06:23.790Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020907,ÁNCASH,MARISCAL LUZURIAGA,MUSGA,5,824,888,28,36,4,4,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:06:47.549Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,020908,ÁNCASH,MARISCAL LUZURIAGA,ELEAZAR GUZMÁN BARRÓN,4,696,812,88,28,5,5,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:06:02.771Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021002,ÁNCASH,PALLASCA,BOLOGNESI,3,538,647,85,24,4,4,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:00.069Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021003,ÁNCASH,PALLASCA,CONCHUCOS,6,3365,3781,221,195,25,25,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:06.911Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021004,ÁNCASH,PALLASCA,HUACASCHUQUE,4,306,341,20,15,2,2,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:13.979Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021005,ÁNCASH,PALLASCA,HUANDOVAL,3,554,615,45,16,3,3,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:21.099Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021006,ÁNCASH,PALLASCA,LACABAMBA,3,381,433,39,13,2,2,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:28.108Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021007,ÁNCASH,PALLASCA,LLAPO,2,288,333,36,9,2,2,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:39.675Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021008,ÁNCASH,PALLASCA,PALLASCA,5,1267,1515,145,103,8,8,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:46.608Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021009,ÁNCASH,PALLASCA,PAMPAS,5,1911,2150,157,82,12,12,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:07:53.626Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021010,ÁNCASH,PALLASCA,SANTA ROSA,5,514,624,70,40,4,4,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:08:00.525Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021011,ÁNCASH,PALLASCA,TAUCA,3,1203,1414,158,53,7,7,0,0,100,2026-10-06T11:00:34-05:00,2026-10-06T16:08:07.379Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021102,ÁNCASH,POMABAMBA,HUAYLLAN,8,1959,2226,128,139,11,11,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:08:38.713Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021103,ÁNCASH,POMABAMBA,PAROBAMBA,3,2739,3192,309,144,20,20,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:08:45.665Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021104,ÁNCASH,POMABAMBA,QUINUABAMBA,5,1191,1417,155,71,8,8,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:08:52.513Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021202,ÁNCASH,RECUAY,COTAPARACO,3,299,323,20,4,3,2,1,0,66.667,2026-10-06T11:06:02-05:00,2026-10-06T16:09:11.591Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021203,ÁNCASH,RECUAY,HUAYLLAPAMPA,2,515,579,49,15,3,3,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:09:18.674Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021204,ÁNCASH,RECUAY,MARCA,3,908,1025,79,38,5,5,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:09:32.785Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021205,ÁNCASH,RECUAY,PAMPAS CHICO,2,514,643,112,17,4,4,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:09:43.894Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021206,ÁNCASH,RECUAY,PARARIN,6,861,955,61,33,6,5,1,0,83.333,2026-10-06T11:06:02-05:00,2026-10-06T16:09:50.790Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021207,ÁNCASH,RECUAY,TAPACOCHA,4,366,431,47,18,2,2,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:09:57.797Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021208,ÁNCASH,RECUAY,TICAPAMPA,4,1589,1818,161,68,8,8,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:10:04.643Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021209,ÁNCASH,RECUAY,LLACLLIN,4,863,920,37,20,5,5,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:09:25.747Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021210,ÁNCASH,RECUAY,CATAC,5,2617,2958,224,117,13,13,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:09:04.618Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021302,ÁNCASH,SANTA,CACERES DEL PERÚ,8,2937,3529,387,205,16,16,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:10:20.599Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021303,ÁNCASH,SANTA,MACATE,9,2173,2372,143,56,13,13,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:10:34.564Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021304,ÁNCASH,SANTA,MORO,7,5164,5994,673,157,25,25,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:10:41.613Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021305,ÁNCASH,SANTA,NEPEÑA,6,8076,9160,785,299,42,41,1,0,97.619,2026-10-06T11:06:02-05:00,2026-10-06T16:10:52.815Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021306,ÁNCASH,SANTA,SAMANCO,5,3027,3424,262,135,14,14,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:11:06.868Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021307,ÁNCASH,SANTA,SANTA,12,16760,19855,1876,1219,88,87,1,0,98.864,2026-10-06T11:06:02-05:00,2026-10-06T16:11:13.794Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021308,ÁNCASH,SANTA,COISHCO,6,9316,10695,824,555,46,46,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:10:27.620Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021309,ÁNCASH,SANTA,NUEVO CHIMBOTE,14,78632,92101,6429,7040,421,405,16,0,96.2,2026-10-06T11:06:02-05:00,2026-10-06T16:10:59.882Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021402,ÁNCASH,SIHUAS,ALFONSO UGARTE,4,321,361,21,19,2,2,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:11:42.572Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021403,ÁNCASH,SIHUAS,CHINGALPO,5,659,708,26,23,4,4,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:11:59.391Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021404,ÁNCASH,SIHUAS,HUAYLLABAMBA,5,1872,2111,129,110,11,11,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:12:06.537Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021405,ÁNCASH,SIHUAS,QUICHES,7,1225,1374,88,61,8,8,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:12:19.220Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021406,ÁNCASH,SIHUAS,SICSIBAMBA,5,921,1033,57,55,5,5,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:12:39.790Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021407,ÁNCASH,SIHUAS,ACOBAMBA,6,940,1020,45,35,6,6,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:11:35.678Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021408,ÁNCASH,SIHUAS,CASHAPAMPA,4,1586,1743,98,59,9,9,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:11:52.358Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021409,ÁNCASH,SIHUAS,RAGASH,5,1804,2008,86,118,10,10,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:12:26.191Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021410,ÁNCASH,SIHUAS,SAN JUAN,5,3239,3723,235,249,22,20,2,0,90.909,2026-10-06T11:06:02-05:00,2026-10-06T16:12:33.066Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021502,ÁNCASH,YUNGAY,CASCAPARA,6,966,1256,198,92,7,7,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:12:52.108Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021503,ÁNCASH,YUNGAY,MANCOS,7,3998,4710,452,260,22,22,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:12:58.892Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021504,ÁNCASH,YUNGAY,MATACOTO,4,1180,1387,154,53,6,6,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:13:05.744Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021505,ÁNCASH,YUNGAY,QUILLO,8,6859,8008,858,291,39,39,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:13:12.562Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021506,ÁNCASH,YUNGAY,RANRAHIRCA,6,2128,2448,197,123,10,10,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:13:24.128Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021507,ÁNCASH,YUNGAY,SHUPLUY,5,1321,1569,169,79,8,8,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:13:30.900Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021508,ÁNCASH,YUNGAY,YANAMA,4,2819,3372,375,178,18,18,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:13:37.635Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021602,ÁNCASH,ANTONIO RAIMONDI,ACZO,7,964,1103,98,41,6,6,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:13:50.814Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021603,ÁNCASH,ANTONIO RAIMONDI,CHACCHO,7,671,773,36,66,5,4,1,0,80,2026-10-06T11:12:01-05:00,2026-10-06T16:13:57.557Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021604,ÁNCASH,ANTONIO RAIMONDI,CHINGAS,5,890,1085,135,60,6,6,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:14:04.378Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021605,ÁNCASH,ANTONIO RAIMONDI,MIRGAS,7,2297,2763,291,175,16,16,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:14:11.151Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021606,ÁNCASH,ANTONIO RAIMONDI,SAN JUAN DE RONTOY,4,837,962,96,29,5,5,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:14:17.916Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021702,ÁNCASH,CARLOS FERMÍN FITZCARRALD,YAUYA,8,2267,2667,195,205,14,13,1,0,92.857,2026-10-06T11:06:02-05:00,2026-10-06T16:14:38.917Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021703,ÁNCASH,CARLOS FERMÍN FITZCARRALD,SAN NICOLÁS,5,1682,1967,167,118,11,11,0,0,100,2026-10-06T11:06:02-05:00,2026-10-06T16:14:32.138Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021802,ÁNCASH,ASUNCIÓN,ACOCHACA,5,1513,1744,141,90,10,10,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:14:47.121Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021902,ÁNCASH,HUARMEY,COCHAPETI,5,811,916,72,33,4,4,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:14:59.899Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021903,ÁNCASH,HUARMEY,HUAYAN,4,585,676,77,14,4,4,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:15:13.409Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021904,ÁNCASH,HUARMEY,MALVAS,4,591,670,73,6,5,4,1,0,80,2026-10-06T11:12:01-05:00,2026-10-06T16:15:20.172Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,021905,ÁNCASH,HUARMEY,CULEBRAS,7,1718,1879,126,35,8,8,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:15:06.598Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022001,ÁNCASH,OCROS,ACAS,2,331,364,26,7,3,3,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:15:43.345Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022002,ÁNCASH,OCROS,CAJAMARQUILLA,3,107,132,22,3,1,1,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:15:50.051Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022003,ÁNCASH,OCROS,CARHUAPAMPA,3,314,406,71,21,2,2,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:15:56.842Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022004,ÁNCASH,OCROS,COCHAS,5,868,961,65,28,6,5,1,0,83.333,2026-10-06T11:12:01-05:00,2026-10-06T16:16:03.660Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022005,ÁNCASH,OCROS,CONGAS,4,616,696,58,22,4,4,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:16:10.502Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022006,ÁNCASH,OCROS,LLIPA,3,188,198,10,0,1,1,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:16:20.977Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022008,ÁNCASH,OCROS,SAN CRISTÓBAL DE RAJAN,5,403,471,36,32,3,3,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:16:27.774Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022009,ÁNCASH,OCROS,SAN PEDRO,3,773,834,36,25,4,4,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:16:34.566Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,022010,ÁNCASH,OCROS,SANTIAGO DE CHILCAS,3,258,304,32,14,2,2,0,0,100,2026-10-06T11:12:01-05:00,2026-10-06T16:16:41.329Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030102,APURÍMAC,ABANCAY,CIRCA,6,2206,2444,109,129,13,13,0,0,100,2026-10-06T11:22:01-05:00,2026-10-06T16:28:17.061Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030103,APURÍMAC,ABANCAY,CURAHUASI,6,10244,11141,484,413,49,49,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:28:24.131Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030104,APURÍMAC,ABANCAY,CHACOCHE,4,953,1027,37,37,5,5,0,0,100,2026-10-06T11:22:01-05:00,2026-10-06T16:28:06.976Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030105,APURÍMAC,ABANCAY,HUANIPACA,4,2329,2583,148,106,13,13,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:28:31.078Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030106,APURÍMAC,ABANCAY,LAMBRAMA,4,2760,3183,247,176,16,16,0,0,100,2026-10-06T11:22:01-05:00,2026-10-06T16:28:38.049Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030107,APURÍMAC,ABANCAY,PICHIRHUA,5,2596,3025,287,142,17,17,0,0,100,2026-10-06T11:22:01-05:00,2026-10-06T16:28:52.342Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030108,APURÍMAC,ABANCAY,SAN PEDRO DE CACHORA,2,1788,1988,160,40,9,9,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:28:59.146Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030109,APURÍMAC,ABANCAY,TAMBURCO,4,6124,6913,424,365,29,29,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:29:05.908Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030202,APURÍMAC,AYMARAES,CAPAYA,4,499,530,10,21,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:29:18.318Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030203,APURÍMAC,AYMARAES,CARAYBAMBA,4,829,900,36,35,4,4,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:29:25.200Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030204,APURÍMAC,AYMARAES,COLCABAMBA,4,571,617,25,21,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:29:39.013Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030205,APURÍMAC,AYMARAES,COTARUSE,4,2041,2287,118,128,14,13,1,0,92.857,2026-10-06T11:26:01-05:00,2026-10-06T16:29:45.933Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030206,APURÍMAC,AYMARAES,CHAPIMARCA,5,1422,1600,57,121,10,10,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:29:32.090Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030207,APURÍMAC,AYMARAES,IHUAYLLO,2,469,493,18,6,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:29:57.514Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030208,APURÍMAC,AYMARAES,LUCRE,3,1104,1236,84,48,6,6,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:11.441Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030209,APURÍMAC,AYMARAES,POCOHUANCA,2,1005,1109,71,33,6,6,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:18.395Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030210,APURÍMAC,AYMARAES,SAÑAYCA,4,807,877,21,49,4,4,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:38.272Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030211,APURÍMAC,AYMARAES,SORAYA,4,495,535,23,17,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:45.171Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030212,APURÍMAC,AYMARAES,TAPAIRIHUA,4,1649,1782,67,66,9,9,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:52.021Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030213,APURÍMAC,AYMARAES,TINTAY,5,1864,2024,72,88,12,11,1,0,91.667,2026-10-06T11:26:01-05:00,2026-10-06T16:30:58.822Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030214,APURÍMAC,AYMARAES,TORAYA,4,892,966,28,46,5,5,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:31:05.684Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030215,APURÍMAC,AYMARAES,YANACA,3,762,814,27,25,4,4,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:31:12.477Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030216,APURÍMAC,AYMARAES,SAN JUAN DE CHACÑA,4,579,609,12,18,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:25.327Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030217,APURÍMAC,AYMARAES,JUSTO APU SAHUARAURA,4,568,604,20,16,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:30:04.444Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030302,APURÍMAC,ANDAHUAYLAS,ANDARAPA,5,3908,4224,151,165,22,21,1,0,95.455,2026-10-06T11:26:01-05:00,2026-10-06T16:32:12.232Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030303,APURÍMAC,ANDAHUAYLAS,CHIARA,3,831,900,41,28,5,5,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:32:19.062Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030304,APURÍMAC,ANDAHUAYLAS,HUANCARAMA,8,3305,3805,187,313,17,17,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:32:25.995Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030305,APURÍMAC,ANDAHUAYLAS,HUANCARAY,4,2412,2712,134,166,13,13,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:32:32.994Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030306,APURÍMAC,ANDAHUAYLAS,KISHUARA,5,4462,4812,176,174,23,23,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:34:03.800Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030307,APURÍMAC,ANDAHUAYLAS,PACOBAMBA,6,3012,3261,93,156,15,15,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:34:10.814Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030308,APURÍMAC,ANDAHUAYLAS,PAMPACHIRI,5,1274,1409,70,65,8,8,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:34:31.822Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030309,APURÍMAC,ANDAHUAYLAS,SAN ANTONIO DE CACHI,4,1955,2109,51,103,10,10,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:34:45.810Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030310,APURÍMAC,ANDAHUAYLAS,SAN JERÓNIMO,6,12483,13775,607,685,62,62,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:34:52.800Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030311,APURÍMAC,ANDAHUAYLAS,TALAVERA,6,10748,11971,610,613,57,56,1,0,98.246,2026-10-06T11:32:01-05:00,2026-10-06T16:35:19.758Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030312,APURÍMAC,ANDAHUAYLAS,TURPO,3,2470,2678,65,143,13,12,1,0,92.308,2026-10-06T11:32:01-05:00,2026-10-06T16:35:33.554Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030313,APURÍMAC,ANDAHUAYLAS,PACUCHA,5,5185,5748,305,258,29,27,2,0,93.103,2026-10-06T11:26:01-05:00,2026-10-06T16:34:17.836Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030314,APURÍMAC,ANDAHUAYLAS,POMACOCHA,2,576,622,21,25,3,3,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:34:38.799Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030315,APURÍMAC,ANDAHUAYLAS,SANTA MARÍA DE CHICMO,4,5272,5687,142,273,28,27,1,0,96.429,2026-10-06T11:32:01-05:00,2026-10-06T16:35:12.822Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030316,APURÍMAC,ANDAHUAYLAS,TUMAY HUARACA,4,1092,1230,97,41,7,7,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:35:26.730Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030317,APURÍMAC,ANDAHUAYLAS,HUAYANA,2,544,597,27,26,3,3,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:32:39.920Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030318,APURÍMAC,ANDAHUAYLAS,SAN MIGUEL DE CHACCRAMPA,4,1186,1328,90,52,7,7,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:34:59.848Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030319,APURÍMAC,ANDAHUAYLAS,KAQUIABAMBA,3,1503,1615,46,66,8,8,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:33:56.844Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030320,APURÍMAC,ANDAHUAYLAS,JOSÉ MARIA ARGUEDAS,5,3088,3443,195,160,14,14,0,0,100,2026-10-06T11:26:01-05:00,2026-10-06T16:33:46.430Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030402,APURÍMAC,ANTABAMBA,EL ORO,4,424,465,23,18,2,2,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:35:48.908Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030403,APURÍMAC,ANTABAMBA,HUAQUIRCA,4,872,964,59,33,5,5,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:35:55.815Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030404,APURÍMAC,ANTABAMBA,JUAN ESPINOZA MEDRANO,3,1276,1391,62,53,7,7,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:36:02.820Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030405,APURÍMAC,ANTABAMBA,OROPESA,4,1261,1378,53,64,7,7,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:36:09.735Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030406,APURÍMAC,ANTABAMBA,PACHACONAS,4,880,948,29,39,5,5,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:36:16.652Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030407,APURÍMAC,ANTABAMBA,SABAINO,3,918,1034,71,45,5,5,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:36:23.512Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030502,APURÍMAC,COTABAMBAS,COYLLURQUI,3,4371,4783,210,202,24,24,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:36:55.860Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030503,APURÍMAC,COTABAMBAS,COTABAMBAS,7,2716,2943,101,126,15,15,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:36:48.786Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030504,APURÍMAC,COTABAMBAS,HAQUIRA,5,4869,5378,245,264,31,31,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:37:02.813Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030505,APURÍMAC,COTABAMBAS,MARA,5,3384,3658,141,133,19,18,1,0,94.737,2026-10-06T11:32:01-05:00,2026-10-06T16:37:09.628Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030506,APURÍMAC,COTABAMBAS,CHALLHUAHUACHO,8,7472,8275,280,523,41,40,1,0,97.561,2026-10-06T11:32:01-05:00,2026-10-06T16:36:41.775Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030602,APURÍMAC,GRAU,CURPAHUASI,5,1461,1604,72,71,9,9,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:37:29.820Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030603,APURÍMAC,GRAU,HUAYLLATI,4,808,935,42,85,5,5,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:37:43.652Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030604,APURÍMAC,GRAU,MAMARA,4,484,523,17,22,3,3,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:37:50.552Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030605,APURÍMAC,GRAU,GAMARRA,5,1911,2127,62,154,13,13,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:37:36.651Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030606,APURÍMAC,GRAU,MICAELA BASTIDAS,2,646,697,32,19,4,4,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:38:02.314Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030607,APURÍMAC,GRAU,PROGRESO,4,1904,2167,91,172,11,11,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:38:16.262Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030608,APURÍMAC,GRAU,PATAYPAMPA,5,643,719,13,63,4,4,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:38:09.318Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030609,APURÍMAC,GRAU,SAN ANTONIO,3,286,295,6,3,2,2,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:38:23.246Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030610,APURÍMAC,GRAU,TURPAY,5,196,220,9,15,2,1,1,0,50,2026-10-06T11:36:02-05:00,2026-10-06T16:38:46.544Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030611,APURÍMAC,GRAU,VILCABAMBA,3,738,800,18,44,4,4,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:38:53.425Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030612,APURÍMAC,GRAU,VIRUNDO,4,525,587,24,38,3,3,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:39:03.607Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030613,APURÍMAC,GRAU,SANTA ROSA,4,485,528,18,25,3,3,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:38:30.170Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030614,APURÍMAC,GRAU,CURASCO,6,830,945,32,83,5,5,0,0,100,2026-10-06T11:32:01-05:00,2026-10-06T16:37:22.889Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030702,APURÍMAC,CHINCHEROS,ONGOY,5,1473,1568,40,55,8,8,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:40:12.024Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030703,APURÍMAC,CHINCHEROS,OCOBAMBA,4,3875,4101,126,100,22,20,2,0,90.909,2026-10-06T11:36:02-05:00,2026-10-06T16:40:05.142Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030704,APURÍMAC,CHINCHEROS,COCHARCAS,3,1404,1469,37,28,7,7,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:39:30.262Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030705,APURÍMAC,CHINCHEROS,ANCO HUALLO,4,6320,6978,380,278,35,35,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:39:23.349Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030706,APURÍMAC,CHINCHEROS,HUACCANA,4,3215,3438,51,172,17,17,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:39:44.289Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030707,APURÍMAC,CHINCHEROS,URANMARCA,3,1795,1911,64,52,10,10,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:40:32.430Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030708,APURÍMAC,CHINCHEROS,RANRACANCHA,2,2337,2462,77,48,11,11,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:40:18.940Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030709,APURÍMAC,CHINCHEROS,ROCCHACC,3,2067,2154,47,40,9,9,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:40:25.849Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030710,APURÍMAC,CHINCHEROS,EL PORVENIR,4,1127,1181,15,39,6,6,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:39:37.298Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030711,APURÍMAC,CHINCHEROS,LOS CHANKAS,3,786,837,10,41,5,4,1,0,80,2026-10-06T11:36:02-05:00,2026-10-06T16:39:58.204Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,030712,APURÍMAC,CHINCHEROS,AHUAYRO,4,854,892,13,25,4,4,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:39:16.402Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040102,AREQUIPA,AREQUIPA,CAYMA,10,57751,64712,3495,3466,274,271,3,0,98.905,2026-10-06T11:36:02-05:00,2026-10-06T16:41:34.377Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040103,AREQUIPA,AREQUIPA,CERRO COLORADO,11,102302,120304,9956,8046,506,502,4,0,99.209,2026-10-06T11:36:02-05:00,2026-10-06T16:41:41.439Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040104,AREQUIPA,AREQUIPA,CHARACATO,11,7526,8506,563,417,36,35,1,0,97.222,2026-10-06T11:36:02-05:00,2026-10-06T16:41:48.508Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040105,AREQUIPA,AREQUIPA,CHIGUATA,10,3126,3535,227,182,14,14,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:41:55.457Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040106,AREQUIPA,AREQUIPA,LA JOYA,7,19569,23155,2146,1440,98,96,2,0,97.959,2026-10-06T11:36:02-05:00,2026-10-06T16:42:24.682Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040107,AREQUIPA,AREQUIPA,MIRAFLORES,11,36744,41983,2417,2822,176,175,1,0,99.432,2026-10-06T11:36:02-05:00,2026-10-06T16:42:38.985Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040108,AREQUIPA,AREQUIPA,MOLLEBAYA,5,2669,3092,285,138,13,13,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:42:51.317Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040109,AREQUIPA,AREQUIPA,PAUCARPATA,14,82028,93402,4658,6716,388,384,4,0,98.969,2026-10-06T11:36:02-05:00,2026-10-06T16:42:58.618Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040110,AREQUIPA,AREQUIPA,POCSI,6,700,791,60,31,4,4,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:43:05.814Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040111,AREQUIPA,AREQUIPA,POLOBAYA,3,931,1137,182,24,5,5,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:43:12.997Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040112,AREQUIPA,AREQUIPA,QUEQUEÑA,5,2093,2395,233,69,10,10,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:43:20.208Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040113,AREQUIPA,AREQUIPA,SABANDIA,4,3277,3705,277,151,16,15,1,0,93.75,2026-10-06T11:36:02-05:00,2026-10-06T16:43:32.024Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040114,AREQUIPA,AREQUIPA,SACHACA,8,18477,21562,1607,1478,91,90,1,0,98.901,2026-10-06T11:36:02-05:00,2026-10-06T16:43:39.158Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040115,AREQUIPA,AREQUIPA,SAN JUAN DE SIGUAS,5,672,809,76,61,4,4,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:43:46.301Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040116,AREQUIPA,AREQUIPA,SAN JUAN DE TARUCANI,8,1205,1333,91,37,7,6,1,0,85.714,2026-10-06T11:42:00-05:00,2026-10-06T16:43:56.474Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040117,AREQUIPA,AREQUIPA,SANTA ISABEL DE SIGUAS,2,597,744,138,9,3,3,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:44:03.446Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040118,AREQUIPA,AREQUIPA,SANTA RITA DE SIHUAS,2,4148,5439,1106,185,22,22,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:44:18.320Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040119,AREQUIPA,AREQUIPA,SOCABAYA,9,39833,45957,3085,3039,189,188,1,0,99.471,2026-10-06T11:36:02-05:00,2026-10-06T16:44:25.356Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040120,AREQUIPA,AREQUIPA,TIABAYA,4,11742,13522,1232,548,57,56,1,0,98.246,2026-10-06T11:42:00-05:00,2026-10-06T16:44:32.411Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040121,AREQUIPA,AREQUIPA,UCHUMAYO,6,12056,13708,1047,605,58,57,1,0,98.276,2026-10-06T11:42:00-05:00,2026-10-06T16:44:39.349Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040122,AREQUIPA,AREQUIPA,VITOR,5,1992,2355,262,101,11,11,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:44:46.304Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040123,AREQUIPA,AREQUIPA,YANAHUARA,7,20219,23030,1289,1522,102,102,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:44:59.257Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040124,AREQUIPA,AREQUIPA,YARABAMBA,7,1926,2085,98,61,15,9,6,0,60,2026-10-06T11:42:00-05:00,2026-10-06T16:45:06.173Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040125,AREQUIPA,AREQUIPA,YURA,9,19522,22988,2033,1433,96,94,2,0,97.917,2026-10-06T11:42:00-05:00,2026-10-06T16:45:13.034Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040126,AREQUIPA,AREQUIPA,MARIANO MELGAR,7,37659,43506,2994,2853,179,179,0,0,100,2026-10-06T11:36:02-05:00,2026-10-06T16:42:31.839Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040127,AREQUIPA,AREQUIPA,JACOBO HUNTER,9,31188,34585,1725,1672,142,140,2,0,98.592,2026-10-06T11:36:02-05:00,2026-10-06T16:42:10.506Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040128,AREQUIPA,AREQUIPA,ALTO SELVA ALEGRE,10,49966,57412,3591,3855,239,238,1,0,99.582,2026-10-06T11:36:02-05:00,2026-10-06T16:41:27.441Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040129,AREQUIPA,AREQUIPA,JOSÉ LUIS BUSTAMANTE Y RIVERO,12,45774,51973,2630,3569,220,219,1,0,99.545,2026-10-06T11:36:02-05:00,2026-10-06T16:42:17.665Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040202,AREQUIPA,CAYLLOMA,ACHOMA,3,562,729,147,20,4,4,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:51:54.036Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040203,AREQUIPA,CAYLLOMA,CABANACONDE,4,977,1305,286,42,8,8,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:52:00.949Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040204,AREQUIPA,CAYLLOMA,CAYLLOMA,4,2069,2422,269,84,13,13,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:52:14.852Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040205,AREQUIPA,CAYLLOMA,CALLALLI,4,1151,1353,146,56,6,6,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:52:07.840Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040206,AREQUIPA,CAYLLOMA,COPORAQUE,4,731,866,98,37,4,4,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:52:21.836Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040207,AREQUIPA,CAYLLOMA,HUAMBO,5,465,543,51,27,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:55:09.834Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040208,AREQUIPA,CAYLLOMA,HUANCA,4,1081,1228,118,29,6,6,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:55:19.376Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040209,AREQUIPA,CAYLLOMA,ICHUPAMPA,3,478,597,96,23,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:55:26.259Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040210,AREQUIPA,CAYLLOMA,LARI,1,188,676,407,81,4,4,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:55:48.337Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040211,AREQUIPA,CAYLLOMA,LLUTA,5,961,1105,104,40,6,6,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:55:55.511Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040212,AREQUIPA,CAYLLOMA,MACA,6,560,635,49,26,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:02.561Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040213,AREQUIPA,CAYLLOMA,MADRIGAL,3,480,577,76,21,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:09.565Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040214,AREQUIPA,CAYLLOMA,SAN ANTONIO DE CHUCA,2,452,736,237,47,4,4,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:28.303Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040215,AREQUIPA,CAYLLOMA,SIBAYO,2,521,604,59,24,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:34.954Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040216,AREQUIPA,CAYLLOMA,TAPAY,4,539,676,120,17,4,4,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:41.887Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040217,AREQUIPA,CAYLLOMA,TISCO,3,745,944,157,42,6,6,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:48.757Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040218,AREQUIPA,CAYLLOMA,TUTI,4,478,571,68,25,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:56:55.636Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040219,AREQUIPA,CAYLLOMA,YANQUE,3,1391,1655,215,49,8,8,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:57:02.458Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040220,AREQUIPA,CAYLLOMA,MAJES,16,38503,43592,2689,2400,190,186,4,0,97.895,2026-10-06T11:52:03-05:00,2026-10-06T16:56:16.626Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040302,AREQUIPA,CAMANÁ,JOSÉ MARIA QUIMPER,5,2923,3252,234,95,14,14,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:45:39.018Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040303,AREQUIPA,CAMANÁ,MARIANO NICOLÁS VALCARCEL,5,2640,3062,330,92,15,15,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:45:45.938Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040304,AREQUIPA,CAMANÁ,MARISCAL CÁCERES,4,4207,4739,358,174,21,21,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:45:52.881Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040305,AREQUIPA,CAMANÁ,NICOLÁS DE PIEROLA,7,4304,4790,292,194,21,21,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:45:59.859Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040306,AREQUIPA,CAMANÁ,OCOÑA,4,2371,2711,255,85,13,13,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:46:12.337Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040307,AREQUIPA,CAMANÁ,QUILCA,4,838,942,86,18,4,4,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:46:19.155Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040308,AREQUIPA,CAMANÁ,SAMUEL PASTOR,9,9463,10708,711,534,47,47,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:46:25.947Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040402,AREQUIPA,CARAVELÍ,ACARI,5,1829,1989,98,62,12,10,2,0,83.333,2026-10-06T11:42:00-05:00,2026-10-06T16:46:39.298Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040403,AREQUIPA,CARAVELÍ,ATICO,4,2890,3088,134,64,15,15,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:46:46.252Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040404,AREQUIPA,CARAVELÍ,ATIQUIPA,1,229,386,62,95,2,2,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:46:53.067Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040405,AREQUIPA,CARAVELÍ,BELLA UNIÓN,5,1960,2108,93,55,10,10,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:46:59.692Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040406,AREQUIPA,CARAVELÍ,CAHUACHO,3,402,451,36,13,3,3,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:47:06.359Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040407,AREQUIPA,CARAVELÍ,CHALA,4,4359,4918,377,182,23,23,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:47:18.524Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040408,AREQUIPA,CARAVELÍ,CHAPARRA,6,1608,1793,142,43,8,8,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:48:12.740Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040409,AREQUIPA,CARAVELÍ,HUANUHUANU,5,1280,1404,85,39,7,7,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:48:19.663Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040410,AREQUIPA,CARAVELÍ,JAQUI,4,868,983,95,20,5,5,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:48:26.524Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040411,AREQUIPA,CARAVELÍ,LOMAS,3,913,954,23,18,4,4,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:48:33.454Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040412,AREQUIPA,CARAVELÍ,QUICACHA,1,527,1048,292,229,6,6,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:48:40.338Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040413,AREQUIPA,CARAVELÍ,YAUCA,4,1220,1296,50,26,6,6,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:48:47.174Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040502,AREQUIPA,CASTILLA,ANDAGUA,3,600,721,89,32,4,4,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:49:27.072Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040503,AREQUIPA,CASTILLA,AYO,4,310,342,25,7,2,2,0,0,100,2026-10-06T11:42:00-05:00,2026-10-06T16:49:36.866Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040504,AREQUIPA,CASTILLA,CHACHAS,3,582,798,186,30,7,7,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:49:43.697Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040505,AREQUIPA,CASTILLA,CHILCAYMARCA,2,536,709,128,45,4,4,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:49:50.592Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040506,AREQUIPA,CASTILLA,CHOCO,3,470,588,102,16,6,6,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:49:57.526Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040507,AREQUIPA,CASTILLA,HUANCARQUI,4,1256,1398,114,28,7,7,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:50:08.924Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040508,AREQUIPA,CASTILLA,MACHAGUAY,4,376,440,44,20,3,3,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:50:15.942Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040509,AREQUIPA,CASTILLA,ORCOPAMPA,4,1876,2204,230,98,12,12,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:50:22.980Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040510,AREQUIPA,CASTILLA,PAMPACOLCA,3,791,959,134,34,6,5,1,0,83.333,2026-10-06T11:46:03-05:00,2026-10-06T16:50:29.946Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040511,AREQUIPA,CASTILLA,TIPAN,2,341,360,13,6,2,2,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:50:36.819Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040512,AREQUIPA,CASTILLA,URACA,7,3887,4393,274,232,20,20,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:50:55.881Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040513,AREQUIPA,CASTILLA,UÑON,3,197,222,19,6,1,1,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:50:48.960Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040514,AREQUIPA,CASTILLA,VIRACO,3,571,701,114,16,4,4,0,0,100,2026-10-06T11:46:03-05:00,2026-10-06T16:51:02.753Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040602,AREQUIPA,CONDESUYOS,ANDARAY,5,398,447,29,20,2,2,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:57:20.627Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040603,AREQUIPA,CONDESUYOS,CAYARANI,3,1525,1706,136,45,10,10,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:57:27.483Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040604,AREQUIPA,CONDESUYOS,CHICHAS,2,463,538,51,24,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:57:34.077Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040605,AREQUIPA,CONDESUYOS,IRAY,5,484,534,31,19,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:57:40.970Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040606,AREQUIPA,CONDESUYOS,SALAMANCA,3,396,493,77,20,3,3,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:58:00.754Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040607,AREQUIPA,CONDESUYOS,YANAQUIHUA,5,2260,2753,383,110,16,16,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:58:21.192Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040608,AREQUIPA,CONDESUYOS,RÍO GRANDE,4,1644,1798,119,35,9,9,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:57:47.831Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040702,AREQUIPA,ISLAY,COCACHACRA,8,6838,7802,579,385,35,35,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:58:35.205Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040703,AREQUIPA,ISLAY,DEÁN VALDIVIA,5,4620,5151,336,195,22,22,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:58:42.051Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040704,AREQUIPA,ISLAY,ISLAY,7,3337,3633,158,138,16,16,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:58:48.963Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040705,AREQUIPA,ISLAY,MEJÍA,3,1113,1194,67,14,6,6,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:58:55.896Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040706,AREQUIPA,ISLAY,PUNTA DE BOMBÓN,5,4690,5220,368,162,23,23,0,0,100,2026-10-06T11:52:03-05:00,2026-10-06T16:59:02.743Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040802,AREQUIPA,LA UNIÓN,ALCA,3,771,1035,188,76,6,6,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:59:15.582Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040803,AREQUIPA,LA UNIÓN,CHARCANA,2,324,380,45,11,2,2,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:59:22.471Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040804,AREQUIPA,LA UNIÓN,HUAYNACOTAS,3,921,1139,120,98,7,7,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:59:51.611Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040805,AREQUIPA,LA UNIÓN,PAMPAMARCA,4,775,910,91,44,6,6,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T16:59:58.747Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040806,AREQUIPA,LA UNIÓN,PUYCA,5,786,1094,170,138,9,9,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T17:00:09.658Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040807,AREQUIPA,LA UNIÓN,QUECHUALLA,3,361,413,36,16,2,2,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T17:00:16.762Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040808,AREQUIPA,LA UNIÓN,SAYLA,4,103,112,3,6,2,1,1,0,50,2026-10-06T11:56:03-05:00,2026-10-06T17:00:25.852Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040809,AREQUIPA,LA UNIÓN,TAURIA,2,188,226,25,13,2,2,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T17:00:36.770Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040810,AREQUIPA,LA UNIÓN,TOMEPAMPA,2,421,490,55,14,3,3,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T17:00:43.842Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,040811,AREQUIPA,LA UNIÓN,TORO,5,322,387,46,19,3,3,0,0,100,2026-10-06T11:56:03-05:00,2026-10-06T17:00:50.859Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050102,AYACUCHO,HUAMANGA,ACOS VINCHOS,5,3265,3579,177,137,15,15,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:04:57.669Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050103,AYACUCHO,HUAMANGA,CARMEN ALTO,7,14817,16530,829,884,71,71,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:05:14.289Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050104,AYACUCHO,HUAMANGA,CHIARA,5,4288,4787,340,159,22,22,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:05:21.320Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050105,AYACUCHO,HUAMANGA,QUINUA,5,3691,4218,348,179,19,19,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:06:00.515Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050106,AYACUCHO,HUAMANGA,SAN JOSÉ DE TICLLAS,4,1513,1711,112,86,8,8,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:06:08.510Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050107,AYACUCHO,HUAMANGA,SAN JUAN BAUTISTA,8,23878,27270,1661,1731,123,121,2,0,98.374,2026-10-06T12:00:34-05:00,2026-10-06T17:06:21.071Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050108,AYACUCHO,HUAMANGA,SANTIAGO DE PISCHA,4,1092,1249,126,31,7,7,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:06:28.114Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050109,AYACUCHO,HUAMANGA,VINCHOS,6,9843,10830,573,414,54,52,2,0,96.296,2026-10-06T12:00:34-05:00,2026-10-06T17:06:49.070Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050110,AYACUCHO,HUAMANGA,TAMBILLO,5,4426,4843,217,200,21,20,1,0,95.238,2026-10-06T12:00:34-05:00,2026-10-06T17:06:42.044Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050111,AYACUCHO,HUAMANGA,ACOCRO,6,5850,6456,275,331,29,28,1,0,96.552,2026-10-06T12:00:34-05:00,2026-10-06T17:04:50.595Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050112,AYACUCHO,HUAMANGA,SOCOS,4,5324,6008,392,292,26,26,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:06:34.877Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050113,AYACUCHO,HUAMANGA,OCROS,4,3390,3917,423,104,22,22,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:05:44.714Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050114,AYACUCHO,HUAMANGA,PACAYCASA,4,2310,2529,148,71,10,10,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:05:52.950Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050115,AYACUCHO,HUAMANGA,JESÚS NAZARENO,7,10245,11523,588,690,52,52,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:05:36.819Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050116,AYACUCHO,HUAMANGA,ANDRÉS AVELINO CÁCERES DORREGARAY,8,11124,12471,580,767,54,54,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:05:04.727Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050204,AYACUCHO,CANGALLO,CHUSCHI,7,3746,4155,194,215,25,24,1,0,96,2026-10-06T12:00:34-05:00,2026-10-06T17:07:02.902Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050206,AYACUCHO,CANGALLO,LOS MOROCHUCOS,5,5301,5839,310,228,27,27,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:07:09.614Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050207,AYACUCHO,CANGALLO,PARAS,7,3146,3517,132,239,19,19,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:07:23.551Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050208,AYACUCHO,CANGALLO,TOTOS,4,2221,2429,119,89,15,15,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:07:30.506Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050211,AYACUCHO,CANGALLO,MARÍA PARADO DE BELLIDO,2,1329,1454,91,34,7,7,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:07:16.708Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050302,AYACUCHO,HUANTA,AYAHUANCO,4,1363,1499,87,49,7,7,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:07:43.451Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050303,AYACUCHO,HUANTA,HUAMANGUILLA,3,2686,3245,412,147,15,15,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:04.719Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050304,AYACUCHO,HUANTA,IGUAIN,5,2303,2562,150,109,12,12,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:11.861Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050305,AYACUCHO,HUANTA,LURICOCHA,6,4099,4675,402,174,22,22,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:30.594Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050307,AYACUCHO,HUANTA,SANTILLANA,4,2090,2314,143,81,14,13,1,0,92.857,2026-10-06T12:00:34-05:00,2026-10-06T17:08:51.389Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050308,AYACUCHO,HUANTA,SIVIA,7,5526,5979,257,196,31,31,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:58.330Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050309,AYACUCHO,HUANTA,LLOCHEGUA,4,4088,4781,512,181,27,27,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:18.840Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050310,AYACUCHO,HUANTA,CANAYRE,6,1727,1943,153,63,11,10,1,0,90.909,2026-10-06T12:00:34-05:00,2026-10-06T17:07:50.524Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050311,AYACUCHO,HUANTA,UCHURACCAY,8,2234,2535,135,166,14,14,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:09:05.592Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050312,AYACUCHO,HUANTA,PUCACOLPA,5,1609,1787,101,77,8,8,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:37.702Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050313,AYACUCHO,HUANTA,CHACA,3,1561,1732,112,59,8,8,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:07:57.627Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050314,AYACUCHO,HUANTA,PUTIS,5,432,508,45,31,3,3,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:08:44.749Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050402,AYACUCHO,LA MAR,ANCO,4,3528,3876,253,95,23,23,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:09:27.185Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050403,AYACUCHO,LA MAR,AYNA,7,4265,4866,271,330,24,24,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:09:34.286Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050404,AYACUCHO,LA MAR,CHILCAS,4,1299,1408,54,55,6,6,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:09:41.414Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050405,AYACUCHO,LA MAR,CHUNGUI,4,2388,2616,150,78,16,16,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:09:48.473Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050406,AYACUCHO,LA MAR,TAMBO,4,5521,6226,387,318,32,31,1,0,96.875,2026-10-06T12:06:02-05:00,2026-10-06T17:10:59.719Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050407,AYACUCHO,LA MAR,LUIS CARRANZA,1,672,937,220,45,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:10:00.592Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050408,AYACUCHO,LA MAR,SANTA ROSA,6,5777,6415,362,276,32,32,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:10:52.938Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050409,AYACUCHO,LA MAR,SAMUGARI,5,3935,4304,180,189,21,20,1,0,95.238,2026-10-06T12:06:02-05:00,2026-10-06T17:10:45.944Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050410,AYACUCHO,LA MAR,ANCHIHUAY,4,2312,2462,106,44,12,12,0,0,100,2026-10-06T12:00:34-05:00,2026-10-06T17:09:19.909Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050411,AYACUCHO,LA MAR,ORONCCOY,4,650,702,40,12,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:10:16.820Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050412,AYACUCHO,LA MAR,UNIÓN PROGRESO,5,1368,1481,61,52,7,7,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:11:06.538Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050413,AYACUCHO,LA MAR,PATIBAMBA,3,965,1096,92,39,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:10:23.831Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050414,AYACUCHO,LA MAR,NINABAMBA,3,1162,1298,91,45,6,6,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:10:07.518Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050415,AYACUCHO,LA MAR,RÍO MAGDALENA,6,768,850,28,54,5,4,1,0,80,2026-10-06T12:06:02-05:00,2026-10-06T17:10:33.981Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050502,AYACUCHO,LUCANAS,AUCARA,6,1241,1388,80,67,11,11,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:11:22.327Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050503,AYACUCHO,LUCANAS,CABANA,5,605,671,44,22,4,4,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:11:29.387Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050504,AYACUCHO,LUCANAS,CARMEN SALCEDO,4,706,781,53,22,4,4,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:11:36.468Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050506,AYACUCHO,LUCANAS,CHAVIÑA,4,1050,1179,89,40,7,7,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:11:43.528Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050508,AYACUCHO,LUCANAS,CHIPAO,5,1264,1473,113,96,10,10,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:11:50.691Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050510,AYACUCHO,LUCANAS,HUAC-HUAS,3,924,1086,132,30,7,7,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:01.992Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050511,AYACUCHO,LUCANAS,LARAMATE,4,800,911,91,20,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:09.107Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050512,AYACUCHO,LUCANAS,LEONCIO PRADO,5,735,812,45,32,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:16.283Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050513,AYACUCHO,LUCANAS,LUCANAS,3,1345,1642,217,80,8,8,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:30.614Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050514,AYACUCHO,LUCANAS,LLAUTA,2,830,905,57,18,4,4,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:23.417Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050516,AYACUCHO,LUCANAS,OCAÑA,4,1335,1495,103,57,9,9,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:42.892Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050517,AYACUCHO,LUCANAS,OTOCA,3,849,965,92,24,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:50.122Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050520,AYACUCHO,LUCANAS,SANCOS,5,1822,1975,95,58,13,12,1,0,92.308,2026-10-06T12:12:02-05:00,2026-10-06T17:13:37.688Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050521,AYACUCHO,LUCANAS,SAN JUAN,4,524,578,38,16,3,3,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:13:11.163Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050522,AYACUCHO,LUCANAS,SAN PEDRO,6,1287,1535,165,83,10,10,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:13:23.598Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050524,AYACUCHO,LUCANAS,SANTA ANA DE HUAYCAHUACHO,4,292,331,28,11,2,2,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:13:44.634Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050525,AYACUCHO,LUCANAS,SANTA LUCÍA,3,543,635,58,34,6,6,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:13:51.375Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050529,AYACUCHO,LUCANAS,SAISA,3,252,285,31,2,3,3,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:12:57.334Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050531,AYACUCHO,LUCANAS,SAN PEDRO DE PALCO,6,774,858,59,25,5,5,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:13:30.643Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050532,AYACUCHO,LUCANAS,SAN CRISTÓBAL,5,895,1020,73,52,6,6,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:13:04.418Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050604,AYACUCHO,PARINACOCHAS,CORONEL CASTAÑEDA,4,550,599,32,17,4,4,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:14:11.170Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050605,AYACUCHO,PARINACOCHAS,CHUMPI,6,1158,1319,65,96,7,7,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:14:04.088Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050608,AYACUCHO,PARINACOCHAS,PACAPAUSA,4,416,479,38,25,3,3,0,0,100,2026-10-06T12:06:02-05:00,2026-10-06T17:14:18.217Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050611,AYACUCHO,PARINACOCHAS,PULLO,4,1758,2079,211,110,15,15,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:14:25.374Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050612,AYACUCHO,PARINACOCHAS,PUYUSCA,5,996,1160,82,82,6,6,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:14:32.436Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050615,AYACUCHO,PARINACOCHAS,SAN FRANCISCO DE RIVACAYCO,4,413,461,34,14,4,4,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:14:44.737Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050616,AYACUCHO,PARINACOCHAS,UPAHUACHO,4,678,781,60,43,7,7,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:14:51.657Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050702,AYACUCHO,VÍCTOR FAJARDO,ALCAMENCA,4,1257,1363,60,46,8,8,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:15:08.607Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050703,AYACUCHO,VÍCTOR FAJARDO,APONGO,4,456,536,18,62,3,3,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:15:15.605Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050704,AYACUCHO,VÍCTOR FAJARDO,CANARIA,5,1417,1603,119,67,10,10,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:15:37.137Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050706,AYACUCHO,VÍCTOR FAJARDO,CAYARA,4,823,903,41,39,5,5,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:15:44.252Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050707,AYACUCHO,VÍCTOR FAJARDO,COLCA,4,1155,1239,54,30,6,6,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:15:51.403Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050708,AYACUCHO,VÍCTOR FAJARDO,HUALLA,5,1267,1381,71,43,8,8,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:05.705Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050709,AYACUCHO,VÍCTOR FAJARDO,HUAMANQUIQUIA,4,671,748,41,36,4,4,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:12.821Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050710,AYACUCHO,VÍCTOR FAJARDO,HUANCARAYLLA,4,1077,1162,46,39,6,6,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:19.878Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050713,AYACUCHO,VÍCTOR FAJARDO,SARHUA,6,1713,1872,65,94,10,10,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:26.821Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050714,AYACUCHO,VÍCTOR FAJARDO,VILCANCHOS,5,1652,1856,102,102,11,11,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:33.848Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050715,AYACUCHO,VÍCTOR FAJARDO,ASQUIPATA,5,263,297,18,16,2,2,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:15:27.376Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050802,AYACUCHO,HUANCA SANCOS,SACSAMARCA,3,783,894,72,39,6,6,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:55.062Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050803,AYACUCHO,HUANCA SANCOS,SANTIAGO DE LUCANAMARCA,4,1121,1258,78,59,9,9,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:02.031Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050804,AYACUCHO,HUANCA SANCOS,CARAPO,5,1114,1277,61,102,9,9,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:16:48.064Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050902,AYACUCHO,VILCAS HUAMÁN,VISCHONGO,4,2653,2900,123,124,14,14,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:18:01.325Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050903,AYACUCHO,VILCAS HUAMÁN,ACCOMARCA,5,909,965,19,37,5,5,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:14.729Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050904,AYACUCHO,VILCAS HUAMÁN,CARHUANCA,4,620,681,38,23,4,4,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:21.758Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050905,AYACUCHO,VILCAS HUAMÁN,CONCEPCIÓN,3,1518,1686,77,91,9,9,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:28.851Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050906,AYACUCHO,VILCAS HUAMÁN,HUAMBALPA,3,1048,1161,70,43,7,7,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:35.958Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050907,AYACUCHO,VILCAS HUAMÁN,SAURAMA,4,927,984,26,31,5,5,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:54.554Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,050908,AYACUCHO,VILCAS HUAMÁN,INDEPENDENCIA,3,760,800,21,19,5,5,0,0,100,2026-10-06T12:12:02-05:00,2026-10-06T17:17:42.686Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051002,AYACUCHO,PÁUCAR DEL SARA SARA,COLTA,3,359,406,38,9,3,3,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:18:14.647Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051003,AYACUCHO,PÁUCAR DEL SARA SARA,CORCULLA,4,221,245,14,10,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:18:21.655Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051004,AYACUCHO,PÁUCAR DEL SARA SARA,LAMPA,6,1039,1203,57,107,6,6,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:18:28.811Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051005,AYACUCHO,PÁUCAR DEL SARA SARA,MARCABAMBA,5,304,346,23,19,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:18:36.020Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051006,AYACUCHO,PÁUCAR DEL SARA SARA,OYOLO,5,642,697,21,34,4,4,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:18:43.135Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051007,AYACUCHO,PÁUCAR DEL SARA SARA,PARARCA,2,249,289,37,3,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:18:55.902Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051008,AYACUCHO,PÁUCAR DEL SARA SARA,SAN JAVIER DE ALPABAMBA,4,383,418,24,11,3,3,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:03.016Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051009,AYACUCHO,PÁUCAR DEL SARA SARA,SAN JOSÉ DE USHUA,4,126,135,2,7,1,1,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:10.058Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051010,AYACUCHO,PÁUCAR DEL SARA SARA,SARA SARA,4,341,364,15,8,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:17.017Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051102,AYACUCHO,SUCRE,BELÉN,3,226,237,6,5,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:29.774Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051103,AYACUCHO,SUCRE,CHALCOS,3,342,356,9,5,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:36.873Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051104,AYACUCHO,SUCRE,SAN SALVADOR DE QUIJE,5,773,862,21,68,4,4,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:20:26.696Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051105,AYACUCHO,SUCRE,PAICO,2,433,471,22,16,3,3,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:20:09.530Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051106,AYACUCHO,SUCRE,SANTIAGO DE PAUCARAY,4,392,422,17,13,3,3,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:20:33.828Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051107,AYACUCHO,SUCRE,SAN PEDRO DE LARCAY,3,565,599,19,15,3,3,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:20:16.604Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051108,AYACUCHO,SUCRE,SORAS,3,392,412,10,10,3,2,1,0,66.667,2026-10-06T12:16:03-05:00,2026-10-06T17:20:43.487Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051109,AYACUCHO,SUCRE,HUACAÑA,4,298,321,10,13,2,2,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:50.921Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051110,AYACUCHO,SUCRE,CHILCAYOC,3,422,464,11,31,3,3,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:44.099Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,051111,AYACUCHO,SUCRE,MORCOLLA,4,761,857,35,61,5,5,0,0,100,2026-10-06T12:16:03-05:00,2026-10-06T17:19:57.671Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060102,CAJAMARCA,CAJAMARCA,ASUNCIÓN,5,4086,4830,597,147,27,26,1,0,96.296,2026-10-06T12:32:00-05:00,2026-10-06T17:34:45.981Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060103,CAJAMARCA,CAJAMARCA,COSPAN,3,3441,4105,540,124,22,22,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:35:03.268Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060104,CAJAMARCA,CAJAMARCA,CHETILLA,4,2400,2830,366,64,13,13,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:34:56.398Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060105,CAJAMARCA,CAJAMARCA,ENCAÑADA,4,16039,19543,2923,581,93,88,5,0,94.624,2026-10-06T12:32:00-05:00,2026-10-06T17:35:10.158Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060106,CAJAMARCA,CAJAMARCA,JESÚS,5,7446,9243,1323,474,45,43,2,0,95.556,2026-10-06T12:32:00-05:00,2026-10-06T17:35:17.019Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060107,CAJAMARCA,CAJAMARCA,LOS BAÑOS DEL INCA,7,23547,28199,2934,1718,121,119,2,0,98.347,2026-10-06T12:32:00-05:00,2026-10-06T17:35:36.343Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060108,CAJAMARCA,CAJAMARCA,LLACANORA,7,3748,4245,274,223,17,17,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:35:23.941Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060109,CAJAMARCA,CAJAMARCA,MAGDALENA,4,5792,6686,715,179,32,32,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:35:43.242Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060110,CAJAMARCA,CAJAMARCA,MATARA,5,2516,2938,288,134,13,13,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:35:50.042Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060111,CAJAMARCA,CAJAMARCA,NAMORA,5,6114,6991,659,218,31,30,1,0,96.774,2026-10-06T12:32:00-05:00,2026-10-06T17:35:56.857Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060112,CAJAMARCA,CAJAMARCA,SAN JUAN,5,2790,3514,494,230,17,17,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:36:03.685Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060202,CAJAMARCA,CAJABAMBA,CACHACHI,8,7643,9223,1129,451,62,60,2,0,96.774,2026-10-06T12:32:00-05:00,2026-10-06T17:36:16.455Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060203,CAJAMARCA,CAJABAMBA,CONDEBAMBA,6,5839,6811,569,403,35,34,1,0,97.143,2026-10-06T12:32:00-05:00,2026-10-06T17:36:23.293Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060205,CAJAMARCA,CAJABAMBA,SITACOCHA,4,3179,3666,361,126,23,22,1,0,95.652,2026-10-06T12:32:00-05:00,2026-10-06T17:36:30.042Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060302,CAJAMARCA,CELENDÍN,CORTEGANA,3,4014,4342,240,88,25,25,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:36:50.434Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060303,CAJAMARCA,CELENDÍN,CHUMUCH,5,1508,1631,84,39,10,9,1,0,90,2026-10-06T12:32:00-05:00,2026-10-06T17:36:43.590Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060304,CAJAMARCA,CELENDÍN,HUASMÍN,5,6494,7295,579,222,41,41,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:36:57.279Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060305,CAJAMARCA,CELENDÍN,JORGE CHÁVEZ,6,561,612,28,23,3,3,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:04.147Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060306,CAJAMARCA,CELENDÍN,JOSÉ GÁLVEZ,5,1805,2011,145,61,9,9,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:11.005Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060307,CAJAMARCA,CELENDÍN,MIGUEL IGLESIAS,6,2729,2910,115,66,15,15,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:30.186Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060308,CAJAMARCA,CELENDÍN,OXAMARCA,6,3417,3701,193,91,18,18,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:37.042Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060309,CAJAMARCA,CELENDÍN,SOROCHUCO,4,3780,4954,858,316,32,30,2,0,93.75,2026-10-06T12:32:00-05:00,2026-10-06T17:37:43.881Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060310,CAJAMARCA,CELENDÍN,SUCRE,6,2941,3260,197,122,16,16,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:50.649Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060311,CAJAMARCA,CELENDÍN,UTCO,5,923,1007,49,35,6,6,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:57.251Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060312,CAJAMARCA,CELENDÍN,LA LIBERTAD DE PALLÁN,4,4190,4483,172,121,22,22,0,0,100,2026-10-06T12:32:00-05:00,2026-10-06T17:37:17.893Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060403,CAJAMARCA,CONTUMAZA,CHILETE,2,1702,1938,193,43,9,9,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:09.728Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060404,CAJAMARCA,CONTUMAZA,GUZMANGO,4,1468,1689,169,52,8,8,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:23.301Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060405,CAJAMARCA,CONTUMAZA,SAN BENITO,4,1916,2118,162,40,10,10,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:30.014Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060406,CAJAMARCA,CONTUMAZA,CUPISNIQUE,4,929,995,57,9,5,5,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:16.532Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060407,CAJAMARCA,CONTUMAZA,TANTARICA,3,1474,1627,115,38,8,8,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:48.639Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060408,CAJAMARCA,CONTUMAZA,YONÁN,4,3405,3803,209,189,18,18,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:55.364Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060409,CAJAMARCA,CONTUMAZA,SANTA CRUZ DE TOLED,3,807,863,41,15,4,4,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:38:36.815Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060502,CAJAMARCA,CUTERVO,CALLAYUC,3,4269,5028,600,159,27,27,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:39:10.368Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060503,CAJAMARCA,CUTERVO,CUJILLO,3,1613,1762,96,53,9,9,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:39:24.108Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060504,CAJAMARCA,CUTERVO,CHOROS,4,2345,2555,121,89,12,12,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:39:17.236Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060505,CAJAMARCA,CUTERVO,LA RAMADA,3,2279,2531,184,68,12,12,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:39:33.953Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060506,CAJAMARCA,CUTERVO,PIMPINGOS,7,2936,3236,153,147,17,16,1,0,94.118,2026-10-06T12:36:02-05:00,2026-10-06T17:39:40.822Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060507,CAJAMARCA,CUTERVO,QUEROCOTILLO,4,5741,6374,480,153,41,37,4,0,90.244,2026-10-06T12:36:02-05:00,2026-10-06T17:39:51.900Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060508,CAJAMARCA,CUTERVO,SAN ANDRÉS DE CUTERVO,4,2870,3121,186,65,14,14,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:01.495Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060509,CAJAMARCA,CUTERVO,SAN JUAN DE CUTERVO,3,1299,1476,136,41,7,7,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:08.380Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060510,CAJAMARCA,CUTERVO,SAN LUIS DE LUCMA,3,1914,2091,130,47,10,10,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:15.318Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060511,CAJAMARCA,CUTERVO,SANTA CRUZ,4,1764,1938,94,80,10,10,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:22.164Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060512,CAJAMARCA,CUTERVO,SANTO DOMINGO DE LA CAPILLA,5,3145,3541,222,174,16,16,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:34.413Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060513,CAJAMARCA,CUTERVO,SANTO TOMÁS,3,4368,4829,355,106,22,22,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:41.498Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060514,CAJAMARCA,CUTERVO,SOCOTA,4,5373,5908,287,248,29,29,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:48.496Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060515,CAJAMARCA,CUTERVO,TORIBIO CASANOVA,4,779,874,75,20,4,4,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:40:55.464Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060602,CAJAMARCA,CHOTA,ANGUÍA,3,2146,2411,214,51,11,11,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:09.253Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060603,CAJAMARCA,CHOTA,COCHABAMBA,5,2963,3389,257,169,17,17,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:58.018Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060604,CAJAMARCA,CHOTA,CONCHÁN,3,3283,3633,245,105,18,17,1,0,94.444,2026-10-06T12:36:02-05:00,2026-10-06T17:42:05.300Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060605,CAJAMARCA,CHOTA,CHADÍN,5,2765,2941,103,73,13,13,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:16.324Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060606,CAJAMARCA,CHOTA,CHIGUIRIP,3,2678,2986,222,86,13,13,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:30.443Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060607,CAJAMARCA,CHOTA,CHIMBÁN,3,1444,1581,104,33,7,7,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:37.656Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060608,CAJAMARCA,CHOTA,HUAMBOS,3,4063,4750,522,165,24,24,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:42:12.626Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060609,CAJAMARCA,CHOTA,LAJAS,5,6892,7756,535,329,39,37,1,1,94.872,2026-10-06T12:36:02-05:00,2026-10-06T17:42:19.793Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060610,CAJAMARCA,CHOTA,LLAMA,4,3449,3985,427,109,19,19,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:42:27.021Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060611,CAJAMARCA,CHOTA,MIRACOSTA,4,1723,2047,289,35,14,13,1,0,92.857,2026-10-06T12:36:02-05:00,2026-10-06T17:42:34.065Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060612,CAJAMARCA,CHOTA,PACCHA,4,3095,3481,293,93,16,16,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:42:45.889Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060613,CAJAMARCA,CHOTA,PIÓN,2,964,1006,26,16,5,5,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:42:53.009Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060614,CAJAMARCA,CHOTA,QUEROCOTO,4,5113,5563,311,139,30,28,2,0,93.333,2026-10-06T12:36:02-05:00,2026-10-06T17:43:00.091Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060615,CAJAMARCA,CHOTA,TACABAMBA,4,8167,8989,414,408,46,45,1,0,97.826,2026-10-06T12:40:35-05:00,2026-10-06T17:43:14.101Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060616,CAJAMARCA,CHOTA,TOCMOCHE,3,758,891,102,31,4,4,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:43:21.084Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060617,CAJAMARCA,CHOTA,SAN JUAN DE LICUPIS,2,706,814,90,18,5,5,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:43:07.105Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060618,CAJAMARCA,CHOTA,CHOROPAMPA,3,1743,1934,148,43,9,9,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:44.800Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060619,CAJAMARCA,CHOTA,CHALAMARCA,4,5935,6675,516,224,30,30,0,0,100,2026-10-06T12:36:02-05:00,2026-10-06T17:41:23.348Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060702,CAJAMARCA,HUALGAYOC,CHUGUR,4,2247,2454,147,60,11,11,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:43:34.376Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060703,CAJAMARCA,HUALGAYOC,HUALGAYOC,3,8964,10198,846,388,48,47,1,0,97.917,2026-10-06T12:40:35-05:00,2026-10-06T17:43:41.378Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060802,CAJAMARCA,JAÉN,BELLAVISTA,5,8944,10479,1157,378,48,48,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:43:59.849Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060803,CAJAMARCA,JAÉN,COLASAY,4,6407,7376,723,246,37,37,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:44:14.012Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060804,CAJAMARCA,JAÉN,CHONTALÍ,6,6171,6765,462,132,31,31,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:44:06.841Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060805,CAJAMARCA,JAÉN,POMAHUACA,5,5427,6012,421,164,29,28,1,0,96.552,2026-10-06T12:40:35-05:00,2026-10-06T17:44:38.631Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060806,CAJAMARCA,JAÉN,PUCARA,6,4132,4871,520,219,23,23,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:44:50.010Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060807,CAJAMARCA,JAÉN,SALLIQUE,3,3307,4355,929,119,24,24,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:44:57.043Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060808,CAJAMARCA,JAÉN,SAN FELIPE,6,2874,3226,229,123,15,15,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:07.054Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060809,CAJAMARCA,JAÉN,SAN JOSÉ DEL ALTO,5,4742,5246,380,124,24,24,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:14.044Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060810,CAJAMARCA,JAÉN,SANTA ROSA,4,6445,7316,710,161,33,33,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:20.991Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060811,CAJAMARCA,JAÉN,LAS PIRIAS,4,3499,3998,426,73,18,17,1,0,94.444,2026-10-06T12:40:35-05:00,2026-10-06T17:44:28.311Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060812,CAJAMARCA,JAÉN,HUABAL,6,5212,5915,457,246,26,26,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:44:21.114Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060902,CAJAMARCA,SANTA CRUZ,CATACHE,4,5256,5810,375,179,27,27,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:40.879Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060903,CAJAMARCA,SANTA CRUZ,CHANCAYBAÑOS,4,2586,2773,120,67,12,12,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:47.934Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060904,CAJAMARCA,SANTA CRUZ,LA ESPERANZA,5,1833,1958,65,60,10,10,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:55.133Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060905,CAJAMARCA,SANTA CRUZ,NINABAMBA,4,1579,1730,107,44,10,10,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:46:02.351Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060906,CAJAMARCA,SANTA CRUZ,PULÁN,4,2641,2811,109,61,13,13,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:46:14.536Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060907,CAJAMARCA,SANTA CRUZ,SEXI,3,362,387,16,9,2,2,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:46:28.727Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060908,CAJAMARCA,SANTA CRUZ,UTICYACU,3,908,965,41,16,5,5,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:46:35.745Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060909,CAJAMARCA,SANTA CRUZ,YAUYUCAN,4,1863,2010,85,62,10,9,1,0,90,2026-10-06T12:40:35-05:00,2026-10-06T17:46:42.824Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060910,CAJAMARCA,SANTA CRUZ,ANDABAMBA,4,862,1013,86,65,5,5,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:45:33.803Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,060911,CAJAMARCA,SANTA CRUZ,SAUCEPAMPA,4,1472,1590,60,58,7,7,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:46:21.577Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061002,CAJAMARCA,SAN MIGUEL,CALQUIS,5,2315,2705,228,162,14,13,1,0,92.857,2026-10-06T12:40:35-05:00,2026-10-06T17:47:02.113Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061003,CAJAMARCA,SAN MIGUEL,LA FLORIDA,4,1576,1764,142,46,8,8,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:23.420Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061004,CAJAMARCA,SAN MIGUEL,LLAPA,4,2652,2970,226,92,15,15,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:30.573Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061005,CAJAMARCA,SAN MIGUEL,NANCHOC,5,1051,1148,62,35,5,5,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:42.054Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061006,CAJAMARCA,SAN MIGUEL,NIEPOS,6,1774,2072,220,78,11,11,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:49.232Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061007,CAJAMARCA,SAN MIGUEL,SAN GREGORIO,5,1435,1714,205,74,8,8,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:56.232Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061008,CAJAMARCA,SAN MIGUEL,SAN SILVESTRE DE COCHAN,4,2751,2976,165,60,15,15,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:48:03.265Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061009,CAJAMARCA,SAN MIGUEL,EL PRADO,5,1914,2116,118,84,11,11,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:16.310Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061010,CAJAMARCA,SAN MIGUEL,UNIÓN AGUA BLANCA,5,2173,2404,166,65,10,10,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:48:17.169Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061011,CAJAMARCA,SAN MIGUEL,TONGOD,3,2470,2568,80,18,12,12,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:48:10.238Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061012,CAJAMARCA,SAN MIGUEL,CATILLUC,4,1919,2180,149,112,11,11,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:47:09.194Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061013,CAJAMARCA,SAN MIGUEL,BOLÍVAR,5,954,1070,79,37,5,5,0,0,100,2026-10-06T12:40:35-05:00,2026-10-06T17:46:55.029Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061102,CAJAMARCA,SAN IGNACIO,CHIRINOS,4,8022,9223,955,246,45,43,2,0,95.556,2026-10-06T12:46:01-05:00,2026-10-06T17:48:35.822Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061103,CAJAMARCA,SAN IGNACIO,HUARANGO,8,10799,11883,669,415,59,59,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:48:42.807Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061104,CAJAMARCA,SAN IGNACIO,NAMBALLE,5,5169,5672,350,153,29,28,1,0,96.552,2026-10-06T12:46:01-05:00,2026-10-06T17:48:56.965Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061105,CAJAMARCA,SAN IGNACIO,LA COIPA,7,12362,13440,625,453,62,61,1,0,98.387,2026-10-06T12:46:01-05:00,2026-10-06T17:48:49.939Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061106,CAJAMARCA,SAN IGNACIO,SAN JOSÉ DE LOURDES,6,10485,11176,432,259,56,55,1,0,98.214,2026-10-06T12:46:01-05:00,2026-10-06T17:49:04.076Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061107,CAJAMARCA,SAN IGNACIO,TABACONAS,6,10695,11687,657,335,57,56,1,0,98.246,2026-10-06T12:46:01-05:00,2026-10-06T17:49:11.098Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061202,CAJAMARCA,SAN MARCOS,ICHOCÁN,3,1249,1439,138,52,8,8,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:49:49.335Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061203,CAJAMARCA,SAN MARCOS,GREGORIO PITA,4,3247,3764,396,121,21,21,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:49:42.369Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061204,CAJAMARCA,SAN MARCOS,JOSÉ MANUEL QUIRÓZ,4,1980,2210,145,85,13,13,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:49:56.344Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061205,CAJAMARCA,SAN MARCOS,EDUARDO VILLANUEVA,4,1797,1973,123,53,10,10,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:49:32.388Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061206,CAJAMARCA,SAN MARCOS,JOSÉ SABOGAL,5,6530,7431,537,364,45,44,1,0,97.778,2026-10-06T12:46:01-05:00,2026-10-06T17:50:03.302Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061207,CAJAMARCA,SAN MARCOS,CHANCAY,5,1713,1968,147,108,9,9,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:49:25.407Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061302,CAJAMARCA,SAN PABLO,SAN BERNARDINO,4,3138,3414,165,111,16,16,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:50:19.732Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061303,CAJAMARCA,SAN PABLO,SAN LUIS,4,975,1061,60,26,5,5,0,0,100,2026-10-06T12:46:01-05:00,2026-10-06T17:50:26.792Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,061304,CAJAMARCA,SAN PABLO,TUMBADÉN,3,2741,2990,184,65,13,12,1,0,92.308,2026-10-06T12:46:01-05:00,2026-10-06T17:50:33.824Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070102,CUSCO,CUSCO,CCORCA,6,1850,2276,326,100,10,10,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:07:33.982Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070103,CUSCO,CUSCO,POROY,7,5364,6388,582,442,27,27,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:07:52.799Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070104,CUSCO,CUSCO,SAN JERÓNIMO,7,26961,31516,2481,2074,135,133,2,0,98.519,2026-10-06T13:02:00-05:00,2026-10-06T18:07:59.586Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070105,CUSCO,CUSCO,SAN SEBASTIÁN,10,51169,61042,4725,5148,261,261,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:08:06.343Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070106,CUSCO,CUSCO,SANTIAGO,8,48775,58752,5449,4528,258,258,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:08:13.077Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070107,CUSCO,CUSCO,SAYLLA,4,3102,3853,607,144,19,16,3,0,84.211,2026-10-06T13:06:01-05:00,2026-10-06T18:08:19.750Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070108,CUSCO,CUSCO,WANCHAQ,9,41371,48395,3107,3917,213,213,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:08:26.449Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070202,CUSCO,ACOMAYO,ACOPIA,5,1652,1775,77,46,8,8,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:08:45.197Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070203,CUSCO,ACOMAYO,ACOS,5,1251,1513,176,86,8,8,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:08:51.939Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070204,CUSCO,ACOMAYO,POMACANCHI,7,4216,4775,304,255,22,22,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:09:05.386Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070205,CUSCO,ACOMAYO,RONDOCAN,5,1502,1822,256,64,9,9,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:09:12.075Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070206,CUSCO,ACOMAYO,SANGARARA,5,1834,2113,208,71,11,11,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:09:18.703Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070207,CUSCO,ACOMAYO,MOSOC LLACTA,3,889,1004,81,34,4,4,0,0,100,2026-10-06T13:02:00-05:00,2026-10-06T18:08:58.667Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070302,CUSCO,ANTA,CHINCHAYPUJIO,7,3030,3496,299,167,16,16,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:09:53.912Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070303,CUSCO,ANTA,HUAROCONDO,5,3421,4211,569,221,19,19,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:00.756Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070304,CUSCO,ANTA,LIMATAMBO,6,4665,5820,870,285,26,26,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:07.591Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070305,CUSCO,ANTA,MOLLEPATA,7,2163,2507,245,99,11,11,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:18.949Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070306,CUSCO,ANTA,PUCYURA,4,2563,2954,279,112,13,13,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:25.630Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070307,CUSCO,ANTA,ZURITE,4,2654,3031,291,86,13,13,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:32.364Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070308,CUSCO,ANTA,CACHIMAYO,6,1868,2135,180,87,9,9,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:09:47.025Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070309,CUSCO,ANTA,ANCAHUASI,6,4368,5032,446,218,23,22,1,0,95.652,2026-10-06T13:02:00-05:00,2026-10-06T18:09:37.131Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070402,CUSCO,CALCA,COYA,8,2482,2784,196,106,12,12,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:50.070Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070403,CUSCO,CALCA,LAMAY,7,3507,4053,355,191,18,18,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:10:56.966Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070404,CUSCO,CALCA,LARES,8,3826,4480,390,264,22,22,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:11:03.817Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070405,CUSCO,CALCA,PISAC,5,6104,7114,727,283,31,31,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:11:10.629Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070406,CUSCO,CALCA,SAN SALVADOR,5,3723,4270,383,164,19,19,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:11:17.392Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070407,CUSCO,CALCA,TARAY,6,2786,3124,231,107,14,13,1,0,92.857,2026-10-06T13:06:01-05:00,2026-10-06T18:11:30.204Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070408,CUSCO,CALCA,YANATILE,8,4179,4815,316,320,29,27,2,0,93.103,2026-10-06T13:06:01-05:00,2026-10-06T18:11:36.961Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070502,CUSCO,CANAS,CHECCA,4,3320,3690,262,108,18,18,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:11:54.434Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070503,CUSCO,CANAS,KUNTURKANKI,4,3272,3562,206,84,16,16,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:12:01.217Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070504,CUSCO,CANAS,LANGUI,5,1745,1981,155,81,9,9,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:12:08.047Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070505,CUSCO,CANAS,LAYO,5,3339,3704,218,147,18,18,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:12:14.915Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070506,CUSCO,CANAS,PAMPAMARCA,5,1261,1401,85,55,6,6,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:12:21.680Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070507,CUSCO,CANAS,QUEHUE,4,1811,1997,111,75,10,10,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:12:33.532Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070508,CUSCO,CANAS,TÚPAC AMARU,5,1761,2004,166,77,10,10,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:12:40.210Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070602,CUSCO,CANCHIS,COMBAPATA,8,3014,3339,164,161,15,15,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:13:10.562Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070603,CUSCO,CANCHIS,CHECACUPE,3,2960,3465,429,76,15,15,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:13:03.824Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070604,CUSCO,CANCHIS,MARANGANI,5,6075,7183,853,255,31,31,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:13:17.358Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070605,CUSCO,CANCHIS,PITUMARCA,5,4115,4765,493,157,23,23,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:13:24.165Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070606,CUSCO,CANCHIS,SAN PABLO,3,2829,3477,540,108,16,16,0,0,100,2026-10-06T13:06:01-05:00,2026-10-06T18:13:30.959Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070607,CUSCO,CANCHIS,SAN PEDRO,4,2114,2349,188,47,10,10,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:13:42.486Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070608,CUSCO,CANCHIS,TINTA,3,3130,3730,521,79,16,16,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:13:49.233Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070702,CUSCO,CHUMBIVILCAS,CAPACMARCA,5,3061,3544,312,171,17,17,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:14:08.607Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070703,CUSCO,CHUMBIVILCAS,COLQUEMARCA,7,5477,6454,599,378,33,32,1,0,96.97,2026-10-06T13:12:01-05:00,2026-10-06T18:14:23.051Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070704,CUSCO,CHUMBIVILCAS,CHAMACA,7,4261,4807,348,198,26,25,1,0,96.154,2026-10-06T13:12:01-05:00,2026-10-06T18:14:15.736Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070705,CUSCO,CHUMBIVILCAS,LIVITACA,4,6026,7068,840,202,39,36,3,0,92.308,2026-10-06T13:06:01-05:00,2026-10-06T18:14:30.120Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070706,CUSCO,CHUMBIVILCAS,LLUSCO,6,3922,4331,219,190,21,21,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:14:37.387Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070707,CUSCO,CHUMBIVILCAS,QUIÑOTA,4,2261,2631,250,120,13,13,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:14:53.667Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070708,CUSCO,CHUMBIVILCAS,VELILLE,5,5248,5832,375,209,26,26,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:15:00.400Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070802,CUSCO,ESPINAR,CONDOROMA,3,715,887,150,22,4,4,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:15:24.517Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070803,CUSCO,ESPINAR,COPORAQUE,7,10072,11590,1102,416,53,53,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:15:31.397Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070804,CUSCO,ESPINAR,OCORURO,6,831,947,80,36,6,4,2,0,66.667,2026-10-06T13:12:01-05:00,2026-10-06T18:15:38.292Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070805,CUSCO,ESPINAR,PALLPATA,7,4757,5332,388,187,22,22,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:15:45.155Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070806,CUSCO,ESPINAR,PICHIGUA,7,3110,3540,301,129,16,16,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:15:56.777Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070807,CUSCO,ESPINAR,SUYCKUTAMBO,8,2101,2415,224,90,10,10,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:16:03.566Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070808,CUSCO,ESPINAR,ALTO PICHIGUA,2,2070,2498,357,71,11,11,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:15:17.782Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070902,CUSCO,LA CONVENCIÓN,ECHARATE,6,12343,14216,1236,637,102,96,6,0,94.118,2026-10-06T13:12:01-05:00,2026-10-06T18:16:29.224Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070903,CUSCO,LA CONVENCIÓN,HUAYOPATA,7,3370,3747,245,132,18,18,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:16:36.119Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070904,CUSCO,LA CONVENCIÓN,MARANURA,6,3983,4380,273,124,21,21,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:17:15.412Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070905,CUSCO,LA CONVENCIÓN,OCOBAMBA,7,2706,2994,169,119,18,16,2,0,88.889,2026-10-06T13:16:01-05:00,2026-10-06T18:19:44.847Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070909,CUSCO,LA CONVENCIÓN,KIMBIRI,11,0,0,0,0,44,0,0,44,0,2026-10-06T13:12:01-05:00,2026-10-06T18:16:49.941Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070911,CUSCO,LA CONVENCIÓN,INKAWASI,4,2841,3091,171,79,16,16,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:16:42.992Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070916,CUSCO,LA CONVENCIÓN,KUMPIRUSHIATO,7,3296,3800,318,186,20,20,0,0,100,2026-10-06T13:12:01-05:00,2026-10-06T18:16:56.902Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070917,CUSCO,LA CONVENCIÓN,CIELO PUNCO,4,0,0,0,0,8,0,0,8,0,2026-10-06T13:12:01-05:00,2026-10-06T18:16:22.360Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,070918,CUSCO,LA CONVENCIÓN,MANITEA,3,0,0,0,0,12,0,0,12,0,2026-10-06T13:12:01-05:00,2026-10-06T18:17:08.471Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140102,LIMA,LIMA,ANCÓN,6,31272,36298,2970,2056,164,160,4,0,97.561,2026-10-06T01:56:00-05:00,2026-10-06T07:02:57.036Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140103,LIMA,LIMA,ATE,21,325825,348182,9808,12549,1671,1484,187,0,88.809,2026-10-06T01:56:00-05:00,2026-10-06T07:03:02.972Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140104,LIMA,LIMA,BREÑA,17,66731,73184,2966,3487,349,320,29,0,91.691,2026-10-06T01:56:00-05:00,2026-10-06T07:03:08.936Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140105,LIMA,LIMA,CARABAYLLO,20,166921,185574,6689,11964,861,796,65,0,92.451,2026-10-06T01:56:00-05:00,2026-10-06T07:03:14.974Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140106,LIMA,LIMA,COMAS,16,285364,319373,13765,20244,1499,1375,124,0,91.728,2026-10-06T01:56:00-05:00,2026-10-06T07:03:25.623Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140107,LIMA,LIMA,CHACLACAYO,12,27433,29809,961,1415,138,130,8,0,94.203,2026-10-06T01:56:00-05:00,2026-10-06T07:03:31.627Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140108,LIMA,LIMA,CHORRILLOS,15,176306,194202,7285,10611,899,821,78,0,91.324,2026-10-06T01:56:00-05:00,2026-10-06T07:04:21.151Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140109,LIMA,LIMA,LA VICTORIA,14,122146,135072,6097,6829,640,602,38,0,94.063,2026-10-06T01:56:00-05:00,2026-10-06T07:04:27.185Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140110,LIMA,LIMA,LA MOLINA,12,115196,122196,3087,3913,574,551,23,0,95.993,2026-10-06T01:56:00-05:00,2026-10-06T07:04:33.153Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140111,LIMA,LIMA,LINCE,11,54994,59439,2124,2321,290,270,20,0,93.103,2026-10-06T01:56:00-05:00,2026-10-06T07:04:39.106Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140112,LIMA,LIMA,LURIGANCHO,12,107336,120196,5401,7459,550,528,22,0,96,2026-10-06T02:00:33-05:00,2026-10-06T07:04:45.069Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140113,LIMA,LIMA,LURÍN,11,49792,54759,2500,2467,248,228,20,0,91.935,2026-10-06T02:00:33-05:00,2026-10-06T07:04:51.154Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140114,LIMA,LIMA,MAGDALENA DEL MAR,11,51806,54337,1063,1468,256,238,18,0,92.969,2026-10-06T02:00:33-05:00,2026-10-06T07:05:57.371Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140115,LIMA,LIMA,MIRAFLORES,9,82079,87487,2901,2507,478,434,44,0,90.795,2026-10-06T02:00:33-05:00,2026-10-06T07:06:03.370Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140116,LIMA,LIMA,PACHACÁMAC,8,62128,71826,5937,3761,319,306,13,0,95.925,2026-10-06T02:00:33-05:00,2026-10-06T07:06:09.321Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140117,LIMA,LIMA,PUEBLO LIBRE,12,68020,72502,2212,2270,337,327,10,0,97.033,2026-10-06T02:00:33-05:00,2026-10-06T07:06:15.317Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140118,LIMA,LIMA,PUCUSANA,8,8344,9033,353,336,44,38,6,0,86.364,2026-10-06T02:00:33-05:00,2026-10-06T07:06:21.307Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140119,LIMA,LIMA,PUENTE PIEDRA,12,179949,198876,8469,10458,891,849,42,0,95.286,2026-10-06T02:00:33-05:00,2026-10-06T07:06:27.274Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140120,LIMA,LIMA,PUNTA HERMOSA,12,6251,6758,218,289,33,29,4,0,87.879,2026-10-06T02:00:33-05:00,2026-10-06T07:07:19.221Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140121,LIMA,LIMA,PUNTA NEGRA,8,5262,5789,273,254,25,25,0,0,100,2026-10-06T02:00:33-05:00,2026-10-06T07:07:25.190Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140122,LIMA,LIMA,RÍMAC,15,105103,116519,5351,6065,560,509,51,0,90.893,2026-10-06T02:00:33-05:00,2026-10-06T07:07:31.132Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140123,LIMA,LIMA,SAN BARTOLO,5,4908,5568,373,287,24,24,0,0,100,2026-10-06T02:00:33-05:00,2026-10-06T07:07:37.146Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140124,LIMA,LIMA,SAN ISIDRO,9,50267,53299,1590,1442,282,267,15,0,94.681,2026-10-06T02:00:33-05:00,2026-10-06T07:07:43.058Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140125,LIMA,LIMA,BARRANCO,8,29395,31775,1207,1173,149,142,7,0,95.302,2026-10-06T02:00:33-05:00,2026-10-06T07:07:49.069Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140126,LIMA,LIMA,SAN MARTÍN DE PORRES,17,332345,375994,21086,22563,1786,1637,149,0,91.657,2026-10-06T02:06:00-05:00,2026-10-06T07:11:22.304Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140127,LIMA,LIMA,SAN MIGUEL,8,101819,110151,4139,4193,507,486,21,0,95.858,2026-10-06T02:06:00-05:00,2026-10-06T07:11:29.205Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140128,LIMA,LIMA,SANTA MARÍA DEL MAR,3,1106,1195,63,26,6,6,0,0,100,2026-10-06T02:06:00-05:00,2026-10-06T07:13:17.905Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140129,LIMA,LIMA,SANTA ROSA,6,12942,15070,1206,922,68,67,1,0,98.529,2026-10-06T02:06:00-05:00,2026-10-06T07:14:15.823Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140130,LIMA,LIMA,SANTIAGO DE SURCO,15,223253,235419,5371,6795,1179,1066,113,0,90.416,2026-10-06T02:06:00-05:00,2026-10-06T07:14:22.483Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140131,LIMA,LIMA,SURQUILLO,9,66192,71601,2644,2765,338,312,26,0,92.308,2026-10-06T02:12:00-05:00,2026-10-06T07:14:29.113Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140132,LIMA,LIMA,VILLA MARÍA DEL TRIUNFO,19,237828,263293,9938,15527,1234,1116,118,0,90.438,2026-10-06T02:06:00-05:00,2026-10-06T07:14:35.682Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140133,LIMA,LIMA,JESÚS MARÍA,12,86736,92324,2376,3212,427,415,12,0,97.19,2026-10-06T02:12:00-05:00,2026-10-06T07:14:44.345Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140134,LIMA,LIMA,INDEPENDENCIA,15,118162,133431,6871,8398,595,566,29,0,95.126,2026-10-06T02:12:00-05:00,2026-10-06T07:14:51.991Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140135,LIMA,LIMA,EL AGUSTINO,15,111977,123856,4660,7219,566,528,38,0,93.286,2026-10-06T02:12:00-05:00,2026-10-06T07:15:19.454Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140136,LIMA,LIMA,SAN JUAN DE MIRAFLORES,19,217398,242106,10271,14437,1115,1026,89,0,92.018,2026-10-06T02:12:00-05:00,2026-10-06T07:15:26.240Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140137,LIMA,LIMA,SAN JUAN DE LURIGANCHO,21,532404,593013,26020,34589,2731,2510,221,0,91.908,2026-10-06T02:12:00-05:00,2026-10-06T07:15:33.039Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140138,LIMA,LIMA,SAN LUIS,11,39303,42873,1800,1770,190,184,6,0,96.842,2026-10-06T02:12:00-05:00,2026-10-06T07:15:39.878Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140139,LIMA,LIMA,CIENEGUILLA,5,22022,24697,1669,1006,105,102,3,0,97.143,2026-10-06T02:12:00-05:00,2026-10-06T07:15:47.467Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140140,LIMA,LIMA,SAN BORJA,8,82077,87051,2574,2400,422,397,25,0,94.076,2026-10-06T02:12:00-05:00,2026-10-06T07:15:54.279Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140141,LIMA,LIMA,VILLA EL SALVADOR,19,237860,261207,8418,14929,1171,1085,86,0,92.656,2026-10-06T02:12:00-05:00,2026-10-06T07:16:05.732Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140142,LIMA,LIMA,LOS OLIVOS,22,198512,217273,7281,11480,984,921,63,0,93.598,2026-10-06T02:12:00-05:00,2026-10-06T07:16:12.838Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+distrital,140143,LIMA,LIMA,SANTA ANITA,13,132743,143375,4724,5908,631,595,36,0,94.295,2026-10-06T02:12:00-05:00,2026-10-06T07:16:23.609Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010100,AMAZONAS,CHACHAPOYAS,,4,29490,33338,2036,1812,169,161,6,2,95.266,2026-10-05T23:26:00-05:00,2026-10-06T04:29:48.958Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010200,AMAZONAS,BAGUA,,5,34655,42652,6254,1743,250,236,6,8,94.4,2026-10-05T23:22:00-05:00,2026-10-06T04:26:32.495Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010300,AMAZONAS,BONGARÁ,,4,15089,16626,913,624,85,84,1,0,98.824,2026-10-05T23:32:00-05:00,2026-10-06T04:34:44.050Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010400,AMAZONAS,LUYA,,4,27140,30896,2817,939,155,155,0,0,100,2026-10-05T23:32:00-05:00,2026-10-06T04:34:50.697Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010500,AMAZONAS,RODRÍGUEZ DE MENDOZA,,5,17065,18493,793,635,97,95,2,0,97.938,2026-10-05T23:32:00-05:00,2026-10-06T04:34:57.352Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010600,AMAZONAS,CONDORCANQUI,,10,20375,24508,3097,1036,174,159,7,8,91.379,2026-10-05T23:32:00-05:00,2026-10-06T04:35:04.028Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,010700,AMAZONAS,UTCUBAMBA,,7,57799,65176,4161,3216,333,328,5,0,98.498,2026-10-05T23:32:00-05:00,2026-10-06T04:35:10.691Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020100,ÁNCASH,HUARAZ,,13,86852,103017,7550,8615,463,458,5,0,98.92,2026-10-05T23:32:00-05:00,2026-10-06T04:36:16.151Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020200,ÁNCASH,AIJA,,6,4604,5143,325,214,26,26,0,0,100,2026-10-05T23:32:00-05:00,2026-10-06T04:36:22.911Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020300,ÁNCASH,BOLOGNESI,,4,13057,14918,1376,485,84,83,1,0,98.81,2026-10-05T23:32:00-05:00,2026-10-06T04:36:29.650Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020400,ÁNCASH,CARHUAZ,,8,27771,33407,3502,2134,148,145,3,0,97.973,2026-10-05T23:32:00-05:00,2026-10-06T04:36:36.372Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020500,ÁNCASH,CASMA,,9,27794,32250,2629,1827,143,140,3,0,97.902,2026-10-05T23:32:00-05:00,2026-10-06T04:36:43.047Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020600,ÁNCASH,CORONGO,,5,4133,4799,506,160,27,27,0,0,100,2026-10-05T23:32:00-05:00,2026-10-06T04:39:09.498Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020700,ÁNCASH,HUAYLAS,,10,29292,35852,4211,2349,169,167,2,0,98.817,2026-10-05T23:32:00-05:00,2026-10-06T04:39:16.273Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020800,ÁNCASH,HUARI,,5,48093,56202,6424,1685,288,281,6,1,97.569,2026-10-05T23:32:00-05:00,2026-10-06T04:39:23.035Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,020900,ÁNCASH,MARISCAL LUZURIAGA,,5,11128,13702,1881,693,71,70,1,0,98.592,2026-10-05T23:32:00-05:00,2026-10-06T04:39:29.762Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021000,ÁNCASH,PALLASCA,,7,10005,13204,2550,649,76,76,0,0,100,2026-10-05T23:36:00-05:00,2026-10-06T04:39:36.543Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021100,ÁNCASH,POMABAMBA,,8,11578,13792,1231,983,76,75,1,0,98.684,2026-10-05T23:36:00-05:00,2026-10-06T04:40:25.133Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021200,ÁNCASH,RECUAY,,5,10704,13316,2110,502,67,66,1,0,98.507,2026-10-05T23:36:00-05:00,2026-10-06T04:40:31.850Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021300,ÁNCASH,SANTA,,15,233414,277524,22332,21778,1280,1244,36,0,97.188,2026-10-05T23:36:00-05:00,2026-10-06T04:40:38.647Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021400,ÁNCASH,SIHUAS,,4,13622,16520,2146,752,89,88,1,0,98.876,2026-10-05T23:36:00-05:00,2026-10-06T04:40:45.311Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021500,ÁNCASH,YUNGAY,,6,29169,35470,4186,2115,171,169,2,0,98.83,2026-10-05T23:36:00-05:00,2026-10-06T04:40:52.055Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021600,ÁNCASH,ANTONIO RAIMONDI,,7,6580,7775,737,458,45,43,2,0,95.556,2026-10-05T23:36:00-05:00,2026-10-06T04:42:01.193Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021700,ÁNCASH,CARLOS FERMÍN FITZCARRALD,,8,8643,10140,806,691,57,56,1,0,98.246,2026-10-05T23:36:00-05:00,2026-10-06T04:42:07.881Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021800,ÁNCASH,ASUNCIÓN,,5,3531,4277,494,252,23,23,0,0,100,2026-10-05T23:36:00-05:00,2026-10-06T04:42:14.577Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,021900,ÁNCASH,HUARMEY,,11,18494,20180,977,709,94,92,2,0,97.872,2026-10-05T23:36:00-05:00,2026-10-06T04:42:21.303Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,022000,ÁNCASH,OCROS,,4,4400,5002,449,153,30,29,1,0,96.667,2026-10-05T23:36:00-05:00,2026-10-06T04:42:28.025Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030100,APURÍMAC,ABANCAY,,9,60103,67597,3421,4073,312,312,0,0,100,2026-10-05T23:36:00-05:00,2026-10-06T04:43:59.572Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030200,APURÍMAC,AYMARAES,,4,16818,18812,1001,993,103,99,4,0,96.117,2026-10-05T23:36:00-05:00,2026-10-06T04:44:06.304Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030300,APURÍMAC,ANDAHUAYLAS,,5,82832,94629,6646,5151,451,446,5,0,98.891,2026-10-05T23:36:00-05:00,2026-10-06T04:44:13.047Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030400,APURÍMAC,ANTABAMBA,,5,6853,7798,451,494,41,41,0,0,100,2026-10-05T23:36:00-05:00,2026-10-06T04:44:19.773Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030500,APURÍMAC,COTABAMBAS,,6,28368,31554,1263,1923,165,163,2,0,98.788,2026-10-05T23:36:00-05:00,2026-10-06T04:44:26.492Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030600,APURÍMAC,GRAU,,4,12950,15100,1266,884,82,82,0,0,100,2026-10-05T23:40:33-05:00,2026-10-06T04:46:13.483Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,030700,APURÍMAC,CHINCHEROS,,4,27645,30098,1282,1171,151,147,4,0,97.351,2026-10-05T23:40:33-05:00,2026-10-06T04:46:20.156Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040100,AREQUIPA,AREQUIPA,,18,665499,763418,42856,55063,3216,3192,24,0,99.254,2026-10-05T23:40:33-05:00,2026-10-06T04:46:27.678Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040200,AREQUIPA,CAYLLOMA,,10,54078,63305,5580,3647,297,288,9,0,96.97,2026-10-05T23:40:33-05:00,2026-10-06T04:46:34.444Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040300,AREQUIPA,CAMANÁ,,12,34650,39517,2838,2029,180,179,1,0,99.444,2026-10-05T23:40:33-05:00,2026-10-06T04:46:41.206Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040400,AREQUIPA,CARAVELÍ,,8,18734,22657,2869,1054,114,111,3,0,97.368,2026-10-05T23:40:33-05:00,2026-10-06T04:48:09.957Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040500,AREQUIPA,CASTILLA,,8,16367,19421,2111,943,105,103,2,0,98.095,2026-10-05T23:40:33-05:00,2026-10-06T04:48:16.742Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040600,AREQUIPA,CONDESUYOS,,6,8675,10091,962,454,56,56,0,0,100,2026-10-05T23:40:33-05:00,2026-10-06T04:48:23.502Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040700,AREQUIPA,ISLAY,,11,35463,39550,2224,1863,177,175,2,0,98.87,2026-10-05T23:46:01-05:00,2026-10-06T04:48:30.184Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,040800,AREQUIPA,LA UNIÓN,,7,5778,7438,1035,625,49,48,1,0,97.959,2026-10-05T23:40:33-05:00,2026-10-06T04:48:36.927Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050100,AYACUCHO,HUAMANGA,,9,152540,171850,8405,10905,783,777,6,0,99.234,2026-10-05T23:40:33-05:00,2026-10-06T04:48:44.272Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050200,AYACUCHO,CANGALLO,,6,18082,20650,1536,1032,110,109,1,0,99.091,2026-10-05T23:40:33-05:00,2026-10-06T04:48:50.993Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050300,AYACUCHO,HUANTA,,10,46585,52849,3387,2877,279,266,1,12,95.341,2026-10-05T23:40:33-05:00,2026-10-06T04:49:22.289Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050400,AYACUCHO,LA MAR,,7,38953,43305,1884,2468,224,223,1,0,99.554,2026-10-05T23:40:33-05:00,2026-10-06T04:49:29.118Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050500,AYACUCHO,LUCANAS,,8,23088,26495,1725,1682,162,157,5,0,96.914,2026-10-05T23:40:33-05:00,2026-10-06T04:49:35.872Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050600,AYACUCHO,PARINACOCHAS,,4,10761,12704,1256,687,77,77,0,0,100,2026-10-05T23:46:01-05:00,2026-10-06T04:49:50.453Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050700,AYACUCHO,VÍCTOR FAJARDO,,6,12578,14083,802,703,79,79,0,0,100,2026-10-05T23:46:01-05:00,2026-10-06T04:49:57.118Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050800,AYACUCHO,HUANCA SANCOS,,4,4698,5308,324,286,34,34,0,0,100,2026-10-05T23:46:01-05:00,2026-10-06T04:50:03.762Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,050900,AYACUCHO,VILCAS HUAMÁN,,5,11877,13078,548,653,71,70,1,0,98.592,2026-10-05T23:46:01-05:00,2026-10-06T04:51:35.818Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,051000,AYACUCHO,PÁUCAR DEL SARA SARA,,7,4819,5407,267,321,33,32,1,0,96.97,2026-10-05T23:46:01-05:00,2026-10-06T04:51:42.472Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,051100,AYACUCHO,SUCRE,,3,5591,6345,525,229,38,37,1,0,97.368,2026-10-05T23:46:01-05:00,2026-10-06T04:51:49.195Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060100,CAJAMARCA,CAJAMARCA,,13,191994,225549,17723,15832,1023,994,29,0,97.165,2026-10-05T23:46:01-05:00,2026-10-06T04:51:56.627Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060200,CAJAMARCA,CAJABAMBA,,6,32670,39693,4629,2394,218,210,8,0,96.33,2026-10-05T23:46:01-05:00,2026-10-06T04:52:03.358Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060300,CAJAMARCA,CELENDÍN,,6,45049,50535,3447,2039,267,265,2,0,99.251,2026-10-05T23:46:01-05:00,2026-10-06T04:52:10.080Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060400,CAJAMARCA,CONTUMAZA,,3,14163,16901,2218,520,82,82,0,0,100,2026-10-05T23:46:01-05:00,2026-10-06T04:52:16.793Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060500,CAJAMARCA,CUTERVO,,6,61489,76689,11947,3253,381,378,3,0,99.213,2026-10-05T23:52:01-05:00,2026-10-06T04:55:03.983Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060600,CAJAMARCA,CHOTA,,6,81899,95398,9909,3590,464,456,7,1,98.276,2026-10-05T23:52:01-05:00,2026-10-06T04:55:10.683Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060700,CAJAMARCA,HUALGAYOC,,7,41612,52057,7267,3178,264,262,2,0,99.242,2026-10-05T23:52:01-05:00,2026-10-06T04:55:17.316Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060800,CAJAMARCA,JAÉN,,11,111820,126878,8244,6814,605,593,12,0,98.017,2026-10-05T23:52:01-05:00,2026-10-06T04:55:23.963Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,060900,CAJAMARCA,SANTA CRUZ,,6,23939,26426,1691,796,125,125,0,0,100,2026-10-05T23:52:01-05:00,2026-10-06T04:55:30.693Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,061000,CAJAMARCA,SAN MIGUEL,,4,28311,33240,3923,1006,160,160,0,0,100,2026-10-05T23:52:01-05:00,2026-10-06T04:55:37.428Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,061100,CAJAMARCA,SAN IGNACIO,,6,68571,84024,12567,2886,408,401,7,0,98.284,2026-10-05T23:52:01-05:00,2026-10-06T04:55:44.140Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,061200,CAJAMARCA,SAN MARCOS,,4,25528,30324,3508,1288,162,160,2,0,98.765,2026-10-05T23:52:01-05:00,2026-10-06T04:57:53.390Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,061300,CAJAMARCA,SAN PABLO,,4,13483,15339,1380,476,73,72,1,0,98.63,2026-10-05T23:52:01-05:00,2026-10-06T04:58:00.107Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070100,CUSCO,CUSCO,,13,237993,284772,21900,24879,1253,1236,17,0,98.643,2026-10-05T23:52:01-05:00,2026-10-06T04:58:07.496Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070200,CUSCO,ACOMAYO,,6,13146,15882,1868,868,76,76,0,0,100,2026-10-05T23:52:01-05:00,2026-10-06T04:58:14.237Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070300,CUSCO,ANTA,,11,37812,43090,2628,2650,191,190,1,0,99.476,2026-10-05T23:52:01-05:00,2026-10-06T04:58:20.990Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070400,CUSCO,CALCA,,10,38683,44559,3196,2680,209,206,3,0,98.565,2026-10-05T23:52:01-05:00,2026-10-06T04:58:27.723Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070500,CUSCO,CANAS,,5,20795,23563,1816,952,114,114,0,0,100,2026-10-05T23:56:01-05:00,2026-10-06T04:58:34.399Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070600,CUSCO,CANCHIS,,11,55301,62966,4679,2986,287,284,3,0,98.955,2026-10-05T23:56:01-05:00,2026-10-06T05:00:03.832Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070700,CUSCO,CHUMBIVILCAS,,11,41124,46408,2714,2570,234,232,2,0,99.145,2026-10-05T23:56:01-05:00,2026-10-06T05:00:10.447Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070800,CUSCO,ESPINAR,,14,42940,48206,2341,2925,216,213,3,0,98.611,2026-10-05T23:56:01-05:00,2026-10-06T05:00:17.086Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,070900,CUSCO,LA CONVENCIÓN,,7,62808,73285,7459,3018,618,389,14,215,62.945,2026-10-05T23:56:01-05:00,2026-10-06T05:00:23.823Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,071000,CUSCO,PARURO,,5,17936,20580,1550,1094,103,101,2,0,98.058,2026-10-05T23:56:01-05:00,2026-10-06T05:00:30.504Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,071100,CUSCO,PAUCARTAMBO,,9,26767,30660,1973,1920,143,141,2,0,98.601,2026-10-05T23:56:01-05:00,2026-10-06T05:00:37.182Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,071200,CUSCO,QUISPICANCHI,,6,50124,59851,7069,2658,274,272,2,0,99.27,2026-10-05T23:56:01-05:00,2026-10-06T05:00:43.819Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,071300,CUSCO,URUBAMBA,,6,42446,48688,3698,2544,216,215,1,0,99.537,2026-10-05T23:56:01-05:00,2026-10-06T05:03:10.670Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080100,HUANCAVELICA,HUANCAVELICA,,9,71699,79021,3540,3782,383,381,2,0,99.478,2026-10-05T23:56:01-05:00,2026-10-06T05:03:18.104Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080200,HUANCAVELICA,ACOBAMBA,,5,26278,28246,981,987,143,143,0,0,100,2026-10-05T23:56:01-05:00,2026-10-06T05:03:24.810Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080300,HUANCAVELICA,ANGARAES,,5,27658,30561,1458,1445,159,159,0,0,100,2026-10-05T23:56:01-05:00,2026-10-06T05:03:31.571Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080400,HUANCAVELICA,CASTROVIRREYNA,,8,11560,12597,512,525,67,65,2,0,97.015,2026-10-05T23:56:01-05:00,2026-10-06T05:03:38.325Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080500,HUANCAVELICA,TAYACAJA,,6,57052,62209,2567,2590,309,303,6,0,98.058,2026-10-05T23:56:01-05:00,2026-10-06T05:03:45.101Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080600,HUANCAVELICA,HUAYTARA,,7,13976,15399,619,804,83,81,2,0,97.59,2026-10-05T23:56:01-05:00,2026-10-06T05:03:51.836Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,080700,HUANCAVELICA,CHURCAMPA,,5,21031,22789,803,955,120,115,5,0,95.833,2026-10-06T00:02:00-05:00,2026-10-06T05:05:24.400Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090100,HUÁNUCO,HUÁNUCO,,15,156813,179945,10618,12514,856,837,19,0,97.78,2026-10-06T00:02:00-05:00,2026-10-06T05:05:31.848Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090200,HUÁNUCO,AMBO,,8,31689,35710,2478,1543,174,168,6,0,96.552,2026-10-06T00:02:00-05:00,2026-10-06T05:05:38.568Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090300,HUÁNUCO,DOS DE MAYO,,5,18374,22708,3469,865,122,119,3,0,97.541,2026-10-06T00:02:00-05:00,2026-10-06T05:05:45.195Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090400,HUÁNUCO,HUAMALIES,,7,28055,32006,2305,1646,174,170,4,0,97.701,2026-10-05T23:46:01-05:00,2026-10-06T04:49:43.143Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090500,HUÁNUCO,MARAÑÓN,,5,14293,16269,1390,586,93,92,1,0,98.925,2026-10-06T00:02:00-05:00,2026-10-06T05:05:51.803Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090600,HUÁNUCO,LEONCIO PRADO,,12,68868,78571,5742,3961,386,379,7,0,98.187,2026-10-06T00:02:00-05:00,2026-10-06T05:05:58.566Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090700,HUÁNUCO,PACHITEA,,9,28001,30569,1335,1233,163,160,3,0,98.16,2026-10-06T00:02:00-05:00,2026-10-06T05:06:05.222Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090800,HUÁNUCO,PUERTO INCA,,8,15781,19357,2872,704,118,111,7,0,94.068,2026-10-06T00:02:00-05:00,2026-10-06T05:08:16.016Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,090900,HUÁNUCO,HUACAYBAMBA,,5,7348,8626,808,470,54,53,1,0,98.148,2026-10-06T00:06:01-05:00,2026-10-06T05:08:22.699Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,091000,HUÁNUCO,LAURICOCHA,,9,10866,11804,484,454,79,60,0,19,75.949,2026-10-06T00:02:00-05:00,2026-10-06T05:08:29.403Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,091100,HUÁNUCO,YAROWILCA,,6,15615,18295,1953,727,111,93,4,14,83.784,2026-10-06T00:02:00-05:00,2026-10-06T05:08:36.097Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,100100,ICA,ICA,,13,227953,254154,11847,14354,1110,1073,37,0,96.667,2026-10-06T00:02:00-05:00,2026-10-06T05:08:43.498Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,100200,ICA,CHINCHA,,12,133797,149720,7731,8192,637,614,23,0,96.389,2026-10-06T00:02:00-05:00,2026-10-06T05:08:50.241Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,100300,ICA,NASCA,,8,37907,46786,6751,2128,216,207,9,0,95.833,2026-10-06T00:02:00-05:00,2026-10-06T05:08:56.965Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,100400,ICA,PISCO,,12,90166,98748,4177,4405,425,410,15,0,96.471,2026-10-06T00:06:01-05:00,2026-10-06T05:11:25.016Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,100500,ICA,PALPA,,9,9395,10284,523,366,46,46,0,0,100,2026-10-06T00:06:01-05:00,2026-10-06T05:11:31.729Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110100,JUNÍN,HUANCAYO,,10,310672,353016,18919,23425,1583,1569,14,0,99.116,2026-10-06T00:06:01-05:00,2026-10-06T05:11:39.097Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110200,JUNÍN,CONCEPCIÓN,,7,34029,38173,2272,1872,185,182,3,0,98.378,2026-10-06T00:06:01-05:00,2026-10-06T05:11:45.801Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110300,JUNÍN,JAUJA,,6,49015,56036,4324,2697,269,268,1,0,99.628,2026-10-06T00:06:01-05:00,2026-10-06T05:11:52.523Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110400,JUNÍN,JUNÍN,,7,10835,12759,1150,774,64,64,0,0,100,2026-10-06T00:06:01-05:00,2026-10-06T05:11:59.214Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110500,JUNÍN,TARMA,,6,49556,56733,3670,3507,260,259,1,0,99.615,2026-10-06T00:06:01-05:00,2026-10-06T05:14:31.771Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110600,JUNÍN,YAULI,,7,19540,21674,998,1136,105,105,0,0,100,2026-10-06T00:06:01-05:00,2026-10-06T05:14:38.526Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110700,JUNÍN,SATIPO,,9,85610,98955,8153,5192,546,516,8,22,94.505,2026-10-06T00:12:01-05:00,2026-10-06T05:14:45.158Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110800,JUNÍN,CHANCHAMAYO,,10,77949,90159,7062,5148,477,462,13,2,96.855,2026-10-06T00:12:01-05:00,2026-10-06T05:14:51.923Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,110900,JUNÍN,CHUPACA,,7,38325,42062,1923,1814,191,191,0,0,100,2026-10-06T00:12:01-05:00,2026-10-06T05:14:58.553Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120100,LA LIBERTAD,TRUJILLO,,14,547095,623096,28727,47274,2855,2794,61,0,97.863,2026-10-06T00:12:01-05:00,2026-10-06T05:15:05.983Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120200,LA LIBERTAD,BOLÍVAR,,3,6042,7787,1145,600,46,45,1,0,97.826,2026-10-06T00:12:01-05:00,2026-10-06T05:16:17.279Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120300,LA LIBERTAD,SÁNCHEZ CARRIÓN,,5,66406,82758,10750,5602,426,414,12,0,97.183,2026-10-06T00:12:01-05:00,2026-10-06T05:16:23.989Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120400,LA LIBERTAD,OTUZCO,,6,45923,51716,3063,2730,259,248,3,8,95.753,2026-10-06T00:12:01-05:00,2026-10-06T05:16:30.750Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120500,LA LIBERTAD,PACASMAYO,,6,48542,63802,11300,3960,291,288,3,0,98.969,2026-10-06T00:12:01-05:00,2026-10-06T05:16:37.465Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120600,LA LIBERTAD,PATAZ,,7,29053,36881,4140,3688,221,204,8,9,92.308,2026-10-06T00:12:01-05:00,2026-10-06T05:16:44.116Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120700,LA LIBERTAD,SANTIAGO DE CHUCO,,7,26528,30393,2027,1838,154,153,1,0,99.351,2026-10-06T00:12:01-05:00,2026-10-06T05:16:50.792Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120800,LA LIBERTAD,ASCOPE,,9,62516,75106,7762,4828,342,334,8,0,97.661,2026-10-06T00:16:01-05:00,2026-10-06T05:19:46.060Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,120900,LA LIBERTAD,CHEPÉN,,10,44510,52232,4203,3519,240,239,1,0,99.583,2026-10-06T00:16:01-05:00,2026-10-06T05:19:52.704Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,121000,LA LIBERTAD,JULCÁN,,5,15660,18753,1840,1253,93,90,3,0,96.774,2026-10-06T00:16:01-05:00,2026-10-06T05:19:59.357Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,121100,LA LIBERTAD,GRAN CHIMÚ,,5,11226,13655,1675,754,83,69,1,13,83.133,2026-10-06T00:16:01-05:00,2026-10-06T05:20:06.004Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,121200,LA LIBERTAD,VIRÚ,,11,53921,62657,4565,4171,287,280,7,0,97.561,2026-10-06T00:16:01-05:00,2026-10-06T05:20:12.632Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,130100,LAMBAYEQUE,CHICLAYO,,15,455624,523627,32042,35961,2382,2336,46,0,98.069,2026-10-06T00:16:01-05:00,2026-10-06T05:20:20.046Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,130200,LAMBAYEQUE,FERREÑAFE,,8,55776,65647,6433,3438,307,302,5,0,98.371,2026-10-06T00:20:35-05:00,2026-10-06T05:25:29.410Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,130300,LAMBAYEQUE,LAMBAYEQUE,,11,174004,203245,19182,10059,894,876,18,0,97.987,2026-10-06T00:20:35-05:00,2026-10-06T05:25:36.123Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140100,LIMA,LIMA,,26,5213223,5636000,131069,291708,26351,24430,1921,0,92.71,2026-10-06T10:26:01-05:00,2026-10-06T15:31:37.449Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140200,LIMA,CAJATAMBO,,6,3526,4130,380,224,24,24,0,0,100,2026-10-06T00:26:00-05:00,2026-10-06T05:34:20.209Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140300,LIMA,CANTA,,7,8720,9963,796,447,48,46,2,0,95.833,2026-10-06T00:26:00-05:00,2026-10-06T05:34:26.254Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140400,LIMA,CAÑETE,,16,137051,158664,13766,7847,673,657,16,0,97.623,2026-10-06T00:26:00-05:00,2026-10-06T05:34:32.265Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140500,LIMA,HUAURA,,9,124585,146975,12745,9645,655,646,9,0,98.626,2026-10-06T00:26:00-05:00,2026-10-06T05:34:38.331Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140600,LIMA,HUAROCHIRÍ,,11,60926,70712,6278,3508,344,332,12,0,96.512,2026-10-06T00:32:01-05:00,2026-10-06T05:34:44.389Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140700,LIMA,YAUYOS,,7,17287,20228,2218,723,111,110,1,0,99.099,2026-10-06T00:32:01-05:00,2026-10-06T05:34:50.450Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140800,LIMA,HUARAL,,14,104591,125064,12040,8433,555,540,8,7,97.297,2026-10-06T00:32:01-05:00,2026-10-06T05:38:06.385Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,140900,LIMA,BARRANCA,,13,80273,92006,6108,5625,421,413,8,0,98.1,2026-10-06T00:32:01-05:00,2026-10-06T05:38:12.421Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,141000,LIMA,OYÓN,,7,7682,9279,1136,461,50,49,1,0,98,2026-10-06T00:32:01-05:00,2026-10-06T05:38:50.423Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150100,LORETO,MAYNAS,,14,204292,232628,15896,12440,1331,1235,90,6,92.787,2026-10-06T00:32:01-05:00,2026-10-06T05:38:57.008Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150200,LORETO,ALTO AMAZONAS,,8,44548,51127,4305,2274,368,259,27,82,70.38,2026-10-06T00:32:01-05:00,2026-10-06T05:39:02.940Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150300,LORETO,LORETO,,10,21072,23381,1579,730,203,135,10,58,66.502,2026-10-06T00:32:01-05:00,2026-10-06T05:39:08.878Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150400,LORETO,REQUENA,,6,22610,24764,1755,399,193,131,10,52,67.876,2026-10-06T00:32:01-05:00,2026-10-06T05:39:18.982Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150500,LORETO,UCAYALI,,7,27416,29820,1602,802,191,173,12,6,90.576,2026-10-06T00:32:01-05:00,2026-10-06T05:39:24.918Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150600,LORETO,MARISCAL RAMÓN CASTILLA,,7,24008,28863,3757,1098,196,187,9,0,95.408,2026-10-06T00:36:01-05:00,2026-10-06T05:39:35.647Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150700,LORETO,DATEM DEL MARAÑÓN,,8,3147,3373,133,93,202,20,2,180,9.901,2026-10-06T00:32:01-05:00,2026-10-06T05:39:41.555Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,150900,LORETO,PUTUMAYO,,6,214,311,80,17,30,2,0,28,6.667,2026-10-06T00:36:01-05:00,2026-10-06T05:39:47.504Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,160100,MADRE DE DIOS,TAMBOPATA,,11,68027,79487,7026,4434,404,396,8,0,98.02,2026-10-06T00:36:01-05:00,2026-10-06T05:39:54.073Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,160200,MADRE DE DIOS,MANÚ,,6,6479,8947,2095,373,71,57,1,13,80.282,2026-10-06T00:36:01-05:00,2026-10-06T05:39:59.989Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,160300,MADRE DE DIOS,TAHUAMANÚ,,5,5761,6565,572,232,36,35,1,0,97.222,2026-10-06T00:36:01-05:00,2026-10-06T05:40:05.911Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,170100,MOQUEGUA,MARISCAL NIETO,,13,58443,65223,3464,3316,281,278,3,0,98.932,2026-10-06T00:36:01-05:00,2026-10-06T05:40:20.751Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,170200,MOQUEGUA,GENERAL SÁNCHEZ CERRO,,6,10118,11798,1275,405,60,58,2,0,96.667,2026-10-06T00:36:01-05:00,2026-10-06T05:40:26.673Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,170300,MOQUEGUA,ILO,,15,46988,52663,3175,2500,231,228,3,0,98.701,2026-10-06T00:36:01-05:00,2026-10-06T05:40:32.587Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,180100,PASCO,PASCO,,8,64997,73640,4777,3866,375,372,3,0,99.2,2026-10-06T00:36:01-05:00,2026-10-06T05:40:39.167Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,180200,PASCO,DANIEL ALCIDES CARRIÓN,,8,17701,19536,956,879,106,104,2,0,98.113,2026-10-06T00:36:01-05:00,2026-10-06T05:40:45.127Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,180300,PASCO,OXAPAMPA,,7,48016,55637,4730,2891,308,306,2,0,99.351,2026-10-06T00:36:01-05:00,2026-10-06T05:40:51.076Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190100,PIURA,PIURA,,13,389524,470333,44928,35881,2177,2088,89,0,95.912,2026-10-06T00:36:01-05:00,2026-10-06T05:41:18.124Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190200,PIURA,AYABACA,,6,62756,71929,7126,2047,392,389,3,0,99.235,2026-10-06T00:36:01-05:00,2026-10-06T05:41:24.055Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190300,PIURA,HUANCABAMBA,,7,58866,66868,5289,2713,359,352,7,0,98.05,2026-10-06T00:36:01-05:00,2026-10-06T05:41:29.986Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190400,PIURA,MORROPÓN,,12,87717,102148,9274,5157,496,464,9,23,93.548,2026-10-06T00:36:01-05:00,2026-10-06T05:41:35.923Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190500,PIURA,PAITA,,12,71768,80922,4354,4800,349,346,3,0,99.14,2026-10-06T00:36:01-05:00,2026-10-06T05:41:41.834Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190600,PIURA,SULLANA,,12,164438,197257,16945,15874,889,864,25,0,97.188,2026-10-06T00:36:01-05:00,2026-10-06T05:41:47.741Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190700,PIURA,TALARA,,10,68949,79270,5227,5094,384,369,15,0,96.094,2026-10-06T00:36:01-05:00,2026-10-06T05:42:00.840Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,190800,PIURA,SECHURA,,5,46293,51914,3727,1894,216,214,2,0,99.074,2026-10-06T00:36:01-05:00,2026-10-06T05:42:06.775Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200100,PUNO,PUNO,,9,130118,147150,7953,9079,639,634,5,0,99.218,2026-10-06T00:36:01-05:00,2026-10-06T05:42:13.367Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200200,PUNO,AZÁNGARO,,6,71925,83252,7807,3520,363,354,9,0,97.521,2026-10-06T00:36:01-05:00,2026-10-06T05:42:19.325Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200300,PUNO,CARABAYA,,4,33386,39371,4422,1563,189,188,1,0,99.471,2026-10-06T00:36:01-05:00,2026-10-06T05:42:25.254Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200400,PUNO,CHUCUITO,,7,43466,49616,3478,2672,230,230,0,0,100,2026-10-06T00:36:01-05:00,2026-10-06T05:42:31.190Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200500,PUNO,HUANCANÉ,,7,40615,46527,3497,2415,202,202,0,0,100,2026-10-06T00:36:01-05:00,2026-10-06T05:43:02.085Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200600,PUNO,LAMPA,,5,28320,31754,2252,1182,134,132,2,0,98.507,2026-10-06T00:42:00-05:00,2026-10-06T05:43:08.013Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200700,PUNO,MELGAR,,8,39951,44368,2334,2083,200,197,3,0,98.5,2026-10-06T00:36:01-05:00,2026-10-06T05:43:13.951Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200800,PUNO,SANDIA,,5,29762,34806,2894,2150,170,170,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:43:19.801Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,200900,PUNO,SAN ROMÁN,,11,172710,190703,7157,10836,778,774,4,0,99.486,2026-10-06T00:36:01-05:00,2026-10-06T05:43:25.746Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,201000,PUNO,YUNGUYO,,3,18676,22624,2888,1060,112,112,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:43:31.708Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,201100,PUNO,SAN ANTONIO DE PUTINA,,7,17636,20047,1452,959,87,85,2,0,97.701,2026-10-06T00:36:01-05:00,2026-10-06T05:43:46.004Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,201200,PUNO,EL COLLAO,,7,37329,41719,2557,1833,189,185,4,0,97.884,2026-10-06T00:42:00-05:00,2026-10-06T05:43:51.958Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,201300,PUNO,MOHO,,5,14414,16897,1536,947,87,87,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:43:57.874Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210100,SAN MARTÍN,MOYOBAMBA,,7,69718,79806,5446,4642,380,379,1,0,99.737,2026-10-06T00:42:00-05:00,2026-10-06T05:44:04.446Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210200,SAN MARTÍN,HUALLAGA,,5,17447,19064,1019,598,90,88,2,0,97.778,2026-10-06T00:36:01-05:00,2026-10-06T05:44:10.386Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210300,SAN MARTÍN,LAMAS,,6,49798,56926,4172,2956,261,256,5,0,98.084,2026-10-06T00:42:00-05:00,2026-10-06T05:44:16.321Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210400,SAN MARTÍN,MARISCAL CÁCERES,,6,34331,38401,2133,1937,188,182,6,0,96.809,2026-10-06T00:36:01-05:00,2026-10-06T05:44:35.691Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210500,SAN MARTÍN,RIOJA,,7,73930,82300,4636,3734,382,381,1,0,99.738,2026-10-06T00:42:00-05:00,2026-10-06T05:44:41.612Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210600,SAN MARTÍN,SAN MARTÍN,,9,110913,126766,7423,8430,572,563,9,0,98.427,2026-10-06T00:42:00-05:00,2026-10-06T05:44:47.538Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210700,SAN MARTÍN,BELLAVISTA,,5,31917,35622,2462,1243,174,168,6,0,96.552,2026-10-06T00:42:00-05:00,2026-10-06T05:44:53.479Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210800,SAN MARTÍN,TOCACHE,,6,39239,45387,4022,2126,232,227,5,0,97.845,2026-10-06T00:42:00-05:00,2026-10-06T05:44:59.369Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,210900,SAN MARTÍN,PICOTA,,5,24646,28646,3044,956,131,126,5,0,96.183,2026-10-06T00:42:00-05:00,2026-10-06T05:45:05.302Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,211000,SAN MARTÍN,EL DORADO,,5,21107,24863,2693,1063,115,111,4,0,96.522,2026-10-06T00:42:00-05:00,2026-10-06T05:45:11.234Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,220100,TACNA,TACNA,,9,190163,222984,20244,12577,942,931,11,0,98.832,2026-10-06T00:42:00-05:00,2026-10-06T05:45:26.111Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,220200,TACNA,TARATA,,4,5173,5995,655,167,28,28,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:45:32.053Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,220300,TACNA,JORGE BASADRE,,9,8416,9075,433,226,40,40,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:45:37.969Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,220400,TACNA,CANDARAVE,,5,4616,5185,407,162,24,24,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:45:43.891Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,230100,TUMBES,TUMBES,,15,79731,94166,7008,7427,425,416,9,0,97.882,2026-10-06T00:42:00-05:00,2026-10-06T05:45:50.461Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,230200,TUMBES,CONTRALMIRANTE VILLAR,,9,12273,13593,620,700,61,60,1,0,98.361,2026-10-06T00:42:00-05:00,2026-10-06T05:45:56.399Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,230300,TUMBES,ZARUMILLA,,9,25691,29249,1606,1952,135,131,4,0,97.037,2026-10-06T00:42:00-05:00,2026-10-06T05:46:02.306Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,240100,CALLAO,CALLAO,,6,526859,630929,60581,43489,2900,2832,68,0,97.655,2026-10-06T00:42:00-05:00,2026-10-06T05:46:13.631Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,250100,UCAYALI,CORONEL PORTILLO,,14,187615,217640,16084,13941,1157,1115,41,1,96.37,2026-10-06T00:42:00-05:00,2026-10-06T05:46:20.133Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,250200,UCAYALI,PADRE ABAD,,7,35638,42339,4434,2267,220,210,10,0,95.455,2026-10-06T00:42:00-05:00,2026-10-06T05:46:25.999Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,250300,UCAYALI,ATALAYA,,11,19980,24004,2433,1591,173,158,5,10,91.329,2026-10-06T00:42:00-05:00,2026-10-06T05:46:31.938Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+provincial,250400,UCAYALI,PURÚS,,6,1625,1837,114,98,12,12,0,0,100,2026-10-06T00:42:00-05:00,2026-10-06T05:46:37.846Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales

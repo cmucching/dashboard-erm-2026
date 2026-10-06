@@ -1,0 +1,44 @@
+﻿ubigeo,district,valid_votes,emitted_votes,blank_votes,null_votes,total_actas,counted_actas,jee_actas,pending_actas,counted_pct,source_updated_at,retrieved_at,source_url
+140102,ANCÓN,29160,32718,1291,2267,164,144,20,0,87.805,2026-10-06T10:06:02-05:00,2026-10-06T15:12:11.994Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140103,ATE,342098,362959,7487,13374,1671,1548,123,0,92.639,2026-10-06T10:06:02-05:00,2026-10-06T15:13:04.069Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140125,BARRANCO,29943,31653,542,1168,149,142,7,0,95.302,2026-10-06T10:06:02-05:00,2026-10-06T15:13:11.667Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140104,BREÑA,68636,73795,1825,3334,349,323,26,0,92.55,2026-10-06T10:06:02-05:00,2026-10-06T15:13:19.333Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140105,CARABAYLLO,167548,184953,5473,11932,861,793,68,0,92.102,2026-10-06T10:06:02-05:00,2026-10-06T15:13:27.079Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140107,CHACLACAYO,26428,28421,670,1323,138,124,14,0,89.855,2026-10-06T10:06:02-05:00,2026-10-06T15:13:34.905Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140108,CHORRILLOS,181129,196619,4791,10699,899,832,67,0,92.547,2026-10-06T10:06:02-05:00,2026-10-06T15:13:42.772Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140139,CIENEGUILLA,20535,22310,459,1316,105,92,13,0,87.619,2026-10-06T10:12:01-05:00,2026-10-06T15:18:56.067Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140106,COMAS,298148,327955,8842,20965,1499,1412,87,0,94.196,2026-10-06T10:16:02-05:00,2026-10-06T15:20:03.383Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140135,EL AGUSTINO,107186,117490,3435,6869,566,501,65,0,88.516,2026-10-06T10:16:02-05:00,2026-10-06T15:20:10.770Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140134,INDEPENDENCIA,118885,131011,3735,8391,595,556,39,0,93.445,2026-10-06T10:16:02-05:00,2026-10-06T15:20:18.142Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140133,JESÚS MARÍA,86960,91005,1026,3019,427,409,18,0,95.785,2026-10-06T10:16:02-05:00,2026-10-06T15:20:25.582Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140110,LA MOLINA,113887,119155,1497,3771,574,538,36,0,93.728,2026-10-06T10:16:02-05:00,2026-10-06T15:20:33.011Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140109,LA VICTORIA,122429,131472,2734,6309,640,586,54,0,91.563,2026-10-06T10:16:02-05:00,2026-10-06T15:20:40.485Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140101,LIMA,198867,212833,2134,11832,1015,965,50,0,95.074,2026-10-06T10:16:02-05:00,2026-10-06T15:21:47.318Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140111,LINCE,56298,59369,813,2258,290,270,20,0,93.103,2026-10-06T10:16:02-05:00,2026-10-06T15:21:54.850Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140142,LOS OLIVOS,204147,220400,4507,11746,984,934,50,0,94.919,2026-10-06T10:16:02-05:00,2026-10-06T15:22:02.407Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140112,LURIGANCHO,103429,117592,7391,6772,550,517,33,0,94,2026-10-06T10:16:02-05:00,2026-10-06T15:22:09.965Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140113,LURÍN,50728,55057,1518,2811,248,229,19,0,92.339,2026-10-06T10:16:02-05:00,2026-10-06T15:22:17.539Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140114,MAGDALENA DEL MAR,53562,55560,595,1403,256,244,12,0,95.313,2026-10-06T10:16:02-05:00,2026-10-06T15:22:25.114Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140115,MIRAFLORES,82272,85864,1020,2572,478,426,52,0,89.121,2026-10-06T10:16:02-05:00,2026-10-06T15:24:06.676Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140116,PACHACÁMAC,63882,71060,2104,5074,319,303,16,0,94.984,2026-10-06T10:16:02-05:00,2026-10-06T15:24:14.373Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140118,PUCUSANA,8018,8764,368,378,44,37,7,0,84.091,2026-10-06T10:16:02-05:00,2026-10-06T15:24:21.983Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140117,PUEBLO LIBRE,69546,72525,767,2212,337,327,10,0,97.033,2026-10-06T10:16:02-05:00,2026-10-06T15:24:29.592Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140119,PUENTE PIEDRA,179658,195934,5313,10963,891,836,55,0,93.827,2026-10-06T10:16:02-05:00,2026-10-06T15:24:37.200Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140120,PUNTA HERMOSA,6366,6981,326,289,33,30,3,0,90.909,2026-10-06T10:22:01-05:00,2026-10-06T15:24:44.776Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140121,PUNTA NEGRA,4880,5565,443,242,25,24,1,0,96,2026-10-06T10:22:01-05:00,2026-10-06T15:26:39.766Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140122,RÍMAC,109527,118017,2374,6116,560,515,45,0,91.964,2026-10-06T10:22:01-05:00,2026-10-06T15:26:47.299Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140123,SAN BARTOLO,4384,4855,157,314,24,21,3,0,87.5,2026-10-06T10:22:01-05:00,2026-10-06T15:26:54.703Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140140,SAN BORJA,83079,86278,833,2366,422,394,28,0,93.365,2026-10-06T10:22:01-05:00,2026-10-06T15:27:02.125Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140124,SAN ISIDRO,52430,54389,590,1369,282,272,10,0,96.454,2026-10-06T10:22:01-05:00,2026-10-06T15:27:11.884Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140137,SAN JUAN DE LURIGANCHO,548878,603111,16687,37546,2731,2556,175,0,93.592,2026-10-06T10:22:01-05:00,2026-10-06T15:27:21.013Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140136,SAN JUAN DE MIRAFLORES,216829,237383,5825,14729,1115,1005,110,0,90.135,2026-10-06T10:22:01-05:00,2026-10-06T15:28:45.169Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140138,SAN LUIS,39471,41970,792,1707,190,180,10,0,94.737,2026-10-06T10:22:01-05:00,2026-10-06T15:28:55.231Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140126,SAN MARTÍN DE PORRES,347277,380576,10280,23019,1786,1658,128,0,92.833,2026-10-06T10:22:01-05:00,2026-10-06T15:29:06.073Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140127,SAN MIGUEL,101248,106838,1467,4123,507,472,35,0,93.097,2026-10-06T10:22:01-05:00,2026-10-06T15:29:13.285Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140143,SANTA ANITA,132164,140989,3056,5769,631,585,46,0,92.71,2026-10-06T10:22:01-05:00,2026-10-06T15:29:20.440Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140128,SANTA MARÍA DEL MAR,1118,1195,49,28,6,6,0,0,100,2026-10-06T10:22:01-05:00,2026-10-06T15:30:03.637Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140129,SANTA ROSA,13380,14846,421,1045,68,66,2,0,97.059,2026-10-06T10:26:01-05:00,2026-10-06T15:30:10.754Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140130,SANTIAGO DE SURCO,225688,235061,2493,6880,1179,1065,114,0,90.331,2026-10-06T10:26:01-05:00,2026-10-06T15:30:22.071Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140131,SURQUILLO,65955,69677,1000,2722,338,303,35,0,89.645,2026-10-06T10:26:01-05:00,2026-10-06T15:30:29.126Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140141,VILLA EL SALVADOR,237638,259580,6616,15326,1171,1078,93,0,92.058,2026-10-06T10:26:01-05:00,2026-10-06T15:30:39.277Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales
+140132,VILLA MARÍA DEL TRIUNFO,239532,262215,7323,15360,1234,1112,122,0,90.113,2026-10-06T10:26:01-05:00,2026-10-06T15:31:15.047Z,https://resultadoelectoral.onpe.gob.pe/main/elecciones-municipales

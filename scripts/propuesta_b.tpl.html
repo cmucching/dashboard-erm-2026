@@ -103,7 +103,9 @@ rank=Object.entries(by).sort((a,b)=>b[1]-a[1]),minA=Math.min(...DATA.map(r=>r.ac
 $('#h1').innerHTML=`25 carreras abiertas.<br><em>${close.length} se deciden por menos de 3 puntos.</em>`;
 $('#sub').textContent=`${rank[0][0]} lidera en ${rank[0][1]} regiones y ${rank[1][0]} en ${rank[1][1]}. Aquí ves quién va primero, a cuánto está el segundo y cuánto del conteo falta.`;
 $('#kpis').innerHTML=`<div class="hot"><b>${close.length}</b><span>regiones con ventaja menor a 3 pp</span></div><div><b>${rank.length}</b><span>organizaciones lideran al menos una región</span></div><div><b>${f(minA)}–${f(maxA)} %</b><span>actas contabilizadas, según región</span></div>`;
-$('#cut').innerHTML=`<i></i>Corte ONPE · ${DATA[0].actualizacion||DATA[0].hora_onpe} · Perú (UTC−5)`;
+{const pd=t=>{const m=String(t||'').match(/(\d+)\/(\d+)\/(\d+)\D+(\d+):(\d+):(\d+)\s*([ap])/i);if(!m)return null;let h=+m[4]%12+(m[7].toLowerCase()==='p'?12:0);return new Date(+m[3],+m[2]-1,+m[1],h,+m[5],+m[6])};
+ const ts=DATA.map(r=>({t:pd(r.actualizacion),s:r.actualizacion})).filter(x=>x.t).sort((a,b)=>a.t-b.t);
+ $('#cut').innerHTML=ts.length?`<i></i><span>Cortes ONPE por región: <b>${ts[0].s}</b> a <b>${ts[ts.length-1].s}</b> · hora de Perú (UTC−5). Cada región conserva su propia hora de corte.</span>`:`<i></i>Corte ONPE · ${DATA[0].hora_onpe} · Perú (UTC−5)`}
 
 }
 prep();head();

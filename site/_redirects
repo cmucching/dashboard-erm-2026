@@ -1,0 +1,6 @@
+/api/results            /api/results.json            200
+/api/provincial         /api/provincial.json         200
+/api/update-status      /api/update-status.json      200
+/api/municipal-data     /api/municipal-data.json     200
+/api/municipal-status   /api/municipal-status.json   200
+/api/config             /api/config.json             200
