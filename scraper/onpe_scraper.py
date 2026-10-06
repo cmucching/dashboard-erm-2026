@@ -281,6 +281,25 @@ def descubrir_elecciones(fetch) -> None:
                   f"actas={(tot or {}).get('totalActas')} partic={len(par or [])} | {nombres}", flush=True)
 
 
+def verificar_distritos(fetch, ubigeos: list[str]) -> None:
+    """Muestra lo que ONPE devuelve ahora mismo para cada distrito (elección provincial=3 y distrital=4)."""
+    for ub in ubigeos:
+        u = {"dep": ub[:2] + "0000", "prov": ub[:4] + "00", "ubigeo": ub}
+        for ide, nombre in ((ID_DISTRITAL, "ALCALDE DISTRITAL"), (ID_MUNICIPAL, "alcalde provincial en el distrito")):
+            ut, up = url_resumen("totales", ide, "dist", u), url_resumen("participantes", ide, "dist", u)
+            r = fetch([ut, up])
+            tot, par = _datos(r.get(ut)), _datos(r.get(up))
+            if not tot and not par:
+                print(f"{ub} · {nombre}: ONPE no devuelve datos (estado {r.get(ut, {}).get('status')})", flush=True)
+                continue
+            print(f"{ub} · {nombre}: actas {tot.get('contabilizadas')}/{tot.get('totalActas')} "
+                  f"({tot.get('actasContabilizadas')} %), JEE {tot.get('enviadasJee')}, pendientes {tot.get('pendientesJee')}, "
+                  f"válidos {tot.get('totalVotosValidos')}, emitidos {tot.get('totalVotosEmitidos')}, "
+                  f"corte {tot.get('fechaActualizacion')}", flush=True)
+            for q in sorted(par or [], key=lambda q: -(q.get('totalVotosValidos') or 0))[:4]:
+                print(f"     {q.get('nombreAgrupacionPolitica')}: {q.get('totalVotosValidos')} ({q.get('porcentajeVotosValidos')} %)", flush=True)
+
+
 def descubrir_campos(page) -> None:
     """Muestra el JSON crudo de un distrito (elección 4) y las URLs de API que usa la propia web de ONPE."""
     u = {"dep": "010000", "prov": "010100", "ubigeo": "010102"}
@@ -322,6 +341,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--hilos", type=int, default=2, help="pedidos en paralelo (por defecto 2; más hilos aumentan el riesgo de 403)")
     ap.add_argument("--pausa-ms", type=int, default=500, help="pausa mínima entre pedidos de cada hilo (ms)")
     ap.add_argument("--dry-run", action="store_true", help="no escribe archivos")
+    ap.add_argument("--verificar", nargs="+", metavar="UBIGEO",
+                    help="consulta en vivo estos distritos (p. ej. 010601 150411) y muestra lo que ONPE devuelve")
     ap.add_argument("--descubrir", action="store_true",
                     help="diagnóstico: muestra qué idEleccion de ONPE corresponde a cada elección (no escribe nada)")
     args = ap.parse_args(argv)
@@ -343,6 +364,10 @@ def main(argv: list[str] | None = None) -> int:
             if resp is None or resp.status >= 400:
                 print(f"BLOQUEO: la página de inicio respondió {getattr(resp, 'status', None)}", file=sys.stderr)
                 return EXIT_BLOQUEO
+            if args.verificar:
+                verificar_distritos(FetcherNavegador(page), args.verificar)
+                browser.close()
+                return 0
             if args.descubrir:
                 descubrir_elecciones(FetcherNavegador(page))
                 descubrir_campos(page)
