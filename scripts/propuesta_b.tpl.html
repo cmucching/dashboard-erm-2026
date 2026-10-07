@@ -75,6 +75,15 @@ nav.top a[aria-current]{color:var(--ink);font-weight:800;border-color:var(--oran
 .foot a{color:var(--ink)}
 @media(max-width:1000px){.lead{grid-template-columns:1fr}.kpis{border-left:0;border-top:1px solid var(--line);padding-top:14px}.kpis div{padding-left:0}.board{grid-template-columns:1fr}.mapcard{position:static}}
 @media(max-width:620px){.axis{display:none}.row{grid-template-columns:1fr 64px}.dumb{grid-column:1/-1;order:3}.more{grid-template-columns:1fr}}
+.kpis{grid-template-columns:repeat(4,1fr)}.kpis b{font-size:clamp(22px,2.4vw,34px)}
+.mapmode{padding:10px 20px 12px}.mapmode .seg{display:inline-flex;flex-wrap:wrap}
+.mapcard path.hot{stroke:var(--orange);stroke-width:2px}.mapcard path.hot2{stroke:var(--ink);stroke-width:2.4px;stroke-dasharray:5 3}
+.maplegend{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;padding:12px 20px 0;font-size:12px;color:var(--ink2)}.maplegend[hidden]{display:none}
+.maplegend span{display:flex;gap:6px;align-items:center}.maplegend .lgt{font-weight:800;color:var(--ink);flex-basis:100%}
+.maplegend span i{width:14px;height:14px;border-radius:3px;border:1px solid #C5CDD2}.maplegend i.lghot{background:#fff;border:2px solid var(--orange)}.maplegend i.lghot2{background:#fff;border:2px dashed var(--ink)}
+.badge{display:inline-block;border-radius:999px;padding:2px 8px;font-size:10.5px;font-weight:800;margin-top:4px}.badge.sv{background:var(--orange);color:#fff}.badge.zona{background:#FBE7A8;color:#6B4E00}
+.lawnote{background:#FFF1E9;border:1px solid #F5C9B0;border-radius:14px;padding:12px 16px;margin:0 0 18px;font-size:13.5px;line-height:1.5;color:#5C2A10}.lawnote b{color:var(--ink)}
+@media(max-width:1000px){.kpis{grid-template-columns:repeat(2,1fr)}}
 :focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
@@ -82,27 +91,46 @@ nav.top a[aria-current]{color:var(--ink);font-weight:800;border-color:var(--oran
 <nav class="top" aria-label="Vistas"><a href="#" aria-current="page">Gobernadores regionales</a><a href="__LIVE__/provincial">Alcaldes provinciales</a><a href="__LIVE__/distrital">Alcaldes distritales</a><a href="__LIVE__/lima-metropolitana">Lima Metropolitana</a><a href="__LIVE__/base-municipal">Base municipal · descarga</a></nav>
 <main class="wrap">
  <section class="lead"><div><h1 id="h1"></h1><p id="sub"></p></div><div class="kpis" id="kpis"></div></section>
+ <div class="lawnote" id="lawnote"></div>
  <div class="cut" id="cut"></div>
  <section class="board">
-  <div class="mapcard"><div class="maphead"><h2>Quién va primero, región por región</h2><small>Toca una región</small></div><svg id="map" viewBox="0 0 100 100" role="img" aria-label="Mapa del Perú coloreado por organización que lidera"></svg><div class="chips" id="chips" role="group" aria-label="Filtrar por organización"></div></div>
-  <div class="races"><div class="rh"><h2>Las 25 carreras</h2><div class="seg" id="sort" role="group" aria-label="Ordenar"><button data-k="margin" aria-pressed="true">Más reñidas</button><button data-k="big" aria-pressed="false">Mayor ventaja</button><button data-k="actas" aria-pressed="false">Actas</button><button data-k="name" aria-pressed="false">A–Z</button></div></div>
+  <div class="mapcard"><div class="maphead"><h2>Quién va primero, región por región</h2><small>Toca una región</small></div><div class="mapmode"><div class="seg" id="mode" role="group" aria-label="Qué muestra el mapa"><button data-m="lead" aria-pressed="true">Quién va primero</button><button data-m="falta" aria-pressed="false">Qué falta contar</button><button data-m="sv" aria-pressed="false">Segunda elección</button></div></div><svg id="map" viewBox="0 0 100 100" role="img" aria-label="Mapa del Perú coloreado por organización que lidera"></svg><div class="maplegend" id="legend" hidden></div><div class="chips" id="chips" role="group" aria-label="Filtrar por organización"></div></div>
+  <div class="races"><div class="rh"><h2>Las 25 carreras</h2><div class="seg" id="sort" role="group" aria-label="Ordenar"><button data-k="margin" aria-pressed="true">Más reñidas</button><button data-k="big" aria-pressed="false">Mayor ventaja</button><button data-k="actas" aria-pressed="false">Actas</button><button data-k="umbral" aria-pressed="false">Cerca del 30 %</button><button data-k="name" aria-pressed="false">A–Z</button></div></div>
   <div class="axis"><span>Región</span><div class="sc" title="Ventaja del 1.º sobre el 2.º, en puntos porcentuales" id="sc"></div><span style="text-align:right">pp</span></div><div id="rows"></div></div>
  </section>
- <footer class="foot">Fuente: ONPE, resultados parciales; porcentajes sobre votos válidos. Cada barra mide la ventaja (la escala llega a 10 pp; si la ventaja es mayor, la barra se corta) del 1.º sobre el 2.º en puntos porcentuales (pp); la línea naranja marca 3 pp y la marca lateral naranja, las carreras por debajo de ese umbral, que pueden cambiar. Los liderazgos parciales no equivalen a autoridades proclamadas. Datos de ejemplo congelados al corte indicado · <a href="__LIVE__">tablero en vivo</a> · <a href="https://resultadoelectoral.onpe.gob.pe/main/elecciones-regionales" target="_blank" rel="noopener">ONPE</a></footer>
+ <footer class="foot">Fuente: ONPE, resultados parciales; porcentajes sobre votos válidos. Cada barra mide la ventaja (la escala llega a 10 pp; si la ventaja es mayor, la barra se corta) del 1.º sobre el 2.º en puntos porcentuales (pp); la línea naranja marca 3 pp y la marca lateral naranja, las carreras por debajo de ese umbral, que pueden cambiar. Segunda elección: según el artículo 5 de la Ley 27683, Ley de Elecciones Regionales (texto de la Ley 29470), el gobernador y el vicegobernador regionales necesitan al menos 30 % de los votos válidos; si ninguna fórmula lo supera, se convoca una segunda elección dentro de los 30 días calendario siguientes a la proclamación de los cómputos oficiales entre las dos fórmulas más votadas. La marca «2.ª elección» es una lectura del corte parcial, no una proclamación del JNE. Los liderazgos parciales no equivalen a autoridades proclamadas. Datos de ejemplo congelados al corte indicado · <a href="__LIVE__">tablero en vivo</a> · <a href="https://resultadoelectoral.onpe.gob.pe/main/elecciones-regionales" target="_blank" rel="noopener">ONPE</a></footer>
 </main><div class="tip" id="tip"></div>
 <script>
 const DATA=__DATA__,SYM=__SYM__,GEO=__GEO__;
 const $=s=>document.querySelector(s),f=(n,d=1)=>n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
 const sy=r=>SYM[r]||r;
-let sel=null,filt=null,sortK='margin',rank=[];
-function prep(){DATA.forEach(r=>{r.m=r.top[0].percent-r.top[1].percent;r.p1=r.top[0].percent;r.p2=r.top[1].percent})}
+let sel=null,filt=null,sortK='margin',rank=[],mode='lead';
+const UMBRAL=30,RIESGO=33; // Ley 27683, art. 5 (texto de la Ley 29470): al menos 30 % de los votos válidos
+const RAMP=[[0,'#EEF1EF','Completo'],[2,'#B5CCD8','Hasta 2 %'],[5,'#6E9DB8','2–5 %'],[10,'#2F6B8F','5–10 %'],[100,'#06263D','Más de 10 %']];
+const rampColor=v=>v<=0?RAMP[0][1]:(RAMP.find(x=>x[0]>0&&v<=x[0])||RAMP[4])[1];
+function prep(){DATA.forEach(r=>{r.m=r.top[0].percent-r.top[1].percent;r.p1=r.top[0].percent;r.p2=r.top[1].percent;
+ r.falta=Math.max(0,100-r.actas_contabilizadas);r.sv=r.p1<UMBRAL;r.zona=!r.sv&&r.p1<RIESGO;
+ r.m23=r.tercero?r.p2-r.tercero.percent:null;r.hot=r.m<3&&r.falta>0;r.hot2=r.sv&&r.m23!==null&&r.m23<3&&r.falta>0})}
+function paint(){
+ const lead=mode==='lead';
+ svg.querySelectorAll('path').forEach(p=>{const r=DATA.find(x=>x.id===p.dataset.id);if(!r)return;
+  p.setAttribute('fill',mode==='lead'?r.color:mode==='falta'?rampColor(r.falta):r.sv?'#F45A22':r.zona?'#F2C14E':'#CBD3D9');
+  p.classList.toggle('hot',mode==='falta'&&r.hot);p.classList.toggle('hot2',mode==='sv'&&r.hot2)});
+ $('.maphead h2').textContent=lead?'Quién va primero, región por región':mode==='falta'?'Qué falta contar, región por región':'Quién va a segunda elección';
+ $('.maphead small').textContent=lead?'Toca una región':mode==='falta'?'Más oscuro: más actas por contar · borde naranja: ventaja menor a 3 pp':'Naranja: menos de 30 % · amarillo: entre 30 y 33 %';
+ svg.setAttribute('aria-label',lead?'Mapa del Perú coloreado por organización que lidera':mode==='falta'?'Mapa del Perú por porcentaje de actas que falta contabilizar':'Mapa del Perú por regiones que irían a segunda elección');
+ const lg=$('#legend');lg.hidden=lead;
+ lg.innerHTML=lead?'':mode==='falta'?`<span class="lgt">Actas por contabilizar</span>${RAMP.map(x=>`<span><i style="background:${x[1]}"></i>${x[2]}</span>`).join('')}<span><i class="lghot"></i>Ventaja menor a 3 pp y actas por contar (${DATA.filter(r=>r.hot).length})</span>`
+  :`<span class="lgt">Primera vuelta: ¿pasa el 30 % de los votos válidos?</span><span><i style="background:#F45A22"></i>Menos de 30 %: segunda elección (${DATA.filter(r=>r.sv).length})</span><span><i style="background:#F2C14E"></i>30–33 %: cerca del umbral (${DATA.filter(r=>r.zona).length})</span><span><i style="background:#CBD3D9"></i>33 % o más</span><span><i class="lghot2"></i>Segundo y tercer puesto a menos de 3 pp (${DATA.filter(r=>r.hot2).length})</span>`}
 function head(){
 
 var close=DATA.filter(r=>r.m<3),by={};DATA.forEach(r=>by[r.organizacion]=(by[r.organizacion]||0)+1);
 rank=Object.entries(by).sort((a,b)=>b[1]-a[1]),minA=Math.min(...DATA.map(r=>r.actas_contabilizadas)),maxA=Math.max(...DATA.map(r=>r.actas_contabilizadas));
 $('#h1').innerHTML=`25 carreras abiertas.<br><em>${close.length} se deciden por menos de 3 puntos.</em>`;
 $('#sub').textContent=`${rank[0][0]} lidera en ${rank[0][1]} regiones y ${rank[1][0]} en ${rank[1][1]}. Aquí ves quién va primero, a cuánto está el segundo y cuánto del conteo falta.`;
-$('#kpis').innerHTML=`<div class="hot"><b>${close.length}</b><span>regiones con ventaja menor a 3 pp</span></div><div><b>${rank.length}</b><span>organizaciones lideran al menos una región</span></div><div><b>${f(minA)}–${f(maxA)} %</b><span>actas contabilizadas, según región</span></div>`;
+const sv=DATA.filter(r=>r.sv),zn=DATA.filter(r=>r.zona);
+$('#lawnote').innerHTML=`<b>Segunda elección.</b> La ley exige al menos 30 % de los votos válidos para ganar en primera vuelta (Ley 27683, art. 5). Con el corte actual, <b>${sv.length} de ${DATA.length} regiones</b> están por debajo del 30 % y irían a segunda elección${zn.length?`; otras ${zn.length} están entre 30 % y 33 % y podrían cruzar el umbral según lo que falta contar`:''}. Quienes pasan son los dos más votados, por eso importa también la distancia entre el 2.º y el 3.º puesto. Cambia el mapa con los botones de arriba.`;
+$('#kpis').innerHTML=`<div class="hot"><b>${close.length}</b><span>regiones con ventaja menor a 3 pp</span></div><div class="hot"><b>${sv.length}</b><span>regiones bajo 30 %: irían a segunda elección</span></div><div><b>${rank.length}</b><span>organizaciones lideran al menos una región</span></div><div><b>${f(minA)}–${f(maxA)} %</b><span>actas contabilizadas, según región</span></div>`;
 {const pd=t=>{const m=String(t||'').match(/(\d+)\/(\d+)\/(\d+)\D+(\d+):(\d+):(\d+)\s*([ap])/i);if(!m)return null;let h=+m[4]%12+(m[7].toLowerCase()==='p'?12:0);return new Date(+m[3],+m[2]-1,+m[1],h,+m[5],+m[6])};
  const ts=DATA.map(r=>({t:pd(r.actualizacion),s:r.actualizacion})).filter(x=>x.t).sort((a,b)=>a.t-b.t);
  $('#cut').innerHTML=ts.length?`<i></i><span>Cortes ONPE por región: <b>${ts[0].s}</b> a <b>${ts[ts.length-1].s}</b> · hora de Perú (UTC−5). Cada región conserva su propia hora de corte.</span>`:`<i></i>Corte ONPE · ${DATA[0].hora_onpe} · Perú (UTC−5)`}
@@ -122,25 +150,26 @@ chips();
 const maxM=10,tk=[0,2,4,6,8,10];
 $('#sc').innerHTML=tk.map(v=>`<span style="left:${v/maxM*100}%">${v}</span>`).join('');
 function rows(){
- const a=DATA.filter(r=>!filt||r.organizacion===filt).slice().sort({margin:(x,y)=>x.m-y.m,big:(x,y)=>y.m-x.m,actas:(x,y)=>x.actas_contabilizadas-y.actas_contabilizadas,name:(x,y)=>x.region.localeCompare(y.region,'es')}[sortK]);
+ const a=DATA.filter(r=>!filt||r.organizacion===filt).slice().sort({margin:(x,y)=>x.m-y.m,big:(x,y)=>y.m-x.m,actas:(x,y)=>x.actas_contabilizadas-y.actas_contabilizadas,umbral:(x,y)=>Math.abs(x.p1-UMBRAL)-Math.abs(y.p1-UMBRAL),name:(x,y)=>x.region.localeCompare(y.region,'es')}[sortK]);
  $('#rows').innerHTML=a.map(r=>{const t=r.top;return `<div class="row${r.m<3?' close':''}${sel===r.id?' sel':''}" data-id="${r.id}" style="--c:${r.color}" tabindex="0" role="button" aria-expanded="${sel===r.id}">
- <div class="nm">${r.region}<small>${r.organizacion}</small></div>
+ <div class="nm">${r.region}<small>${r.organizacion}</small>${r.sv?'<span class="badge sv">2.ª elección</span>':r.zona?'<span class="badge zona">Cerca del 30 %</span>':''}</div>
  <div class="dumb"><div class="grid">${tk.slice(1).map(v=>`<i style="left:${v/maxM*100}%"></i>`).join('')}<i class="thr" style="left:${3/maxM*100}%"></i></div><div class="bar" style="width:${Math.min(Math.max(r.m/maxM*100,.8),100)}%${r.m>maxM?';border-radius:0':''}"></div>${r.m>maxM?'<div class="ov">▸ sigue</div>':''}<div class="bl"><b>${f(r.p1,2)}</b> % <span>vs</span> ${f(r.p2,2)} %</div></div>
  <div class="mg"><b>${f(r.m,2)}</b><small>pp · ${f(r.actas_contabilizadas,1)} % actas</small><div class="act"><i style="width:${r.actas_contabilizadas}%"></i></div></div>
- <div class="more">${t.map((c,i)=>`<div class="cand" style="--c:${i?'#8A98A3':r.color}"><img src="${sy(c.simbolo)}" alt=""><div><b>${c.party}</b><span>${i+1}.º · ${c.candidate}</span><em>${f(c.percent,2)} %</em><span>${c.votes.toLocaleString('en-US')} votos válidos</span></div></div>`).join('')}</div></div>`}).join('');
+ <div class="more">${t.map((c,i)=>`<div class="cand" style="--c:${i?'#8A98A3':r.color}"><img src="${sy(c.simbolo)}" alt=""><div><b>${c.party}</b><span>${i+1}.º · ${c.candidate}</span><em>${f(c.percent,2)} %</em><span>${c.votes.toLocaleString('en-US')} votos válidos</span></div></div>`).join('')}<div class="cand" style="--c:#C9C6BE;grid-column:1/-1"><div><span>${r.sv?`Menos de ${UMBRAL} % de los votos válidos: iría a segunda elección entre el 1.º y el 2.º${r.tercero?`; el 3.º, ${r.tercero.party}, está a ${f(r.m23,2)} pp del 2.º (${f(r.tercero.percent,2)} %)`:''}.`:r.zona?`Supera el ${UMBRAL} % por ${f(r.p1-UMBRAL,2)} pp; con lo que falta contar podría quedar bajo el umbral.`:`Supera el ${UMBRAL} % con holgura (${f(r.p1-UMBRAL,2)} pp).`}</span>${r.actas_total?`<span>Actas: ${r.actas_contadas.toLocaleString('en-US')} contabilizadas de ${r.actas_total.toLocaleString('en-US')} · ${r.actas_jee} para JEE · ${r.actas_pendientes} pendientes</span>`:''}</div></div></div></div>`}).join('');
  svg.classList.toggle('dim',!!filt);svg.querySelectorAll('path').forEach(p=>{const r=DATA.find(x=>x.id===p.dataset.id);p.classList.toggle('on',!filt||r.organizacion===filt);p.classList.toggle('sel',p.dataset.id===sel)});
 }
 function pick(id,scroll){sel=sel===id?null:id;rows();if(sel&&scroll)document.querySelector(`.row[data-id="${sel}"]`).scrollIntoView({block:'center',behavior:'smooth'})}
 $('#rows').addEventListener('click',e=>{const r=e.target.closest('.row');if(r)pick(r.dataset.id,false)});
 $('#rows').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const r=e.target.closest('.row');if(r){e.preventDefault();pick(r.dataset.id,false)}}});
 svg.addEventListener('click',e=>{const p=e.target.closest('path');if(p)pick(p.dataset.id,true)});
-const tip=$('#tip');svg.addEventListener('mousemove',e=>{const p=e.target.closest('path');if(!p){tip.style.display='none';return}const r=DATA.find(x=>x.id===p.dataset.id);tip.innerHTML=`<b>${r.region}</b>1.º ${r.organizacion} · ${f(r.p1,2)} %<br>Ventaja ${f(r.m,2)} pp`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-250)+'px';tip.style.top=(e.clientY+14)+'px'});
+const tip=$('#tip');svg.addEventListener('mousemove',e=>{const p=e.target.closest('path');if(!p){tip.style.display='none';return}const r=DATA.find(x=>x.id===p.dataset.id);tip.innerHTML=mode==='falta'?`<b>${r.region}</b>Falta contabilizar ${f(r.falta,1)} % de las actas${r.actas_total?`<br>${(r.actas_total-r.actas_contadas).toLocaleString('en-US')} actas (JEE ${r.actas_jee} · pendientes ${r.actas_pendientes})`:''}<br>1.º ${r.organizacion} · ventaja ${f(r.m,2)} pp${r.hot?'<br>Reñida: puede cambiar':''}`:mode==='sv'?`<b>${r.region}</b>1.º ${r.organizacion} · ${f(r.p1,2)} %<br>${r.sv?'Bajo 30 %: iría a segunda elección':r.zona?'Cerca del umbral de 30 %':'Supera el 30 % con holgura'}${r.sv&&r.tercero?`<br>2.º ${f(r.p2,2)} % · 3.º ${f(r.tercero.percent,2)} %`:''}`:`<b>${r.region}</b>1.º ${r.organizacion} · ${f(r.p1,2)} %<br>Ventaja ${f(r.m,2)} pp`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-250)+'px';tip.style.top=(e.clientY+14)+'px'});
 svg.addEventListener('mouseleave',()=>tip.style.display='none');
 $('#sort').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;sortK=b.dataset.k;document.querySelectorAll('#sort button').forEach(x=>x.setAttribute('aria-pressed',x===b));rows()});
+$('#mode').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.dataset.m===mode)return;mode=b.dataset.m;document.querySelectorAll('#mode button').forEach(x=>x.setAttribute('aria-pressed',x===b));paint();rows()});
 $('#chips').addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;filt=filt===b.dataset.o?null:b.dataset.o;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.o===filt));rows()});
-rows();
+paint();rows();
 // datos en vivo: si existe /api/results (sitio publicado) se actualiza cada 5 min; si no, queda el corte incrustado
 async function live(){try{const r=await fetch('/api/results',{cache:'no-store'});if(!r.ok)return;const info=await r.json();if(info.regiones?.length!==25)return;
- DATA.splice(0,25,...info.regiones);prep();head();chips();svg.querySelectorAll('path').forEach(p=>{const d=DATA.find(x=>x.id===p.dataset.id);if(d)p.setAttribute('fill',d.color)});rows()}catch(e){}}
+ DATA.splice(0,25,...info.regiones);prep();head();chips();paint();rows()}catch(e){}}
 if(location.protocol.startsWith('http')){live();setInterval(live,300000)}
 </script></body></html>

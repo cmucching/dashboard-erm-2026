@@ -112,6 +112,12 @@ def main():
                 "candidate_source": fuente, "simbolo": sym_local(code),
             })
         p1 = top[0]
+        ordenados = ordena(d["participantes"])
+        tercero = None
+        if len(ordenados) > 2:
+            p3 = ordenados[2]
+            tercero = {"party": p3["nombreAgrupacionPolitica"], "votes": p3["totalVotosValidos"],
+                       "percent": p3["porcentajeVotosValidos"], "candidate": cand(p3)}
         nuevo = dict(base)
         nuevo.update({
             "organizacion": corto.get(p1["nombreAgrupacionPolitica"], titulo_es(p1["nombreAgrupacionPolitica"])),
@@ -119,7 +125,9 @@ def main():
             "simbolo": sym_local(p1["codigoAgrupacionPolitica"]), "votos": p1["totalVotosValidos"],
             "porcentaje_validos": p1["porcentajeVotosValidos"], "actas_contabilizadas": t["actasContabilizadas"],
             "hora_onpe": hora_onpe(t["fechaActualizacion"]), "actualizacion": formato_hora_onpe(t["fechaActualizacion"]),
-            "valid": t["totalVotosValidos"], "checked_at": gen, "top": tops,
+            "valid": t["totalVotosValidos"], "checked_at": gen, "top": tops, "tercero": tercero,
+            "actas_total": t["totalActas"], "actas_contadas": t["contabilizadas"],
+            "actas_jee": t["enviadasJee"], "actas_pendientes": t["pendientesJee"],
         })
         regs.append(nuevo)
     cortes = sorted(r["actualizacion"] for r in regs)
