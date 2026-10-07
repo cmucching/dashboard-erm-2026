@@ -173,6 +173,18 @@ def consultar_capitales(fetch, sin_eleccion: list[dict], catalogo: list[dict]) -
     return regs
 
 
+ID_PROV_LIMA = "140100"
+
+
+def consultar_lima(fetch, catalogo: list[dict]) -> list[dict]:
+    """Alcaldía de Lima Metropolitana (elección provincial) a nivel de cada uno de sus distritos.
+
+    Sirve para proyectar lo que falta contar por distrito (modelo MAG aplicado a Lima)."""
+    unidades = [d for d in catalogo if d.get("prov") == ID_PROV_LIMA]
+    print(f"Lima Metropolitana: voto metropolitano en {len(unidades)} distritos", file=sys.stderr, flush=True)
+    return consultar_unidades(fetch, ID_MUNICIPAL, "dist", unidades) if unidades else []
+
+
 def _leer(ruta: Path) -> list[dict]:
     try:
         return json.loads(ruta.read_text(encoding="utf-8"))
@@ -252,12 +264,14 @@ def recolectar(fetch, out: Path, modo: str, ahora: datetime | None = None,
     # Distritos capitales de provincia: no tienen alcalde distrital (ONPE responde 204), pero su votación
     # (elección provincial dentro del distrito) sí existe y se muestra de forma individualizada.
     capitales = consultar_capitales(fetch, [d for d in dists if d.get("sin_eleccion")], ub["dist"])
-    problemas = {r["ubigeo"]: r["qc"] for r in deps + provs + dists + capitales if r.get("qc")}
+    lima = consultar_lima(fetch, ub["dist"])
+    problemas = {r["ubigeo"]: r["qc"] for r in deps + provs + dists + capitales + lima if r.get("qc")}
     archivos = {
         "regional_departamentos.json": deps,
         "municipal_provincias.json": provs,
         "municipal_distritos.json": dists,
         "municipal_capitales.json": capitales,
+        "municipal_lima.json": lima,
     }
     h = T.huella(archivos)
     csv_top2 = T.a_csv(T.top2_regional(deps))

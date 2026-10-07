@@ -63,12 +63,38 @@ function head(m){
  $('#cut').innerHTML=`<i></i><span>Cortes ONPE por distrito: <b>${fmt(us[0])}</b> a <b>${fmt(us[us.length-1])}</b> · hora de Perú (UTC−5). Cada distrito conserva su propia hora de corte.</span>`+(VIEW==='lima'?'':`<span class="pillnote">${m.state==='complete'?'Descarga completa':'Descarga en curso'}</span>`);
 }
 let M=null;
+// Modelo MAG aplicado a la alcaldía de Lima Metropolitana: estratos = distritos (Ec. 2, 5-7 y 10 del manuscrito), W = 1.
+function mag(met){
+ const el=$('#mag'),rec=(met.records||[]).filter(r=>r.counted_actas>0&&r.valid_votes>0),tb=met.total_before;if(!el||!tb)return;
+ const sorted=[...tb.organizations].sort((a,b)=>b.votes-a.votes),A=sorted[0].organization,B=sorted[1].organization;
+ const votes=(r,o)=>(r.organizations.find(x=>x.organization===o)||{votes:0}).votes;
+ const sum=(a,k)=>a.reduce((s,x)=>s+x[k],0),contados=sum(met.records,'counted_actas');
+ if(met.records.length!==met.expected_districts||contados!==tb.counted_actas){el.hidden=true;return}
+ const S=rec.map(r=>{const v=r.valid_votes/r.counted_actas,rem=(r.total_actas-r.counted_actas)*v,sa=votes(r,A)/r.valid_votes,sb=votes(r,B)/r.valid_votes;return{name:r.district,falta:r.total_actas-r.counted_actas,jee:r.jee_actas,rem,sa,sb,d:rem*(sa-sb),gap:votes(r,A)-votes(r,B)}});
+ const Bt=sum(S,'gap'),D=sum(S,'d'),Bf=Bt+D,rem=sum(S,'rem'),SF=Math.abs(D)/Math.abs(Bt);
+ const adv=S.filter(s=>s.d<0).reduce((t,s)=>t+s.d,0),pro=S.filter(s=>s.d>0).reduce((t,s)=>t+s.d,0),Badv=Bt+adv,Bhalf=Bt+adv+pro/2;
+ const quiebre=Bf>0?Bf/rem*100:0,n0=x=>Math.round(x).toLocaleString('en-US'),pp=x=>f(x,1);
+ const corto=s=>tc(s.replace(/ - PARTIDO.*$/,'')),sa=corto(A),sb=corto(B),volteo=Bf<=0,volteoAdv=Badv<=0;
+ const verdict=volteo?`El modelo proyecta que <b>${esc(sb)}</b> pasaría al primer lugar.`:volteoAdv?`En el escenario central <b>${esc(sa)}</b> se mantiene primero, pero en el escenario adverso <b>${esc(sb)}</b> lo alcanzaría.`:`<b>${esc(sa)}</b> se mantiene primero incluso en el escenario adverso: la elección no se voltea con los datos actuales.`;
+ const top=[...S].sort((x,y)=>Math.abs(y.d)-Math.abs(x.d)).slice(0,6);
+ el.hidden=false;
+ el.innerHTML=`<div class="maghead"><h2>¿Se voltea la elección? <small>Modelo de Agotamiento Geográfico (MAG)</small></h2><p class="magverdict">${verdict}</p></div>
+ <div class="magkpis"><div><b>${n0(Bt)}</b><span>votos de ventaja hoy de ${esc(sa)} (${f(100*Bt/sum(rec,'valid_votes'),2)} pp)</span></div><div><b>${Bf>=0?'+':''}${n0(Bf)}</b><span>ventaja final proyectada (B<sub>f</sub>)</span></div><div><b>${f(SF,2)}</b><span>Factor de Seguridad SF = |D<sub>neto</sub>|/|B<sub>t</sub>| ${SF<.5?'· posición robusta':SF<1?'· zona de riesgo':'· cruce proyectado'}</span></div><div><b>${pp(quiebre)} pp</b><span>desvío necesario a favor de ${esc(sb)} en lo que falta para voltear</span></div></div>
+ <table class="magtab"><thead><tr><th>Escenario</th><th>Qué supone</th><th>Ventaja final de ${esc(sa)}</th></tr></thead><tbody>
+ <tr><td>Central</td><td>Se resuelven todas las actas y cada distrito conserva su mezcla actual</td><td><b>${n0(Bf)}</b></td></tr>
+ <tr><td>Adverso moderado</td><td>Solo la mitad de lo que falta en distritos favorables a ${esc(sa)}; todo en los favorables a ${esc(sb)}</td><td><b>${n0(Bhalf)}</b></td></tr>
+ <tr><td>Adverso extremo</td><td>Solo se liberan las actas de distritos favorables a ${esc(sb)}</td><td><b>${n0(Badv)}</b></td></tr></tbody></table>
+ <p class="magnote">Faltan ${n0(sum(S,'falta'))} actas (${n0(sum(S,'jee'))} en el JEE), unos ${n0(rem)} votos válidos. Distritos que más pesan en lo que falta:</p>
+ <ul class="maglist">${top.map(s=>`<li><b>${esc(tc(s.name))}</b> · faltan ${s.falta} actas · ${esc(sa)} ${f(100*s.sa,1)} % vs ${esc(sb)} ${f(100*s.sb,1)} % · efecto ${s.d>=0?'+':''}${n0(s.d)} votos</li>`).join('')}</ul>
+ <details><summary>Cómo se calcula y qué no dice</summary><p>Cada distrito es un estrato. Los votos pendientes son las actas que faltan × votos válidos por acta ya contados × la proporción de cada candidatura en ese distrito (Ec. 2). La brecha final es la ventaja de hoy más la suma de los diferenciales netos por distrito (Ec. 4, 7 y 9). SF compara ese diferencial con la ventaja actual (Ec. 10): menor que 0,5, la posición es robusta; igual o mayor que 1, el cruce es el escenario central.</p><p>Límites: supone que lo que falta se comporta como lo ya contado en cada distrito y que todas las actas se resuelven (peso W = 1). Los pesos dinámicos W<sub>it</sub> del artículo están calibrados para una elección presidencial y no se aplican aquí. No anticipa decisiones del JEE, como anular actas. Es una proyección sobre un corte parcial, no un resultado oficial ni una proclamación.</p></details>`;
+}
 Promise.all([fetch('api/municipal-data.json',{cache:'no-store'}).then(r=>r.json()),fetch('api/party-colors.json').then(r=>r.json()).then(p=>{PALETA=p}).catch(()=>{}),fetch('district-paths.json').then(r=>r.json()),VIEW==='lima'?fetch('lima-metropolitana-onpe.json').then(r=>r.json()):null]).then(([d,_pal,paths,lima])=>{
  const recs=new Map(d.records.filter(r=>r.level==='distrital').map(r=>[r.ubigeo,r]));
  ALL=d.coverage.filter(scope).map(c=>({id:c.ubigeo,name:c.district,prov:c.province,dep:c.department,status:c.status,d:(paths[c.ubigeo]||{}).d,b:(paths[c.ubigeo]||{}).b,rec:recs.get(c.ubigeo)||null}));
  R=ALL.filter(c=>c.rec&&c.rec.valid_votes>0&&c.rec.organizations.length>0).map(c=>{const r=c.rec,o=[...r.organizations].sort((a,b)=>b.votes-a.votes),t=o.slice(0,2),col=partyColor(t[0].organization);return{id:c.id,name:c.name,prov:c.prov,dep:c.dep,org:t[0].organization,party:t[0].organization,color:col,p1:t[0].pct_valid,p2:t[1]?t[1].pct_valid:0,m:t[0].pct_valid-(t[1]?t[1].pct_valid:0),adv:r.counted_pct,upd:r.source_updated_at,top:t,ca:r.counted_actas,ta:r.total_actas,jee:r.jee_actas,pe:r.pending_actas,org_n:r.organization_count,cap:r.eleccion_fuente==='provincial'}});
  const byId=new Map(R.map(r=>[r.id,r]));
  svg.innerHTML=ALL.filter(c=>c.d).map(c=>{const r=byId.get(c.id);return `<path data-id="${c.id}" d="${c.d}" fill="${r?r.color:'#E4E2DC'}" class="${r?'':'nodata'}"><title>${esc(tc(c.name))}${r?'':' · sin resultados aún'}</title></path>`}).join('');
+ if(lima){try{mag(lima.metropolitan)}catch(e){console.error(e)}}
  if(lima){const m=lima.metropolitan.total_before;M={top:[...m.organizations].sort((a,b)=>b.votes-a.votes).slice(0,2),counted_pct:m.counted_pct};
   $('#duel').innerHTML=M.top.map((o,i)=>`<div class="cand" style="--c:${i?'#8A98A3':partyColor(o.organization)}"><img src="${esc(o.symbol_url)}" alt=""><div><b>${esc(o.organization)}</b><span>${i+1}.º lugar · alcaldía metropolitana</span><em>${f(o.pct_valid,3)} %</em><span>${o.votes.toLocaleString('en-US')} votos válidos</span></div></div>`).join('');
   $('#duelnote').textContent=`Actas contabilizadas: ${f(m.counted_pct,3)} % (${m.counted_actas.toLocaleString('en-US')} de ${m.total_actas.toLocaleString('en-US')}; ${m.jee_actas.toLocaleString('en-US')} para envío al JEE). Corte ONPE: ${fmt(lima.metropolitan.metadata.source_cut_until)}`}

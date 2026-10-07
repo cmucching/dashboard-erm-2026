@@ -352,6 +352,14 @@ def main():
         lima["metropolitan"]["total_before"] = tb
         lima["metropolitan"]["metadata"]["source_cut_until"] = reg_lima["source_updated_at"]
         lima["metropolitan"]["metadata"]["last_saved_at"] = gen
+    # Voto metropolitano por distrito (estratos del modelo MAG aplicado a Lima), con el mismo corte que el total.
+    mp = ROOT / "data" / "municipal_lima.json"
+    if mp.exists():
+        ml = [registro("provincial", d, "LIMA", "LIMA", d["nombre"]) for d in jload(mp) if d.get("participantes") and d.get("totales")]
+        if len(ml) == lima["metropolitan"]["expected_districts"]:
+            lima["metropolitan"]["records"] = ml
+        else:
+            print(f"AVISO: voto metropolitano en {len(ml)} distritos (se esperaban {lima['metropolitan']['expected_districts']}); se conservan los anteriores")
     lima_d = [r for r in records if r["level"] == "distrital" and r["province_code"] == "140100"]
     if DISTRITAL_DESDE_DATA:
         lima["district_mayors"]["records"] = lima_d
