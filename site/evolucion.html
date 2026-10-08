@@ -52,16 +52,16 @@ function fillU(){let ks;if(lvl==='dep'){ks=Object.keys(H.dep);ks.sort((a,b)=>(N.
  $('#su').innerHTML=ks.map(u=>`<option value="${u}">${esc(tc(nm(u)||u))}</option>`).join('');uid=ks[0]||null}
 function serie(){const a=(H[lvl]||{})[uid]||[];return a.map((r,i)=>r?{i,t:H.cortes[i],pct:r[0],valid:r[1],l:r[2],v1:r[3],v2:r[4],m:r[1]?(r[3]-r[4])/r[1]*100:0}:null).filter(Boolean)}
 function line(svg,S,key,opt){const W=700,Hh=300,L=44,R=12,T=14,B=34,x0=L,x1=W-R,y0=Hh-B,y1=T;
- const vals=S.map(s=>s[key]);let lo=opt.lo??Math.min(...vals),hi=opt.hi??Math.max(...vals);if(hi-lo<1e-6){hi=lo+1}const pad=opt.lo===undefined?(hi-lo)*.1:0;lo-=pad;hi+=pad*(opt.lo===undefined?1:0);
+ const vals=S.map(s=>s[key]);let lo=Math.min(...vals),hi=Math.max(...vals);const span=Math.max(hi-lo,opt.min||0.5),mid=(hi+lo)/2;lo=mid-span*.6;hi=mid+span*.6;if(opt.floor0&&lo<0)lo=0;if(opt.cap100&&hi>100)hi=100;
  const t0=+new Date(S[0].t),t1=+new Date(S[S.length-1].t)||t0+1,X=t=>S.length<2?(x0+x1)/2:x0+(+new Date(t)-t0)/(t1-t0)*(x1-x0),Y=v=>y0-(v-lo)/(hi-lo)*(y0-y1);
  let h='';for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4,y=Y(v);h+=`<line class="gl" x1="${x0}" x2="${x1}" y1="${y}" y2="${y}"/><text class="ax" x="${x0-6}" y="${y+4}" text-anchor="end">${f(v,opt.d)}</text>`}
- const nt=Math.min(5,S.length);for(let k=0;k<nt;k++){const s=S[Math.round(k*(S.length-1)/Math.max(1,nt-1))];h+=`<text class="ax" x="${X(s.t)}" y="${Hh-12}" text-anchor="${k===nt-1?'end':k===0?'start':'middle'}">${fmt(s.t)}</text>`}
+ const nt=Math.min(4,S.length);for(let k=0;k<nt;k++){const s=S[Math.round(k*(S.length-1)/Math.max(1,nt-1))];h+=`<text class="ax" x="${X(s.t)}" y="${Hh-12}" text-anchor="${k===nt-1?'end':k===0?'start':'middle'}">${fmt(s.t)}</text>`}
  if(opt.zero&&lo<0&&hi>0)h+=`<line x1="${x0}" x2="${x1}" y1="${Y(0)}" y2="${Y(0)}" stroke="#06263D" stroke-dasharray="4 3"/>`;
  // tramos por líder
  let seg=[S[0]];for(let k=1;k<S.length;k++){if(opt.byLeader&&S[k].l!==S[k-1].l){h+=path(seg);seg=[S[k-1],S[k]];}seg.push(S[k]);if(seg.length>2&&seg[0]===seg[1]){}}
  function path(sg){const u=[...new Set(sg)];const c=opt.byLeader?color(u[u.length-1].l):'#F45A22';return `<polyline fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round" points="${u.map(s=>X(s.t)+','+Y(s[key])).join(' ')}"/>`}
  h+=path(seg);S.forEach((s,k)=>{h+=`<circle cx="${X(s.t)}" cy="${Y(s[key])}" r="${k===S.length-1?5:3}" fill="${opt.byLeader?color(s.l):'#F45A22'}"><title>${fmt(s.t)} · ${f(s[key],opt.d)}${opt.u}</title></circle>`});
- svg.innerHTML=h}
+ svg.innerHTML=h+`<text class="ax" x="${x1}" y="10" text-anchor="end">escala ajustada al rango</text>`}
 function draw(){
  const S=serie(),nm=(lvl==='dep'?N.dep:lvl==='prov'?N.prov:N.dist)[uid]||uid;
  if(!S.length){$('#h1').textContent=tc(nm||'Sin datos');$('#sub').textContent='Esta unidad no tiene resultados en el historial guardado.';$('#kp').innerHTML='';$('#tb').innerHTML='';$('#c1').innerHTML=$('#c2').innerHTML='';return}
@@ -70,7 +70,7 @@ function draw(){
  $('#sub').textContent=`${S.length} cortes guardados entre ${fmt(p.t)} y ${fmt(a.t)} (hora de Perú). Aquí ves cómo se movió la ventaja a medida que ONPE contaba más actas.`;
  const dm=a.m-p.m,cambios=S.filter((s,k)=>k&&s.l!==S[k-1].l).length;
  $('#kp').innerHTML=`<div><b>${f(a.m)} pp</b><span>ventaja actual del 1.º</span></div><div><b>${dm>=0?'+':''}${f(dm)} pp</b><span>cambio desde el primer corte</span></div><div><b>${f(a.pct,1)} %</b><span>actas contabilizadas</span></div><div><b>${cambios}</b><span>cambios de líder en el período</span></div>`;
- line($('#c1'),S,'m',{d:2,u:' pp',byLeader:true,lo:0});line($('#c2'),S,'pct',{d:1,u:' %',lo:0,hi:100});
+ line($('#c1'),S,'m',{d:2,u:' pp',byLeader:true,min:.5,floor0:true});line($('#c2'),S,'pct',{d:1,u:' %',min:1,floor0:true,cap100:true});
  const used=[...new Set(S.map(s=>s.l))].filter(i=>i>=0);$('#lg').innerHTML=used.map(i=>`<span><i style="background:${color(i)}"></i>${esc(tc(H.partidos[i]))}</span>`).join('');
  $('#tb').innerHTML=S.slice().reverse().map((s,k,r)=>{const prev=r[k+1],d=prev?s.m-prev.m:null;return `<tr class="${k?'':'cur'}"><td>${fmt(s.t)}</td><td>${f(s.pct,1)} %</td><td>${s.l<0?'—':esc(tc(H.partidos[s.l]))}</td><td>${f(s.m)} pp</td><td>${d===null?'—':(d>=0?'+':'')+f(d)}</td></tr>`}).join('');
 }
