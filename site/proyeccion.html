@@ -1,0 +1,59 @@
+<!doctype html><html lang="es-PE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proyección de cierre · Perú 2026</title><meta name="description" content="Qué carreras municipales ya no pueden cambiar y cuáles siguen abiertas, según las actas que faltan contar. Escenarios ajustables.">
+<link rel="icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="shell.css">
+<style>
+.pj{max-width:1460px;margin:0 auto;padding:8px 24px 48px}.pj h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:18px 0 6px;font-weight:800}.pj .sub{color:var(--ink2);max-width:72ch;margin:0 0 18px}
+.pj .tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 16px}.pj .seg{display:inline-flex;background:#ECEAE5;border-radius:10px;padding:3px}.pj .seg button{border:0;background:none;padding:8px 14px;font:inherit;font-weight:700;color:var(--ink2);border-radius:8px;cursor:pointer}.pj .seg button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 3px #0002}
+.pj select,.pj input[type=search]{font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);max-width:100%}
+.pj .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin-bottom:20px}.pj .card h2{font-size:18px;margin:0 0 2px}.pj small,.pj .note{color:var(--ink2)}
+.pj .sl{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 18px;align-items:center}.pj .sl input{width:100%;accent-color:var(--orange)}.pj .sl b{font-size:28px}
+.pj .kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:14px 0 0}.pj .kp div{border:1px solid var(--line);border-radius:14px;padding:12px 14px}.pj .kp b{display:block;font-size:28px}.pj .kp span{font-size:12.5px;color:var(--ink2)}
+.pj .bar{display:flex;height:14px;border-radius:7px;overflow:hidden;margin-top:14px;background:#EEECE7}.pj .bar i{display:block;height:100%}
+.pj table{width:100%;border-collapse:collapse;font-size:13.5px}.pj th,.pj td{padding:8px 6px;border-bottom:1px solid #EEECE7;text-align:right}.pj th:first-child,.pj td:first-child,.pj th:nth-child(2),.pj td:nth-child(2){text-align:left}.pj th{cursor:pointer;white-space:nowrap}
+.pj .tg{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:700}.pj .tg.ok{background:#DDF3F1;color:#00695F}.pj .tg.risk{background:#FFE6DA;color:#B43A0C}.pj .tg.mid{background:#FFF1C9;color:#7A5A00}
+.pj .tw{max-height:560px;overflow:auto}.pj .note{font-size:12.5px;margin-top:10px}
+</style></head><body>
+<main class="pj">
+ <h1 id="h1">Cargando…</h1><p class="sub" id="sub"></p>
+ <div class="card"><h2>¿Cuánto mejor le iría al segundo en lo que falta contar?</h2><small>Mueve el control: es una prueba de resistencia sobre las actas pendientes, no una predicción.</small>
+  <div class="sl"><input type="range" id="d" min="0" max="40" step="1" value="10" aria-label="Puntos porcentuales a favor del segundo"><b id="dv">10 pp</b></div>
+  <div class="bar" id="bar" aria-hidden="true"></div><div class="kp" id="kp"></div></div>
+ <div class="tools"><div class="seg" id="lvl" role="group" aria-label="Nivel"><button data-l="distrital" aria-pressed="true">Distritos</button><button data-l="provincial" aria-pressed="false">Provincias</button></div>
+ <select id="st" aria-label="Estado"><option value="">Todos los estados</option><option value="risk">En riesgo</option><option value="mid">Abiertos</option><option value="ok">Decididos</option></select><select id="dep" aria-label="Departamento"><option value="">Todo el Perú</option></select><input type="search" id="q" placeholder="Buscar distrito o partido" aria-label="Buscar"></div>
+ <div class="card"><h2 id="th">Carreras</h2><small id="cn"></small><div class="tw"><table><thead><tr><th data-k="name">Territorio</th><th data-k="party">1.º</th><th data-k="lead">Ventaja (votos)</th><th data-k="pend">Votos que faltan (est.)</th><th data-k="sf">Cobertura</th><th data-k="pct">Actas</th><th data-k="st">Estado</th></tr></thead><tbody id="tb"></tbody></table></div>
+ <p class="note"><b>Método.</b> Votos que faltan = votos válidos por acta ya contada × actas sin contabilizar (incluye las enviadas al JEE). Es una estimación: las actas pendientes suelen ser de zonas rurales y más pequeñas, por lo que el valor puede sobrar. <b>Cobertura</b> = ventaja ÷ votos que faltan. <b>Decidido</b>: la ventaja es mayor que todos los votos que faltan, incluso si todos fueran para el segundo. <b>En riesgo</b>: con el escenario del control, el 2.º supera al 1.º. <b>Abierto</b>: no está decidido, pero resiste el escenario. Solo se compara 1.º con 2.º; no considera que un tercero pueda alcanzarlos. Porcentajes sobre votos válidos.</p></div>
+</main>
+<script src="shell.js"></script>
+<script>
+const $=s=>document.querySelector(s),f=(n,d=0)=>n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tc=s=>String(s).toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase());
+let REC=[],lvl='distrital',D=10,sortK='sf',sortAsc=true,limit=60;
+function calc(r){const o=[...r.organizations].sort((a,b)=>b.votes-a.votes),a=o[0],b=o[1]||{votes:0,pct_valid:0};
+ const cnt=r.counted_actas,pend=r.total_actas-cnt;if(!(r.valid_votes>0)||!a||cnt<=0)return null;
+ const P=r.valid_votes/cnt*pend,lead=a.votes-b.votes,m=(a.pct_valid-b.pct_valid)/100;
+ return{id:r.ubigeo,name:r.level==='provincial'?r.province:r.district,prov:r.province,dep:r.department,party:a.organization,second:b.organization||'—',lead,P,sf:P>0?lead/P:Infinity,pct:r.counted_pct,m,pend,total:r.total_actas,cnt}}
+function estado(x){if(x.P<=0||x.lead>x.P)return'ok';const fl=x.lead+x.P*(x.m-D/100);return fl<0?'risk':'mid'}
+const NM={ok:'Decidido',mid:'Abierto',risk:'En riesgo'};
+function filtered(){let a=REC.filter(x=>(!$('#dep').value||x.dep===$('#dep').value)&&(!$('#st').value||x.st===$('#st').value)&&(!$('#q').value||(x.name+' '+x.party+' '+x.prov).toLowerCase().includes($('#q').value.toLowerCase())));
+ const k=sortK,dir=sortAsc?1:-1;a.sort((p,q)=>{let u=p[k],v=q[k];if(k==='st'){const o={risk:0,mid:1,ok:2};u=o[u];v=o[v]}if(typeof u==='string')return dir*u.localeCompare(v,'es');return dir*((u===Infinity?1e12:u)-(v===Infinity?1e12:v))});return a}
+function render(){REC.forEach(x=>x.st=estado(x));
+ const n=REC.length,c={ok:0,mid:0,risk:0};REC.forEach(x=>c[x.st]++);const w=k=>(c[k]/n*100).toFixed(2);
+ const unit=lvl==='provincial'?'provincias':'distritos';
+ $('#h1').innerHTML=`${f(c.ok)} de ${f(n)} ${unit} <em>ya no pueden cambiar de ganador</em>`;
+ $('#sub').textContent=`De las carreras con resultados, ${f(c.risk)} ${c.risk===1?'cambiaría':'cambiarían'} de líder si al segundo le fuera ${D} pp mejor en las actas que faltan. ${f(c.mid)} siguen abiertas pero aguantan ese escenario.`;
+ $('#dv').textContent=D+' pp';
+ $('#bar').innerHTML=`<i style="width:${w('ok')}%;background:#00A39A"></i><i style="width:${w('mid')}%;background:#F2C14E"></i><i style="width:${w('risk')}%;background:#F45A22"></i>`;
+ $('#kp').innerHTML=`<div><b style="color:#00695F">${f(c.ok)}</b><span>decididos (ventaja mayor que todo lo que falta)</span></div><div><b style="color:#7A5A00">${f(c.mid)}</b><span>abiertos, pero resisten el escenario</span></div><div><b style="color:#B43A0C">${f(c.risk)}</b><span>en riesgo con el escenario actual</span></div><div><b>${f(REC.reduce((s,x)=>s+x.P,0))}</b><span>votos válidos estimados por contar</span></div>`;
+ const a=filtered();$('#th').textContent=lvl==='provincial'?'Las carreras provinciales':'Las carreras distritales';$('#cn').textContent=`${f(a.length)} de ${f(n)}`;
+ $('#tb').innerHTML=a.slice(0,limit).map(x=>`<tr><td>${esc(tc(x.name))}<br><small>${esc(tc(x.dep))}${lvl==='distrital'?' · '+esc(tc(x.prov)):''}</small></td><td>${esc(tc(x.party))}<br><small>vs ${esc(tc(x.second))}</small></td><td>${f(x.lead)}</td><td>${f(x.P)}</td><td>${x.sf===Infinity?'—':f(x.sf,2)+'×'}</td><td>${f(x.pct,1)} %</td><td><span class="tg ${x.st}">${NM[x.st]}</span></td></tr>`).join('')+(a.length>limit?`<tr><td colspan="7" style="text-align:center"><button id="more" class="seg" style="border:0;padding:8px 16px;cursor:pointer;font:inherit;font-weight:700">Mostrar más</button></td></tr>`:'')}
+function load(){REC=window.ALL.filter(r=>r.level===lvl).map(calc).filter(Boolean);const deps=[...new Set(REC.map(x=>x.dep))].sort((a,b)=>a.localeCompare(b,'es'));$('#dep').innerHTML='<option value="">Todo el Perú</option>'+deps.map(d=>`<option value="${esc(d)}">${esc(tc(d))}</option>`).join('');limit=60;render()}
+fetch('api/municipal-data.json').then(r=>r.json()).then(m=>{window.ALL=m.records;load();
+ $('#d').oninput=e=>{D=+e.target.value;render()};
+ $('#lvl').onclick=e=>{const b=e.target.closest('button');if(!b)return;lvl=b.dataset.l;document.querySelectorAll('#lvl button').forEach(x=>x.setAttribute('aria-pressed',x===b));load()};
+ ['#st','#dep','#q'].forEach(s=>$(s).addEventListener('input',()=>{limit=60;render()}));
+ document.querySelector('thead').onclick=e=>{const k=e.target.closest('th')?.dataset.k;if(!k)return;sortAsc=sortK===k?!sortAsc:true;sortK=k;render()};
+ $('#tb').onclick=e=>{if(e.target.id==='more'){limit+=100;render()}}});
+</script></body></html>

@@ -1,6 +1,6 @@
 (function(){
  var P=(location.pathname.split('/').pop()||'index.html').replace(/\.html$/,'')||'index';
- var items=[['index','Gobernadores regionales'],['provincial','Alcaldes provinciales'],['distrital','Alcaldes distritales'],['evolucion','Evolución del conteo'],['lima-metropolitana','Lima Metropolitana'],['base-municipal','Base municipal · descarga']];
+ var items=[['index','Gobernadores regionales'],['provincial','Alcaldes provinciales'],['distrital','Alcaldes distritales'],['evolucion','Evolución del conteo'],['proyeccion','Proyección de cierre'],['lima-metropolitana','Lima Metropolitana'],['base-municipal','Base municipal · descarga']];
  var d=document,h=d.createElement('div');
  h.innerHTML='<div class="sh-band"><img src="banner-marca-personal.jpg" width="1584" height="396" alt="Geomática y Dirección de Proyectos. Precisión técnica. Visión de proyecto."><div class="sh-id"><b>Ing. PMP Carlos Mucching Mendoza</b><a href="https://www.linkedin.com/in/carlosmucching" target="_blank" rel="noopener">linkedin.com/in/carlosmucching ↗</a></div></div>'+
  '<nav class="sh-nav" aria-label="Vistas electorales">'+items.map(function(i){return '<a href="'+i[0]+'.html"'+(i[0]===P?' aria-current="page"':'')+'>'+i[1]+'</a>'}).join('')+'</nav>'+
