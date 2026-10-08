@@ -23,11 +23,15 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # el historial de cortes se arma desde el historial de git
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Convertir data/ en las API del sitio
         run: python scripts/data_to_site.py
+      - name: Historial de cortes
+        run: python scripts/build_history.py
       - name: Regenerar tablero regional
         run: python scripts/build_propuesta_b.py
       - uses: actions/configure-pages@v5

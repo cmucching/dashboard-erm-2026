@@ -1,0 +1,77 @@
+<!doctype html><html lang="es-PE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evolución del conteo · Perú 2026</title><meta name="description" content="Cómo cambia el conteo de ONPE corte a corte: avance de actas y ventaja del primero sobre el segundo, por departamento, provincia o distrito.">
+<link rel="icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="shell.css"><link rel="stylesheet" href="board.css">
+<style>
+.ev{max-width:1460px;margin:0 auto;padding:8px 24px 48px}.ev h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:18px 0 6px;font-weight:800}.ev .sub{color:var(--ink2);max-width:70ch;margin:0 0 18px}
+.ev .tools{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px}.ev .seg{display:inline-flex;background:#ECEAE5;border-radius:10px;padding:3px}.ev .seg button{border:0;background:none;padding:8px 14px;font:inherit;font-weight:700;color:var(--ink2);border-radius:8px;cursor:pointer}.ev .seg button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 3px #0002}
+.ev select{font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);max-width:100%}
+.ev .grid2{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:20px}@media(max-width:980px){.ev .grid2{grid-template-columns:1fr}}
+.ev .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px}.ev .card h2{font-size:18px;margin:0 0 2px}.ev .card small{color:var(--ink2)}
+.ev svg{width:100%;height:auto;display:block;touch-action:none}.ev .ax{font-size:11px;fill:#41596B}.ev .gl{stroke:#E4E2DC}.ev .lg{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;margin:8px 0 0;color:var(--ink2)}.ev .lg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.ev table{width:100%;border-collapse:collapse;font-size:13.5px}.ev th,.ev td{text-align:right;padding:7px 6px;border-bottom:1px solid #EEECE7}.ev th:first-child,.ev td:first-child{text-align:left}.ev tr.cur td{background:#FFF3EC;font-weight:700}.ev .tw{max-height:420px;overflow:auto}
+.ev .kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 18px}.ev .kp div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px}.ev .kp b{display:block;font-size:26px}.ev .kp span{font-size:12.5px;color:var(--ink2)}
+.ev .note{font-size:12.5px;color:var(--ink2);margin-top:14px}
+</style></head><body>
+<main class="ev" id="app">
+ <h1 id="h1">Cargando historial…</h1><p class="sub" id="sub"></p>
+ <div class="tools"><div class="seg" id="lvl" role="group" aria-label="Nivel"><button data-l="dep" aria-pressed="true">Departamento</button><button data-l="prov" aria-pressed="false">Provincia</button><button data-l="dist" aria-pressed="false">Distrito</button></div>
+ <select id="sd" aria-label="Departamento"></select><select id="sp" aria-label="Provincia" hidden></select><select id="su" aria-label="Unidad"></select></div>
+ <div class="kp" id="kp"></div>
+ <div class="grid2"><div class="card"><h2>Ventaja del primero sobre el segundo</h2><small>Puntos porcentuales sobre votos válidos, corte a corte</small><svg id="c1" viewBox="0 0 700 300" role="img" aria-label="Evolución de la ventaja"></svg><div class="lg" id="lg"></div></div>
+ <div class="card"><h2>Avance del conteo</h2><small>% de actas contabilizadas</small><svg id="c2" viewBox="0 0 700 300" role="img" aria-label="Evolución del avance de actas"></svg></div></div>
+ <div class="card" style="margin-top:20px"><h2>Detalle por corte</h2><small>Hora de Perú (UTC−5). Los cortes sin cambios no se repiten.</small><div class="tw"><table><thead><tr><th>Corte ONPE</th><th>Actas</th><th>Líder</th><th>Ventaja</th><th>Δ ventaja</th></tr></thead><tbody id="tb"></tbody></table></div></div>
+ <p class="note">Fuente: ONPE, resultados parciales; cada punto es un corte guardado por este sitio (desde el 06/10/2026). Los cortes anteriores a esa fecha usaban otra estructura de datos y no se muestran. «Ventaja» = % de votos válidos del 1.º menos el del 2.º; si cambia el líder, la serie muestra el valor del líder de ese corte.</p>
+</main>
+<script src="shell.js"></script>
+<script>
+const $=s=>document.querySelector(s),f=(n,d=2)=>n.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tc=s=>String(s).toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase());
+const fmt=s=>new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:true}).format(new Date(s)).replace(',',' ·');
+let H,N={dep:{},prov:{},dist:{}},PAR={},lvl='dep',uid=null,hover=null;
+const PAL=['#F45A22','#00A39A','#06263D','#7A5AF8','#C2410C','#2F6B8F','#B45309','#0E7490'];
+function color(i){return PAR[i]||PAL[i%PAL.length]}
+Promise.all([fetch('history.json'.replace('history','api/history')).then(r=>r.json()),fetch('api/municipal-data.json').then(r=>r.json()),fetch('api/party-colors.json').then(r=>r.json()).catch(()=>({}))]).then(([h,m,pc])=>{
+ H=h;m.records.forEach(r=>{N.dep[r.department_code]=r.department;N.prov[r.province_code]=r.province;if(r.level==='distrital')N.dist[r.ubigeo]=r.district});
+ H.partidos.forEach((p,i)=>PAR[i]=pc[p]||null);
+ initSel();draw();
+ $('#lvl').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;lvl=b.dataset.l;document.querySelectorAll('#lvl button').forEach(x=>x.setAttribute('aria-pressed',x===b));initSel();draw()});
+ $('#sd').onchange=()=>{fillP();fillU();draw()};$('#sp').onchange=()=>{fillU();draw()};$('#su').onchange=()=>{uid=$('#su').value;draw()};
+});
+const depOf=u=>u.slice(0,2)+'0000',provOf=u=>u.slice(0,4)+'00';
+function initSel(){$('#sd').innerHTML=Object.keys(H.dep).sort((a,b)=>(N.dep[a]||'').localeCompare(N.dep[b]||'','es')).map(u=>`<option value="${u}">${esc(tc(N.dep[u]||u))}</option>`).join('');
+ $('#sd').hidden=lvl==='dep';if(lvl!=='dep'){const i=[...$('#sd').options].find(o=>o.value==='150000');if(i)$('#sd').value='150000'}fillP();fillU()}
+function fillP(){const sp=$('#sp');sp.hidden=lvl!=='dist';if(lvl!=='dist')return;const d=$('#sd').value;
+ sp.innerHTML=Object.keys(H.prov).filter(u=>depOf(u)===d).sort((a,b)=>(N.prov[a]||'').localeCompare(N.prov[b]||'','es')).map(u=>`<option value="${u}">${esc(tc(N.prov[u]||u))}</option>`).join('')}
+function fillU(){let ks;if(lvl==='dep'){ks=Object.keys(H.dep);ks.sort((a,b)=>(N.dep[a]||'').localeCompare(N.dep[b]||'','es'))}
+ else if(lvl==='prov'){ks=Object.keys(H.prov).filter(u=>depOf(u)===$('#sd').value);ks.sort((a,b)=>(N.prov[a]||'').localeCompare(N.prov[b]||'','es'))}
+ else{ks=Object.keys(H.dist).filter(u=>provOf(u)===$('#sp').value);ks.sort((a,b)=>(N.dist[a]||'').localeCompare(N.dist[b]||'','es'))}
+ const nm=u=>lvl==='dep'?N.dep[u]:lvl==='prov'?N.prov[u]:N.dist[u];
+ $('#su').innerHTML=ks.map(u=>`<option value="${u}">${esc(tc(nm(u)||u))}</option>`).join('');uid=ks[0]||null}
+function serie(){const a=(H[lvl]||{})[uid]||[];return a.map((r,i)=>r?{i,t:H.cortes[i],pct:r[0],valid:r[1],l:r[2],v1:r[3],v2:r[4],m:r[1]?(r[3]-r[4])/r[1]*100:0}:null).filter(Boolean)}
+function line(svg,S,key,opt){const W=700,Hh=300,L=44,R=12,T=14,B=34,x0=L,x1=W-R,y0=Hh-B,y1=T;
+ const vals=S.map(s=>s[key]);let lo=opt.lo??Math.min(...vals),hi=opt.hi??Math.max(...vals);if(hi-lo<1e-6){hi=lo+1}const pad=opt.lo===undefined?(hi-lo)*.1:0;lo-=pad;hi+=pad*(opt.lo===undefined?1:0);
+ const t0=+new Date(S[0].t),t1=+new Date(S[S.length-1].t)||t0+1,X=t=>S.length<2?(x0+x1)/2:x0+(+new Date(t)-t0)/(t1-t0)*(x1-x0),Y=v=>y0-(v-lo)/(hi-lo)*(y0-y1);
+ let h='';for(let k=0;k<=4;k++){const v=lo+(hi-lo)*k/4,y=Y(v);h+=`<line class="gl" x1="${x0}" x2="${x1}" y1="${y}" y2="${y}"/><text class="ax" x="${x0-6}" y="${y+4}" text-anchor="end">${f(v,opt.d)}</text>`}
+ const nt=Math.min(5,S.length);for(let k=0;k<nt;k++){const s=S[Math.round(k*(S.length-1)/Math.max(1,nt-1))];h+=`<text class="ax" x="${X(s.t)}" y="${Hh-12}" text-anchor="${k===nt-1?'end':k===0?'start':'middle'}">${fmt(s.t)}</text>`}
+ if(opt.zero&&lo<0&&hi>0)h+=`<line x1="${x0}" x2="${x1}" y1="${Y(0)}" y2="${Y(0)}" stroke="#06263D" stroke-dasharray="4 3"/>`;
+ // tramos por líder
+ let seg=[S[0]];for(let k=1;k<S.length;k++){if(opt.byLeader&&S[k].l!==S[k-1].l){h+=path(seg);seg=[S[k-1],S[k]];}seg.push(S[k]);if(seg.length>2&&seg[0]===seg[1]){}}
+ function path(sg){const u=[...new Set(sg)];const c=opt.byLeader?color(u[u.length-1].l):'#F45A22';return `<polyline fill="none" stroke="${c}" stroke-width="2.5" stroke-linejoin="round" points="${u.map(s=>X(s.t)+','+Y(s[key])).join(' ')}"/>`}
+ h+=path(seg);S.forEach((s,k)=>{h+=`<circle cx="${X(s.t)}" cy="${Y(s[key])}" r="${k===S.length-1?5:3}" fill="${opt.byLeader?color(s.l):'#F45A22'}"><title>${fmt(s.t)} · ${f(s[key],opt.d)}${opt.u}</title></circle>`});
+ svg.innerHTML=h}
+function draw(){
+ const S=serie(),nm=(lvl==='dep'?N.dep:lvl==='prov'?N.prov:N.dist)[uid]||uid;
+ if(!S.length){$('#h1').textContent=tc(nm||'Sin datos');$('#sub').textContent='Esta unidad no tiene resultados en el historial guardado.';$('#kp').innerHTML='';$('#tb').innerHTML='';$('#c1').innerHTML=$('#c2').innerHTML='';return}
+ const a=S[S.length-1],p=S[0],lead=H.partidos[a.l]||'—';
+ $('#h1').innerHTML=`${esc(tc(nm))}: <em>${a.l<0?'sin votos aún':esc(tc(lead))}</em>`;
+ $('#sub').textContent=`${S.length} cortes guardados entre ${fmt(p.t)} y ${fmt(a.t)} (hora de Perú). Aquí ves cómo se movió la ventaja a medida que ONPE contaba más actas.`;
+ const dm=a.m-p.m,cambios=S.filter((s,k)=>k&&s.l!==S[k-1].l).length;
+ $('#kp').innerHTML=`<div><b>${f(a.m)} pp</b><span>ventaja actual del 1.º</span></div><div><b>${dm>=0?'+':''}${f(dm)} pp</b><span>cambio desde el primer corte</span></div><div><b>${f(a.pct,1)} %</b><span>actas contabilizadas</span></div><div><b>${cambios}</b><span>cambios de líder en el período</span></div>`;
+ line($('#c1'),S,'m',{d:2,u:' pp',byLeader:true,lo:0});line($('#c2'),S,'pct',{d:1,u:' %',lo:0,hi:100});
+ const used=[...new Set(S.map(s=>s.l))].filter(i=>i>=0);$('#lg').innerHTML=used.map(i=>`<span><i style="background:${color(i)}"></i>${esc(tc(H.partidos[i]))}</span>`).join('');
+ $('#tb').innerHTML=S.slice().reverse().map((s,k,r)=>{const prev=r[k+1],d=prev?s.m-prev.m:null;return `<tr class="${k?'':'cur'}"><td>${fmt(s.t)}</td><td>${f(s.pct,1)} %</td><td>${s.l<0?'—':esc(tc(H.partidos[s.l]))}</td><td>${f(s.m)} pp</td><td>${d===null?'—':(d>=0?'+':'')+f(d)}</td></tr>`}).join('');
+}
+</script></body></html>
