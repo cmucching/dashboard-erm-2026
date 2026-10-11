@@ -4,12 +4,37 @@ Corre para distritos y provincias, con k = 3..12. Solo numpy + shapely."""
 import json, sys, heapq
 from pathlib import Path
 from collections import Counter
+import math
 import numpy as np
+from shapely.geometry import shape
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _geo
 from build_analysis import contiguidad
 R = Path(__file__).resolve().parent.parent; S = R / "site"
 KS = list(range(3, 13)); NTOP = 8
+K = math.cos(math.radians(9)); SC = 60; W, N = -81.4, 0.2   # misma proyección que district-paths.json / province-paths.json
+
+def geom_info(feat):
+    """Centroide en coordenadas SVG del mapa y superficie aproximada en km² (grado ajustado por la latitud)."""
+    g = shape(feat["geometry"]).buffer(0); c = g.centroid
+    km2 = g.area * (111.32 * math.cos(math.radians(c.y))) * 110.57
+    return [(c.x - W) * K * SC, (N - c.y) * SC], km2
+
+def dorling(P, w, rmax, iters=500):
+    """Cartograma de círculos: radio ∝ √peso; parten del centroide y se separan hasta no solaparse.
+    Los pares candidatos se recalculan cada 25 iteraciones; entre medias solo se resuelven esos pares."""
+    P = np.array(P, float); r = np.sqrt(w); r = r / r.max() * rmax; P0 = P.copy(); n = len(P)
+    for it in range(iters):
+        if it % 25 == 0:
+            d = P[:, None, :] - P[None, :, :]; dist = np.sqrt((d ** 2).sum(-1)); np.fill_diagonal(dist, np.inf)
+            I, J = np.where(np.triu(dist < (r[:, None] + r[None, :] + 6)))
+        dv = P[I] - P[J]; dd = np.sqrt((dv ** 2).sum(1)) + 1e-9; ov = r[I] + r[J] + 0.3 - dd
+        m = ov > 0
+        if it % 25 and not m.any(): break
+        mv = dv[m] / dd[m, None] * (ov[m, None] * 0.5)
+        np.add.at(P, I[m], mv * 0.6); np.add.at(P, J[m], -mv * 0.6)
+        P += (P0 - P) * 0.01
+    return P, r
 
 def ward_contiguo(X, nb):
     """Devuelve la lista de fusiones [(a,b,nuevo)] hasta que no queden pares vecinos. Ward: coste = na*nb/(na+nb)*|ca-cb|²."""
@@ -99,6 +124,10 @@ def regionalizar(level, feats, ids, rec, nombres):
     idx, mg = correr(range(len(ok)))
     D = np.sqrt(((X[:, None, :] - X[None, :, :]) ** 2).sum(-1))
     dep = [nombres.get(ids[i], {}).get("d", "") for i in ok]
+    info = [geom_info(feats[i]) for i in ok]; AREA = [a for _, a in info]
+    VOT = [int(rec[ids[i]]["valid_votes"]) for i in ok]
+    P, rr = dorling([c for c, _ in info], VOT, 16 if level == "dist" else 34)
+    DOR = [[round(float(x), 1), round(float(y), 1), round(float(q), 1)] for (x, y), q in zip(P, rr)]
     res = {}
     for k in KS:
         lab = cortar(len(ok), mg, k); kk = int(lab.max()) + 1
@@ -108,7 +137,8 @@ def regionalizar(level, feats, ids, rec, nombres):
         for g in range(kk):
             m = lab == g; Z = X[m]; prom = Z.mean(0); o = np.argsort(-prom)[:3]
             dc = Counter(d for d, f in zip(dep, m) if f)
-            regs.append(dict(n=int(m.sum()), lider=top_c[int(o[0])], perfil=[[top_c[int(t)], round(float(prom[t]), 1)] for t in o],
+            vt = sum(v for v, f in zip(VOT, m) if f); ar = sum(a for a, f in zip(AREA, m) if f)
+            regs.append(dict(n=int(m.sum()), vot=vt, area=round(ar, 0), lider=top_c[int(o[0])], perfil=[[top_c[int(t)], round(float(prom[t]), 1)] for t in o],
                              deps=[[d, c] for d, c in dc.most_common(4)], ndeps=len(dc),
                              prom=[round(float(v), 1) for v in prom]))
         # robustez: misma regionalización usando solo unidades con ≥95 % de actas contabilizadas (ARI sobre las comunes)
@@ -120,7 +150,7 @@ def regionalizar(level, feats, ids, rec, nombres):
                            ari_dep=round(ari(lab, [{d: i for i, d in enumerate(sorted(set(dep)))}[d] for d in dep]), 3),
                            rob=rob, regs=regs)
         print(f"{level} k={k} R²={res[str(k)]['R2']} sil={res[str(k)]['sil']} ARI(dep)={res[str(k)]['ari_dep']} rob={rob}", file=sys.stderr)
-    return dict(ids=[ids[i] for i in ok], top=top_c, ks=KS, res=res, n=len(ok), pct95=int(sum(pct >= 95)))
+    return dict(ids=[ids[i] for i in ok], top=top_c, ks=KS, res=res, n=len(ok), pct95=int(sum(pct >= 95)), vot=VOT, area=[round(a, 1) for a in AREA], dor=DOR)
 
 def main():
     md = json.loads((S / "api" / "municipal-data.json").read_text(encoding="utf-8"))["records"]

@@ -14,16 +14,17 @@
 .an .read{font-size:15px;line-height:1.5;margin:14px 0 0}.an table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}.an th,.an td{padding:8px 6px;border-bottom:1px solid #EEECE7;text-align:left;vertical-align:top}.an th.r,.an td.r{text-align:right}
 .an tbody tr{cursor:pointer}.an tbody tr:hover,.an tbody tr.on{background:#F7F5F0}.an .sw{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:8px}.an td small{display:block}
 .an .note{font-size:12.5px;margin-top:10px}.tip{position:fixed;z-index:9;background:#06263D;color:#fff;padding:8px 10px;border-radius:8px;font-size:12.5px;pointer-events:none;display:none;max-width:260px}
-.an .el text{font:11px Archivo,sans-serif;fill:#5b6b78}
+.an svg.cart path{fill:#EFEDE8 !important;pointer-events:none;stroke:#fff}.an #map:not(.cart) circle{display:none}.an #map circle{stroke:#fff;stroke-width:.6;transition:opacity .12s}.an .bar{height:8px;border-radius:4px;background:#ECEAE5;position:relative;margin:3px 0}.an .bar i{position:absolute;left:0;top:0;bottom:0;border-radius:4px}.an .el text{font:11px Archivo,sans-serif;fill:#5b6b78}
 </style></head><body>
 <main class="an">
  <h1 id="h1">Cargando regiones…</h1><p class="sub" id="sub"></p>
  <div class="tools"><div class="seg" id="lvl" role="group" aria-label="Nivel"><button data-l="dist" aria-pressed="false">Distritos</button><button data-l="prov" aria-pressed="true">Provincias</button></div>
+  <div class="seg" id="vw" role="group" aria-label="Tipo de mapa"><button data-v="t" aria-pressed="true">Territorio</button><button data-v="c" aria-pressed="false">Peso electoral</button></div>
   <label class="kk">Regiones <input type="range" id="k" min="3" max="12" value="7" aria-label="Número de regiones"><output id="ko">7</output></label></div>
- <div class="g"><div class="card"><h2 id="mt">Mapa de regiones</h2><small>Cada color es una región de unidades contiguas con perfil de voto parecido</small><svg id="map" viewBox="0 0 760 1124" role="img" aria-label="Mapa de regiones electorales"></svg></div>
+ <div class="g"><div class="card"><h2 id="mt">Mapa de regiones</h2><small id="ms">Cada color es una región de unidades contiguas con perfil de voto parecido</small><svg id="map" viewBox="0 0 760 1124" role="img" aria-label="Mapa de regiones electorales"></svg></div>
  <div><div class="card"><h2>¿Qué tan bien separan las regiones?</h2><small id="k1"></small><div class="kp" id="kp" style="margin-top:12px"></div><p class="read" id="rd"></p>
   <svg class="el" id="el" viewBox="0 0 400 130" role="img" aria-label="Varianza explicada según número de regiones" style="margin-top:12px"></svg></div>
- <div class="card"><h2>Regiones</h2><small>Pasa el cursor o toca una fila para resaltarla en el mapa</small><table><thead><tr><th>Región</th><th class="r">Unidades</th><th>Perfil de voto (% válidos)</th><th>Departamentos</th></tr></thead><tbody id="tb"></tbody></table></div></div></div>
+ <div class="card"><h2>Regiones</h2><small>Pasa el cursor o toca una fila para resaltarla en el mapa</small><table><thead><tr><th>Región</th><th class="r">Unidades</th><th>Peso electoral</th><th>Perfil de voto (% válidos)</th><th>Departamentos</th></tr></thead><tbody id="tb"></tbody></table></div></div></div>
  <p class="note"><b>Método.</b> Aglomeración jerárquica de Ward con restricción de contigüidad: solo se fusionan regiones que comparten frontera (vecindad tipo reina; las unidades aisladas usan sus 4 centroides más próximos). Variables: porcentaje de votos válidos de los 8 partidos con más votos en cada nivel más «Otros», que agrupa a los movimientos regionales y locales. La varianza explicada (R²) mide cuánto de la diferencia entre unidades queda dentro de la región que la separa. La silueta usa distancias en el espacio de votos (cerca de 0 = fronteras difusas). El índice de Rand ajustado compara las regiones con los departamentos: 1 es coincidencia total y 0 es lo esperable al azar. La robustez repite la regionalización solo con distritos al 95 % de actas o más y compara ambas versiones con el mismo índice. <b>Lectura:</b> es una descripción del conteo parcial, no un mapa de preferencias finales, y no explica por qué vota cada territorio. Depende de la unidad distrital (MAUP), de los partidos elegidos y del número de regiones. Dos distritos nuevos no están en la cartografía INEI 2023 y quedan fuera: Alto Trujillo y Santa Rosa de Loreto. Los distritos capitales usan el voto provincial.</p>
 </main><div class="tip" id="tip"></div>
 <script src="shell.js"></script>
@@ -33,32 +34,35 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',
 const tc=s=>String(s).toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase()).replace(/ (Para|El|De|La|Del|Y)(?= )/g,x=>x.toLowerCase());
 const short=s=>/^OTROS/.test(s)?'Otros / regionales':tc(s.replace(/ - .*$/,'').replace(/^PARTIDO (DEMOCRÁTICO |POLÍTICO )?/,''));
 const COL=['#00A39A','#F45A22','#3C6FD8','#E3B505','#8E44AD','#C2185B','#5E8C31','#8D5B3E','#1FA9E0','#E58A2B','#6D7B8A','#B23B3B'];
-let D,PA={},N={},lvl='prov',k=7,sel=null;const svg=$('#map');
+let D,PA={},N={},lvl='prov',k=7,sel=null,vw='t';const svg=$('#map');
 const loadPaths=l=>PA[l]?Promise.resolve(PA[l]):fetch(l==='dist'?'district-paths.json':'province-paths.json').then(r=>r.json()).then(p=>PA[l]=p);
 Promise.all([fetch('api/regions.json').then(r=>r.json()),fetch('api/municipal-data.json').then(r=>r.json())]).then(([d,m])=>{
  D=d;m.records.forEach(r=>{N[r.ubigeo]=r.level==='provincial'?{n:r.province,d:r.department,p:r.department}:{n:r.district,d:r.department,p:r.province}});
  m.records.filter(r=>r.level==='distrital').forEach(r=>N[r.ubigeo]={n:r.district,d:r.department,p:r.province});
  $('#lvl').onclick=e=>{const b=e.target.closest('button');if(!b)return;lvl=b.dataset.l;document.querySelectorAll('#lvl button').forEach(x=>x.setAttribute('aria-pressed',x===b));sel=null;setLevel()};
+ $('#vw').onclick=e=>{const b=e.target.closest('button');if(!b)return;vw=b.dataset.v;document.querySelectorAll('#vw button').forEach(x=>x.setAttribute('aria-pressed',x===b));svg.classList.toggle('cart',vw==='c');draw()};
  $('#k').oninput=e=>{k=+e.target.value;$('#ko').textContent=k;sel=null;draw()};
- svg.addEventListener('mousemove',e=>{const t=e.target.closest('path'),tip=$('#tip');if(!t){tip.style.display='none';return}const G=D[lvl],i=+t.dataset.i,u=G.ids[i],n=N[u]||{n:u,d:'',p:''},g=G.res[k].lab[i],r=G.res[k].regs[g];
-  tip.innerHTML=`<b>${esc(tc(n.n))}</b><br>${esc(tc(n.p))} · ${esc(tc(n.d))}<br>Región ${g+1}: ${esc(r.perfil.slice(0,2).map(p=>short(p[0])+' '+f(p[1])+' %').join(' · '))}`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-270)+'px';tip.style.top=(e.clientY+14)+'px';hl(g)});
+ svg.addEventListener('mousemove',e=>{const t=e.target.closest('[data-i]'),tip=$('#tip');if(!t){tip.style.display='none';return}const G=D[lvl],i=+t.dataset.i,u=G.ids[i],n=N[u]||{n:u,d:'',p:''},g=G.res[k].lab[i],r=G.res[k].regs[g];
+  tip.innerHTML=`<b>${esc(tc(n.n))}</b><br>${esc(tc(n.p))} · ${esc(tc(n.d))}<br>Región ${g+1}: ${esc(r.perfil.slice(0,2).map(p=>short(p[0])+' '+f(p[1])+' %').join(' · '))}<br>${f(G.vot[i],0)} votos válidos · ${f(G.area[i],0)} km²`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-270)+'px';tip.style.top=(e.clientY+14)+'px';hl(g)});
  svg.addEventListener('mouseleave',()=>{$('#tip').style.display='none';hl(sel)});setLevel()});
 function setLevel(){const G=D[lvl];loadPaths(lvl).then(P=>{const pos={};G.ids.forEach((u,i)=>pos[u]=i);
- svg.innerHTML=Object.keys(P).map(u=>pos[u]!=null?`<path data-i="${pos[u]}" d="${P[u].d}"></path>`:`<path d="${P[u].d}" style="fill:#F5F4F2"></path>`).join('');draw()})}
-function hl(g){svg.querySelectorAll('path[data-i]').forEach(el=>{el.style.opacity=g==null||el.dataset.g==g?1:.18});document.querySelectorAll('#tb tr').forEach(tr=>tr.classList.toggle('on',g!=null&&+tr.dataset.g===g))}
+ svg.innerHTML=Object.keys(P).map(u=>pos[u]!=null?`<path data-i="${pos[u]}" d="${P[u].d}"></path>`:`<path d="${P[u].d}" style="fill:#F5F4F2"></path>`).join('')+G.dor.map((c,i)=>`<circle data-i="${i}" cx="${c[0]}" cy="${c[1]}" r="${c[2]}"></circle>`).join('');svg.classList.toggle('cart',vw==='c');draw()})}
+function hl(g){svg.querySelectorAll('[data-i]').forEach(el=>{el.style.opacity=g==null||el.dataset.g==g?1:.18});document.querySelectorAll('#tb tr').forEach(tr=>tr.classList.toggle('on',g!=null&&+tr.dataset.g===g))}
 function draw(){const G=D[lvl],R=G.res[k],U=lvl==='dist'?'distritos':'provincias';
- svg.querySelectorAll('path[data-i]').forEach(el=>{const g=R.lab[+el.dataset.i];el.dataset.g=g;el.style.fill=COL[g%COL.length]});
+ svg.querySelectorAll('[data-i]').forEach(el=>{const g=R.lab[+el.dataset.i];el.dataset.g=g;el.style.fill=COL[g%COL.length]});
  const T=new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:true}).format(new Date(D.corte));
- const nreg=R.regs.length,mx=R.regs[0].n;
+ const nreg=R.regs.length,mx=R.regs[0].n,TV=G.vot.reduce((a,b)=>a+b,0),TA=G.area.reduce((a,b)=>a+b,0);
  $('#h1').innerHTML=`${nreg} regiones electorales: <em>${f(R.R2*100,0)} % de la variación explicada</em>`;
  $('#sub').textContent=`${lvl==='dist'?'Distritos':'Provincias'} contiguos agrupados por perfil de voto · corte ${T} (hora de Perú) · n = ${f(G.n,0)} ${U}.`;
  $('#k1').textContent='Varianza explicada, silueta y comparación con los departamentos';
  const rb=R.rob==null?'—':f(R.rob,2);
  $('#kp').innerHTML=`<div><b>${f(R.R2*100,1)} %</b><span>varianza explicada (R²)</span></div><div><b>${f(R.sil,2)}</b><span>silueta media (−1 a 1)</span></div><div><b>${f(R.ari_dep,2)}</b><span>coincidencia con departamentos (Rand ajustado)</span></div><div><b>${rb}</b><span>${lvl==='dist'?'robustez con distritos ≥ 95 % de actas':'robustez: solo se calcula en distritos'}</span></div>`;
+ const dn=R.regs.map((r,g)=>[g,(r.vot/TV)/(r.area/TA)]).sort((a,b)=>b[1]-a[1])[0],rd=R.regs[dn[0]];
+ $('#ms').textContent=vw==='c'?'Cada círculo es un '+(lvl==='dist'?'distrito':'provincia')+' y su superficie es proporcional a los votos válidos. El color es la región.':'Cada color es una región de unidades contiguas con perfil de voto parecido. El tamaño en el mapa es territorio, no votantes.';
  const fr=R.ari_dep<0.2?'Las regiones cruzan los límites departamentales: el voto se parece más entre territorios vecinos de distintos departamentos que dentro de cada departamento.':R.ari_dep<0.4?'Las regiones coinciden solo en parte con los departamentos: varias cruzan sus límites.':'Las regiones se parecen bastante a los departamentos.';
  const sp=R.R2<0.3?' La estructura es débil: la mayor parte de la variación ocurre entre vecinos, por la fragmentación del voto local.':'';
- $('#rd').textContent=fr+sp+(mx/G.n>0.4?` Una región reúne ${f(mx/G.n*100,0)} % de las unidades (perfil mixto): conviene mirar más regiones.`:'');
- $('#tb').innerHTML=R.regs.map((r,g)=>`<tr data-g="${g}"><td><span class="sw" style="background:${COL[g%COL.length]}"></span>${g+1}</td><td class="r">${f(r.n,0)}</td><td>${r.perfil.map(p=>esc(short(p[0]))+' '+f(p[1])).join('<br>')}</td><td>${r.deps.slice(0,3).map(d=>esc(tc(d[0]))+' ('+d[1]+')').join('<br>')}${r.ndeps>3?`<small>y ${r.ndeps-3} más</small>`:''}</td></tr>`).join('');
+ $('#rd').textContent=fr+sp+(mx/G.n>0.4?` Una región reúne ${f(mx/G.n*100,0)} % de las unidades (perfil mixto): conviene mirar más regiones.`:'')+` En peso electoral, la región ${dn[0]+1} reúne ${f(rd.vot/TV*100,0)} % de los votos en ${f(rd.area/TA*100,0)} % del territorio.`;
+ $('#tb').innerHTML=R.regs.map((r,g)=>`<tr data-g="${g}"><td><span class="sw" style="background:${COL[g%COL.length]}"></span>${g+1}</td><td class="r">${f(r.n,0)}</td><td style="min-width:130px"><b>${f(r.vot/TV*100)} %</b> de votos<div class="bar"><i style="width:${r.vot/TV*100}%;background:#06263D"></i></div><small>${f(r.area/TA*100)} % del territorio</small><div class="bar"><i style="width:${r.area/TA*100}%;background:#B8B4AA"></i></div></td><td>${r.perfil.map(p=>esc(short(p[0]))+' '+f(p[1])).join('<br>')}</td><td>${r.deps.slice(0,3).map(d=>esc(tc(d[0]))+' ('+d[1]+')').join('<br>')}${r.ndeps>3?`<small>y ${r.ndeps-3} más</small>`:''}</td></tr>`).join('');
  document.querySelectorAll('#tb tr').forEach(tr=>{tr.onmouseenter=()=>hl(+tr.dataset.g);tr.onmouseleave=()=>hl(sel);tr.onclick=()=>{sel=sel===+tr.dataset.g?null:+tr.dataset.g;hl(sel)}});hl(sel);
  // codo: R² según k
  const ks=G.ks,v=ks.map(q=>G.res[q].R2),x=i=>30+i*(350/(ks.length-1)),y=r=>110-(r-Math.min(...v))/(Math.max(...v)-Math.min(...v)||1)*85;
