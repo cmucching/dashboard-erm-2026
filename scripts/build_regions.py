@@ -36,9 +36,9 @@ def dorling(P, w, rmax, iters=500):
         P += (P0 - P) * 0.01
     return P, r
 
-def ward_contiguo(X, nb):
+def ward_contiguo(X, nb, w=None):
     """Devuelve la lista de fusiones [(a,b,nuevo)] hasta que no queden pares vecinos. Ward: coste = na*nb/(na+nb)*|ca-cb|²."""
-    n = len(X); size = {i: 1 for i in range(n)}; cen = {i: X[i].astype(float) for i in range(n)}
+    n = len(X); w = np.ones(n) if w is None else np.asarray(w, float); size = {i: float(w[i]) for i in range(n)}; cen = {i: X[i].astype(float) for i in range(n)}
     adj = {i: set(j for j in nb[i] if j != i) for i in range(n)}; ver = {i: 0 for i in range(n)}
     def cost(a, b):
         d = cen[a] - cen[b]; return size[a] * size[b] / (size[a] + size[b]) * float(d @ d)
@@ -71,13 +71,13 @@ def cortar(n, merges, k):
     for i in range(n): out[i] = lab.setdefault(raiz(i), len(lab))
     return out
 
-def r2(X, lab):
-    tss = ((X - X.mean(0)) ** 2).sum(); wss = 0.0
+def r2(X, lab, w):
+    mu = (X * w[:, None]).sum(0) / w.sum(); tss = (w[:, None] * (X - mu) ** 2).sum(); wss = 0.0
     for g in np.unique(lab):
-        Z = X[lab == g]; wss += ((Z - Z.mean(0)) ** 2).sum()
+        m = lab == g; mg = (X[m] * w[m, None]).sum(0) / w[m].sum(); wss += (w[m, None] * (X[m] - mg) ** 2).sum()
     return 1 - wss / tss
 
-def silueta(D, lab):
+def silueta(D, lab, w):
     n = len(lab); s = np.zeros(n); gs = np.unique(lab)
     if len(gs) < 2: return 0.0
     for i in range(n):
@@ -86,7 +86,7 @@ def silueta(D, lab):
         a = D[i, own].sum() / (ni - 1)
         b = min(D[i, lab == g].mean() for g in gs if g != lab[i])
         s[i] = (b - a) / max(a, b)
-    return float(s.mean())
+    return float((s * w).sum() / w.sum())
 
 def ari(a, b):
     a = np.asarray(a); b = np.asarray(b)
@@ -112,7 +112,7 @@ def regionalizar(level, feats, ids, rec, nombres):
         v = [d.get(o, 0.0) for o in top]; X[j] = v + [max(0.0, 100 - sum(v))]; pct[j] = r.get("counted_pct") or 0
     nb_all = contiguidad(feats); loc = {i: j for j, i in enumerate(ok)}
     nb = [set(loc[k] for k in nb_all[i] if k in loc) for i in ok]
-    def correr(sel):
+    def correr(sel, wt=None):
         idx = np.array(sel); mp = {int(g): k for k, g in enumerate(idx)}
         nbs = []
         for g in idx:  # vecinos directos + vecinos de las unidades excluidas contiguas (puente de un salto)
@@ -120,37 +120,38 @@ def regionalizar(level, feats, ids, rec, nombres):
             for h in nb[g]:
                 if h not in mp: v |= set(k for k in nb[h] if k in mp)
             v.discard(g); nbs.append(set(mp[k] for k in v))
-        return idx, ward_contiguo(X[idx], nbs)
-    idx, mg = correr(range(len(ok)))
+        return idx, ward_contiguo(X[idx], nbs, None if wt is None else wt[idx])
     D = np.sqrt(((X[:, None, :] - X[None, :, :]) ** 2).sum(-1))
     dep = [nombres.get(ids[i], {}).get("d", "") for i in ok]
     info = [geom_info(feats[i]) for i in ok]; AREA = [a for _, a in info]
     VOT = [int(rec[ids[i]]["valid_votes"]) for i in ok]
     P, rr = dorling([c for c, _ in info], VOT, 16 if level == "dist" else 34)
     DOR = [[round(float(x), 1), round(float(y), 1), round(float(q), 1)] for (x, y), q in zip(P, rr)]
-    res = {}
-    for k in KS:
-        lab = cortar(len(ok), mg, k); kk = int(lab.max()) + 1
-        # ordenar regiones por tamaño descendente
-        orden = [g for g, _ in Counter(lab.tolist()).most_common()]; rem = {g: r for r, g in enumerate(orden)}; lab = np.array([rem[g] for g in lab])
-        regs = []
-        for g in range(kk):
-            m = lab == g; Z = X[m]; prom = Z.mean(0); o = np.argsort(-prom)[:3]
-            dc = Counter(d for d, f in zip(dep, m) if f)
-            vt = sum(v for v, f in zip(VOT, m) if f); ar = sum(a for a, f in zip(AREA, m) if f)
-            regs.append(dict(n=int(m.sum()), vot=vt, area=round(ar, 0), lider=top_c[int(o[0])], perfil=[[top_c[int(t)], round(float(prom[t]), 1)] for t in o],
-                             deps=[[d, c] for d, c in dc.most_common(4)], ndeps=len(dc),
-                             prom=[round(float(v), 1) for v in prom]))
-        # robustez: misma regionalización usando solo unidades con ≥95 % de actas contabilizadas (ARI sobre las comunes)
-        rob = None
-        sel = [j for j in range(len(ok)) if pct[j] >= 95]
-        if len(sel) > 30 and len(sel) < len(ok) and level == "dist":
-            ix2, mg2 = correr(sel); l2 = cortar(len(sel), mg2, k); rob = round(ari(lab[ix2], l2), 3)
-        res[str(k)] = dict(lab=[int(v) for v in lab], R2=round(float(r2(X, lab)), 4), sil=round(silueta(D, lab), 3),
-                           ari_dep=round(ari(lab, [{d: i for i, d in enumerate(sorted(set(dep)))}[d] for d in dep]), 3),
-                           rob=rob, regs=regs)
-        print(f"{level} k={k} R²={res[str(k)]['R2']} sil={res[str(k)]['sil']} ARI(dep)={res[str(k)]['ari_dep']} rob={rob}", file=sys.stderr)
-    return dict(ids=[ids[i] for i in ok], top=top_c, ks=KS, res=res, n=len(ok), pct95=int(sum(pct >= 95)), vot=VOT, area=[round(a, 1) for a in AREA], dor=DOR)
+    V = np.array(VOT, float)
+    def construir(ponderar):
+        wt = V if ponderar else None; w = V if ponderar else np.ones(len(ok))
+        idx, mg = correr(range(len(ok)), wt); res = {}
+        for k in KS:
+            lab = cortar(len(ok), mg, k); kk = int(lab.max()) + 1
+            clave = {g: (V[lab == g].sum() if ponderar else (lab == g).sum()) for g in range(kk)}  # regiones por tamaño (votos si ponderada)
+            rem = {g: r for r, g in enumerate(sorted(clave, key=lambda g: -clave[g]))}; lab = np.array([rem[g] for g in lab])
+            regs = []
+            for g in range(kk):
+                m = lab == g; prom = (X[m] * w[m, None]).sum(0) / w[m].sum(); o = np.argsort(-prom)[:3]
+                dc = Counter(d for d, f in zip(dep, m) if f)
+                vt = sum(v for v, f in zip(VOT, m) if f); ar = sum(a for a, f in zip(AREA, m) if f)
+                regs.append(dict(n=int(m.sum()), vot=vt, area=round(ar, 0), lider=top_c[int(o[0])], perfil=[[top_c[int(t)], round(float(prom[t]), 1)] for t in o],
+                                 deps=[[d, c] for d, c in dc.most_common(4)], ndeps=len(dc), prom=[round(float(v), 1) for v in prom]))
+            # robustez: misma regionalización con solo las unidades de ≥95 % de actas (ARI sobre las comunes)
+            rob = None; sel = [j for j in range(len(ok)) if pct[j] >= 95]
+            if len(sel) > 30 and len(sel) < len(ok) and level == "dist":
+                ix2, mg2 = correr(sel, wt); l2 = cortar(len(sel), mg2, k); rob = round(ari(lab[ix2], l2), 3)
+            res[str(k)] = dict(lab=[int(v) for v in lab], R2=round(float(r2(X, lab, w)), 4), sil=round(silueta(D, lab, w), 3),
+                               ari_dep=round(ari(lab, [{d: i for i, d in enumerate(sorted(set(dep)))}[d] for d in dep]), 3), rob=rob, regs=regs)
+            print(f"{level} {'POND' if ponderar else 'simple'} k={k} R²={res[str(k)]['R2']} sil={res[str(k)]['sil']} ARI(dep)={res[str(k)]['ari_dep']} rob={rob}", file=sys.stderr)
+        return res
+    res = construir(False); resw = construir(True)
+    return dict(ids=[ids[i] for i in ok], top=top_c, ks=KS, res=res, resw=resw, n=len(ok), pct95=int(sum(pct >= 95)), vot=VOT, area=[round(a, 1) for a in AREA], dor=DOR)
 
 def main():
     md = json.loads((S / "api" / "municipal-data.json").read_text(encoding="utf-8"))["records"]
