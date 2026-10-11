@@ -1,0 +1,81 @@
+<!doctype html><html lang="es-PE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ficha territorial · Perú 2026</title><meta name="description" content="Ficha de un distrito o provincia: resultado municipal, avance del conteo, evolución, proyección de cierre, posición espacial y región. Se puede compartir por enlace y comparar con otro territorio.">
+<link rel="icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="shell.css">
+<style>
+.an{max-width:1460px;margin:0 auto;padding:8px 24px 48px}.an h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:18px 0 6px;font-weight:800}.an .sub{color:var(--ink2);max-width:80ch;margin:0 0 16px}
+.an .tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 18px;position:relative}.an button.b,.an .tools input{font:inherit;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;cursor:pointer}.an .tools input{font-weight:500;cursor:text;min-width:260px}
+.an button.b.pri{background:var(--ink);color:#fff;border-color:var(--ink)}.an .sug{position:absolute;top:100%;left:0;z-index:5;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px #06263D22;min-width:340px;max-width:92vw;margin-top:6px;overflow:hidden}.an .sug a{display:block;padding:9px 12px;color:var(--ink);text-decoration:none;font-size:14px}.an .sug a:hover{background:#F7F5F0}.an .sug small{display:block;color:var(--ink2)}
+.an .cols{display:grid;gap:20px;grid-template-columns:repeat(var(--n,1),minmax(0,1fr))}@media(max-width:900px){.an .cols{grid-template-columns:1fr}}
+.an .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin-bottom:20px}.an .card h2{font-size:18px;margin:0 0 2px}.an small,.an .note{color:var(--ink2)}
+.an .head{border-top:5px solid var(--c);padding-top:14px}.an .head h2{font-size:clamp(22px,2.4vw,30px);font-weight:800}
+.an .kp{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}.an .kp div{border:1px solid var(--line);border-radius:14px;padding:12px 14px}.an .kp b{display:block;font-size:24px}.an .kp span{font-size:12.5px;color:var(--ink2)}
+.an .pr{display:grid;grid-template-columns:minmax(0,1fr) 54px;gap:2px 10px;align-items:center;margin-top:10px;font-size:13.5px}.an .pr .t{height:9px;border-radius:5px;background:#ECEAE5;grid-column:1}.an .pr .t i{display:block;height:100%;border-radius:5px}.an .pr em{font-style:normal;text-align:right;font-weight:700;grid-row:1/3;grid-column:2;align-self:center}
+.an .tag{display:inline-block;padding:3px 10px;border-radius:999px;font-size:13px;font-weight:700}.an .tag.ok{background:#DDF2EC;color:#0B6B5E}.an .tag.mid{background:#FFF0C2;color:#7A5A00}.an .tag.risk{background:#FDE0D6;color:#A3340E}
+.an svg{width:100%;height:auto;display:block}.an .lg{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;margin-top:6px;color:var(--ink2)}.an .lg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.an table{width:100%;border-collapse:collapse;font-size:14px}.an th,.an td{padding:8px 6px;border-bottom:1px solid #EEECE7;text-align:right}.an th:first-child,.an td:first-child{text-align:left}
+.an .note{font-size:12.5px;margin-top:10px}.an .empty{padding:40px 0;color:var(--ink2);font-size:17px}
+</style></head><body>
+<main class="an">
+ <h1 id="h1">Ficha territorial</h1><p class="sub" id="sub"></p>
+ <div class="tools" id="tools" hidden><button class="b pri" id="cp" type="button">Copiar enlace</button><input id="cmp" type="search" placeholder="Comparar con otro territorio…" autocomplete="off" aria-label="Comparar con otro territorio"><button class="b" id="x" type="button" hidden>Quitar comparación</button><div class="sug" id="sug" hidden></div></div>
+ <div id="out"></div>
+ <p class="note" id="nt" hidden><b>Lectura.</b> La proyección supone que las actas pendientes tienen el mismo tamaño promedio que las contadas y que el 1.º pierde hasta 10 puntos de margen en ellas: es un criterio de robustez, no un pronóstico. «Posición espacial» y «región» vienen del análisis de la página correspondiente y describen al territorio frente a sus vecinos, no su comportamiento individual. Los distritos capitales usan el voto provincial. Los votos en blanco y nulos se calculan como emitidos menos válidos.</p>
+</main>
+<script src="shell.js"></script>
+<script>
+const $=s=>document.querySelector(s),f=(n,d=0)=>n==null?'—':Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tc=s=>String(s).toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase()).replace(/ (De|Del|La|Las|Los|El|Y|Para)(?= )/g,m=>m.toLowerCase());
+const sh=s=>tc(String(s).replace(/ - .*$/,''));
+const CA='#F45A22',CB='#00A39A',DPP=10,CL=['Sin patrón significativo','Alto-alto: ventaja alta rodeada de ventajas altas','Bajo-bajo: carrera reñida rodeada de carreras reñidas','Bajo-alto: carrera reñida rodeada de ventajas altas','Alto-bajo: ventaja alta rodeada de carreras reñidas'];
+const q=new URLSearchParams(location.search);let UA=q.get('u'),UB=q.get('c');
+const norm=t=>String(t||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+let REC={},H,AN,RG,PC={},IDX=[];
+Promise.all([fetch('api/municipal-data.json').then(r=>r.json()),fetch('api/history.json').then(r=>r.json()),fetch('api/analysis.json').then(r=>r.json()),fetch('api/regions.json').then(r=>r.json()),fetch('api/party-colors.json').then(r=>r.json()).catch(()=>({})),fetch('api/search-index.json').then(r=>r.json())]).then(([m,h,a,r,pc,ix])=>{
+ m.records.forEach(x=>REC[x.ubigeo]=x);H=h;AN=a;RG=r;PC=pc;IDX=ix.map(e=>({...e,t:norm(e.n+' '+e.p+' '+e.d)}));init()});
+const color=o=>PC[o]||'#6D7B8A';
+function info(u){const r=REC[u];if(!r)return null;const lv=r.level==='provincial'?'prov':'dist',o=[...(r.organizations||[])].sort((a,b)=>b.votes-a.votes),a=o[0],b=o[1]||{votes:0,pct_valid:0};
+ const cnt=r.counted_actas,pend=Math.max(0,r.total_actas-cnt),P=cnt>0?r.valid_votes/cnt*pend:0,lead=a?a.votes-b.votes:0,m=a?(a.pct_valid-b.pct_valid)/100:0;
+ let st='mid';if(!a||cnt<=0)st=null;else if(P<=0||lead>P)st='ok';else st=(lead+P*(m-DPP/100))<0?'risk':'mid';
+ const serie=(H[lv][u]||[]).map((c,i)=>c&&c[1]?{t:H.cortes[i],pct:c[0],mg:(c[3]-c[4])/c[1]*100}:null).filter(Boolean);
+ const A=AN[lv],ia=A.ids.indexOf(u),V=A.vars.margen,R=RG[lv],ir=R.ids.indexOf(u),rs=R.resw['7'],g=ir>=0?rs.lab[ir]:null;
+ return{u,r,lv,o,a,b,P,lead,m,st,serie,cl:ia>=0&&V.cl[ia]!=null?V.cl[ia]:(ia>=0&&V.v[ia]!=null?0:null),gi:ia>=0?V.gi[ia]:null,reg:g!=null?{n:g+1,p:rs.regs[g].perfil.slice(0,2),k:7,u:rs.regs[g].n,vot:rs.regs[g].vot/R.vot.reduce((x,y)=>x+y,0)*100}:null,
+  bn:r.emitted_votes?(r.emitted_votes-r.valid_votes)/r.emitted_votes*100:null,name:lv==='prov'?r.province:r.district}}
+function init(){
+ if(!UA||!REC[UA]){$('#h1').textContent='Ficha territorial';$('#sub').textContent='';$('#out').innerHTML='<p class="empty">Busca un distrito o una provincia con el botón «Buscar» de arriba a la derecha (o con la tecla /) para abrir su ficha.</p>';return}
+ render();
+ $('#cp').onclick=()=>{navigator.clipboard.writeText(location.href).then(()=>{$('#cp').textContent='Enlace copiado';setTimeout(()=>$('#cp').textContent='Copiar enlace',1800)}).catch(()=>{prompt('Copia el enlace:',location.href)})};
+ $('#x').onclick=()=>{UB=null;sync();render()};
+ const inp=$('#cmp'),sg=$('#sug');
+ inp.oninput=()=>{const t=norm(inp.value).trim().split(/\s+/).filter(Boolean);if(!t.length){sg.hidden=true;return}
+  const l=IDX.filter(e=>e.u!==UA&&t.every(x=>e.t.includes(x))).sort((a,b)=>(a.l===b.l?b.v-a.v:(a.l==='p'?-1:1))).slice(0,8);
+  sg.innerHTML=l.length?l.map(e=>`<a href="#" data-u="${e.u}"><b>${esc(tc(e.n))}</b><small>${e.l==='p'?'Provincia':'Distrito'} · ${esc(tc(e.p))} · ${esc(tc(e.d))}</small></a>`).join(''):'<a href="#">Sin resultados</a>';sg.hidden=false};
+ sg.onclick=e=>{e.preventDefault();const a=e.target.closest('a[data-u]');if(!a)return;UB=a.dataset.u;inp.value='';sg.hidden=true;sync();render()};
+ document.addEventListener('click',e=>{if(!e.target.closest('.tools'))sg.hidden=true})}
+function sync(){const p=new URLSearchParams();p.set('u',UA);if(UB)p.set('c',UB);history.replaceState(null,'','?'+p)}
+function chart(L){const pts=L.flatMap(x=>x.s.map(p=>p.mg));if(!pts.length)return'<p class="note">Sin cortes con datos para este territorio.</p>';
+ const T=[...new Set(L.flatMap(x=>x.s.map(p=>+new Date(p.t))))].sort((a,b)=>a-b),t0=T[0],t1=T[T.length-1]||t0+1;
+ let lo=Math.min(...pts),hi=Math.max(...pts);if(hi-lo<1){const c=(hi+lo)/2;lo=c-.5;hi=c+.5}const pad=(hi-lo)*.12;lo-=pad;hi+=pad;
+ const X=t=>50+((+new Date(t))-t0)/((t1-t0)||1)*620,Y=v=>10+(hi-v)/(hi-lo)*170;
+ const ticks=[0,1,2,3,4].map(i=>lo+(hi-lo)*i/4);
+ return `<svg viewBox="0 0 700 215" role="img" aria-label="Evolución del margen">`+ticks.map(v=>`<line x1="50" x2="680" y1="${Y(v)}" y2="${Y(v)}" stroke="#EEECE7"/><text x="44" y="${Y(v)+4}" text-anchor="end" font-size="11" fill="#5b6b78">${f(v,1)}</text>`).join('')+
+  (lo<0&&hi>0?`<line x1="50" x2="680" y1="${Y(0)}" y2="${Y(0)}" stroke="#06263D" stroke-dasharray="3 3"/>`:'')+
+  L.map(x=>`<polyline fill="none" stroke="${x.c}" stroke-width="2.5" points="${x.s.map(p=>X(p.t)+','+Y(p.mg)).join(' ')}"/>`+x.s.slice(-1).map(p=>`<circle cx="${X(p.t)}" cy="${Y(p.mg)}" r="4.5" fill="${x.c}"/>`).join('')).join('')+
+  [0,1,2,3].map(i=>{const t=t0+(t1-t0)*i/3;return `<text x="${50+620*i/3}" y="205" font-size="11" fill="#5b6b78" text-anchor="${i?i===3?'end':'middle':'start'}">${new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(t))}</text>`}).join('')+`</svg>`}
+function render(){const A=info(UA),B=UB&&REC[UB]?info(UB):null,L=B?[A,B]:[A];$('#tools').hidden=false;$('#nt').hidden=false;$('#x').hidden=!B;
+ document.title=`${tc(A.name)}${B?' vs '+tc(B.name):''} · Ficha territorial`;
+ $('#h1').innerHTML=B?`${esc(tc(A.name))} <em>frente a</em> ${esc(tc(B.name))}`:esc(tc(A.name));
+ const T=new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:true}).format(new Date(RG.corte));
+ $('#sub').textContent=B?`Comparación de dos territorios · corte ${T} (hora de Perú).`:`${A.lv==='prov'?'Provincia':'Distrito'} de ${tc(A.r.province)} · ${tc(A.r.department)} · corte ${T} (hora de Perú).`;
+ const cols=[A,B].filter(Boolean).map((x,i)=>{const c=i?CB:CA,tag={ok:'Decidido',mid:'Abierto',risk:'En riesgo'}[x.st];
+  const gtxt=x.cl==null?'Sin dato espacial':CL[x.cl]+(x.gi!=null?` · Gi* ${f(x.gi,2)}`:'');
+  return `<section class="card head" style="--c:${c}"><h2>${esc(tc(x.name))}</h2><small>${x.lv==='prov'?'Provincia':'Distrito'} · ${esc(tc(x.r.province))} · ${esc(tc(x.r.department))}</small>
+  <div class="kp"><div><b>${f(x.r.valid_votes)}</b><span>votos válidos</span></div><div><b>${f(x.r.counted_pct,1)} %</b><span>avance: ${f(x.r.counted_actas)} de ${f(x.r.total_actas)} actas</span></div><div><b>${f(x.m*100,1)} pp</b><span>ventaja del 1.º sobre el 2.º (${f(x.lead)} votos)</span></div><div><b>${f(x.bn,1)} %</b><span>blancos y nulos sobre emitidos</span></div></div>
+  <h2 style="margin-top:16px;font-size:15px">Votos válidos por organización</h2>${x.o.slice(0,6).map(o=>`<div class="pr"><span>${esc(sh(o.organization))}</span><em>${f(o.pct_valid,1)} %</em><div class="t"><i style="width:${o.pct_valid}%;background:${color(o.organization)}"></i></div></div>`).join('')}
+  <h2 style="margin-top:18px;font-size:15px">Proyección de cierre</h2><p style="margin:6px 0 0">${tag?`<span class="tag ${x.st}">${tag}</span> `:''}${x.st==null?'Sin actas contabilizadas aún.':x.P<=0?'Conteo completo.':`Faltan unos ${f(x.P)} votos válidos (estimado) frente a una ventaja de ${f(x.lead)}.`}</p>
+  <h2 style="margin-top:18px;font-size:15px">Posición espacial y región</h2><p style="margin:6px 0 0">${esc(gtxt)}.${x.reg?` Región ${x.reg.n} de ${x.reg.k} (ponderada por votos): ${esc(x.reg.p.map(p=>(/^OTROS/.test(p[0])?'Otros / regionales':sh(p[0]))+' '+f(p[1],1)+' %').join(' · '))}; reúne ${f(x.reg.vot,0)} % de los votos.`:' Sin región asignada (unidad fuera de la cartografía).'}</p></section>`}).join('');
+ const comp=B?`<section class="card"><h2>Diferencias</h2><table><thead><tr><th></th><th>${esc(tc(A.name))}</th><th>${esc(tc(B.name))}</th></tr></thead><tbody>${[['Votos válidos',x=>f(x.r.valid_votes)],['Avance de actas',x=>f(x.r.counted_pct,1)+' %'],['Líder',x=>x.a?sh(x.a.organization)+' '+f(x.a.pct_valid,1)+' %':'—'],['Ventaja del 1.º (pp)',x=>f(x.m*100,1)],['Blancos y nulos',x=>f(x.bn,1)+' %'],['Estado',x=>({ok:'Decidido',mid:'Abierto',risk:'En riesgo'}[x.st]||'—')],['Región',x=>x.reg?'Región '+x.reg.n:'—']].map(r=>`<tr><td>${r[0]}</td><td>${esc(r[1](A))}</td><td>${esc(r[1](B))}</td></tr>`).join('')}</tbody></table></section>`:'';
+ $('#out').innerHTML=`<div class="cols" style="--n:${L.length}">${cols}</div>${comp}<section class="card"><h2>Evolución de la ventaja del 1.º</h2><small>Puntos porcentuales sobre votos válidos, en cada corte de ONPE</small>${chart(L.map((x,i)=>({s:x.serie,c:i?CB:CA})))}<div class="lg">${L.map((x,i)=>`<span><i style="background:${i?CB:CA}"></i>${esc(tc(x.name))}</span>`).join('')}</div></section>`}
+</script></body></html>

@@ -30,6 +30,8 @@ jobs:
           python-version: "3.12"
       - name: Convertir data/ en las API del sitio
         run: python scripts/data_to_site.py
+      - name: Índice del buscador
+        run: python scripts/build_search.py
       - name: Historial de cortes
         run: python scripts/build_history.py
       - name: Análisis espacial (Moran, LISA, Gi*)
