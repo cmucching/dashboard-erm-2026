@@ -36,6 +36,7 @@ jobs:
         run: |
           pip install -q numpy shapely
           python scripts/build_analysis.py
+          python scripts/build_regions.py
       - name: Regenerar tablero regional
         run: python scripts/build_propuesta_b.py
       - uses: actions/configure-pages@v5
