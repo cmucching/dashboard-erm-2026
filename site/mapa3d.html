@@ -1,0 +1,90 @@
+<!doctype html><html lang="es-PE"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mapa 3D · Perú 2026</title><meta name="description" content="Mapa en relieve del voto municipal: la altura de cada distrito o provincia muestra su peso electoral, su ventaja o lo que falta contar, y el color, el líder, la región o el patrón espacial.">
+<link rel="icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<link rel="stylesheet" href="shell.css"><link rel="stylesheet" href="vendor/maplibre-gl.css">
+<style>
+.an{max-width:1460px;margin:0 auto;padding:8px 24px 48px}.an h1{font-size:clamp(28px,4vw,46px);line-height:1.05;margin:18px 0 6px;font-weight:800}.an .sub{color:var(--ink2);max-width:80ch;margin:0 0 16px}
+.an .tools{display:flex;gap:10px 14px;flex-wrap:wrap;align-items:flex-end;margin:0 0 14px}.an .tools label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;color:var(--ink2)}
+.an .seg{display:inline-flex;background:#ECEAE5;border-radius:10px;padding:3px}.an .seg button{border:0;background:none;padding:8px 14px;font:inherit;font-weight:700;color:var(--ink2);border-radius:8px;cursor:pointer}.an .seg button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 3px #0002}
+.an select{font:inherit;font-weight:500;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);max-width:100%}.an input[type=range]{accent-color:#F45A22;width:140px}
+.an .b{font:inherit;font-weight:700;padding:9px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.an .stage{position:relative;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#F5F4F2}.an #map{height:min(78vh,820px);min-height:460px;width:100%}
+.an .lg{position:absolute;left:14px;bottom:14px;background:#fffffff0;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:12.5px;max-width:300px;max-height:46%;overflow:auto;z-index:2}.an .lg b{display:block;margin-bottom:5px}.an .lg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}.an .lg div.r{display:flex;align-items:center;margin:2px 0}
+.an .tip{position:absolute;z-index:3;background:#06263D;color:#fff;padding:8px 10px;border-radius:8px;font-size:12.5px;pointer-events:none;display:none;max-width:260px}
+.an .nogl{padding:40px 24px;font-size:16px}.an .note{font-size:12.5px;color:var(--ink2);margin-top:12px}
+.maplibregl-ctrl-attrib{display:none}
+</style></head><body>
+<main class="an">
+ <h1 id="h1">Mapa 3D del voto municipal</h1><p class="sub" id="sub">La altura y el color son dos variables distintas: puedes ver, por ejemplo, el peso electoral en altura y el líder en color.</p>
+ <div class="tools"><div class="seg" id="lvl" role="group" aria-label="Nivel"><button data-l="dist" aria-pressed="true">Distritos</button><button data-l="prov" aria-pressed="false">Provincias</button></div>
+  <label>Altura<select id="hs"><option value="votos">Peso electoral (votos válidos)</option><option value="margen">Ventaja del 1.º</option><option value="pend">Actas por contabilizar</option><option value="plano">Plano (sin altura)</option></select></label>
+  <label>Color<select id="cs"><option value="lider">Organización líder</option><option value="margen">Ventaja del 1.º (calor)</option><option value="pend">Actas por contabilizar (calor)</option><option value="lisa">Patrón espacial (LISA)</option><option value="reg">Región electoral</option></select></label>
+  <label>Exageración vertical<input type="range" id="ex" min="0.3" max="4" step="0.1" value="1.5" aria-label="Exageración vertical"></label>
+  <button class="b" id="v3" type="button">Vista inclinada</button><button class="b" id="v2" type="button">Vista cenital</button><button class="b" id="cp" type="button">Copiar enlace</button></div>
+ <div class="stage"><div id="map" role="application" aria-label="Mapa 3D del voto municipal. Usa el botón derecho del ratón o dos dedos para inclinar y girar."></div><div class="lg" id="lg"></div><div class="tip" id="tip"></div></div>
+ <p class="note"><b>Cómo se lee.</b> Arrastra para mover, rueda para acercar, clic derecho o dos dedos para inclinar y girar; un clic en un territorio abre su ficha. La altura sigue la raíz cuadrada del valor (peso electoral) para que Lima no aplaste al resto. Una vista inclinada oculta territorios que quedan detrás de los más altos: usa «Vista cenital» para verlos todos. El relieve es una variable más, no el terreno real; y el área sigue siendo el territorio, no los votantes (para eso, el cartograma de «Regiones electorales»). Los distritos capitales usan el voto provincial. Dos distritos nuevos no están en la cartografía INEI 2023 y no se dibujan: Alto Trujillo y Santa Rosa de Loreto.</p>
+</main>
+<script src="shell.js"></script>
+<script src="vendor/maplibre-gl.js"></script>
+<script>
+const $=s=>document.querySelector(s),f=(n,d=1)=>n==null?'—':Number(n).toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tc=s=>String(s).toLowerCase().replace(/(^|[\s(\-])(\S)/g,(m,a,b)=>a+b.toUpperCase()).replace(/ (De|Del|La|Las|Los|El|Y|Para)(?= )/g,m=>m.toLowerCase());
+const sh=s=>/^OTROS/.test(s)?'Otros / regionales':tc(String(s).replace(/ - .*$/,''));
+const HEAT=['#FFF4D6','#FFD36B','#FF9A3C','#E8472B','#A3123C','#4B0F5C'],COLR=['#00A39A','#F45A22','#3C6FD8','#E3B505','#8E44AD','#C2185B','#5E8C31','#8D5B3E','#1FA9E0','#E58A2B','#6D7B8A','#B23B3B'];
+const CL=[['#E4E2DC','Sin patrón significativo'],['#D6402C','Alto-alto: ventaja alta rodeada de altas'],['#2F6B8F','Bajo-bajo: carrera reñida rodeada de reñidas'],['#8FB6D1','Bajo-alto'],['#F2A38A','Alto-bajo']];
+const hx=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+function ramp(st,t){t=Math.max(0,Math.min(1,t));const k=t*(st.length-1),i=Math.min(st.length-2,Math.floor(k)),u=k-i,a=hx(st[i]),b=hx(st[i+1]);return '#'+a.map((x,j)=>Math.round(x+(b[j]-x)*u).toString(16).padStart(2,'0')).join('')}
+const P=new URLSearchParams(location.search);let lvl=P.get('n')==='prov'?'prov':'dist',HS=P.get('h')||'votos',CS=P.get('c')||'lider',EX=+P.get('x')||1.5;
+function zoomInicial(){const el=$('#map'),w=el.clientWidth||900,h=el.clientHeight||700,m=154600,zh=Math.log2(m/(2150000/(0.95*h))),zw=Math.log2(m/(1500000/(0.92*w)));return Math.max(3,Math.min(zh,zw)-0.85)}
+let map,GEO={},IDX={},AN,RG,PC={},ready=false;
+const key={dist:'geo3d-dist.json',prov:'geo3d-prov.json'};
+$('#hs').value=HS;$('#cs').value=CS;$('#ex').value=EX;document.querySelectorAll('#lvl button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lvl));
+function hasGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}}
+if(!hasGL()||typeof maplibregl==='undefined'){$('#map').innerHTML='<p class="nogl">Tu navegador no puede dibujar gráficos 3D (WebGL). Usa el <a href="analisis.html">mapa 2D de análisis espacial</a> o el <a href="regiones.html">mapa de regiones</a>, que muestran lo mismo en plano.</p>';document.querySelectorAll('.tools select,.tools button,.tools input').forEach(e=>e.disabled=true)}
+else Promise.all([fetch('api/search-index.json').then(r=>r.json()),fetch('api/analysis.json').then(r=>r.json()),fetch('api/regions.json').then(r=>r.json()),fetch('api/party-colors.json').then(r=>r.json()).catch(()=>({}))]).then(([ix,a,r,pc])=>{
+ ix.forEach(e=>IDX[e.u]=e);AN=a;RG=r;PC=pc;
+ map=new maplibregl.Map({container:'map',style:{version:8,sources:{},layers:[{id:'bg',type:'background',paint:{'background-color':'#F5F4F2'}}]},center:[-75.2,-9.3],zoom:zoomInicial(),pitch:55,bearing:-12,maxPitch:80,minZoom:3,maxZoom:11,attributionControl:false,dragRotate:true});
+ map.addControl(new maplibregl.NavigationControl({visualizePitch:true}),'top-right');
+ map.on('load',()=>{map.addSource('u',{type:'geojson',data:{type:'FeatureCollection',features:[]}});
+  map.addLayer({id:'ext',type:'fill-extrusion',source:'u',paint:{'fill-extrusion-color':['get','c'],'fill-extrusion-height':['get','h'],'fill-extrusion-base':0,'fill-extrusion-opacity':1,'fill-extrusion-vertical-gradient':true}});
+  map.addLayer({id:'lin',type:'line',source:'u',paint:{'line-color':'#ffffff','line-width':.4,'line-opacity':.6}});
+  ready=true;bind();load(lvl)})}).catch(e=>{$('#map').innerHTML='<p class="nogl">No se pudieron cargar los datos: '+esc(e.message||e)+'</p>'});
+function load(l){lvl=l;(GEO[l]?Promise.resolve(GEO[l]):fetch(key[l]).then(r=>r.json()).then(g=>GEO[l]=g)).then(()=>paint())}
+function vals(l){const A=AN[l],R=RG[l],ia={},ir={};A.ids.forEach((u,i)=>ia[u]=i);R.ids.forEach((u,i)=>ir[u]=i);return{A,R,ia,ir}}
+function paint(){const g=GEO[lvl],{A,R,ia,ir}=vals(lvl),rs=R.resw['7'],mg=A.vars.margen;
+ // escalas de color y altura
+ const arr=k=>Object.values(IDX).filter(e=>e.l===(lvl==='prov'?'p':'d')).map(e=>k(e)).filter(v=>v!=null).sort((a,b)=>a-b),pc=(a,p)=>a[Math.floor(p*(a.length-1))];
+ const vv=arr(e=>e.v),vmax=vv[vv.length-1],mgA=arr(e=>e.m),mg98=pc(mgA,.98),pdA=arr(e=>e.a==null?null:100-e.a),pd98=pc(pdA,.98)||1;
+ const H0=lvl==="dist"?150000:260000;
+ const feats=g.features.map(ft=>{const u=ft.properties.u,e=IDX[u];let c='#E4E2DC',h=0,t={};
+  if(e&&e.v){
+   const pend=e.a==null?null:100-e.a;
+   if(CS==='lider')c=PC[e.w]||'#6D7B8A';else if(CS==='margen')c=ramp(HEAT,1-Math.min(e.m,mg98)/mg98);else if(CS==='pend')c=ramp(HEAT,Math.min(pend,pd98)/pd98);
+   else if(CS==='lisa'){const i=ia[u],k=i==null?null:mg.cl[i];c=k==null?'#E4E2DC':CL[k][0]}
+   else if(CS==='reg'){const i=ir[u];c=i==null?'#E4E2DC':COLR[rs.lab[i]%COLR.length]}
+   if(HS==='votos')h=Math.sqrt(e.v/vmax)*H0;else if(HS==='margen')h=Math.min(e.m,mg98)/mg98*H0*.7;else if(HS==='pend')h=pend==null?0:Math.min(pend,pd98)/pd98*H0*.7;
+  }
+  return{type:'Feature',geometry:ft.geometry,properties:{u,c,h:h*EX}}});
+ map.getSource('u').setData({type:'FeatureCollection',features:feats});legend({vmax,mg98,pd98});
+ $('#h1').textContent=({votos:'Peso electoral en relieve',margen:'Ventaja del 1.º en relieve',pend:'Lo que falta contar en relieve',plano:'Mapa en plano'})[HS]}
+function legend(s){const L=$('#lg'),hl={votos:'Altura: votos válidos (raíz cuadrada)',margen:'Altura: ventaja del 1.º sobre el 2.º',pend:'Altura: actas por contabilizar',plano:'Sin altura'}[HS],grad=(a,b)=>`<div style="height:10px;border-radius:5px;background:linear-gradient(90deg,${HEAT.join(',')});margin:4px 0"></div><div style="display:flex;justify-content:space-between"><span>${a}</span><span>${b}</span></div>`;let h=`<b>${hl}</b>`;
+ if(CS==='lider'){const c={};Object.values(IDX).filter(e=>e.l===(lvl==='prov'?'p':'d')&&e.w).forEach(e=>c[e.w]=(c[e.w]||0)+1);h+='Color: líder<br>'+Object.entries(c).sort((a,b)=>b[1]-a[1]).slice(0,7).map(([o,n])=>`<div class="r"><i style="background:${PC[o]||'#6D7B8A'}"></i>${esc(sh(o))} (${n})</div>`).join('')}
+ else if(CS==='margen')h+='Color: ventaja del 1.º'+grad(f(s.mg98)+' pp o más','0 pp (reñida)');
+ else if(CS==='pend')h+='Color: actas por contabilizar'+grad('0 %',f(s.pd98)+' % o más');
+ else if(CS==='lisa')h+='Color: patrón espacial de la ventaja<br>'+CL.map(c=>`<div class="r"><i style="background:${c[0]}"></i>${c[1]}</div>`).join('');
+ else h+='Color: región electoral (7, ponderadas por votos)<br>'+RG[lvl].resw['7'].regs.map((r,i)=>`<div class="r"><i style="background:${COLR[i%COLR.length]}"></i>${i+1}: ${esc(sh(r.perfil[0][0]))} ${f(r.perfil[0][1])} % · ${f(r.n,0)} u.</div>`).join('');
+ L.innerHTML=h}
+function bind(){const tip=$('#tip'),stage=document.querySelector('.stage');
+ map.on('mousemove','ext',e=>{map.getCanvas().style.cursor='pointer';const u=e.features[0].properties.u,x=IDX[u];if(!x)return;
+  tip.innerHTML=`<b>${esc(tc(x.n))}</b><br>${x.l==='p'?'Provincia':esc(tc(x.p))} · ${esc(tc(x.d))}<br>${f(x.v,0)} votos válidos · avance ${f(x.a,1)} %<br>${x.w?esc(sh(x.w))+' '+f(x.lp)+' % · ventaja '+f(x.m)+' pp':'Sin datos'}`;
+  const r=stage.getBoundingClientRect();tip.style.display='block';tip.style.left=Math.min(e.originalEvent.clientX-r.left+14,r.width-270)+'px';tip.style.top=(e.originalEvent.clientY-r.top+14)+'px'});
+ map.on('mouseleave','ext',()=>{map.getCanvas().style.cursor='';tip.style.display='none'});
+ map.on('click','ext',e=>{const u=e.features[0].properties.u;if(IDX[u])location.href='unidad.html?u='+u});
+ $('#lvl').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#lvl button').forEach(x=>x.setAttribute('aria-pressed',x===b));load(b.dataset.l);sync()};
+ $('#hs').onchange=e=>{HS=e.target.value;paint();sync()};$('#cs').onchange=e=>{CS=e.target.value;paint();sync()};$('#ex').oninput=e=>{EX=+e.target.value;paint()};$('#ex').onchange=sync;
+ $('#v3').onclick=()=>map.easeTo({center:[-75.2,-9.3],zoom:zoomInicial(),pitch:58,bearing:-12,duration:700});$('#v2').onclick=()=>map.easeTo({center:[-75,-9.6],zoom:zoomInicial(),pitch:0,bearing:0,duration:700});
+ $('#cp').onclick=()=>{navigator.clipboard.writeText(location.href).then(()=>{$('#cp').textContent='Enlace copiado';setTimeout(()=>$('#cp').textContent='Copiar enlace',1800)}).catch(()=>prompt('Copia el enlace:',location.href))}}
+function sync(){const p=new URLSearchParams();p.set('n',lvl);p.set('h',HS);p.set('c',CS);if(EX!==1.5)p.set('x',EX);history.replaceState(null,'','?'+p)}
+</script></body></html>
