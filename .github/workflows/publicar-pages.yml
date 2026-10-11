@@ -32,6 +32,10 @@ jobs:
         run: python scripts/data_to_site.py
       - name: Historial de cortes
         run: python scripts/build_history.py
+      - name: Análisis espacial (Moran, LISA, Gi*)
+        run: |
+          pip install -q numpy shapely
+          python scripts/build_analysis.py
       - name: Regenerar tablero regional
         run: python scripts/build_propuesta_b.py
       - uses: actions/configure-pages@v5
