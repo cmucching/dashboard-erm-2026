@@ -20,22 +20,6 @@ def geom_info(feat):
     km2 = g.area * (111.32 * math.cos(math.radians(c.y))) * 110.57
     return [(c.x - W) * K * SC, (N - c.y) * SC], km2
 
-def dorling(P, w, rmax, iters=500):
-    """Cartograma de círculos: radio ∝ √peso; parten del centroide y se separan hasta no solaparse.
-    Los pares candidatos se recalculan cada 25 iteraciones; entre medias solo se resuelven esos pares."""
-    P = np.array(P, float); r = np.sqrt(w); r = r / r.max() * rmax; P0 = P.copy(); n = len(P)
-    for it in range(iters):
-        if it % 25 == 0:
-            d = P[:, None, :] - P[None, :, :]; dist = np.sqrt((d ** 2).sum(-1)); np.fill_diagonal(dist, np.inf)
-            I, J = np.where(np.triu(dist < (r[:, None] + r[None, :] + 6)))
-        dv = P[I] - P[J]; dd = np.sqrt((dv ** 2).sum(1)) + 1e-9; ov = r[I] + r[J] + 0.3 - dd
-        m = ov > 0
-        if it % 25 and not m.any(): break
-        mv = dv[m] / dd[m, None] * (ov[m, None] * 0.5)
-        np.add.at(P, I[m], mv * 0.6); np.add.at(P, J[m], -mv * 0.6)
-        P += (P0 - P) * 0.01
-    return P, r
-
 def ward_contiguo(X, nb, w=None):
     """Devuelve la lista de fusiones [(a,b,nuevo)] hasta que no queden pares vecinos. Ward: coste = na*nb/(na+nb)*|ca-cb|²."""
     n = len(X); w = np.ones(n) if w is None else np.asarray(w, float); size = {i: float(w[i]) for i in range(n)}; cen = {i: X[i].astype(float) for i in range(n)}
@@ -125,8 +109,6 @@ def regionalizar(level, feats, ids, rec, nombres):
     dep = [nombres.get(ids[i], {}).get("d", "") for i in ok]
     info = [geom_info(feats[i]) for i in ok]; AREA = [a for _, a in info]
     VOT = [int(rec[ids[i]]["valid_votes"]) for i in ok]
-    P, rr = dorling([c for c, _ in info], VOT, 16 if level == "dist" else 34)
-    DOR = [[round(float(x), 1), round(float(y), 1), round(float(q), 1)] for (x, y), q in zip(P, rr)]
     V = np.array(VOT, float)
     def construir(ponderar):
         wt = V if ponderar else None; w = V if ponderar else np.ones(len(ok))
@@ -151,7 +133,7 @@ def regionalizar(level, feats, ids, rec, nombres):
             print(f"{level} {'POND' if ponderar else 'simple'} k={k} R²={res[str(k)]['R2']} sil={res[str(k)]['sil']} ARI(dep)={res[str(k)]['ari_dep']} rob={rob}", file=sys.stderr)
         return res
     res = construir(False); resw = construir(True)
-    return dict(ids=[ids[i] for i in ok], top=top_c, ks=KS, res=res, resw=resw, n=len(ok), pct95=int(sum(pct >= 95)), vot=VOT, area=[round(a, 1) for a in AREA], dor=DOR)
+    return dict(ids=[ids[i] for i in ok], top=top_c, ks=KS, res=res, resw=resw, n=len(ok), pct95=int(sum(pct >= 95)), vot=VOT, area=[round(a, 1) for a in AREA])
 
 def main():
     md = json.loads((S / "api" / "municipal-data.json").read_text(encoding="utf-8"))["records"]
