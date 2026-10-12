@@ -1,5 +1,5 @@
 """Cartograma continuo por difusión (Gastner y Newman, 2004): cada distrito o provincia ocupa un área proporcional a sus votos válidos.
-Genera site/cartogram-dist.json y site/cartogram-prov.json: {vb:[x,y,w,h], paths:{ubigeo:"M…"}, dep:{departamento:"M…"}, err:{mediana,p90}}.
+Genera site/cartogram-dist.json y site/cartogram-prov.json: {vb0, vb1 (cuadro original y deformado), u:{ubigeo:{o,m,n}}, dep:{departamento:{o,m,n}}, err}; o = vértices originales, m = deformados (décimas), n = vértices por anillo; la página interpola entre ambos.
 Solo numpy + shapely (>=2). Las geometrías se deforman con el mismo campo de velocidad, de modo que las fronteras se mantienen."""
 import json, math, sys, time
 from pathlib import Path
@@ -83,25 +83,39 @@ def cartograma(nombre, feats, votos, tol, ny=560, seg=0.06):
     area_pais = sum(Polygon(e).area for u in U for e, _ in u["ps"]); medio = w.sum() / area_pais
     dentro = rho > 0
     rho[~dentro] = medio * c * c
-    Pall = np.vstack([np.vstack([e] + i) for u in U for e, i in u["ps"]]); Pg = np.column_stack([(Pall[:, 0] - x0) / c, (Pall[:, 1] - y0) / c])
+    # contornos de departamento en coordenadas originales: se mueven con el mismo campo para poder interpolar
+    orig = {}
+    for u in U: orig.setdefault(u["dep"], []).append(MultiPolygon([Polygon(e, i) for e, i in u["ps"]]).buffer(0))
+    depr = {d: [r.coords for g in [unary_union(gs)] for pp in polys(g) for r in [pp.exterior, *pp.interiors]] for d, gs in orig.items()}
+    filas = [e for u in U for e, i in u["ps"] for e in [e, *i]]; filas_dep = [np.array(r) for rs in depr.values() for r in rs]
+    Pall = np.vstack(filas + filas_dep); Pg = np.column_stack([(Pall[:, 0] - x0) / c, (Pall[:, 1] - y0) / c])
     Pn, pasos = difundir(rho, Pg); Pn = np.column_stack([Pn[:, 0] * c + x0, Pn[:, 1] * c + y0])
-    paths, geoms, deps, k = {}, {}, {}, 0
+    ent = lambda A: [int(round(v * 10)) for v in A.ravel()]
+    unid, geoms, k = {}, {}, 0
     for u in U:
-        ps = []
+        o, m, nn, ps = [], [], [], []
         for e, ints in u["ps"]:
-            n = len(e); ring = Pn[k:k + n]; k += n; hs = []
-            for i in ints: hs.append(Pn[k:k + len(i)]); k += len(i)
-            ps.append(Polygon(ring, hs).buffer(0))
-        g = unary_union(ps); geoms[u["u"]] = g; paths[u["u"]] = ruta(g); deps.setdefault(u["dep"], []).append(g)
+            ring0 = [e, *ints]; hs = []
+            for j, r in enumerate(ring0):
+                n = len(r); seg_m = Pn[k:k + n]; o.append(ent(r)); m.append(ent(seg_m)); nn.append(n); k += n
+                hs.append(seg_m)
+            ps.append(Polygon(hs[0], hs[1:]).buffer(0))
+        geoms[u["u"]] = unary_union(ps)
+        unid[u["u"]] = {"o": [v for r in o for v in r], "m": [v for r in m for v in r], "n": nn}
+    dep_out = {}
+    for d, rs in depr.items():
+        o, m, nn = [], [], []
+        for r in rs:
+            n = len(r); o += ent(np.array(r)); m += ent(Pn[k:k + n]); nn.append(n); k += n
+        dep_out[d] = {"o": o, "m": m, "n": nn}
     # error del cartograma: área obtenida frente a la deseada (votos / densidad media por celda)
     err = []
     for u, v in zip(U, w):
-        a = geoms[u["u"]].area; d = v / (medio * c * c) * c * c  # área deseada en unidades del mapa
+        a = geoms[u["u"]].area; d = v / (medio * c * c) * c * c
         err.append(abs(a - d) / d if d > 0 else 0)
-    # área deseada se calcula sobre la densidad media de todo el mapa (masa / área del lienzo)
-    dep_paths = {d: ruta(unary_union(gs)) for d, gs in deps.items()}
-    b = unary_union(list(geoms.values())).bounds; m = 12
-    out = {"vb": [round(b[0] - m, 1), round(b[1] - m, 1), round(b[2] - b[0] + 2 * m, 1), round(b[3] - b[1] + 2 * m, 1)], "paths": paths, "dep": dep_paths}
+    b1 = unary_union(list(geoms.values())).bounds; b0 = (minx, miny, maxx, maxy); mg = 12
+    vb = lambda b: [round(b[0] - mg, 1), round(b[1] - mg, 1), round(b[2] - b[0] + 2 * mg, 1), round(b[3] - b[1] + 2 * mg, 1)]
+    out = {"vb0": vb(b0), "vb1": vb(b1), "u": unid, "dep": dep_out}
     rel = np.array(err); out["err"] = {"mediana": round(float(np.median(rel)), 3), "p90": round(float(np.percentile(rel, 90)), 3)}
     dest = S / nombre; dest.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
     print(nombre, len(U), f"{dest.stat().st_size/1e6:.2f} MB", f"{pasos} pasos", f"{time.time()-t0:.0f}s", "error relativo de área: mediana", out["err"]["mediana"], "p90", out["err"]["p90"], file=sys.stderr)
