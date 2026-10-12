@@ -1,11 +1,22 @@
 (function(){
  var P=(location.pathname.split('/').pop()||'index.html').replace(/\.html$/,'')||'index';
- var items=[['index','Gobernadores regionales'],['provincial','Alcaldes provinciales'],['distrital','Alcaldes distritales'],['evolucion','Evolución del conteo'],['proyeccion','Proyección de cierre'],['analisis','Análisis espacial'],['regiones','Regiones electorales'],['mapa3d','Mapa 3D'],['lima-metropolitana','Lima Metropolitana'],['base-municipal','Base municipal · descarga']];
+ var solo=document.currentScript&&document.currentScript.hasAttribute('data-solo');
+ var G=[['Datos',[['mapa','Mapa interactivo','De la región al distrito, con zoom'],['index','Gobernadores regionales','Las 25 carreras regionales'],['provincial','Alcaldes provinciales','196 provincias'],['distrital','Alcaldes distritales','Todos los distritos'],['lima-metropolitana','Lima Metropolitana','Alcalde metropolitano y sus 43 distritos'],['base-municipal','Base municipal · descarga','Tablas en CSV y JSON']]],
+  ['Análisis',[['evolucion','Evolución del conteo','Cómo cambió cada corte'],['proyeccion','Proyección de cierre','Escenario con el avance actual'],['analisis','Análisis espacial','Moran, LISA y Gi*'],['regiones','Regiones electorales','Agrupa territorios por perfil de voto'],['mapa3d','Mapa 3D','Relieve electoral']]]];
+ var here='';G.forEach(function(g){g[1].forEach(function(i){if(i[0]===P)here=i[1]})});if(P==='unidad')here='Ficha de un territorio';
+ var caret='<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+ var navHTML='<nav class="sh-nav" aria-label="Secciones">'+G.map(function(g,gi){var on=g[1].some(function(i){return i[0]===P});
+  return '<div class="sh-grp"><button type="button" class="sh-gb'+(on?' on':'')+'" aria-expanded="false" aria-haspopup="true" aria-controls="shm'+gi+'">'+g[0]+caret+'</button><div class="sh-menu" id="shm'+gi+'" hidden>'+g[1].map(function(i){return '<a href="'+i[0]+'.html"'+(i[0]===P?' aria-current="page"':'')+'>'+i[1]+'<small>'+i[2]+'</small></a>'}).join('')+'</div></div>'}).join('')+(here?'<span class="sh-here">Estás en <b>'+here+'</b></span>':'')+'</nav>';
  var d=document,h=d.createElement('div');
- h.innerHTML='<div class="sh-band"><img src="banner-marca-personal.jpg" width="1584" height="396" alt="Geomática y Dirección de Proyectos. Precisión técnica. Visión de proyecto."><div class="sh-id"><b>Ing. PMP Carlos Mucching Mendoza</b><a href="https://www.linkedin.com/in/carlosmucching" target="_blank" rel="noopener">linkedin.com/in/carlosmucching ↗</a></div></div>'+
- '<nav class="sh-nav" aria-label="Vistas electorales">'+items.map(function(i){return '<a href="'+i[0]+'.html"'+(i[0]===P?' aria-current="page"':'')+'>'+i[1]+'</a>'}).join('')+'</nav>'+
+ if(solo){var old=d.querySelector('nav.top');h.innerHTML=navHTML;if(old)old.replaceWith(h.firstChild);else d.body.insertBefore(h.firstChild,d.body.firstChild)}
+ else{h.innerHTML='<div class="sh-band"><img src="banner-marca-personal.jpg" width="1584" height="396" alt="Geomática y Dirección de Proyectos. Precisión técnica. Visión de proyecto."><div class="sh-id"><b>Ing. PMP Carlos Mucching Mendoza</b><a href="https://www.linkedin.com/in/carlosmucching" target="_blank" rel="noopener">linkedin.com/in/carlosmucching ↗</a></div></div>'+navHTML+
  '<div class="sh-cut" id="shCut"><i></i><span>Consultando el corte ONPE…</span></div>';
- while(h.lastChild)d.body.insertBefore(h.lastChild,d.body.firstChild);
+ while(h.lastChild)d.body.insertBefore(h.lastChild,d.body.firstChild)}
+ // menús desplegables: clic abre, clic fuera o Esc cierra; solo uno abierto
+ var bts=[].slice.call(d.querySelectorAll('.sh-gb')),closeM=function(f){bts.forEach(function(b){b.setAttribute('aria-expanded','false');d.getElementById(b.getAttribute('aria-controls')).hidden=true;if(f===b)b.focus()})};
+ bts.forEach(function(b){b.addEventListener('click',function(e){e.stopPropagation();var o=b.getAttribute('aria-expanded')==='true';closeM();if(!o){b.setAttribute('aria-expanded','true');d.getElementById(b.getAttribute('aria-controls')).hidden=false}})});
+ d.addEventListener('click',function(e){if(!e.target.closest('.sh-grp'))closeM()});
+ d.addEventListener('keydown',function(e){if(e.key==='Escape'){var o=bts.filter(function(b){return b.getAttribute('aria-expanded')==='true'})[0];if(o){e.stopImmediatePropagation();closeM(o)}}},true);
  // Buscador global (tecla / o Ctrl+K): abre la ficha compartible de cualquier distrito o provincia
  var nav=d.querySelector('.sh-nav'),bt=d.createElement('button');bt.className='sh-find';bt.type='button';bt.setAttribute('aria-label','Buscar distrito o provincia');bt.innerHTML='Buscar <kbd>/</kbd>';d.body.appendChild(bt);
  var ov=d.createElement('div');ov.className='sh-ov';ov.hidden=true;ov.innerHTML='<div class="sh-box" role="dialog" aria-modal="true" aria-label="Buscar"><input id="shQ" type="search" placeholder="Distrito o provincia, por ejemplo Andoas" autocomplete="off" aria-label="Buscar distrito o provincia"><ul id="shR" role="listbox"></ul><p class="sh-hint">↑ ↓ para moverte · Enter abre la ficha · Esc cierra</p></div>';d.body.appendChild(ov);
@@ -27,7 +38,7 @@
   if(e.key==='Escape'){close()}else if(e.key==='ArrowDown'){e.preventDefault();cur=Math.min(list.length-1,cur+1);mark()}else if(e.key==='ArrowUp'){e.preventDefault();cur=Math.max(0,cur-1);mark()}else if(e.key==='Enter'&&list[cur]){location.href='unidad.html?u='+list[cur].u}});
  var fmt=function(s){try{return new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:true}).format(new Date(s)).replace(',',' ·')}catch(e){return s}};
  var n=function(x){return Number(x).toLocaleString('en-US')};
- fetch('api/municipal-status.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(s){
+ if(d.getElementById('shCut'))fetch('api/municipal-status.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(s){
   var full=s.distrital>=s.expected_distrital&&s.provincial>=s.expected_provincial;
   d.getElementById('shCut').innerHTML='<i></i><span>Corte ONPE más reciente: <b>'+fmt(s.source_cut_until)+'</b> (hora de Perú, UTC−5). Datos desde '+fmt(s.source_cut_from)+'.</span><span class="'+(full?'':'warn')+'">'+(full?'Descarga completa':'Descarga en curso: '+n(s.provincial)+' de '+n(s.expected_provincial)+' provincias y '+n(s.distrital)+' de '+n(s.expected_distrital)+' distritos')+'</span>';
  }).catch(function(){d.getElementById('shCut').innerHTML='<i></i><span>Cada territorio muestra su propia hora de corte ONPE (UTC−5).</span>'});
