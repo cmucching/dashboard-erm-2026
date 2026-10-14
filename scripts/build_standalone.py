@@ -18,7 +18,7 @@ def js_seguro(txt):
 
 
 def main():
-    h = (SITE / "index.html").read_text(encoding="utf-8")
+    h = (SITE / "gobernadores.html").read_text(encoding="utf-8")
     # quitar script HUD de Netlify
     h = re.sub(r"<script async src=\"/\.netlify/scripts/hud[^>]*></script>", "", h)
     # CSS locales en línea

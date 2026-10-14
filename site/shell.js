@@ -1,7 +1,7 @@
 (function(){
  var P=(location.pathname.split('/').pop()||'index.html').replace(/\.html$/,'')||'index';
  var solo=document.currentScript&&document.currentScript.hasAttribute('data-solo');
- var G=[['Datos',[['mapa','Mapa interactivo','De la región al distrito, con zoom'],['index','Gobernadores regionales','Las 25 carreras regionales'],['provincial','Alcaldes provinciales','196 provincias'],['distrital','Alcaldes distritales','Todos los distritos'],['lima-metropolitana','Lima Metropolitana','Alcalde metropolitano y sus 43 distritos'],['base-municipal','Base municipal · descarga','Tablas en CSV y JSON']]],
+ var G=[['Datos',[['index','Mapa interactivo','De la región al distrito, con zoom'],['gobernadores','Gobernadores regionales','Las 25 carreras regionales'],['provincial','Alcaldes provinciales','196 provincias'],['distrital','Alcaldes distritales','Todos los distritos'],['lima-metropolitana','Lima Metropolitana','Alcalde metropolitano y sus 43 distritos'],['base-municipal','Base municipal · descarga','Tablas en CSV y JSON']]],
   ['Análisis',[['evolucion','Evolución del conteo','Cómo cambió cada corte'],['proyeccion','Proyección de cierre','Escenario con el avance actual'],['analisis','Análisis espacial','Moran, LISA y Gi*'],['regiones','Regiones electorales','Agrupa territorios por perfil de voto'],['mapa3d','Mapa 3D','Relieve electoral']]]];
  var here='';G.forEach(function(g){g[1].forEach(function(i){if(i[0]===P)here=i[1]})});if(P==='unidad')here='Ficha de un territorio';
  var caret='<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -30,12 +30,14 @@
   var tk=q.split(/\s+/);list=IDX.filter(function(e){return tk.every(function(t){return e.t.indexOf(t)>=0})}).sort(function(a,b){var sa=a.k.indexOf(q)===0?0:1,sb=b.k.indexOf(q)===0?0:1;return sa-sb||(a.l===b.l?b.v-a.v:(a.l==='p'?-1:1))}).slice(0,10);cur=0;
   ul.innerHTML=list.length?list.map(function(e,i){return '<li role="option" data-i="'+i+'"'+(i===0?' aria-selected="true"':'')+'><a href="unidad.html?u='+e.u+'"><b>'+esc(tc(e.n))+'</b><span>'+(e.l==='p'?'Provincia · ':'Distrito de ')+esc(tc(e.p))+' · '+esc(tc(e.d))+'</span>'+(e.w?'<em>'+esc(tc(e.w.replace(/ - .*$/,'')))+' '+e.lp.toLocaleString('en-US',{maximumFractionDigits:1})+' %</em>':'')+'</a></li>'}).join(''):'<li class="sh-empty">Sin resultados para «'+esc(d.getElementById('shQ').value)+'».</li>'};
  var mark=function(){d.querySelectorAll('#shR li[role=option]').forEach(function(l,i){l.setAttribute('aria-selected',i===cur?'true':'false');if(i===cur)l.scrollIntoView({block:'nearest'})})};
+ var pickU=function(e){if(typeof window.ERM_goto==='function'){ov.hidden=true;window.ERM_goto(e.u);return true}return false};
  var open=function(){ov.hidden=false;var q=d.getElementById('shQ');q.value='';q.focus();draw();load().then(draw)},close=function(){ov.hidden=true;bt.focus()};
  bt.onclick=open;ov.addEventListener('mousedown',function(e){if(e.target===ov)close()});
  d.getElementById('shQ').addEventListener('input',draw);
+ d.getElementById('shR').addEventListener('click',function(e){var li=e.target.closest('li[role=option]');if(!li||!list[+li.dataset.i])return;if(typeof window.ERM_goto==='function'){e.preventDefault();pickU(list[+li.dataset.i])}});
  d.addEventListener('keydown',function(e){var t=e.target,typing=t&&/INPUT|TEXTAREA|SELECT/.test(t.tagName);
   if(ov.hidden){if((e.key==='/'&&!typing)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();open()}return}
-  if(e.key==='Escape'){close()}else if(e.key==='ArrowDown'){e.preventDefault();cur=Math.min(list.length-1,cur+1);mark()}else if(e.key==='ArrowUp'){e.preventDefault();cur=Math.max(0,cur-1);mark()}else if(e.key==='Enter'&&list[cur]){location.href='unidad.html?u='+list[cur].u}});
+  if(e.key==='Escape'){close()}else if(e.key==='ArrowDown'){e.preventDefault();cur=Math.min(list.length-1,cur+1);mark()}else if(e.key==='ArrowUp'){e.preventDefault();cur=Math.max(0,cur-1);mark()}else if(e.key==='Enter'&&list[cur]){if(!pickU(list[cur]))location.href='unidad.html?u='+list[cur].u}});
  var fmt=function(s){try{return new Intl.DateTimeFormat('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:true}).format(new Date(s)).replace(',',' ·')}catch(e){return s}};
  var n=function(x){return Number(x).toLocaleString('en-US')};
  if(d.getElementById('shCut'))fetch('api/municipal-status.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(s){

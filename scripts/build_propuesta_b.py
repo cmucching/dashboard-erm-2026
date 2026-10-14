@@ -29,7 +29,7 @@ out = RAIZ / "dist" / "propuesta-b.html"; out.parent.mkdir(exist_ok=True)
 out.write_text(html, encoding="utf-8"); print(out, f"{out.stat().st_size/1e6:.2f} MB")
 
 # versión para el sitio (rutas relativas, banner externo)
-SITE_OUT = S / "index.html"
+SITE_OUT = S / "gobernadores.html"
 site = html.replace(b64("banner-marca-personal.jpg", "image/jpeg"), "/banner-marca-personal.jpg").replace(LIVE, "")
 site = site.replace(' · <a href="">tablero en vivo</a>', "").replace("Datos de ejemplo congelados al corte indicado", "Datos al corte indicado")
 # menú agrupado (Datos / Análisis) y buscador global, compartidos con el resto de páginas
