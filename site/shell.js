@@ -2,7 +2,7 @@
  var P=(location.pathname.split('/').pop()||'index.html').replace(/\.html$/,'')||'index';
  var solo=document.currentScript&&document.currentScript.hasAttribute('data-solo');
  var G=[['Datos',[['index','Mapa interactivo','De la región al distrito, con zoom'],['gobernadores','Gobernadores regionales','Las 25 carreras regionales'],['provincial','Alcaldes provinciales','196 provincias'],['distrital','Alcaldes distritales','Todos los distritos'],['lima-metropolitana','Lima Metropolitana','Alcalde metropolitano y sus 43 distritos'],['base-municipal','Base municipal · descarga','Tablas en CSV y JSON']]],
-  ['Análisis',[['evolucion','Evolución del conteo','Cómo cambió cada corte'],['proyeccion','Proyección de cierre','Escenario con el avance actual'],['analisis','Análisis espacial','Moran, LISA y Gi*'],['regiones','Regiones electorales','Agrupa territorios por perfil de voto'],['mapa3d','Mapa 3D','Relieve electoral']]]];
+  ['Análisis',[['regiones','Regiones electorales','Agrupa territorios por perfil de voto'],['evolucion','Evolución del conteo','Cómo cambió cada corte'],['proyeccion','Proyección de cierre','Escenario con el avance actual'],['analisis','Análisis espacial','Moran, LISA y Gi*'],['mapa3d','Mapa 3D','Relieve electoral']]]];
  var here='';G.forEach(function(g){g[1].forEach(function(i){if(i[0]===P)here=i[1]})});if(P==='unidad')here='Ficha de un territorio';
  var caret='<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
  var navHTML='<nav class="sh-nav" aria-label="Secciones">'+G.map(function(g,gi){var on=g[1].some(function(i){return i[0]===P});
