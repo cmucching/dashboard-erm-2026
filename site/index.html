@@ -216,7 +216,7 @@ function card(lab,u,ficha){if(!u)return '';const mx=Math.max(1,...u.top.map(t=>t
  ${u.top.length>1?`<div class="dm">Ventaja del 1.º sobre el 2.º: <b>${f(u.m,1)} pp</b>${u.m<3&&u.adv<100?' · <span class="hot">carrera reñida</span>':''}${ficha?` · <a href="unidad.html?u=${u.k}">Ficha completa →</a>`:''}</div>`:''}${gauges(u)}${ficha?layerNote(u):''}</div>`}
 const nmD=k=>tc(BY['d'+k]?.name||k);
 function locBox(k){if(S.loc===k)return'';if(LOCIDX.includes(k))return`<button class="ghost wide" data-loc="${k}">Ver los resultados por local de votación →</button>`;
- return`<div class="ln"><b>Colegios y locales de votación:</b> aún no descargamos las actas de este distrito. Ya están ${LOCIDX.map(x=>nmD(x)).slice(0,-1).join(', ')} y ${nmD(LOCIDX[LOCIDX.length-1])}.<div class="qk">${LOCIDX.map(x=>`<button class="ghost" data-pk="${x}">${esc(nmD(x))}</button>`).join('')}</div></div>`}
+ return`<div class="ln"><b>Colegios y locales de votación:</b> aún no descargamos las actas de este distrito. Hoy hay ${LOCIDX.length} distritos de Lima Metropolitana con resultados por local:<div class="qk">${LOCIDX.map(x=>`<button class="ghost" data-pk="${x}">${esc(nmD(x))}</button>`).join('')}</div></div>`}
 function locIntro(){const L=LOCIDX.filter(k=>BY['d'+k]&&inScope(BY['d'+k]));return`<div class="dc"><div class="dh"><div><small>Colegios y locales de votación</small><h3>Resultados por local</h3></div></div><p class="dm" style="margin-top:6px">Los distritos con el ícono de colegio ya tienen sus locales en el mapa. Toca uno para acercarte:</p><div class="qk">${L.map(x=>`<button class="ghost" data-pk="${x}">${esc(nmD(x))}</button>`).join('')}</div></div>`}
 function detail(){const parts=[];
  if(S.dep&&REGOF[S.dep]&&S.prov!==LMAP)parts.push(card('Gobernador regional',REGOF[S.dep],false));
@@ -338,7 +338,7 @@ function locPanel(D){if(!D||!S.loc){lcEl.hidden=true;return}lcEl.hidden=false;co
  lcEl.innerHTML=`<h2>Locales de votación · ${esc(nm)}</h2><small>${D.locales.length} locales · ${fi(D.actas_total)} mesas · actas contabilizadas ${fi(D.actas_contadas)} · corte ONPE ${esc(new Date(D.corte_onpe).toLocaleString('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:true}))}</small>
  <div class="ctl2"><div class="seg sm" id="lk" role="group" aria-label="Elección"><button data-k="d" aria-pressed="${S.lk==='d'}">Alcalde distrital</button><button data-k="p" aria-pressed="${S.lk==='p'}">Alcalde de Lima Metropolitana</button></div><button class="ghost" id="lcsv">Descargar CSV</button><button class="ghost" id="lx">Cerrar</button></div>
  ${S.form!=='t'?'<p class="src">Los puntos se muestran en la forma <b>Territorio</b>.</p>':''}${locSel(D,sel)}
- <p class="src">${ub.con_coordenadas!=null?`<b>${ub.con_coordenadas} de ${ub.total}</b> locales están ubicados en el mapa (${f(ub.electores_ubicados/ub.electores*100,0)} % de los electores). `:''}Coordenadas: ${D.locales.some(l=>l.fuente==='Minedu')?'padrón de IIEE de Minedu':'<b>aproximadas con OpenStreetMap; pendiente cruzar con el padrón de Minedu</b>'}. Los estadios, parroquias y locales no escolares no figuran en el padrón de Minedu.</p>
+ <p class="src">${ub.con_coordenadas===0?'<b>Aún sin coordenadas:</b> los locales se listan con sus resultados y se ubicarán en el mapa cuando se crucen con el padrón de Minedu. ':(ub.con_coordenadas!=null?`<b>${ub.con_coordenadas} de ${ub.total}</b> locales están ubicados en el mapa (${f(ub.electores_ubicados/ub.electores*100,0)} % de los electores). `:'')+'Coordenadas: '+(D.locales.some(l=>l.fuente==='Minedu')?'padrón de IIEE de Minedu':'<b>aproximadas con OpenStreetMap; pendiente cruzar con el padrón de Minedu</b>')+'.'} Los estadios, parroquias y locales no escolares no figuran en el padrón de Minedu.</p>
  <div class="lbox" id="lbox">${locRows(D)}</div>`}
 async function locSync(tk,keepZoom){const D=S.loc?await locLoad(S.loc):null;if(tk!=null&&tk!==RTok)return;locPanel(D);locPaint(D);if(D&&S.form==='t'&&!keepZoom&&!S.lsel){const bb=locBB(D);if(bb)zoomTo(bb)}}
 function locSelect(c,zoom){S.lsel=S.lsel===c?null:c;const D=LOCD[S.loc];locPanel(D);locPaint(D);url(false);const l=D.locales.find(x=>x.c===S.lsel);if(l&&l.xy&&zoom)zoomTo([l.xy[0]-.6,l.xy[1]-.6,l.xy[0]+.6,l.xy[1]+.6]);const r=document.querySelector('#lbox .lrow.sel');if(r)r.scrollIntoView({block:'nearest'})}
@@ -385,7 +385,7 @@ function labDo(){if(S.form!=='t'||!gN){if(gN)gN.style.display='none';return}gN.s
  for(const k in LABEL)if(!on.has(k))LABEL[k].style.display='none'}
 // ---------- arranque ----------
 Promise.all([jget('api/municipal-data.json'),jget('api/results.json'),jget('api/party-colors.json').catch(()=>({})),jget('dept-paths.json'),jget('province-paths.json'),jget('api/locales/index.json').catch(()=>[])]).then(async([m,res,pal,dp,pp,li])=>{
- LOCIDX=Array.isArray(li)?li:[];build(m,res,pal,dp,pp);NSH('r');NSH('p');mkOutlines(dp,pp);
+ LOCIDX=Array.isArray(li)?li:[];build(m,res,pal,dp,pp);LOCIDX=LOCIDX.filter(k=>BY['d'+k]).sort((a,b)=>BY['d'+a].name.localeCompare(BY['d'+b].name,'es'));NSH('r');NSH('p');mkOutlines(dp,pp);
  const ns=readURL(new URLSearchParams(location.search));Object.assign(S,ns);
  if(S.lv==='d'||S.sel)await ensureDist();
  await render(true);url(false);
