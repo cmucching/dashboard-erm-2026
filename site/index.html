@@ -37,6 +37,8 @@
 @media(prefers-reduced-motion:reduce){.mp #map path,.mp #map rect.u{transition:none}.mp #fB{animation:none}}
 @media(max-width:700px){.mp{padding:4px 12px 40px}.mp .sub{display:none}.mp h1{font-size:21px}.mp .tools{gap:6px 10px;margin-bottom:10px}.mp #lv{display:flex;flex-wrap:nowrap;width:100%}.mp #lv button{flex:1;padding:8px 4px;font-size:12.5px;white-space:normal;line-height:1.15}.mp .seg.sm button{padding:7px 9px;font-size:12.5px}.mp .card{padding:12px}.sh-band .sh-id{padding:10px 118px 2px 12px!important}.sh-id b{font-size:15px!important}.sh-cut{font-size:12px!important}.sh-cut span+span{display:none}.mp #map{height:clamp(340px,62vh,560px)}}
 .mp .ps{width:22px;height:22px;object-fit:contain;flex:none;background:#fff;border-radius:5px}.mp .tr{grid-template-columns:22px minmax(0,1fr) auto!important}.mp .chip .ps{width:20px;height:20px}
+.mp #lc h2{margin-bottom:2px}.mp #lc .lrow{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:2px 10px;align-items:center;padding:8px 6px;border-top:1px solid var(--line);cursor:pointer;border-radius:8px}.mp #lc .lrow:hover,.mp #lc .lrow.sel{background:#F3F1EC}.mp #lc .lrow .ps{width:26px;height:26px}.mp #lc .lrow i.nop{width:26px;height:26px;border-radius:50%;border:2px dashed #B9C0C6;box-sizing:border-box}.mp #lc .lrow b{font-size:13.5px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.mp #lc .lrow small{display:block}.mp #lc .lrow .rt{text-align:right;font-size:12.5px;color:var(--ink2);white-space:nowrap}.mp #lc .lrow .rt b{display:inline;font-size:13.5px;color:var(--ink)}.mp #lc .lbox{max-height:520px;overflow:auto;margin-top:8px}.mp #lc .lsel{background:#F7F5F0;border-radius:12px;padding:10px 12px;margin:10px 0}.mp #lc .lsel h3{margin:0 0 4px;font-size:16px}.mp #lc .src{font-size:12.5px;color:var(--ink2);margin:8px 0 0}.mp #lc .src b{color:var(--ink)}.mp #lc .ctl2{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 0}
+.mp #gL .lp{cursor:pointer}.mp #gL .lp circle{fill:#fff;stroke-width:3;transition:stroke-width .15s}.mp #gL .lp:hover circle,.mp #gL .lp.sel circle{stroke-width:5}.mp #gL .lp.sel circle{stroke:#06263D!important}.mp #gL text{font-size:10px;font-weight:800;fill:#06263D;paint-order:stroke;stroke:#fff;stroke-width:3px;pointer-events:none}
 </style></head><body>
 <main class="mp">
  <h1>Perú 2026: de la región al distrito en un par de toques</h1>
@@ -51,10 +53,10 @@
    <div class="wrap"><svg id="map" viewBox="0 0 760 1124" role="img" aria-label="Mapa electoral del Perú">
     <g id="fT"><g id="gR"></g><g id="gP" style="display:none"></g><g id="gD" style="display:none"></g><g id="gOd"></g><g id="gOp"></g></g>
     <g id="fC" style="display:none"><g id="cR"></g><g id="cP" style="display:none"></g><g id="cD" style="display:none"></g><g id="cOp"></g><g id="cOd"></g></g>
-    <g id="fB" style="display:none"></g></svg>
+    <g id="fB" style="display:none"></g><g id="gL"></g></svg>
     <div class="zc" id="zc" aria-label="Zoom del mapa"><button id="zi" aria-label="Acercar">+</button><button id="zo" aria-label="Alejar">−</button><button id="zh" aria-label="Centrar" title="Centrar en el ámbito">⌂</button></div></div>
    <div class="chips" id="chips" role="group" aria-label="Resaltar en el mapa"></div><div class="lg" id="lg" hidden></div><p class="hint" id="hn" hidden></p></div>
-  <div><div class="card" id="dt"></div>
+  <div><div class="card" id="dt"></div><div class="card" id="lc" hidden></div>
    <div class="card"><h2 id="lt">Carreras</h2><div class="kpi" id="kp"></div>
     <div class="lt"><input id="q" type="search" placeholder="Buscar en esta lista" aria-label="Buscar en esta lista"><div class="seg sm" id="so" role="group" aria-label="Ordenar"><button data-k="margin" aria-pressed="true">Más reñidas</button><button data-k="big" aria-pressed="false">Mayor ventaja</button><button data-k="actas" aria-pressed="false">Actas</button><button data-k="name" aria-pressed="false">A–Z</button></div></div>
     <div id="rows"></div><button class="more" id="more" hidden></button></div></div>
@@ -74,8 +76,8 @@ const CL=['#E4E2DC','#D6402C','#2F6B8F','#8FB6D1','#F2A38A'],CLN=['Sin patrón s
 const TT={r:'gobernadores regionales',p:'alcaldes provinciales',d:'alcaldes distritales'},LV={r:{n:'Gobernador regional',pl:'regiones'},p:{n:'Alcalde provincial',pl:'provincias'},d:{n:'Alcalde distrital',pl:'distritos'}};
 const LYN={lead:'Quién va primero',falta:'Qué falta contar',reg:'Regiones electorales',lisa:'Patrón espacial'};
 const svg=$('#map'),NS='http://www.w3.org/2000/svg',GT={r:$('#gR'),p:$('#gP'),d:$('#gD')},GC={r:$('#cR'),p:$('#cP'),d:$('#cD')};
-const S={lv:'r',dep:null,prov:null,sel:null,form:'t',layer:'lead',k:7,lvar:'margen',t:.6,chip:null,sort:'margin',q:'',lim:30};
-let PAL={},U={r:[],p:[],d:[]},BY={},DEPN={},DEPNAME={},REGOF={},LMAP=null,PATH={},EL={t:{},c:{},b:{}},DISTLOADED=null,RGD=null,ANA=null,CG={},CEL={r:[],p:[],d:[]},COUT={p:[],d:[]},REGC={},VB=[0,0,760,1124],anim=0,CUR=null,TC=0,RTok=0;
+const S={lv:'r',dep:null,prov:null,sel:null,form:'t',layer:'lead',k:7,lvar:'margen',t:.6,chip:null,sort:'margin',q:'',lim:30,loc:null,lsel:null,lk:'d'};
+let LOCIDX=[],LOCD={};let PAL={},U={r:[],p:[],d:[]},BY={},DEPN={},DEPNAME={},REGOF={},LMAP=null,PATH={},EL={t:{},c:{},b:{}},DISTLOADED=null,RGD=null,ANA=null,CG={},CEL={r:[],p:[],d:[]},COUT={p:[],d:[]},REGC={},VB=[0,0,760,1124],anim=0,CUR=null,TC=0,RTok=0;
 const col=p=>PAL[p]||'#8A97A3';
 const SYMID={};const ic=p=>SYMID[p]?`<img class="ps" src="simbolos/${SYMID[p]}.png" alt="" width="22" height="22" loading="lazy" decoding="async">`:`<i style="background:${col(p)}"></i>`;
 // ---------- datos ----------
@@ -111,16 +113,17 @@ function applyT(t){TC=t;const l=S.lv;CEL[l].forEach(e=>e.el.setAttribute('d',dst
 const inScope=u=>S.lv==='r'?true:S.lv==='p'?(!S.dep||u.dep===S.dep):(S.prov?u.prov===S.prov:S.dep?u.dep===S.dep:true);
 const units=()=>U[S.lv].filter(inScope);
 function scopeBB(){const L=S.lv==='r'?U.r:units();if(S.form==='c'){const bb=(CEL[S.lv]||[]).filter(e=>L.includes(e.u)).map(e=>bbC(e.g,S.t));return bb.length?uni(bb):[0,0,760,1124]}const bb=L.map(uBB);return bb.some(Boolean)?uni(bb):[0,0,760,1124]}
-function setVB(v){VB=v;svg.setAttribute('viewBox',v.map(x=>+x.toFixed(2)).join(' '))}
+function setVB(v){VB=v;svg.setAttribute('viewBox',v.map(x=>+x.toFixed(2)).join(' '));locScale()}
 function fitVB(bb){const r=svg.getBoundingClientRect(),ar=(r.width||760)/(r.height||1124);let w=(bb[2]-bb[0])*1.14,h=(bb[3]-bb[1])*1.14;const cx=(bb[0]+bb[2])/2,cy=(bb[1]+bb[3])/2;if(w/h<ar)w=h*ar;else h=w/ar;return[cx-w/2,cy-h/2,w,h]}
 function zoomTo(bb,instant){const to=fitVB(bb);CUR=bb;cancelAnimationFrame(anim);if(instant||matchMedia('(prefers-reduced-motion:reduce)').matches){setVB(to);return}
  const from=VB.slice(),t0=performance.now(),D=620;const step=t=>{let k=Math.min(1,(t-t0)/D);k=k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;setVB(from.map((x,i)=>x+(to[i]-x)*k));if(k<1)anim=requestAnimationFrame(step)};anim=requestAnimationFrame(step)}
 function zoomAt(fc,cx,cy){cancelAnimationFrame(anim);const r=svg.getBoundingClientRect(),[x,y,w,h]=VB,px=cx==null?.5:(cx-r.left)/r.width,py=cy==null?.5:(cy-r.top)/r.height;let nw=w*fc,nh=h*fc;const base=fitVB(CUR||[0,0,760,1124]);if(nw>base[2]*1.6){nw=base[2]*1.6;nh=base[3]*1.6}if(nw<base[2]/60){return}setVB([x+(w-nw)*px,y+(h-nh)*py,nw,nh])}
 // ---------- estado y URL ----------
-function qs(){const p=new URLSearchParams();if(S.lv!=='r')p.set('n',S.lv);if(S.dep)p.set('d',S.dep);if(S.prov)p.set('p',S.prov);if(S.sel)p.set('u',S.sel);if(S.form!=='t')p.set('f',S.form);if(S.layer!=='lead')p.set('l',S.layer);if(S.layer==='reg'&&S.k!==7)p.set('k',S.k);if(S.layer==='lisa'&&S.lvar!=='margen')p.set('v',S.lvar);if(S.form==='c'&&Math.round(S.t*100)!==60)p.set('t',Math.round(S.t*100));return p.toString()}
+function qs(){const p=new URLSearchParams();if(S.lv!=='r')p.set('n',S.lv);if(S.dep)p.set('d',S.dep);if(S.prov)p.set('p',S.prov);if(S.sel)p.set('u',S.sel);if(S.form!=='t')p.set('f',S.form);if(S.layer!=='lead')p.set('l',S.layer);if(S.layer==='reg'&&S.k!==7)p.set('k',S.k);if(S.layer==='lisa'&&S.lvar!=='margen')p.set('v',S.lvar);if(S.form==='c'&&Math.round(S.t*100)!==60)p.set('t',Math.round(S.t*100));if(S.loc){p.set('loc',S.loc);if(S.lsel)p.set('lo',S.lsel);if(S.lk==='p')p.set('le','p')}return p.toString()}
 function url(push){const q=qs(),u=location.pathname+(q?'?'+q:'');if(push)history.pushState(null,'',u);else history.replaceState(null,'',u)}
 function readURL(q){const lv=['r','p','d'].includes(q.get('n'))?q.get('n'):'r',sel=q.get('u'),su=sel&&BY['d'+sel],rg=q.get('r')&&BY['r'+q.get('r')];
- const ns={lv,dep:q.get('d')||null,prov:q.get('p')||null,sel:su?sel:null,form:['c','b'].includes(q.get('f'))?q.get('f'):'t',layer:['falta','reg','lisa'].includes(q.get('l'))?q.get('l'):'lead',k:Math.min(12,Math.max(3,+q.get('k')||7)),lvar:q.get('v')||'margen',t:q.get('t')?Math.min(1,Math.max(0,+q.get('t')/100)):.6,chip:null};
+ const ns={lv,dep:q.get('d')||null,prov:q.get('p')||null,sel:su?sel:null,form:['c','b'].includes(q.get('f'))?q.get('f'):'t',layer:['falta','reg','lisa'].includes(q.get('l'))?q.get('l'):'lead',k:Math.min(12,Math.max(3,+q.get('k')||7)),lvar:q.get('v')||'margen',t:q.get('t')?Math.min(1,Math.max(0,+q.get('t')/100)):.6,chip:null,loc:null,lsel:null,lk:q.get('le')==='p'?'p':'d'};
+ const lc=q.get('loc'),lu=lc&&BY['d'+lc];if(lu&&LOCIDX.includes(lc)){ns.loc=lc;ns.lsel=q.get('lo')||null;if(!su){ns.sel=lc;ns.lv='d';ns.dep=lu.dep;ns.prov=lu.prov}}
  if(su){ns.lv='d';ns.dep=su.dep;ns.prov=su.prov}else if(rg&&!q.get('n')){ns.lv=rg.none?'d':'p';ns.dep=rg.dep;if(rg.none)ns.prov=rg.prov}
  if(ns.lv==='r'){ns.dep=null;ns.prov=null}return ns}
 function go(ns,o={}){Object.assign(S,ns);S.lim=30;S.q='';$('#q').value='';return render(o.instant).then(()=>url(o.push!==false&&!o.replace))}
@@ -177,7 +180,7 @@ function card(lab,u,ficha){if(!u)return '';const mx=Math.max(1,...u.top.map(t=>t
 function detail(){const parts=[];
  if(S.dep&&REGOF[S.dep]&&S.prov!==LMAP)parts.push(card('Gobernador regional',REGOF[S.dep],false));
  if(S.prov)parts.push(card('Alcalde provincial',BY['p'+S.prov],true));
- if(S.sel)parts.push(card('Alcalde distrital',BY['d'+S.sel],true));
+ if(S.sel)parts.push(card('Alcalde distrital',BY['d'+S.sel],true)+(LOCIDX.includes(S.sel)&&!S.loc?`<button class="ghost" data-loc="${S.sel}" style="margin-top:10px;width:100%;padding:10px;font-size:14px">Ver los resultados por local de votación →</button>`:''));
  if(!parts.length){const L=U.r.filter(u=>u.lead),by={};L.forEach(u=>by[u.lead.party]=(by[u.lead.party]||0)+1);const rk=Object.entries(by).sort((a,b)=>b[1]-a[1]),cl=L.filter(u=>u.m<3&&u.adv<100).length;
   $('#dt').innerHTML=`<h2>Gobernadores regionales</h2><small>Resumen nacional · toca una región del mapa para acercarte</small><div class="kpi" style="margin-top:10px"><span><b>${L.length}</b> regiones con resultados</span><span><b>${cl}</b> con ventaja menor a 3 pp</span><span><b>${rk.length}</b> organizaciones lideran</span></div>
   ${rk.slice(0,6).map(([p,n])=>`<div class="tr">${ic(p)}<span title="${esc(p)}">${esc(short(p))}</span><b>${n}</b><div class="tb"><u style="width:${n/rk[0][1]*100}%;background:${col(p)}"></u></div></div>`).join('')}`;return}
@@ -206,7 +209,7 @@ function rows(){const all=units(),a=list(),vv=all.reduce((s,u)=>s+u.valid,0),ad=
   <div><div class="mb"><u style="width:${Math.min(100,Math.max(u.lead?3:0,u.m/10*100))}%;background:${u.lead?col(u.lead.party):GREY}"></u></div><div class="mv"><b>${u.lead?f(u.m,1)+' pp':'—'}</b> · ${f(u.adv,0)} % actas</div></div></div>`).join(''):`<p class="empty">Nada coincide con ese filtro.</p>`;
  const mo=$('#more');mo.hidden=a.length<=S.lim;mo.textContent=`Mostrar más (${fi(a.length-S.lim)} restantes)`}
 // ---------- render ----------
-async function render(instant,keepZoom){const tk=++RTok;
+async function render(instant,keepZoom){const tk=++RTok;if(S.loc&&S.sel!==S.loc){S.loc=null;S.lsel=null}
  document.querySelectorAll('#lv button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===S.lv));document.querySelectorAll('#ly button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.y===S.layer));document.querySelectorAll('#fm button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.f===S.form));document.querySelectorAll('#so button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===S.sort));
  const need=[];if(S.lv==='d'||S.sel)need.push(ensureDist());if(S.form==='c')need.push(needC(S.lv));if(S.layer==='reg')need.push(needReg());if(S.layer==='lisa')need.push(needAna());
  if(need.length&&!(DISTLOADED&&need.length===1&&S.lv==='d'&&S.form!=='c'&&S.layer!=='reg'&&S.layer!=='lisa')){$('#ms').textContent='Cargando…';}
@@ -217,7 +220,8 @@ async function render(instant,keepZoom){const tk=++RTok;
  $('#mt').textContent=LYN[S.layer]+' · '+TT[S.lv];
  $('#ms').textContent=S.lv==='r'?'Toca una región para ver sus provincias':S.lv==='p'?'Toca una provincia para ver sus distritos':'Toca un distrito para ver su resultado';
  $('#up').hidden=!(S.dep||S.prov||S.sel||S.lv!=='r');$('#d3').href='mapa3d.html?n='+(S.lv==='p'?'prov':'dist');svg.setAttribute('aria-label','Mapa electoral: '+LV[S.lv].pl+' · '+LYN[S.layer]);
- if(S.layer!=='lead'&&S.layer!=='falta'&&S.lv==='r')$('#ms').textContent='Toca una región para verla por provincias con esta capa'}
+ if(S.layer!=='lead'&&S.layer!=='falta'&&S.lv==='r')$('#ms').textContent='Toca una región para verla por provincias con esta capa';
+ await locSync(tk,keepZoom)}
 // ---------- cambios de capa y forma ----------
 function setForm(f){if(f===S.form)return;const from=S.form;
  if(from==='t'&&f==='c'){needC(S.lv).then(()=>{S.form='c';S.chip=S.chip;render(true,true).then(()=>{applyT(0);showForm();paint();const to=S.t,t0=performance.now();zoomTo(scopeBB(),false);const st=n=>{const k=Math.min(1,(n-t0)/800),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;applyT(to*e);if(k<1)requestAnimationFrame(st)};requestAnimationFrame(st);url(false)})});return}
@@ -258,9 +262,50 @@ rowsEl.addEventListener('mouseleave',()=>svg.querySelectorAll('.hv').forEach(x=>
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.querySelector('.sh-ov:not([hidden])')&&!/INPUT|SELECT/.test((e.target||{}).tagName))up()});
 let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{if(S.form==='b')bloques();else if(CUR)zoomTo(CUR,true)},150)});
 addEventListener('popstate',()=>{Object.assign(S,readURL(new URLSearchParams(location.search)));render(false)});
+
+// ---------- locales de votación (por distrito, a partir de las actas por mesa) ----------
+const ln=n=>tc(n).replace(/\b(Ie|Iep|Iei|Cebe|Ceba|Cetpro|Pnp|Fap|Se|Pri|Ini|Uni|Pucp|Apima)\b/g,m=>m.toUpperCase());
+const proj=(la,lo)=>[(lo+81.4)*Math.cos(9*Math.PI/180)*60,(0.2-la)*60];
+const gL=$('#gL'),lcEl=$('#lc');
+const lwin=(D,l,k)=>{const e=Object.entries(l[k]||{});if(!e.length)return null;const tot=e.reduce((a,b)=>a+b[1],0),[c,v]=e[0];const nm=D.organizaciones[c]||c;return{c,nm,v,pct:tot?v/tot*100:0,tot}};
+async function locLoad(u){if(u in LOCD)return LOCD[u];try{const r=await fetch('api/locales/'+u+'.json');if(!r.ok)throw 0;const D=await r.json();(D.locales||[]).forEach(l=>{l.xy=l.lat!=null?proj(l.lat,l.lon):null});LOCD[u]=D}catch(e){LOCD[u]=null}return LOCD[u]}
+function locScale(){if(!gL.firstChild)return;const w=svg.getBoundingClientRect().width||700,px=VB[2]/w;gL.querySelectorAll('.lp').forEach(g=>g.setAttribute('transform',`translate(${g.dataset.x} ${g.dataset.y}) scale(${px.toFixed(5)})`))}
+function locBB(D){const P=D.locales.filter(l=>l.xy).map(l=>l.xy);if(!P.length)return null;const xs=P.map(p=>p[0]),ys=P.map(p=>p[1]);return[Math.min(...xs)-.5,Math.min(...ys)-.5,Math.max(...xs)+.5,Math.max(...ys)+.5]}
+function locPaint(D){gL.innerHTML='';if(!D||S.form!=='t'){gL.style.display='none';return}gL.style.display='';
+ const fr=document.createDocumentFragment();
+ D.locales.filter(l=>l.xy).slice().sort((a,b)=>b.el-a.el).forEach(l=>{const w=lwin(D,l,S.lk),r=Math.max(9,Math.min(21,5+Math.sqrt(l.el)/10)),g=document.createElementNS(NS,'g');g.setAttribute('class','lp'+(S.lsel===l.c?' sel':''));g.dataset.c=l.c;g.dataset.x=l.xy[0].toFixed(2);g.dataset.y=l.xy[1].toFixed(2);
+  const cc=w?col(w.nm):GREY,id=w&&SYMID[w.nm];
+  g.innerHTML=`<circle r="${r}" style="stroke:${cc}"></circle>${id?`<image href="simbolos/${id}.png" x="${-r*.72}" y="${-r*.72}" width="${r*1.44}" height="${r*1.44}" preserveAspectRatio="xMidYMid meet"></image>`:''}`;fr.appendChild(g)});
+ gL.appendChild(fr);locScale()}
+const lpar=(D,k)=>{const t={};D.locales.forEach(l=>Object.entries(l[k]||{}).forEach(([c,v])=>t[c]=(t[c]||0)+v));return t};
+function locRows(D){const k=S.lk;return D.locales.slice().sort((a,b)=>b.el-a.el).map(l=>{const w=lwin(D,l,k);return`<div class="lrow${S.lsel===l.c?' sel':''}" data-c="${esc(l.c)}" tabindex="0" role="button">${w?ic(w.nm):'<i class="nop"></i>'}<div><b title="${esc(l.n)}">${esc(ln(l.n))}</b><small>${w?esc(short(w.nm))+' · '+f(w.pct,1)+' %':'Sin actas contabilizadas'}${l.lat==null?' · sin ubicar en el mapa':''}</small></div><div class="rt"><b>${fi(l.el)}</b> electores<br>${l.mesas} mesas</div></div>`}).join('')}
+function locSel(D,l){if(!l)return'';const k=S.lk,e=Object.entries(l[k]||{}),tot=e.reduce((a,b)=>a+b[1],0),mx=e.length?e[0][1]:1,cont=k==='d'?l.mc_d:l.mc_p;
+ return`<div class="lsel"><h3>${esc(ln(l.n))}</h3><div class="dm">${l.mesas} mesas · ${fi(l.el)} electores · ${cont} de ${l.mesas} actas contabilizadas · asistencia ${l.el?f(l.as/l.el*100,1):'—'} %</div>${e.length?e.slice(0,6).map(([c,v])=>{const nm=D.organizaciones[c]||c;return`<div class="tr">${ic(nm)}<span title="${esc(nm)}">${esc(short(nm))}</span><b>${f(tot?v/tot*100:0,1)} %</b><div class="tb"><u style="width:${v/mx*100}%;background:${col(nm)}"></u></div><small>${fi(v)} votos</small></div>`}).join(''):'<p class="dm">Aún sin actas contabilizadas.</p>'}${l.lat!=null?`<div class="dm" style="margin-top:6px">Ubicación: ${l.fuente==='Minedu'?'padrón Minedu':'OpenStreetMap (provisional)'} · ${l.lat.toFixed(5)}, ${l.lon.toFixed(5)}</div>`:''}</div>`}
+function locPanel(D){if(!D||!S.loc){lcEl.hidden=true;return}lcEl.hidden=false;const u=BY['d'+S.loc],ub=D.ubicados||{},nm=u?tc(u.name):D.distrito;
+ const sel=D.locales.find(l=>l.c===S.lsel);
+ lcEl.innerHTML=`<h2>Locales de votación · ${esc(nm)}</h2><small>${D.locales.length} locales · ${fi(D.actas_total)} mesas · actas contabilizadas ${fi(D.actas_contadas)} · corte ONPE ${esc(new Date(D.corte_onpe).toLocaleString('es-PE',{timeZone:'America/Lima',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:true}))}</small>
+ <div class="ctl2"><div class="seg sm" id="lk" role="group" aria-label="Elección"><button data-k="d" aria-pressed="${S.lk==='d'}">Alcalde distrital</button><button data-k="p" aria-pressed="${S.lk==='p'}">Alcalde de Lima Metropolitana</button></div><button class="ghost" id="lcsv">Descargar CSV</button><button class="ghost" id="lx">Cerrar</button></div>
+ ${S.form!=='t'?'<p class="src">Los puntos se muestran en la forma <b>Territorio</b>.</p>':''}${locSel(D,sel)}
+ <p class="src">${ub.con_coordenadas!=null?`<b>${ub.con_coordenadas} de ${ub.total}</b> locales están ubicados en el mapa (${f(ub.electores_ubicados/ub.electores*100,0)} % de los electores). `:''}Coordenadas: ${D.locales.some(l=>l.fuente==='Minedu')?'padrón de IIEE de Minedu':'<b>aproximadas con OpenStreetMap; pendiente cruzar con el padrón de Minedu</b>'}. Los estadios, parroquias y locales no escolares no figuran en el padrón de Minedu.</p>
+ <div class="lbox" id="lbox">${locRows(D)}</div>`}
+async function locSync(tk,keepZoom){const D=S.loc?await locLoad(S.loc):null;if(tk!=null&&tk!==RTok)return;locPanel(D);locPaint(D);if(D&&S.form==='t'&&!keepZoom&&!S.lsel){const bb=locBB(D);if(bb)zoomTo(bb)}}
+function locSelect(c,zoom){S.lsel=S.lsel===c?null:c;const D=LOCD[S.loc];locPanel(D);locPaint(D);url(false);const l=D.locales.find(x=>x.c===S.lsel);if(l&&l.xy&&zoom)zoomTo([l.xy[0]-.6,l.xy[1]-.6,l.xy[0]+.6,l.xy[1]+.6]);const r=document.querySelector('#lbox .lrow.sel');if(r)r.scrollIntoView({block:'nearest'})}
+function locCSV(D){const k=S.lk,cod=Object.keys(lpar(D,k)),q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+ const cab=['codigo_local','local','mesas','electores','asistentes','votos_emitidos','votos_validos','blancos','nulos','latitud','longitud','fuente_coordenadas',...cod.map(c=>q(D.organizaciones[c]||c))];
+ const fil=D.locales.map(l=>[l.c,q(l.n),l.mesas,l.el,l.as,l.em,l.va,l.bl,l.nu,l.lat??'',l.lon??'',l.fuente??'',...cod.map(c=>(l[k]||{})[c]||0)].join(','));
+ const b=new Blob(['﻿'+cab.join(',')+'\n'+fil.join('\n')],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='locales-votacion-'+S.loc+'-'+(k==='d'?'distrital':'lima-metropolitana')+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),2000)}
+document.addEventListener('click',e=>{const o=e.target.closest('[data-loc]');if(o){if(S.form!=='t')S.form='t';S.loc=o.dataset.loc;S.lsel=null;render(false).then(()=>url(true));return}
+ if(e.target.closest('#lx')){S.loc=null;S.lsel=null;render(true,true).then(()=>{url(false);zoomTo(scopeBB())});return}
+ if(e.target.closest('#lcsv')){locCSV(LOCD[S.loc]);return}
+ const k=e.target.closest('#lk button');if(k){S.lk=k.dataset.k;const D=LOCD[S.loc];locPanel(D);locPaint(D);url(false);return}
+ const r=e.target.closest('#lc .lrow');if(r)locSelect(r.dataset.c,true)});
+gL.addEventListener('click',e=>{const g=e.target.closest('.lp');if(g){e.stopPropagation();locSelect(g.dataset.c,false)}});
+gL.addEventListener('mousemove',e=>{const g=e.target.closest('.lp');if(!g)return;e.stopPropagation();const D=LOCD[S.loc],l=D&&D.locales.find(x=>x.c===g.dataset.c);if(!l)return;const w=lwin(D,l,S.lk);
+ tip.innerHTML=`<b>${esc(ln(l.n))}</b><br>${l.mesas} mesas · ${fi(l.el)} electores<br>${w?esc(short(w.nm))+' '+f(w.pct,1)+' %':'Sin actas contabilizadas'}<br><i style="color:#F8C9B6;font-style:normal">Toca para ver el detalle</i>`;tip.style.display='block';tip.style.left=Math.min(e.clientX+14,innerWidth-295)+'px';tip.style.top=Math.min(e.clientY+14,innerHeight-110)+'px'});
+gL.addEventListener('mouseleave',()=>{tip.style.display='none'});
 // ---------- arranque ----------
-Promise.all([jget('api/municipal-data.json'),jget('api/results.json'),jget('api/party-colors.json').catch(()=>({})),jget('dept-paths.json'),jget('province-paths.json')]).then(async([m,res,pal,dp,pp])=>{
- build(m,res,pal,dp,pp);NSH('r');NSH('p');mkOutlines(dp,pp);
+Promise.all([jget('api/municipal-data.json'),jget('api/results.json'),jget('api/party-colors.json').catch(()=>({})),jget('dept-paths.json'),jget('province-paths.json'),jget('api/locales/index.json').catch(()=>[])]).then(async([m,res,pal,dp,pp,li])=>{
+ LOCIDX=Array.isArray(li)?li:[];build(m,res,pal,dp,pp);NSH('r');NSH('p');mkOutlines(dp,pp);
  const ns=readURL(new URLSearchParams(location.search));Object.assign(S,ns);
  if(S.lv==='d'||S.sel)await ensureDist();
  await render(true);url(false);
