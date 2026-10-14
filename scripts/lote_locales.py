@@ -4,7 +4,7 @@ Uso: python3 scripts/lote_locales.py <carpeta_trabajo> 140124 140111 ...
 Por distrito: bajar_mesas.py -> agregar_locales.py -> ubicar_locales.py (sin coordenadas si no hay fuente) -> validación
 (votos válidos y actas contabilizadas de la elección provincial vs data/municipal_lima.json) -> site/api/locales/<u>.json + data/mesas/*.gz
 Es reanudable: bajar_mesas.py retoma desde lo ya guardado."""
-import json, sys, subprocess, gzip, shutil, pathlib, datetime
+import os, json, sys, subprocess, gzip, shutil, pathlib, datetime
 R = pathlib.Path(__file__).resolve().parent.parent
 W = pathlib.Path(sys.argv[1]); W.mkdir(parents=True, exist_ok=True); ids = sys.argv[2:]
 lima = {r["ubigeo"]: r for r in json.load(open(R / "data/municipal_lima.json", encoding="utf-8"))}
@@ -14,7 +14,7 @@ def nombre(u):
 res = []
 for u in ids:
     jl = W / f"mesas-{u}.jsonl"
-    r = subprocess.run([sys.executable, str(R / "scripts/bajar_mesas.py"), u, str(jl), "--pausa", "0.4"], capture_output=True, text=True)
+    r = subprocess.run([sys.executable, str(R / "scripts/bajar_mesas.py"), u, str(jl), "--pausa", os.environ.get("PAUSA", "0.4")], capture_output=True, text=True)
     (W / f"log-{u}.txt").write_text(r.stdout + r.stderr, encoding="utf-8")
     if r.returncode != 0:
         print(u, "INCOMPLETO (reanudable):", (r.stdout + r.stderr).strip().splitlines()[-1:], flush=True); res.append((u, "INCOMPLETO")); continue
