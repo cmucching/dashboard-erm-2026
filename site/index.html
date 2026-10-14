@@ -36,6 +36,7 @@
 .tip{position:fixed;z-index:60;background:#06263D;color:#fff;padding:8px 10px;border-radius:8px;font-size:12.5px;pointer-events:none;display:none;max-width:280px;line-height:1.35}
 @media(prefers-reduced-motion:reduce){.mp #map path,.mp #map rect.u{transition:none}.mp #fB{animation:none}}
 @media(max-width:700px){.mp{padding:4px 12px 40px}.mp .sub{display:none}.mp h1{font-size:21px}.mp .tools{gap:6px 10px;margin-bottom:10px}.mp #lv{display:flex;flex-wrap:nowrap;width:100%}.mp #lv button{flex:1;padding:8px 4px;font-size:12.5px;white-space:normal;line-height:1.15}.mp .seg.sm button{padding:7px 9px;font-size:12.5px}.mp .card{padding:12px}.sh-band .sh-id{padding:10px 118px 2px 12px!important}.sh-id b{font-size:15px!important}.sh-cut{font-size:12px!important}.sh-cut span+span{display:none}.mp #map{height:clamp(340px,62vh,560px)}}
+.mp .ps{width:22px;height:22px;object-fit:contain;flex:none;background:#fff;border-radius:5px}.mp .tr{grid-template-columns:22px minmax(0,1fr) auto!important}.mp .chip .ps{width:20px;height:20px}
 </style></head><body>
 <main class="mp">
  <h1>Perú 2026: de la región al distrito en un par de toques</h1>
@@ -76,13 +77,14 @@ const svg=$('#map'),NS='http://www.w3.org/2000/svg',GT={r:$('#gR'),p:$('#gP'),d:
 const S={lv:'r',dep:null,prov:null,sel:null,form:'t',layer:'lead',k:7,lvar:'margen',t:.6,chip:null,sort:'margin',q:'',lim:30};
 let PAL={},U={r:[],p:[],d:[]},BY={},DEPN={},DEPNAME={},REGOF={},LMAP=null,PATH={},EL={t:{},c:{},b:{}},DISTLOADED=null,RGD=null,ANA=null,CG={},CEL={r:[],p:[],d:[]},COUT={p:[],d:[]},REGC={},VB=[0,0,760,1124],anim=0,CUR=null,TC=0,RTok=0;
 const col=p=>PAL[p]||'#8A97A3';
+const SYMID={};const ic=p=>SYMID[p]?`<img class="ps" src="simbolos/${SYMID[p]}.png" alt="" width="22" height="22" loading="lazy" decoding="async">`:`<i style="background:${col(p)}"></i>`;
 // ---------- datos ----------
 function mk(r,l){const o=(r.organizations||[]).slice().sort((a,b)=>b.pct_valid-a.pct_valid),top=o.slice(0,3).map(t=>({party:t.organization,pct:t.pct_valid,votes:t.votes}));
  return{k:r.ubigeo,l,name:l==='p'?(r.department==='LIMA'&&r.province==='LIMA'?'Lima Metropolitana':r.province):r.district,dep:r.department_code,depN:r.department,prov:r.province_code,provN:r.province,top,lead:top[0]||null,m:top.length>1?top[0].pct-top[1].pct:(top[0]?top[0].pct:0),adv:r.counted_pct||0,valid:r.valid_votes||0}}
 function parseBB(d){const a=d.match(/-?\d+(?:\.\d+)?/g);let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;for(let i=0;i<a.length-1;i+=2){const x=+a[i],y=+a[i+1];if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y}return[x0,y0,x1,y1]}
 const uni=bs=>bs.filter(Boolean).reduce((a,b)=>[Math.min(a[0],b[0]),Math.min(a[1],b[1]),Math.max(a[2],b[2]),Math.max(a[3],b[3])]);
 const uBB=u=>u.bb||(PATH[u.l+u.k]?u.bb=parseBB(PATH[u.l+u.k]):null);
-function build(m,res,pal,dp,pp){PAL=pal;const R=m.records;R.forEach(r=>{DEPN[norm(r.department)]=r.department_code;DEPNAME[r.department_code]=tc(r.department)});
+function build(m,res,pal,dp,pp){PAL=pal;const R=m.records;R.forEach(r=>(r.organizations||[]).forEach(o=>{if(o.organization_id&&o.organization)SYMID[o.organization]=o.organization_id}));(res.regiones||[]).forEach(g=>(g.top||[]).forEach(t=>{const m2=/(\d{8})\.png/.exec(t.simbolo||'');if(m2&&t.party)SYMID[t.party]=m2[1]}));R.forEach(r=>{DEPN[norm(r.department)]=r.department_code;DEPNAME[r.department_code]=tc(r.department)});
  res.regiones.forEach(g=>{const n=norm(g.region),dc=DEPN[n.startsWith('LIMA')?'LIMA':n],top=g.top.concat(g.tercero?[g.tercero]:[]).map(t=>({party:t.party,pct:t.percent??0,votes:t.votes,cand:t.candidate}));
   const u={k:g.id,l:'r',name:g.region,dep:dc,top,lead:top[0],m:top[1]?top[0].pct-top[1].pct:top[0].pct,adv:g.actas_contabilizadas||0,valid:g.valid||0};U.r.push(u);BY['r'+u.k]=u;REGOF[dc]=u;PATH['r'+u.k]=dp[g.id]?.d});
  const lm=R.find(r=>r.level==='provincial'&&r.department==='LIMA'&&r.province==='LIMA');LMAP=lm.ubigeo;
@@ -170,7 +172,7 @@ function layerNote(u){if(!u||u.l==='r')return '';const y=S.layer;
 function card(lab,u,ficha){if(!u)return '';const mx=Math.max(1,...u.top.map(t=>t.pct));
  if(u.none)return `<div class="dc"><div class="dh"><div><small>${lab}</small><h3>${esc(u.name)}</h3></div></div><p class="dm" style="margin-top:6px">Lima Metropolitana no elige gobernador regional: vota por su alcalde metropolitano y sus alcaldes distritales.</p></div>`;
  return `<div class="dc"><div class="dh"><div><small>${lab}</small><h3>${esc(tc(u.name))}</h3></div><span class="av">${f(u.adv,1)} % de actas · ${fi(u.valid)} votos válidos</span></div>
- ${u.top.length?u.top.map(t=>`<div class="tr"><i style="background:${col(t.party)}"></i><span title="${esc(t.party)}">${esc(short(t.party))}</span><b>${f(t.pct,1)} %</b><div class="tb"><u style="width:${t.pct/mx*100}%;background:${col(t.party)}"></u></div>${t.cand?`<small>${esc(t.cand)}</small>`:''}</div>`).join(''):'<p class="dm">Aún sin resultados.</p>'}
+ ${u.top.length?u.top.map(t=>`<div class="tr">${ic(t.party)}<span title="${esc(t.party)}">${esc(short(t.party))}</span><b>${f(t.pct,1)} %</b><div class="tb"><u style="width:${t.pct/mx*100}%;background:${col(t.party)}"></u></div>${t.cand?`<small>${esc(t.cand)}</small>`:''}</div>`).join(''):'<p class="dm">Aún sin resultados.</p>'}
  ${u.top.length>1?`<div class="dm">Ventaja del 1.º sobre el 2.º: <b>${f(u.m,1)} pp</b>${u.m<3&&u.adv<100?' · <span class="hot">carrera reñida</span>':''}${ficha?` · <a href="unidad.html?u=${u.k}">Ficha completa →</a>`:''}</div>`:''}${ficha?layerNote(u):''}</div>`}
 function detail(){const parts=[];
  if(S.dep&&REGOF[S.dep]&&S.prov!==LMAP)parts.push(card('Gobernador regional',REGOF[S.dep],false));
@@ -178,12 +180,12 @@ function detail(){const parts=[];
  if(S.sel)parts.push(card('Alcalde distrital',BY['d'+S.sel],true));
  if(!parts.length){const L=U.r.filter(u=>u.lead),by={};L.forEach(u=>by[u.lead.party]=(by[u.lead.party]||0)+1);const rk=Object.entries(by).sort((a,b)=>b[1]-a[1]),cl=L.filter(u=>u.m<3&&u.adv<100).length;
   $('#dt').innerHTML=`<h2>Gobernadores regionales</h2><small>Resumen nacional · toca una región del mapa para acercarte</small><div class="kpi" style="margin-top:10px"><span><b>${L.length}</b> regiones con resultados</span><span><b>${cl}</b> con ventaja menor a 3 pp</span><span><b>${rk.length}</b> organizaciones lideran</span></div>
-  ${rk.slice(0,6).map(([p,n])=>`<div class="tr"><i style="background:${col(p)}"></i><span title="${esc(p)}">${esc(short(p))}</span><b>${n}</b><div class="tb"><u style="width:${n/rk[0][1]*100}%;background:${col(p)}"></u></div></div>`).join('')}`;return}
+  ${rk.slice(0,6).map(([p,n])=>`<div class="tr">${ic(p)}<span title="${esc(p)}">${esc(short(p))}</span><b>${n}</b><div class="tb"><u style="width:${n/rk[0][1]*100}%;background:${col(p)}"></u></div></div>`).join('')}`;return}
  $('#dt').innerHTML=`<h2>Quién va primero aquí</h2><small>Del nivel regional al distrital, según lo que hayas tocado</small><div style="margin-top:10px">${parts.join('')}</div>`}
 function legend(){const L=units(),y=eff(S.lv),chips=$('#chips'),lg=$('#lg'),hn=$('#hn');lg.hidden=true;hn.hidden=true;chips.innerHTML='';
  if(S.layer!=='lead'&&S.layer!=='falta'&&S.lv==='r'){hn.hidden=false;hn.textContent='Las '+(S.layer==='reg'?'regiones electorales':'medidas de patrón espacial')+' se calculan por provincia y por distrito. Aquí se muestra quién va primero; toca una región para verlas.';}
  if(y==='lead'){const by={};L.forEach(u=>{if(u.lead)by[u.lead.party]=(by[u.lead.party]||0)+1});const rk=Object.entries(by).sort((a,b)=>b[1]-a[1]);
-  chips.innerHTML=rk.slice(0,10).map(([p,n])=>`<button class="chip" data-v="${esc(p)}" aria-pressed="${S.chip===p}"><i style="background:${col(p)}"></i>${esc(short(p))}<b>${n}</b></button>`).join('')+(rk.length>10?`<span class="note" style="align-self:center">+${rk.length-10} más</span>`:'')}
+  chips.innerHTML=rk.slice(0,10).map(([p,n])=>`<button class="chip" data-v="${esc(p)}" aria-pressed="${S.chip===p}">${ic(p)}${esc(short(p))}<b>${n}</b></button>`).join('')+(rk.length>10?`<span class="note" style="align-self:center">+${rk.length-10} más</span>`:'')}
  else if(y==='falta'){lg.hidden=false;lg.innerHTML=`<b>Actas por contabilizar:</b>${RAMP.map(x=>`<span><i style="background:${x[1]}"></i>${x[2]}</span>`).join('')}`}
  else if(y==='reg'&&RGD){const R=RGD[S.lv==='p'?'prov':'dist'].resw[S.k],by={};L.forEach(u=>{const g=regLab(u);if(g!=null)by[g]=(by[g]||0)+1});
   chips.innerHTML=Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([g,n])=>`<button class="chip" data-v="${g}" aria-pressed="${S.chip===g}"><i style="background:${COL[g%12]}"></i>Región ${+g+1} · ${esc(short(R.regs[g].lider))}<b>${n}</b></button>`).join('')}
